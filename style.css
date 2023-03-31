@@ -191,6 +191,7 @@ footer {
 /* table styles below, need to organize */
 
 table {
+  border: 1px solid rgba(var(--color-text),0.2);
   border-radius: var(--radius);
 }
 
