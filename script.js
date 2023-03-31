@@ -35,7 +35,7 @@ function populateDetails(i) {
     table.appendChild(row);
     for (const data in dataset[i].sizes[j]) {
       const cell = document.createElement("td");
-      const text = document.createTextNode(dataset[i].sizes[j].[data]);
+      const text = document.createTextNode(dataset[i].sizes[j][data]);
       row.appendChild(cell);
       cell.appendChild(text);
     }
