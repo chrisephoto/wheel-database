@@ -35,7 +35,7 @@ body:has(#wheel-details.open) {
 }
 
 footer {
-  font-size: 80%;
+  font-size: 0.8rem;
   opacity: 0.8;
   padding: 2rem;
   text-align: center;
@@ -74,7 +74,7 @@ input[type="submit"].cta {
 
 label {
   display: block;
-  font-size: 80%;
+  font-size: 0.8rem;
   margin-top: 1rem;
   user-select: none;
 }
@@ -104,9 +104,10 @@ tr {
 }
 
 table caption {
-  font-size: 120%;
+  font-size: 1.2rem;
   font-weight: 600;
-  text-transform: uppercase;
+  margin: 0 0 0.5rem 0;
+  text-align: left;
 }
 
 td, th {
