@@ -191,23 +191,51 @@ footer {
 /* table styles below, need to organize */
 
 table {
-  border-radius: 15px;
+  border-radius: var(--radius);
+}
+
+table,
+tbody,
+td,
+th,
+tr {
+  border-spacing: 0;
+  margin: 0;
+  padding: 0;
+}
+
+table caption {
+  font-size: 120%;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+td, th {
+  padding: 0.5ch 1ch;
 }
 
 tbody > :first-child > :first-child {
-  border-radius: 15px 0 0 0;
+  border-radius: var(--radius) 0 0 0;
 }
 
 tbody > :first-child > :last-child {
-  border-radius: 0 15px 0 0;
+  border-radius: 0 var(--radius) 0 0;
 }
 
 tbody > :last-child > :first-child {
-  border-radius: 0 0 0 15px;
+  border-radius: 0 0 0 var(--radius);
 }
 
 tbody > :last-child > :last-child {
-  border-radius: 0 0 15px 0;
+  border-radius: 0 0 var(--radius) 0;
+}
+
+tr:not(:last-child) td, tr:not(:last-child) th {
+  border-bottom: 1px solid rgba(var(--color-text),0.2);
+}
+
+#wheel-info th {
+  border-right: 1px solid rgba(var(--color-text),0.2);
 }
 
 th {
@@ -231,22 +259,6 @@ th {
   grid-column: 1/-1;
 }
 
-table, tbody, tr, td, th {
-  border-spacing: 0;
-  margin: 0;
-  padding: 0;
-}
-
-table caption {
-  font-size: 120%;
-  font-weight: 600;
-  text-transform: uppercase;
-}
-
-td, th {
-  padding: 0.5ch 1ch;
-}
-
 #wheel-info {
   margin-bottom: 2rem;
 }
@@ -267,14 +279,4 @@ td, th {
 #wheel-specs td {
   text-align: center;
   /*width: 20%;*/
-}
-
-td:first-child {
-  border-top-left-radius: var(--radius); 
-  border-bottom-left-radius: var(--radius);
-}
-
-td:last-child {
-  border-bottom-right-radius: var(--radius); 
-  border-top-right-radius: var(--radius); 
 }
