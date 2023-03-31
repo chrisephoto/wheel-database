@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+  </head>
+  <body>
+    <header>JWL DATABASE by PTETRA AUTO</header>
+    <main>
+      <section id="wheel-filters">
+        <details open>
+          <summary>Filter</summary>
+          <label for="input-search">Search</label>
+          <input id="input-search" type="text" placeholder="Search"/>
+          <label for="input-brand">Brand</label>
+          <select id="input-brand">
+            <option value="" selected disabled hidden>All</option>
+            <option value="advan">Advan</option>
+            <option value="enkei">Enkei</option>
+            <option value="rays">Rays</option>
+            <option value="work">Work</option>
+          </select>
+          <label for="input-style">Style</label>
+          <select id="input-style">
+            <option value="" selected disabled hidden>All</option>
+            <option>3 Spoke</option>
+            <option>4 Spoke</option>
+            <option>5 Spoke</option>
+            <option>6 Spoke</option>
+          </select>
+          <label for="input-size">Size</label>
+          <select id="input-size" multiple>
+            <option value="" selected>All</option>
+            <option value="13">13"</option>
+            <option value="14">14"</option>
+            <option value="15">15"</option>
+            <option value="16">16"</option>
+            <option value="17">17"</option>
+            <option value="18">18"</option>
+          </select>
+          <label for="input-pcd">PCD</label>
+          <select id="input-pcd" multiple>
+            <option value="" selected>All</option>
+            <option>4x100</option>
+            <option>4x114.3</option>
+            <option>5x100</option>
+            <option>5x114.3</option>
+          </select>
+          <label for="input-year">Production Year</label>
+          <select id="input-year" multiple>
+            <option value="" selected>All</option>
+            <option>1980</option>
+            <option>1981</option>
+            <option>1982</option>
+            <option>1983</option>
+            <option>1984</option>
+            <option>1985</option>
+          </select>
+          <input type="submit" value="Apply" onclick="applyFilter()"/>
+        </details>
+      </section>
+      <section id="wheel-list"></section>
+      <section id="wheel-details">
+        <div id="wheel-images"></div>
+        <div>
+          <table id="wheel-info">
+            <caption>Information</caption>
+            <tbody>
+              <tr>
+                <th>Brand</th>
+                <td id="wheel-info-brand"></td>
+              </tr>
+              <tr>
+                <th>Model</th>
+                <td id="wheel-info-model"></td>
+              </tr>
+              <tr>
+                <th>Manufacturer</th>
+                <td id="wheel-info-manufacturer"></td>
+              </tr>
+            </tbody>
+          </table>
+          <table id="wheel-specs">
+            <caption>Specifications</caption>
+            <tbody>
+              <tr>
+                <th>Diameter</th>
+                <th>Width</th>
+                <th>PCD</th>
+                <th>Offset(s)</th>
+                <th>Color(s)</th>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+    <footer>Copyright &#0169; 2023</footer>
+  </body>
+</html>
