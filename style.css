@@ -193,11 +193,12 @@ th {
 #wheel-images img {
   border-radius: var(--radius);
   display: block;
+  grid-column: 1/-1;
   width: 100%;
 }
 
 #wheel-images img:first-child {
-  grid-column: 1/-1;
+  /*grid-column: 1/-1;*/
 }
 
 #wheel-info {
