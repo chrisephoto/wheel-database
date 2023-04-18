@@ -1,12 +1,16 @@
 dataset = [
   {
     shortname: "Bee&#8902;R B5",
-    description: "Dual valvestem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus pharetra non risus in tempus. In vulputate suscipit nunc, et pharetra neque condimentum in. Vivamus id dapibus orci. Mauris accumsan dignissim nulla, quis semper nibh porta nec. Nullam eu metus sit amet ligula consequat pulvinar. Etiam vitae porta erat. Morbi sed posuere arcu. Aliquam a nisi id ligula facilisis consectetur a et tortor. Pellentesque mollis rhoncus nisl, et commodo nisl elementum eget.",
+    description: "Dual valvestem. Nismo LMGT4 style. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus pharetra non risus in tempus. In vulputate suscipit nunc, et pharetra neque condimentum in. Vivamus id dapibus orci. Mauris accumsan dignissim nulla, quis semper nibh porta nec. Nullam eu metus sit amet ligula consequat pulvinar. Etiam vitae porta erat. Morbi sed posuere arcu. Aliquam a nisi id ligula facilisis consectetur a et tortor. Pellentesque mollis rhoncus nisl, et commodo nisl elementum eget.",
     brand: "Bee&#8902;R",
     model: "B5",
-    manufacturer: "Unknown",
+    manufacturer: "Unverified",
+    years: "Unverified",
+    origin: "Unverified",
+    construction: "Unverified",
+    style: "5 Spoke",
     link: "http://web.archive.org/web/20100116090507/http://www.bee-r.com/main/parts/wheel/index.htm",
-    images: [""],
+    images: ["http://web.archive.org/web/20100116090507im_/http://www.bee-r.com/main/parts/wheel/photo/wheelgold01.jpg"],
     sizes: [
       {
         diameter: "17",
@@ -26,12 +30,16 @@ dataset = [
   },
   {
     shortname: "Uras NS-01",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus pharetra non risus in tempus. In vulputate suscipit nunc, et pharetra neque condimentum in. Vivamus id dapibus orci. Mauris accumsan dignissim nulla, quis semper nibh porta nec. Nullam eu metus sit amet ligula consequat pulvinar. Etiam vitae porta erat. Morbi sed posuere arcu. Aliquam a nisi id ligula facilisis consectetur a et tortor. Pellentesque mollis rhoncus nisl, et commodo nisl elementum eget.",
+    description: "Made by DoAll/CST. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus pharetra non risus in tempus. In vulputate suscipit nunc, et pharetra neque condimentum in. Vivamus id dapibus orci. Mauris accumsan dignissim nulla, quis semper nibh porta nec. Nullam eu metus sit amet ligula consequat pulvinar. Etiam vitae porta erat. Morbi sed posuere arcu. Aliquam a nisi id ligula facilisis consectetur a et tortor. Pellentesque mollis rhoncus nisl, et commodo nisl elementum eget.",
     brand: "Uras",
     model: "NS-01",
-    manufacturer: "Unknown",
+    manufacturer: "Unverified",
+    years: "Unverified",
+    origin: "Unverified",
+    construction: "Unverified",
+    style: "5 Spoke",
     link: "http://web.archive.org/web/20070504060720/http://www.uras.co.jp:80/syohin/wheel.html",
-    images: [""],
+    images: ["http://web.archive.org/web/20070504060720im_/http://www.uras.co.jp/2004_04image/wheel/black_org1.jpg"],
     sizes: [
       {
         diameter: "17",
