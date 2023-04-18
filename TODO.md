@@ -14,5 +14,6 @@ EuroMagic Racing ST-05Air
 EuroMagic Racing GT-08F
 RACING HART CP-035 (TWS)
 RAMS/J's Racing PR6 (TWS)
+Hanbai M2
 CST (Doall) Zero-1 Hyper (cast, by weds?)
 	http://doall.jp/csttop/zero1hyper/cstzero1hyper.html
