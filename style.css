@@ -215,6 +215,10 @@ th {
   text-align: right;
 }
 
+#wheel-info-shortname {
+  margin-top: 0;
+}
+
 #wheel-specs {
   width: 100%;
 }
