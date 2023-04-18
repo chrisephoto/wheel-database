@@ -82,21 +82,14 @@ dataset = [
         width: "8.0",
         pcd: "5x114.3",
         offsets: "+30",
-        colors: "Silver, Black, Chrome"
+        colors: "Chrome"
       },
       {
         diameter: "17",
         width: "9.0",
         pcd: "5x114.3",
-        offsets: "+35",
-        colors: "Silver, Black, Chrome"
-      },
-      {
-        diameter: "17",
-        width: "9.5",
-        pcd: "5x114.3",
         offsets: "+15",
-        colors: "Silver, Black, Chrome"
+        colors: "Chrome"
       }
     ]
   },
