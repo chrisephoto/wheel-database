@@ -1,6 +1,6 @@
 # Wheel Database
 
-I created this page to serve as a searchable database of Japanese made wheels - especially those less known, including photos and specifications of each wheel. This was heavily inspired by the work Quentin has done at [Kyusha Shoes](https://www.kyushashoes.com).
+I created this page to serve as a searchable database of Japanese made wheels - especially those less known, including photos and specifications of each wheel. This was heavily inspired by the work done at [Kyusha Shoes](https://www.kyushashoes.com).
 
 There is still quite a bit of work to do to before the database can be fully populated. Things left to do include:
 * CSS: Finish layout and design of Wheel Detail modal
