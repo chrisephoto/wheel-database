@@ -169,7 +169,6 @@ dataset = [
         offsets: "+35/+50",
         colors: "Silver, Gunmetal"
       },
-      
       {
         diameter: "18",
         width: "9.5",
@@ -177,7 +176,6 @@ dataset = [
         offsets: "+12/+22/+34/+40",
         colors: "Silver, Gunmetal"
       },
-      
       {
         diameter: "18",
         width: "10.5",
