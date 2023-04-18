@@ -30,7 +30,7 @@ dataset = [
   },
   {
     shortname: "Uras NS-01",
-    description: "Made by DoAll/CST. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus pharetra non risus in tempus. In vulputate suscipit nunc, et pharetra neque condimentum in. Vivamus id dapibus orci. Mauris accumsan dignissim nulla, quis semper nibh porta nec. Nullam eu metus sit amet ligula consequat pulvinar. Etiam vitae porta erat. Morbi sed posuere arcu. Aliquam a nisi id ligula facilisis consectetur a et tortor. Pellentesque mollis rhoncus nisl, et commodo nisl elementum eget.",
+    description: "Rebadged DoAll/CST D Spec. Possibly manufactured by Weds.",
     brand: "Uras",
     model: "NS-01",
     manufacturer: "Unverified",
@@ -65,95 +65,125 @@ dataset = [
     ]
   },
   {
-    shortname: "Mugen CF-48",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus pharetra non risus in tempus. In vulputate suscipit nunc, et pharetra neque condimentum in. Vivamus id dapibus orci. Mauris accumsan dignissim nulla, quis semper nibh porta nec. Nullam eu metus sit amet ligula consequat pulvinar. Etiam vitae porta erat. Morbi sed posuere arcu. Aliquam a nisi id ligula facilisis consectetur a et tortor. Pellentesque mollis rhoncus nisl, et commodo nisl elementum eget.",
-    brand: "Mugen",
-    model: "CF-48",
-    manufacturer: "Fortran",
-    images: ["https://kyushashoes.com/wp-content/uploads/2021/02/Mugen-CF-48-150x150.jpg","https://kyushashoes.com/wp-content/uploads/2021/01/Bel-Torino-Skyline-150x150.jpg","https://kyushashoes.com/wp-content/uploads/2021/01/Autostrada-MK8-black-150x150.jpg"],
+    shortname: "Uras NS-02",
+    description: "Rebadged DoAll?. Possibly manufactured by Weds.",
+    brand: "Uras",
+    model: "NS-02",
+    manufacturer: "Unverified",
+    years: "Unverified",
+    origin: "Unverified",
+    construction: "Unverified",
+    style: "Split 6 Spoke",
+    link: "http://web.archive.org/web/20070504060427/http://www.uras.co.jp:80/syohin/wheel_ns02.html",
+    images: ["https://saufiles.s3.ap-southeast-2.amazonaws.com/post-41322-1242040115.jpg"],
     sizes: [
       {
-        diameter: "15",
-        width: "6.5",
+        diameter: "17",
+        width: "8.0",
         pcd: "5x114.3",
-        offsets: "+38",
-        colors: "Silver, Bronze"
+        offsets: "+30",
+        colors: "Silver, Black, Chrome"
       },
       {
-        diameter: "15",
-        width: "7",
+        diameter: "17",
+        width: "9.0",
         pcd: "5x114.3",
-        offsets: "+40",
-        colors: "Silver, Bronze"
+        offsets: "+35",
+        colors: "Silver, Black, Chrome"
       },
       {
-        diameter: "16",
-        width: "7",
+        diameter: "17",
+        width: "9.5",
         pcd: "5x114.3",
-        offsets: "+43/+53",
-        colors: "Silver, Bronze"
+        offsets: "+15",
+        colors: "Silver, Black, Chrome"
       }
     ]
   },
   {
-    shortname: "Bel Torino Skyline",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus pharetra non risus in tempus. In vulputate suscipit nunc, et pharetra neque condimentum in. Vivamus id dapibus orci. Mauris accumsan dignissim nulla, quis semper nibh porta nec. Nullam eu metus sit amet ligula consequat pulvinar. Etiam vitae porta erat. Morbi sed posuere arcu. Aliquam a nisi id ligula facilisis consectetur a et tortor. Pellentesque mollis rhoncus nisl, et commodo nisl elementum eget.",
-    brand: "Bel Torino",
-    model: "Skyline",
-    manufacturer: "Rays Engineering",
-    images: ["https://kyushashoes.com/wp-content/uploads/2021/01/Bel-Torino-Skyline-150x150.jpg","https://kyushashoes.com/wp-content/uploads/2021/01/Autostrada-MK8-black-150x150.jpg","https://kyushashoes.com/wp-content/uploads/2021/02/Mugen-CF-48-150x150.jpg"],
+    shortname: "Ings TS06",
+    description: "Manufactured by Rays.",
+    brand: "Ings",
+    model: "TS06",
+    manufacturer: "Rays Co., Ltd.",
+    years: "Unverified",
+    origin: "Unverified",
+    construction: "Unverified",
+    style: "Split 6 Spoke",
+    link: "https://www.ings-net.com/english/products/wheel.html",
+    images: ["https://www.ings-net.com/english/products/imgs/ts06/ts06_main.jpg"],
     sizes: [
       {
-        diameter: "15",
-        width: "6.5",
-        pcd: "5x114.3",
-        offsets: "+38",
-        colors: "Silver, Bronze"
+        diameter: "18",
+        width: "7.5",
+        pcd: "5x100",
+        offsets: "+43/+48",
+        colors: "Silver, Gunmetal, Gold"
       },
       {
-        diameter: "15",
-        width: "7",
+        diameter: "18",
+        width: "7.5",
         pcd: "5x114.3",
-        offsets: "+40",
-        colors: "Silver, Bronze"
+        offsets: "+43/+48",
+        colors: "Silver, Gunmetal, Gold"
       },
       {
-        diameter: "16",
-        width: "7",
-        pcd: "5x114.3",
-        offsets: "+43/+53",
-        colors: "Silver, Bronze"
-      }
-    ]
-  },
-  {
-    shortname: "Autostrada MK8",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus pharetra non risus in tempus. In vulputate suscipit nunc, et pharetra neque condimentum in. Vivamus id dapibus orci. Mauris accumsan dignissim nulla, quis semper nibh porta nec. Nullam eu metus sit amet ligula consequat pulvinar. Etiam vitae porta erat. Morbi sed posuere arcu. Aliquam a nisi id ligula facilisis consectetur a et tortor. Pellentesque mollis rhoncus nisl, et commodo nisl elementum eget.",
-    brand: "Autostrada",
-    model: "MK8",
-    manufacturer: "Rays Engineering",
-    images: ["https://kyushashoes.com/wp-content/uploads/2021/01/Autostrada-MK8-black-150x150.jpg","https://kyushashoes.com/wp-content/uploads/2021/02/Mugen-CF-48-150x150.jpg","https://kyushashoes.com/wp-content/uploads/2021/01/Bel-Torino-Skyline-150x150.jpg"],
-    sizes: [
-      {
-        diameter: "15",
-        width: "6.5",
-        pcd: "5x114.3",
-        offsets: "+38",
-        colors: "Silver, Bronze"
+        diameter: "18",
+        width: "8.0",
+        pcd: "5x100",
+        offsets: "+38/+43",
+        colors: "Silver, Gunmetal, Gold"
       },
       {
-        diameter: "15",
-        width: "7",
+        diameter: "18",
+        width: "8.0",
         pcd: "5x114.3",
-        offsets: "+40",
-        colors: "Silver, Bronze"
+        offsets: "+38/+43",
+        colors: "Silver, Gunmetal, Gold"
       },
       {
-        diameter: "16",
-        width: "7",
+        diameter: "18",
+        width: "8.5",
+        pcd: "5x100",
+        offsets: "+43",
+        colors: "Silver, Gunmetal, Gold"
+      },
+      {
+        diameter: "18",
+        width: "8.5",
         pcd: "5x114.3",
-        offsets: "+43/+53",
-        colors: "Silver, Bronze"
+        offsets: "+22/+30/+38",
+        colors: "Silver, Gunmetal"
+      },
+      {
+        diameter: "18",
+        width: "8.5",
+        pcd: "5x114.3",
+        offsets: "+43",
+        colors: "Silver, Gunmetal, Gold"
+      },
+      {
+        diameter: "18",
+        width: "9.0",
+        pcd: "5x114.3",
+        offsets: "+35/+50",
+        colors: "Silver, Gunmetal"
+      },
+      
+      {
+        diameter: "18",
+        width: "9.5",
+        pcd: "5x114.3",
+        offsets: "+12/+22/+34/+40",
+        colors: "Silver, Gunmetal"
+      },
+      
+      {
+        diameter: "18",
+        width: "10.5",
+        pcd: "5x114.3",
+        offsets: "+15/+22",
+        colors: "Silver, Gunmetal"
       }
     ]
   }
