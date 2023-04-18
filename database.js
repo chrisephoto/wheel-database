@@ -1,5 +1,7 @@
 dataset = [
   {
+    shortname: "Mugen CF-48",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus pharetra non risus in tempus. In vulputate suscipit nunc, et pharetra neque condimentum in. Vivamus id dapibus orci. Mauris accumsan dignissim nulla, quis semper nibh porta nec. Nullam eu metus sit amet ligula consequat pulvinar. Etiam vitae porta erat. Morbi sed posuere arcu. Aliquam a nisi id ligula facilisis consectetur a et tortor. Pellentesque mollis rhoncus nisl, et commodo nisl elementum eget.",
     brand: "Mugen",
     model: "CF-48",
     manufacturer: "Fortran",
@@ -29,6 +31,8 @@ dataset = [
     ]
   },
   {
+    shortname: "Bel Torino Skyline",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus pharetra non risus in tempus. In vulputate suscipit nunc, et pharetra neque condimentum in. Vivamus id dapibus orci. Mauris accumsan dignissim nulla, quis semper nibh porta nec. Nullam eu metus sit amet ligula consequat pulvinar. Etiam vitae porta erat. Morbi sed posuere arcu. Aliquam a nisi id ligula facilisis consectetur a et tortor. Pellentesque mollis rhoncus nisl, et commodo nisl elementum eget.",
     brand: "Bel Torino",
     model: "Skyline",
     manufacturer: "Rays Engineering",
@@ -58,6 +62,8 @@ dataset = [
     ]
   },
   {
+    shortname: "Autostrada MK8",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus pharetra non risus in tempus. In vulputate suscipit nunc, et pharetra neque condimentum in. Vivamus id dapibus orci. Mauris accumsan dignissim nulla, quis semper nibh porta nec. Nullam eu metus sit amet ligula consequat pulvinar. Etiam vitae porta erat. Morbi sed posuere arcu. Aliquam a nisi id ligula facilisis consectetur a et tortor. Pellentesque mollis rhoncus nisl, et commodo nisl elementum eget.",
     brand: "Autostrada",
     model: "MK8",
     manufacturer: "Rays Engineering",
