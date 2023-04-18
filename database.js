@@ -25,6 +25,38 @@ dataset = [
     ]
   },
   {
+    shortname: "Uras NS-01",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus pharetra non risus in tempus. In vulputate suscipit nunc, et pharetra neque condimentum in. Vivamus id dapibus orci. Mauris accumsan dignissim nulla, quis semper nibh porta nec. Nullam eu metus sit amet ligula consequat pulvinar. Etiam vitae porta erat. Morbi sed posuere arcu. Aliquam a nisi id ligula facilisis consectetur a et tortor. Pellentesque mollis rhoncus nisl, et commodo nisl elementum eget.",
+    brand: "Uras",
+    model: "NS-01",
+    manufacturer: "Unknown",
+    link: "http://web.archive.org/web/20070504060720/http://www.uras.co.jp:80/syohin/wheel.html",
+    images: [""],
+    sizes: [
+      {
+        diameter: "17",
+        width: "8.0",
+        pcd: "5x114.3",
+        offsets: "+30",
+        colors: "Silver, Black, Chrome"
+      },
+      {
+        diameter: "17",
+        width: "9.0",
+        pcd: "5x114.3",
+        offsets: "+35",
+        colors: "Silver, Black, Chrome"
+      },
+      {
+        diameter: "17",
+        width: "9.5",
+        pcd: "5x114.3",
+        offsets: "+15",
+        colors: "Silver, Black, Chrome"
+      }
+    ]
+  },
+  {
     shortname: "Mugen CF-48",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus pharetra non risus in tempus. In vulputate suscipit nunc, et pharetra neque condimentum in. Vivamus id dapibus orci. Mauris accumsan dignissim nulla, quis semper nibh porta nec. Nullam eu metus sit amet ligula consequat pulvinar. Etiam vitae porta erat. Morbi sed posuere arcu. Aliquam a nisi id ligula facilisis consectetur a et tortor. Pellentesque mollis rhoncus nisl, et commodo nisl elementum eget.",
     brand: "Mugen",
