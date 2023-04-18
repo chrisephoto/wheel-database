@@ -14,14 +14,13 @@ function populateGrid() {
     const figure = document.createElement("figure");
     const img = document.createElement("img");
     const figcaption = document.createElement("figcaption");
-    const text = document.createTextNode(dataset[i].brand + " " + dataset[i].model);
     const div = document.createElement("div");
     content.appendChild(figure);
     figure.onclick = function(){populateDetails(i)}
     figure.appendChild(img);
     img.src = dataset[i].images[0];
     figure.appendChild(figcaption);
-    figcaption.appendChild(text);
+    figcaption.innerHTML = dataset[i].shortname;
   }
 }
 
