@@ -26,6 +26,8 @@ function populateGrid() {
 }
 
 function populateDetails(i) {
+  document.getElementById("wheel-info-shortname").innerHTML = dataset[i].shortname;
+  document.getElementById("wheel-info-description").innerHTML = dataset[i].description;
   document.getElementById("wheel-info-brand").innerHTML = dataset[i].brand;
   document.getElementById("wheel-info-model").innerHTML = dataset[i].model;
   document.getElementById("wheel-info-manufacturer").innerHTML = dataset[i].manufacturer;
