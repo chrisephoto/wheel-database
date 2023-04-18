@@ -5,6 +5,7 @@ dataset = [
     brand: "Bee&#8902;R",
     model: "B5",
     manufacturer: "Unknown",
+    link: "http://web.archive.org/web/20100116090507/http://www.bee-r.com/main/parts/wheel/index.htm",
     images: [""],
     sizes: [
       {
