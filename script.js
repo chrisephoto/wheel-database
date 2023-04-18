@@ -30,6 +30,7 @@ function populateDetails(i) {
   document.getElementById("wheel-info-brand").innerHTML = dataset[i].brand;
   document.getElementById("wheel-info-model").innerHTML = dataset[i].model;
   document.getElementById("wheel-info-manufacturer").innerHTML = dataset[i].manufacturer;
+  document.getElementById("wheel-info-link").innerHTML = "<a href=" & dataset[i].link & " target='_blank'>Link</a>";
   for (let j = 0; j < dataset[i].sizes.length; j++) {
     const table = document.querySelector("#wheel-specs tbody");
     const row  = document.createElement("tr");
