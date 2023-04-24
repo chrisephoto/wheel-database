@@ -11,8 +11,9 @@ window.onkeydown=function(e){
 
 document.addEventListener('click', event => {
   if (document.getElementById("wheel-details").classList.contains("open")) {
-    const isClickInside = document.getElementById("wheel-details").contains(event.target)
-    if (!isClickInside) {
+    const validClick1 = document.getElementById("wheel-details").contains(event.target)
+    const validClick2 = document.getElementById("wheel-list").contains(event.target)
+    if (!validClick1 || !!validClick2) {
       closeDetails();
     }
   }
