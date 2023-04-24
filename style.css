@@ -172,6 +172,13 @@ th {
   transform: scale(1.0);
 }
 
+#wheel-details-close {
+  cursor: pointer;
+  position: absolute;
+    right: 0;
+    top: 0;
+}
+
 #wheel-filters {
   padding: 2rem 2rem 0 2rem;
 }
