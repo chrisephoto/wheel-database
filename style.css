@@ -92,8 +92,6 @@ summary {
 table {
   border: 1px solid rgba(var(--color-text),0.2);
   border-radius: var(--radius);
-  margin-bottom: 2rem;
-  width: 100%;
 }
 
 table,
@@ -210,6 +208,12 @@ th {
 
 #wheel-images img:first-child {
   /*grid-column: 1/-1;*/
+}
+
+#wheel-info,
+#wheel-specs {
+  margin-bottom: 2rem;
+  width: 100%;
 }
 
 #wheel-info td {
