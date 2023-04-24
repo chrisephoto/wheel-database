@@ -101,6 +101,7 @@ function applyFilter() {
       filterIndexes.push(i)
     }
   }
+  document.getElementById("wheel-list").innerHTML = "";
   for (let j = 0; j < filterIndexes.length; j++) {
     console.log("populating");
     populateGrid(j)
