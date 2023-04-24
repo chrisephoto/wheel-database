@@ -210,6 +210,14 @@ th {
   /*grid-column: 1/-1;*/
 }
 
+#wheel-info-container {
+  height: fit-content;
+}
+
+#wheel-info-container > :last-child {
+  margin-bottom: 0;
+}
+
 #wheel-info,
 #wheel-specs {
   margin-bottom: 2rem;
