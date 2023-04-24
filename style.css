@@ -71,6 +71,8 @@ input[type="submit"] {
   background: rgb(var(--color-accent));
   border: none;
   color: rgb(var(--color-background));
+  cursor: pointer;
+  margin-top: 1rem;
 }
 
 label {
