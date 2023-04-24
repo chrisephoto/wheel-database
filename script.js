@@ -17,7 +17,7 @@ document.addEventListener('click', event => {
     const validClick2 = document.getElementById("wheel-list").contains(event.target)
     console.log(validClick1);
     console.log(validClick2);
-    if (!validClick1 || !validClick2) {
+    if (!validClick1 && !validClick2) {
       console.log("details closed");
       closeDetails();
     }
