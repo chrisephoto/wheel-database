@@ -1,3 +1,4 @@
+// event listeners
 window.onload=function(){
   populateGrid();
 }
@@ -8,6 +9,14 @@ window.onkeydown=function(e){
   }
 }
 
+document.addEventListener('click', event => {
+  const isClickInside = document.getElementById("wheel-details").contains(event.target)
+  if (!isClickInside) {
+    closeDetails();
+  }
+})
+
+// functions
 function populateGrid() {
   for (let i = 0; i < dataset.length; i++) {
     const content = document.getElementById("wheel-list");
