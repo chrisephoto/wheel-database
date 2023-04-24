@@ -83,10 +83,23 @@ function closeDetails() {
 }
 
 function applyFilter() {
+  filterIndexes = []
+  
   filterBrand = document.getElementById("input-brand").value;
   filterStyle = document.getElementById("input-style").value;
   filterSize = document.getElementById("input-size").value;
   filterPCD = document.getElementById("input-pcd").value;
   filterYear = document.getElementById("input-year").value;
   console.log(filterBrand + ", " + filterStyle + ", " + filterSize + ", " + filterPCD + ", " + filterYear)
+  
+  // check each entry in database for criteria, add index of matches to new array, populateData using only indexes in new array
+  for (let i = 0; i < dataset.length; i++) {
+    if (dataset[i].brand == filterBrand) {
+      filterIndexes.push(i)
+    }
+  }
+  for (let j = 0; j < filterIndexes.length; j++) {
+    populateData(j)
+  }
+  
 }
