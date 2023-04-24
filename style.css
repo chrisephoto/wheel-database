@@ -60,14 +60,14 @@ select {
   padding: 1ch;
 }
 
-input[type="submit"] {
+input[type="reset"] {
   background: rgb(var(--color-background));
   color: rgb(var(--color-text));
   cursor: pointer;
   margin-top: 1rem;
 }
 
-input[type="submit"].cta {
+input[type="submit"] {
   background: rgb(var(--color-accent));
   border: none;
   color: rgb(var(--color-background));
