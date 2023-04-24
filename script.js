@@ -1,7 +1,9 @@
 // event listeners
 window.onload=function(){
-  document.getElementById("wheel-details-close").addEventListener("click", closeDetails); 
-  populateGrid();
+  document.getElementById("wheel-details-close").addEventListener("click", closeDetails);
+  for (let i = 0; i < dataset.length; i++) {
+    populateGrid(i)
+  }
 }
 
 window.onkeydown=function(e){
@@ -21,20 +23,18 @@ document.addEventListener("click", event => {
 })
 
 // functions
-function populateGrid() {
-  for (let i = 0; i < dataset.length; i++) {
-    const content = document.getElementById("wheel-list");
-    const figure = document.createElement("figure");
-    const img = document.createElement("img");
-    const figcaption = document.createElement("figcaption");
-    const div = document.createElement("div");
-    content.appendChild(figure);
-    figure.onclick = function(){populateDetails(i)}
-    figure.appendChild(img);
-    img.src = dataset[i].images[0];
-    figure.appendChild(figcaption);
-    figcaption.innerHTML = dataset[i].shortname;
-  }
+function populateGrid(i) {
+  const content = document.getElementById("wheel-list");
+  const figure = document.createElement("figure");
+  const img = document.createElement("img");
+  const figcaption = document.createElement("figcaption");
+  const div = document.createElement("div");
+  content.appendChild(figure);
+  figure.onclick = function(){populateDetails(i)}
+  figure.appendChild(img);
+  img.src = dataset[i].images[0];
+  figure.appendChild(figcaption);
+  figcaption.innerHTML = dataset[i].shortname;
 }
 
 function populateDetails(i) {
@@ -99,7 +99,7 @@ function applyFilter() {
     }
   }
   for (let j = 0; j < filterIndexes.length; j++) {
-    populateData(j)
+    populateGrid(j)
   }
   
 }
