@@ -90,11 +90,34 @@ function applyFilter() {
   filterIndexes = []
   
   //set filter params
+  filterSearch = document.getElementById("input-search").value;
   filterBrand = document.getElementById("input-brand").value;
+  //filterMfg = document.getElementById("input-mfg").value;
+  filterYear = [];
+  for (var option of document.getElementById('input-year').options)
+  {
+      if (option.selected) {
+          filterYear.push(option.value);
+      }
+  }
+  //filterConstruction = document.getElementById("input-construction").value;
   filterStyle = document.getElementById("input-style").value;
-  filterSize = document.getElementById("input-size").value;
-  filterPCD = document.getElementById("input-pcd").value;
-  filterYear = document.getElementById("input-year").value;
+  filterSize = [];
+  for (var option of document.getElementById('input-size').options)
+  {
+      if (option.selected) {
+          filterSize.push(option.value);
+      }
+  }
+  filterPCD = [];
+  for (var option of document.getElementById('input-pcd').options)
+  {
+      if (option.selected) {
+          filterPCD.push(option.value);
+      }
+  }
+  
+  console.log(filterSearch + filterBrand + filterYear + filterStyle + filterSize + filterPCD)
   
   //check dataset for matches
   for (let i = 0; i < dataset.length; i++) {
