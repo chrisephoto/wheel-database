@@ -103,8 +103,6 @@ function applyFilter() {
   }
   document.getElementById("wheel-list").innerHTML = "";
   for (let j = 0; j < filterIndexes.length; j++) {
-    console.log("populating");
-    populateGrid(j)
+    populateGrid(filterIndexes[j])
   }
-  
 }
