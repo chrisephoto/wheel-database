@@ -10,15 +10,10 @@ window.onkeydown=function(e){
 }
 
 document.addEventListener('click', event => {
-  console.log("fired");
   if (document.getElementById("wheel-details").classList.contains("open")) {
-    console.log("details is open");
     const validClick1 = document.getElementById("wheel-details").contains(event.target)
     const validClick2 = document.getElementById("wheel-list").contains(event.target)
-    console.log(validClick1);
-    console.log(validClick2);
     if (!validClick1 && !validClick2) {
-      console.log("details closed");
       closeDetails();
     }
   }
