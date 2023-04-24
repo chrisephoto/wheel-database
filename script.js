@@ -121,18 +121,4 @@ function resetFilter() {
   for (let i = 0; i < dataset.length; i++) {
     populateGrid(i)
   }
-  
-  //reset inputs
-  a = document.getElementById("input-search");
-  b = document.getElementById("input-brand");
-  c = document.getElementById("input-style");
-  d = document.getElementById("input-size");
-  e = document.getElementById("input-pcd");
-  f = document.getElementById("input-year");
-  a.value = a.defaultValue
-  b.value = b.defaultValue
-  c.value = c.defaultValue
-  d.value = d.defaultValue
-  e.value = e.defaultValue
-  f.value = f.defaultValue
 }
