@@ -10,7 +10,7 @@ window.onkeydown=function(e){
 }
 
 document.addEventListener('click', event => {
-  if document.getElementById("wheel-details").classList.contains("open") {
+  if (document.getElementById("wheel-details").classList.contains("open")) {
     const isClickInside = document.getElementById("wheel-details").contains(event.target)
     if (!isClickInside) {
       closeDetails();
