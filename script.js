@@ -90,15 +90,19 @@ function applyFilter() {
   filterSize = document.getElementById("input-size").value;
   filterPCD = document.getElementById("input-pcd").value;
   filterYear = document.getElementById("input-year").value;
-  console.log(filterBrand + ", " + filterStyle + ", " + filterSize + ", " + filterPCD + ", " + filterYear)
+  
+  console.log(filterBrand);
   
   // check each entry in database for criteria, add index of matches to new array, populateData using only indexes in new array
   for (let i = 0; i < dataset.length; i++) {
+    console.log("check performed");
     if (dataset[i].brand == filterBrand) {
+      console.log("check passed");
       filterIndexes.push(i)
     }
   }
   for (let j = 0; j < filterIndexes.length; j++) {
+    console.log("populating");
     populateGrid(j)
   }
   
