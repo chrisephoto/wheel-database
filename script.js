@@ -69,7 +69,10 @@ function populateDetails(i) {
 }
 
 function closeDetails() {
+  //remove class to hide modal
   document.getElementById("wheel-details").classList = "";
+  
+  //clear details from modal
   setTimeout(function(){
     const images = document.querySelectorAll('#wheel-details img');
     images.forEach(images => {
@@ -83,26 +86,53 @@ function closeDetails() {
 }
 
 function applyFilter() {
+  //create array
   filterIndexes = []
   
+  //set filter params
   filterBrand = document.getElementById("input-brand").value;
   filterStyle = document.getElementById("input-style").value;
   filterSize = document.getElementById("input-size").value;
   filterPCD = document.getElementById("input-pcd").value;
   filterYear = document.getElementById("input-year").value;
   
-  console.log(filterBrand);
-  
-  // check each entry in database for criteria, add index of matches to new array, populateData using only indexes in new array
+  //check dataset for matches
   for (let i = 0; i < dataset.length; i++) {
-    console.log("check performed");
     if (dataset[i].brand == filterBrand) {
-      console.log("check passed");
+      //add matches to array
       filterIndexes.push(i)
     }
   }
+  
+  //clear wheel list
   document.getElementById("wheel-list").innerHTML = "";
+  
+  //populate wheel list
   for (let j = 0; j < filterIndexes.length; j++) {
     populateGrid(filterIndexes[j])
   }
+}
+
+function resetFilter() {
+  //clear wheel list
+  document.getElementById("wheel-list").innerHTML = "";
+  
+  //populate wheel list
+  for (let i = 0; i < dataset.length; i++) {
+    populateGrid(i)
+  }
+  
+  //reset inputs
+  a = document.getElementById("input-search");
+  b = document.getElementById("input-brand");
+  c = document.getElementById("input-style");
+  d = document.getElementById("input-size");
+  e = document.getElementById("input-pcd");
+  f = document.getElementById("input-year");
+  a.value = a.defaultValue
+  b.value = b.defaultValue
+  c.value = c.defaultValue
+  d.value = d.defaultValue
+  e.value = e.defaultValue
+  f.value = f.defaultValue
 }
