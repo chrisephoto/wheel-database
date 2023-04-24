@@ -1,5 +1,6 @@
 // event listeners
 window.onload=function(){
+  document.getElementById("wheel-details-close").addEventListener("click", closeDetails); 
   populateGrid();
 }
 
@@ -8,8 +9,6 @@ window.onkeydown=function(e){
     closeDetails();
   }
 }
-
-document.getElementById("wheel-details-close").addEventListener("click", closeDetails); 
 
 document.addEventListener("click", event => {
   if (document.getElementById("wheel-details").classList.contains("open")) {
