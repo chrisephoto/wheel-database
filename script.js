@@ -166,7 +166,7 @@ function applyFilter() {
     matchBrand = true;
     //matchMfg = true;
     matchYear = false;
-    //matchConstruction = true;
+    matchConstruction = true;
     matchStyle = true;
     matchSize = false;
     
