@@ -122,8 +122,7 @@ function applyFilter() {
     matchYear = false;
     //matchConstruction = true;
     matchStyle = true;
-    matchSize = true;
-    matchPCD = true;
+    matchSize = false;
     
     //matchSearch
     
@@ -138,10 +137,9 @@ function applyFilter() {
     for (let j = 0; j < filterYear.length; j++) {
       if ((filterYear[j] >= dataset[i].yearStart && filterYear[j] <= dataset[i].yearEnd) || !filterYear[j]) {
         matchYear = true;
-        continue afterMatchYear;
+        break;
       }
     }
-    afterMatchYear:
     
     //matchConstruction
     
@@ -150,20 +148,19 @@ function applyFilter() {
       matchStyle = false;
     }
     
-    //matchSize and matchPCD
-    for (let j = 0; j < filterSize.length; j++) {
+    //matchSize    
+    matchSizeLoop: for (let j = 0; j < filterSize.length; j++) {
       for (let k = 0; k < dataset[i].size.length; k++) {
         if (dataset[i].sizes[k].diameter.includes(filterSize[j]) || !filterSize[j]) {
           for (let l = 0; l < filterPCD.length; l++) {
             if (dataset[i].sizes[k].pcd.includes(filterPCD[l]) || !filterPCD[l]) {
               matchSize = true;
-              continue afterMatchSize;
+              break matchSizeLoop;
             }
           }
         }
       }
     }
-    afterMatchSize:
     
     //add matches to index list
     if (matchBrand && matchYear && matchStyle && matchSize) {
