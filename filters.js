@@ -8,6 +8,14 @@ filters =  {
     "Unverified",
     "Rays Co., Ltd."
     ],
+  construction: [
+    "1 Piece - Cast",
+    "1 Piece - Forged",
+    "2 Piece - Cast",
+    "2 Piece - Forged",
+    "3 Piece - Cast",
+    "3 Piece - Forged"
+    ],
   style: [
     "Aero",
     "Mesh",
