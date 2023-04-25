@@ -9,6 +9,7 @@ filters =  {
     "Rays Co., Ltd."
     ],
   construction: [
+    "Unverified",
     "1 Piece - Cast",
     "1 Piece - Forged",
     "2 Piece - Cast",
