@@ -1,9 +1,9 @@
 dataset = [
   {
     id: "XUN1UOX4TSJA",
-    shortname: "Southern Way S-05",
+    shortname: "Southern Ways S-05",
     description: "Dual valvestem. Nismo LMGT4 style. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus pharetra non risus in tempus. In vulputate suscipit nunc, et pharetra neque condimentum in. Vivamus id dapibus orci. Mauris accumsan dignissim nulla, quis semper nibh porta nec. Nullam eu metus sit amet ligula consequat pulvinar. Etiam vitae porta erat. Morbi sed posuere arcu. Aliquam a nisi id ligula facilisis consectetur a et tortor. Pellentesque mollis rhoncus nisl, et commodo nisl elementum eget.",
-    brand: "Southern Way",
+    brand: "Southern Ways",
     model: "S-05",
     manufacturer: "TAN-EI-SYA Co., Ltd.",
     yearStart: "2004",
