@@ -120,9 +120,11 @@ function applyFilter() {
   //check dataset for matches
   for (let i = 0; i < dataset.length; i++) {
     if (filterBrand && dataset[i].brand != filterBrand) {
+      console.log(i + "fail");
       continue;
     }
     if (filterStyle && dataset[i].style != filterStyle) {
+      console.log("i + fail");
       continue;
     }
     for (let j = 0; j < filterYear.length; j++) {
@@ -132,6 +134,7 @@ function applyFilter() {
         j = filterYear.length
       }
       if (!matchSub.includes("true") {
+        console.log("i + fail");
         continue;
       }
     }
