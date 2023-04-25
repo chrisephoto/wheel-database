@@ -2,7 +2,7 @@ dataset = [
   {
     id: "0YDS9EBJLVAB",
     shortname: "Bee&#8902;R B5",
-    description: "Dual valvestem. Nismo LMGT4 style. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus pharetra non risus in tempus. In vulputate suscipit nunc, et pharetra neque condimentum in. Vivamus id dapibus orci. Mauris accumsan dignissim nulla, quis semper nibh porta nec. Nullam eu metus sit amet ligula consequat pulvinar. Etiam vitae porta erat. Morbi sed posuere arcu. Aliquam a nisi id ligula facilisis consectetur a et tortor. Pellentesque mollis rhoncus nisl, et commodo nisl elementum eget.",
+    description: "Dual valvestem. Nismo LMGT4 style.",
     brand: "Bee&#8902;R",
     model: "B5",
     manufacturer: "Unverified",
@@ -33,7 +33,7 @@ dataset = [
   {
     id: "T8HREQGJ1TRN",
     shortname: "Ings TS06",
-    description: "Manufactured by Rays.",
+    description: "Ings and Rays designed the TS06 with possible use in the Super-Taikyu race series in mind. A forged single piece structure and a twin 6 spoke were chosen to accomplish that goal. The end result is a strong and lightweight wheel well-suited for both the street and the racetrack.",
     brand: "Ings",
     model: "TS06",
     manufacturer: "Rays Co., Ltd.",
@@ -120,7 +120,7 @@ dataset = [
   {
     id: "XUN1UOX4TSJA",
     shortname: "Southern Ways S-05",
-    description: "Dual valvestem. Nismo LMGT4 style. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus pharetra non risus in tempus. In vulputate suscipit nunc, et pharetra neque condimentum in. Vivamus id dapibus orci. Mauris accumsan dignissim nulla, quis semper nibh porta nec. Nullam eu metus sit amet ligula consequat pulvinar. Etiam vitae porta erat. Morbi sed posuere arcu. Aliquam a nisi id ligula facilisis consectetur a et tortor. Pellentesque mollis rhoncus nisl, et commodo nisl elementum eget.",
+    description: "Manufactured by Tan-ei-sya and sold by its subsidiary Ijak (prior to their name change to TWS in 2008) under the Southern Way brand. The S-05 implemented wheel design and manufacturing technology that Tan-ei-sya developed while making wheels for F1 resulting in an incredibly strong and lightweight wheel that was widely used across many race series in Japan.",
     brand: "Southern Ways",
     model: "S-05",
     manufacturer: "TAN-EI-SYA Co., Ltd.",
