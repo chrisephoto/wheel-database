@@ -1,25 +1,130 @@
 dataset = [
   {
     id: "XUN1UOX4TSJA",
-    shortname: "Southern Ways S-05",
+    shortname: "Southern Way S-05",
     description: "Dual valvestem. Nismo LMGT4 style. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus pharetra non risus in tempus. In vulputate suscipit nunc, et pharetra neque condimentum in. Vivamus id dapibus orci. Mauris accumsan dignissim nulla, quis semper nibh porta nec. Nullam eu metus sit amet ligula consequat pulvinar. Etiam vitae porta erat. Morbi sed posuere arcu. Aliquam a nisi id ligula facilisis consectetur a et tortor. Pellentesque mollis rhoncus nisl, et commodo nisl elementum eget.",
-    brand: "Southern Ways",
+    brand: "Southern Way",
     model: "S-05",
     manufacturer: "TAN-EI-SYA Co., Ltd.",
-    yearStart: "Unverified",
-    yearEnd: "Unverified",
+    yearStart: "2004",
+    yearEnd: "2008",
     origin: "Japan",
     construction: "1 Piece - Forged",
     style: "Split 5 Spoke",
-    link: "#",
+    link: "http://web.archive.org/web/20060509014028/http://www.ijak.co.jp/HPcatalog/s05size.html",
     images: ["images/XUN1UOX4TSJA-01.jpg"],
     sizes: [
+      {
+        diameter: "15",
+        width: "5.5",
+        pcd: "4x100",
+        offsets: "+38",
+        colors: "White, Silver, Gold"
+      },
+      {
+        diameter: "15",
+        width: "6.0",
+        pcd: "4x100",
+        offsets: "+39",
+        colors: "White, Silver, Gold"
+      },
+      {
+        diameter: "15",
+        width: "6.5",
+        pcd: "4x100",
+        offsets: "+37",
+        colors: "White, Silver, Gold"
+      },
+      {
+        diameter: "15",
+        width: "7.0",
+        pcd: "4x100",
+        offsets: "+35/+45/+48",
+        colors: "White, Silver, Gold"
+      },
+      {
+        diameter: "15",
+        width: "7.0",
+        pcd: "5x114.3",
+        offsets: "+42",
+        colors: "White, Silver, Gold"
+      },
+      {
+        diameter: "16",
+        width: "7.5",
+        pcd: "5x114.3",
+        offsets: "+45",
+        colors: "White, Silver, Gold"
+      },
+      {
+        diameter: "17",
+        width: "7.5",
+        pcd: "5x100",
+        offsets: "+48",
+        colors: "White, Silver, Gold"
+      },
+      {
+        diameter: "17",
+        width: "7.5",
+        pcd: "5x114.3",
+        offsets: "+35/+45",
+        colors: "White, Silver, Gold"
+      },
+      {
+        diameter: "17",
+        width: "8.0",
+        pcd: "5x114.3",
+        offsets: "+42",
+        colors: "White, Silver, Gold"
+      },
+      {
+        diameter: "17",
+        width: "8.5",
+        pcd: "5x100",
+        offsets: "+48",
+        colors: "White, Silver, Gold"
+      },
+      {
+        diameter: "17",
+        width: "8.5",
+        pcd: "5x114.3",
+        offsets: "+35",
+        colors: "White, Silver, Gold"
+      },
+      {
+        diameter: "17",
+        width: "9.5",
+        pcd: "5x114.3",
+        offsets: "+37",
+        colors: "White, Silver, Gold"
+      },
+      {
+        diameter: "18",
+        width: "7.5",
+        pcd: "5x100",
+        offsets: "+49",
+        colors: "White, Silver, Gold"
+      },
+      {
+        diameter: "18",
+        width: "8.5",
+        pcd: "5x100",
+        offsets: "+48",
+        colors: "White, Silver, Gold"
+      },
       {
         diameter: "18",
         width: "8.5",
         pcd: "5x114.3",
-        offsets: "+35",
-        colors: ""
+        offsets: "+20/+35",
+        colors: "White, Silver, Gold"
+      },
+      {
+        diameter: "18",
+        width: "9.5",
+        pcd: "5x114.3",
+        offsets: "+20/+35",
+        colors: "White, Silver, Gold"
       }
     ]
   },
