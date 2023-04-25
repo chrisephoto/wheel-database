@@ -145,7 +145,7 @@ function applyFilter() {
   //set filter params
   //filterSearch = document.getElementById("input-search").value;
   filterBrand = document.getElementById("input-brand").value;
-  //filterMfg = document.getElementById("input-mfg").value;
+  filterManufacturer = document.getElementById("input-manufacturer").value;
   filterYear = [];
   for (var option of document.getElementById("input-year").options) {
       if (option.selected) {
@@ -171,7 +171,7 @@ function applyFilter() {
   for (let i = 0; i < dataset.length; i++) {
     //matchSearch = true;
     matchBrand = true;
-    //matchMfg = true;
+    matchManufacturer = true;
     matchYear = false;
     matchConstruction = true;
     matchStyle = true;
@@ -187,7 +187,10 @@ function applyFilter() {
       matchBrand = false;
     }
     
-    //matchMfg
+    //matchManufacturer
+    if (filterManufacturer && dataset[i].manufacturer != filterManufacturer) {
+      matchManufacturer = false;
+    }
     
     //matchYear
     for (let j = 0; j < filterYear.length; j++) {
@@ -222,7 +225,7 @@ function applyFilter() {
     }
     
     //add matches to index list
-    if (matchBrand && matchYear && matchConstruction && matchStyle && matchSize) {
+    if (matchBrand && matchManufacturer && matchYear && matchConstruction && matchStyle && matchSize) {
       filterIndexes.push(i);
     }
   }
