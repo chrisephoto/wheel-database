@@ -5,7 +5,6 @@ I created this page to serve as a searchable database of Japanese made wheels - 
 There is still quite a bit of work to do to before the database can be fully populated. Things left to do include:
 * JS: Finialize database JSON format, object keys and values
 * JS: Auto-populate filter options based on database contents
-* JS: Implement filtering of displayed wheels
 
 Once all of the HTML/CSS/JS is functional I will begin updating the database.js file with wheels. Everything has been designed with a goal of making updating the site/database easy and straight forward.
 
