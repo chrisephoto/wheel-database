@@ -150,7 +150,7 @@ function applyFilter() {
     
     //matchSize    
     matchSizeLoop: for (let j = 0; j < filterSize.length; j++) {
-      for (let k = 0; k < dataset[i].size.length; k++) {
+      for (let k = 0; k < dataset[i].sizes.length; k++) {
         if (dataset[i].sizes[k].diameter.includes(filterSize[j]) || !filterSize[j]) {
           for (let l = 0; l < filterPCD.length; l++) {
             if (dataset[i].sizes[k].pcd.includes(filterPCD[l]) || !filterPCD[l]) {
