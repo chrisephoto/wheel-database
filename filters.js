@@ -1,8 +1,8 @@
 filters =  {
   brand: [
-    "BeeR",
-    "Uras",
-    "Ings"
+    "Bee&#8902;R",
+    "Ings",
+    "Uras"
     ],
   manufacturer: [
     "Unverified",
