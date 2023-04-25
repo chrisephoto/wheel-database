@@ -124,6 +124,7 @@ function applyFilter() {
     if (dataset[i].brand == filterBrand) {
       for (let j = 0; j < filterYear.length; j++) {
         console.log(dataset[i].years);
+        console.log(filterYear[j]);
         if (dataset[i].years.includes(filterYear[j])) {
           //add matches to array
           filterIndexes.push(i);
