@@ -31,6 +31,20 @@ function populateFilters() {
     option.innerHTML = filters.brand[i]
     input.appendChild(option);
   }
+  for (let i = 0; i < filters.style.length; i++) {
+    const input = document.getElementById("input-style");
+    const option = document.createElement("option");
+    option.value = filters.style[i]
+    option.innerHTML = filters.style[i]
+    input.appendChild(option);
+  }
+  for (let i = 0; i < filters.diameter.length; i++) {
+    const input = document.getElementById("input-diameter");
+    const option = document.createElement("option");
+    option.value = filters.diameter[i]
+    option.innerHTML = filters.diameter[i]
+    input.appendChild(option);
+  }
 }
 
 function populateGrid(i) {
