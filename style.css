@@ -67,7 +67,7 @@ input[type="reset"] {
   margin-top: 1rem;
 }
 
-input[type="submit"] {
+input[type="button"] {
   background: rgb(var(--color-accent));
   border: none;
   color: rgb(var(--color-background));
