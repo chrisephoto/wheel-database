@@ -17,7 +17,7 @@ dataset = [
       {
         diameter: "18",
         width: "8.5",
-        pcd: "4x114.3/5x114.3",
+        pcd: "5x114.3",
         offsets: "+35",
         colors: ""
       }
