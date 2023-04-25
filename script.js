@@ -1,6 +1,7 @@
 // event listeners
 window.onload=function(){
   document.getElementById("wheel-details-close").addEventListener("click", closeDetails);
+  populateFilters();
   for (let i = 0; i < dataset.length; i++) {
     populateGrid(i)
   }
@@ -42,7 +43,7 @@ function populateFilters() {
     const input = document.getElementById("input-diameter");
     const option = document.createElement("option");
     option.value = filters.diameter[i]
-    option.innerHTML = filters.diameter[i]
+    option.innerHTML = filters.diameter[i] + "&quot;"
     input.appendChild(option);
   }
 }
