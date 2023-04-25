@@ -116,18 +116,32 @@ function applyFilter() {
           filterPCD.push(option.value);
       }
   }
-  
-  console.log(filterSearch + filterBrand + filterYear + filterStyle + filterSize + filterPCD)
-  
+    
   //check dataset for matches
   for (let i = 0; i < dataset.length; i++) {
-    if (dataset[i].brand == filterBrand || !filterBrand) {
-      for (let j = 0; j < filterYear.length; j++) {
-        if (dataset[i].years.includes(filterYear[j])) {
-          //add matches to array
-          filterIndexes.push(i);
-          j = filterYear.length
-        }
+    match = []
+    if (dataset[i].brand != filterBrand || !filterBrand) {
+      match.push("true")
+    }
+    for (let j = 0; j < filterYear.length; j++) {
+      if (dataset[i].years.includes(filterYear[j])) {
+        match.push("true");
+        j = filterYear.length
+      }
+    }
+    if (dataset[i].style == filterStyle || !filterStyle) {
+      match.push("true")
+    }
+    for (let j = 0; j < filterSize.length; j++) {
+      if (dataset[i].years.includes(filterSize[j])) {
+        match.push("true");
+        j = filterSize.length
+      }
+    }
+    for (let j = 0; j < filterPCD.length; j++) {
+      if (dataset[i].years.includes(filterPCD[j])) {
+        match.push("true");
+        j = filterPCD.length
       }
     }
   }
