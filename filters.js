@@ -12,7 +12,7 @@ filters =  {
     "5 Spoke",
     "6 Spoke"
     ],
-  size: [
+  diameter: [
     "17",
     "18"
     ],
