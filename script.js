@@ -23,6 +23,16 @@ document.addEventListener("click", event => {
 })
 
 // functions
+function populateFilters() {
+  for (let i = 0; i < filters.brand.length; i++) {
+    const input = document.getElementById("input-brand");
+    const option = document.createElement("option");
+    option.value = filters.brand[i]
+    option.innerHTML = filters.brand[i]
+    input.appendChild(option);
+  }
+}
+
 function populateGrid(i) {
   const content = document.getElementById("wheel-list");
   const figure = document.createElement("figure");
