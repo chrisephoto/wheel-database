@@ -1,13 +1,11 @@
 filters = [
   {
     brand: [
-      "All",
       "BeeR",
       "Uras",
       "Ings"
       ],
     manufacturer: [
-      "All",
       "Unverified",
       "Rays Co., Ltd."
       ],
