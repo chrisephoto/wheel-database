@@ -43,7 +43,7 @@ function populateDetails(i) {
   document.getElementById("wheel-info-brand").innerHTML = dataset[i].brand;
   document.getElementById("wheel-info-model").innerHTML = dataset[i].model;
   document.getElementById("wheel-info-manufacturer").innerHTML = dataset[i].manufacturer;
-  document.getElementById("wheel-info-years").innerHTML = dataset[i].years;
+  document.getElementById("wheel-info-years").innerHTML = dataset[i].yearStart + " - " + dataset[i].yearEnd;
   document.getElementById("wheel-info-origin").innerHTML = dataset[i].origin;
   document.getElementById("wheel-info-construction").innerHTML = dataset[i].construction;
   document.getElementById("wheel-info-style").innerHTML = dataset[i].style;
