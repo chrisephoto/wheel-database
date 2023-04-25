@@ -28,22 +28,36 @@ function populateFilters() {
   for (let i = 0; i < filters.brand.length; i++) {
     const input = document.getElementById("input-brand");
     const option = document.createElement("option");
-    option.value = filters.brand[i]
-    option.innerHTML = filters.brand[i]
+    option.value = filters.brand[i];
+    option.innerHTML = filters.brand[i];
     input.appendChild(option);
   }
   for (let i = 0; i < filters.style.length; i++) {
     const input = document.getElementById("input-style");
     const option = document.createElement("option");
-    option.value = filters.style[i]
-    option.innerHTML = filters.style[i]
+    option.value = filters.style[i];
+    option.innerHTML = filters.style[i];
     input.appendChild(option);
   }
   for (let i = 0; i < filters.diameter.length; i++) {
     const input = document.getElementById("input-diameter");
     const option = document.createElement("option");
-    option.value = filters.diameter[i]
-    option.innerHTML = filters.diameter[i] + "&quot;"
+    option.value = filters.diameter[i];
+    option.innerHTML = filters.diameter[i] + "&quot;";
+    input.appendChild(option);
+  }
+  for (let i = 0; i < filters.pcd.length; i++) {
+    const input = document.getElementById("input-pcd");
+    const option = document.createElement("option");
+    option.value = filters.pcd[i];
+    option.innerHTML = filters.pcd[i];
+    input.appendChild(option);
+  }
+  for (let i = 0; i < filters.year.length; i++) {
+    const input = document.getElementById("input-year");
+    const option = document.createElement("option");
+    option.value = filters.year[i];
+    option.innerHTML = filters.year[i];
     input.appendChild(option);
   }
 }
