@@ -122,8 +122,13 @@ function applyFilter() {
   //check dataset for matches
   for (let i = 0; i < dataset.length; i++) {
     if (dataset[i].brand == filterBrand) {
-      //add matches to array
-      filterIndexes.push(i)
+      for (let j = 0; j < filterYear.length; j++) {
+        if (dataset[i].year.includes(filterYear[j])) {
+          //add matches to array
+          filterIndexes.push(i);
+          return;
+        }
+      }
     }
   }
   
