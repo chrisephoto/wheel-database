@@ -125,6 +125,9 @@ function applyFilter() {
     matchSize = false;
     
     //matchSearch
+    if (filterBrand && dataset[i].brand != filterBrand) {
+      matchBrand = false;
+    }
     
     //matchBrand
     if (filterBrand && dataset[i].brand != filterBrand) {
