@@ -39,6 +39,13 @@ function populateFilters() {
     option.innerHTML = filters.style[i];
     input.appendChild(option);
   }
+  for (let i = 0; i < filters.construction.length; i++) {
+    const input = document.getElementById("input-construction");
+    const option = document.createElement("option");
+    option.value = filters.construction[i];
+    option.innerHTML = filters.construction[i];
+    input.appendChild(option);
+  }
   for (let i = 0; i < filters.diameter.length; i++) {
     const input = document.getElementById("input-diameter");
     const option = document.createElement("option");
@@ -138,7 +145,7 @@ function applyFilter() {
           filterYear.push(option.value);
       }
   }
-  //filterConstruction = document.getElementById("input-construction").value;
+  filterConstruction = document.getElementById("input-construction").value;
   filterStyle = document.getElementById("input-style").value;
   filterDiameter = [];
   for (var option of document.getElementById("input-diameter").options) {
@@ -184,6 +191,9 @@ function applyFilter() {
     }
     
     //matchConstruction
+    if (filterConstruction && dataset[i].construction != filterConstruction) {
+      matchConstruction = false;
+    }
     
     //matchStyle
     if (filterStyle && dataset[i].style != filterStyle) {
@@ -205,7 +215,7 @@ function applyFilter() {
     }
     
     //add matches to index list
-    if (matchBrand && matchYear && matchStyle && matchSize) {
+    if (matchBrand && matchYear && matchConstruction && matchStyle && matchSize) {
       filterIndexes.push(i);
     }
   }
