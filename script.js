@@ -123,7 +123,8 @@ function applyFilter() {
   for (let i = 0; i < dataset.length; i++) {
     if (dataset[i].brand == filterBrand) {
       for (let j = 0; j < filterYear.length; j++) {
-        if (dataset[i].year.includes(filterYear[j])) {
+        console.log(dataset[i].years);
+        if (dataset[i].years.includes(filterYear[j])) {
           //add matches to array
           filterIndexes.push(i);
           return;
