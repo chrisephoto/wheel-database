@@ -32,6 +32,13 @@ function populateFilters() {
     option.innerHTML = filters.brand[i];
     input.appendChild(option);
   }
+  for (let i = 0; i < filters.manufacturer.length; i++) {
+    const input = document.getElementById("input-manufacturer");
+    const option = document.createElement("option");
+    option.value = filters.manufacturer[i];
+    option.innerHTML = filters.manufacturer[i];
+    input.appendChild(option);
+  }
   for (let i = 0; i < filters.style.length; i++) {
     const input = document.getElementById("input-style");
     const option = document.createElement("option");
