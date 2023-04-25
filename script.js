@@ -121,7 +121,7 @@ function applyFilter() {
   
   //check dataset for matches
   for (let i = 0; i < dataset.length; i++) {
-    if (dataset[i].brand == filterBrand) {
+    if (dataset[i].brand == filterBrand || !filterBrand) {
       for (let j = 0; j < filterYear.length; j++) {
         if (dataset[i].years.includes(filterYear[j])) {
           //add matches to array
