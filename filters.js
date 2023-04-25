@@ -2,6 +2,7 @@ filters =  {
   brand: [
     "Bee&#8902;R",
     "Ings",
+    "Southern Ways",
     "Uras"
     ],
   manufacturer: [
