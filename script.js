@@ -125,16 +125,8 @@ function applyFilter() {
     if (filterStyle && dataset[i].style != filterStyle) {
       continue;
     }
-    for (let j = 0; j < filterYear.length; j++) {
-      matchSub = []
-      if (dataset[i].years.includes(filterYear[j])) {
-        matchSub.push("true");
-        j = filterYear.length
-      }
-      console.log(matchSub);
-      if (!matchSub.includes("true")) {
-        continue;
-      }
+    if (!dataset[i].years.some(r=> filterYear.includes(r))) {
+      continue;
     }
     filterIndexes.push(i);
   }
