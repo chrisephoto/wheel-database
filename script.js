@@ -90,7 +90,7 @@ function applyFilter() {
   filterIndexes = []
   
   //set filter params
-  filterSearch = document.getElementById("input-search").value;
+  //filterSearch = document.getElementById("input-search").value;
   filterBrand = document.getElementById("input-brand").value;
   //filterMfg = document.getElementById("input-mfg").value;
   filterYear = [];
@@ -116,7 +116,7 @@ function applyFilter() {
     
   //check dataset for matches
   for (let i = 0; i < dataset.length; i++) {
-    matchSearch = true;
+    //matchSearch = true;
     matchBrand = true;
     //matchMfg = true;
     matchYear = false;
