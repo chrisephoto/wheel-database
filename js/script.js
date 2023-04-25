@@ -83,7 +83,8 @@ function populateGrid(i) {
   const figcaption = document.createElement("figcaption");
   const div = document.createElement("div");
   content.appendChild(figure);
-  figure.onclick = function(){populateDetails(i)}
+  figure.id = dataset[i].id;
+  figure.onclick = function(){populateDetails(i)};
   figure.appendChild(img);
   img.src = dataset[i].images[0];
   figure.appendChild(figcaption);
