@@ -94,8 +94,7 @@ function applyFilter() {
   filterBrand = document.getElementById("input-brand").value;
   //filterMfg = document.getElementById("input-mfg").value;
   filterYear = [];
-  for (var option of document.getElementById('input-year').options)
-  {
+  for (var option of document.getElementById("input-year").options) {
       if (option.selected) {
           filterYear.push(option.value);
       }
@@ -103,15 +102,13 @@ function applyFilter() {
   //filterConstruction = document.getElementById("input-construction").value;
   filterStyle = document.getElementById("input-style").value;
   filterSize = [];
-  for (var option of document.getElementById('input-size').options)
-  {
+  for (var option of document.getElementById("input-size").options) {
       if (option.selected) {
           filterSize.push(option.value);
       }
   }
   filterPCD = [];
-  for (var option of document.getElementById('input-pcd').options)
-  {
+  for (var option of document.getElementById("input-pcd").options) {
       if (option.selected) {
           filterPCD.push(option.value);
       }
@@ -132,7 +129,7 @@ function applyFilter() {
       matchBrand = false;
     }
     for (let j = 0; j < filterYear.length; j++) {
-      if ((filterYear[j] >= dataset[i].yearStart && filterYear[j] <= dataset[i].yearEnd) || filterYear[j] = "") {
+      if (filterYear[j] >= dataset[i].yearStart && filterYear[j] <= dataset[i].yearEnd) {
         matchYear = true;
       }
     }
@@ -143,8 +140,6 @@ function applyFilter() {
       filterIndexes.push(i);
     }
   }
-  
-  console.log(filterIndexes);
   
   //clear wheel list
   document.getElementById("wheel-list").innerHTML = "";
