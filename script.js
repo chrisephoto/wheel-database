@@ -125,10 +125,10 @@ function applyFilter() {
   }
   //filterConstruction = document.getElementById("input-construction").value;
   filterStyle = document.getElementById("input-style").value;
-  filterSize = [];
-  for (var option of document.getElementById("input-size").options) {
+  filterDiameter = [];
+  for (var option of document.getElementById("input-diameter").options) {
       if (option.selected) {
-          filterSize.push(option.value);
+          filterDiameter.push(option.value);
       }
   }
   filterPCD = [];
@@ -176,9 +176,9 @@ function applyFilter() {
     }
     
     //matchSize    
-    matchSizeLoop: for (let j = 0; j < filterSize.length; j++) {
+    matchSizeLoop: for (let j = 0; j < filterDiameter.length; j++) {
       for (let k = 0; k < dataset[i].sizes.length; k++) {
-        if (dataset[i].sizes[k].diameter.includes(filterSize[j]) || !filterSize[j]) {
+        if (dataset[i].sizes[k].diameter.includes(filterDiameter[j]) || !filterDiameter[j]) {
           for (let l = 0; l < filterPCD.length; l++) {
             if (dataset[i].sizes[k].pcd.includes(filterPCD[l]) || !filterPCD[l]) {
               matchSize = true;
