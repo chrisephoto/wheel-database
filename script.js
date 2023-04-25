@@ -119,31 +119,23 @@ function applyFilter() {
     
   //check dataset for matches
   for (let i = 0; i < dataset.length; i++) {
-    match = []
-    if (dataset[i].brand != filterBrand || !filterBrand) {
-      match.push("true")
+    if (filterBrand && dataset[i].brand != filterBrand) {
+      continue;
+    }
+    if (filterStyle && dataset[i].style != filterStyle) {
+      continue;
     }
     for (let j = 0; j < filterYear.length; j++) {
+      matchSub = []
       if (dataset[i].years.includes(filterYear[j])) {
-        match.push("true");
+        matchSub.push("true");
         j = filterYear.length
       }
-    }
-    if (dataset[i].style == filterStyle || !filterStyle) {
-      match.push("true")
-    }
-    for (let j = 0; j < filterSize.length; j++) {
-      if (dataset[i].years.includes(filterSize[j])) {
-        match.push("true");
-        j = filterSize.length
+      if (!matchSub.includes("true") {
+        continue;
       }
     }
-    for (let j = 0; j < filterPCD.length; j++) {
-      if (dataset[i].years.includes(filterPCD[j])) {
-        match.push("true");
-        j = filterPCD.length
-      }
-    }
+    filterIndexes.push(i);
   }
   
   //clear wheel list
