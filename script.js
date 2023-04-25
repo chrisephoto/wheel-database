@@ -133,7 +133,7 @@ function applyFilter() {
         matchSub.push("true");
         j = filterYear.length
       }
-      if (!matchSub.includes("true") {
+      if (!matchSub.includes("true")) {
         console.log("i + fail");
         continue;
       }
