@@ -125,15 +125,15 @@ function applyFilter() {
     matchSize = true;
     matchPCD = true;
     
-    if (filterBrand != "All" && dataset[i].brand != filterBrand) {
+    if (filterBrand && dataset[i].brand != filterBrand) {
       matchBrand = false;
     }
     for (let j = 0; j < filterYear.length; j++) {
-      if ((filterYear[j] >= dataset[i].yearStart && filterYear[j] <= dataset[i].yearEnd) || filterYear[j] == "All") {
+      if ((filterYear[j] >= dataset[i].yearStart && filterYear[j] <= dataset[i].yearEnd) || !filterYear[j]) {
         matchYear = true;
       }
     }
-    if (filterStyle != "All" && dataset[i].style != filterStyle) {
+    if (filterStyle && dataset[i].style != filterStyle) {
       matchStyle = false;
     }
     if (matchBrand && matchYear && matchStyle) {
