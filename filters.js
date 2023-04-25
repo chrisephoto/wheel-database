@@ -12,10 +12,13 @@ filters =  {
     "Unverified",
     "1 Piece - Cast",
     "1 Piece - Forged",
+    "1 Piece - Unverified",
     "2 Piece - Cast",
     "2 Piece - Forged",
+    "2 Piece - Unverified",
     "3 Piece - Cast",
-    "3 Piece - Forged"
+    "3 Piece - Forged",
+    "3 Piece - Unverified"
     ],
   style: [
     "Aero",
