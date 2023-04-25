@@ -125,18 +125,48 @@ function applyFilter() {
     matchSize = true;
     matchPCD = true;
     
+    //matchSearch
+    
+    //matchBrand
     if (filterBrand && dataset[i].brand != filterBrand) {
       matchBrand = false;
     }
+    
+    //matchMfg
+    
+    //matchYear
     for (let j = 0; j < filterYear.length; j++) {
       if ((filterYear[j] >= dataset[i].yearStart && filterYear[j] <= dataset[i].yearEnd) || !filterYear[j]) {
         matchYear = true;
+        continue afterMatchYear;
       }
     }
+    afterMatchYear:
+    
+    //matchConstruction
+    
+    //matchStyle
     if (filterStyle && dataset[i].style != filterStyle) {
       matchStyle = false;
     }
-    if (matchBrand && matchYear && matchStyle) {
+    
+    //matchSize and matchPCD
+    for (let j = 0; j < filterSize.length; j++) {
+      for (let k = 0; k < dataset[i].size.length; k++) {
+        if (dataset[i].sizes[k].diameter.includes(filterSize[j]) || !filterSize[j]) {
+          for (let l = 0; l < filterPCD.length; l++) {
+            if (dataset[i].sizes[k].pcd.includes(filterPCD[l]) || !filterPCD[l]) {
+              matchSize = true;
+              continue afterMatchSize;
+            }
+          }
+        }
+      }
+    }
+    afterMatchSize:
+    
+    //add matches to index list
+    if (matchBrand && matchYear && matchStyle && matchSize) {
       filterIndexes.push(i);
     }
   }
