@@ -119,22 +119,29 @@ function applyFilter() {
     
   //check dataset for matches
   for (let i = 0; i < dataset.length; i++) {
+    matchSearch = true;
+    matchBrand = true;
+    //matchMfg = true;
+    matchYear = false;
+    //matchConstruction = true;
+    matchStyle = true;
+    matchSize = true;
+    matchPCD = true;
+    
     if (filterBrand && dataset[i].brand != filterBrand) {
-      continue;
-    }
-    if (filterStyle && dataset[i].style != filterStyle) {
-      continue;
+      matchBrand = false;
     }
     for (let j = 0; j < filterYear.length; j++) {
-      matchSub = []
-      if (filterYear[j] >= dataset[i].yearStart && filterYear[j] <= dataset[i].yearEnd) {
-        matchSub.push("true")
-      }
-      if (matchSub.includes("true")) {
-        console.log("match")
+      if ((filterYear[j] >= dataset[i].yearStart && filterYear[j] <= dataset[i].yearEnd) || filterYear[j] = "") {
+        matchYear = true;
       }
     }
-    filterIndexes.push(i);
+    if (filterStyle && dataset[i].style != filterStyle) {
+      matchStyle = false;
+    }
+    if (matchBrand && matchYear && matchStyle) {
+      filterIndexes.push(i);
+    }
   }
   
   console.log(filterIndexes);
