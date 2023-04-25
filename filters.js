@@ -6,7 +6,8 @@ filters =  {
     ],
   manufacturer: [
     "Unverified",
-    "Rays Co., Ltd."
+    "Rays Co., Ltd.",
+    "TAN-EI-SYA Co., Ltd."
     ],
   construction: [
     "Unverified",
