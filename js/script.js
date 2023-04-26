@@ -7,10 +7,11 @@ window.onload=function(){
   }
   const queryString = window.location.search;
   console.log(queryString);
-  const URLid = urlParams.get("id")
-  console.log(URLid);
+  const urlParams = new URLSearchParams(queryString);
+  const urlId = urlParams.get("id")
+  console.log(urlId);
   for (let i = 0; i < dataset.length; i++) {
-    if (dataset[i].id == URLid) {
+    if (dataset[i].id == urlId) {
       populateDetails[i]
     }
   }
