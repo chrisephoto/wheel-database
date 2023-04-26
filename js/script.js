@@ -97,11 +97,11 @@ function populateDetails(i) {
   document.getElementById("wheel-info-brand").innerHTML = dataset[i].brand;
   document.getElementById("wheel-info-model").innerHTML = dataset[i].model;
   document.getElementById("wheel-info-manufacturer").innerHTML = dataset[i].manufacturer;
-  if (dataset[i].yearStart == dataset[i].yearEnd) {
-    document.getElementById("wheel-info-years").innerHTML = dataset[i].yearStart;
+  if (dataset[i].year_start == dataset[i].year_end) {
+    document.getElementById("wheel-info-years").innerHTML = dataset[i].year_start;
   }
   else {
-    document.getElementById("wheel-info-years").innerHTML = dataset[i].yearStart + " - " + dataset[i].yearEnd;
+    document.getElementById("wheel-info-years").innerHTML = dataset[i].year_start + " - " + dataset[i].year_end;
   }
   document.getElementById("wheel-info-origin").innerHTML = dataset[i].origin;
   document.getElementById("wheel-info-construction").innerHTML = dataset[i].construction;
@@ -200,7 +200,7 @@ function applyFilter() {
     
     //matchYear
     for (let j = 0; j < filterYear.length; j++) {
-      if ((filterYear[j] >= dataset[i].yearStart && filterYear[j] <= dataset[i].yearEnd) || !filterYear[j]) {
+      if ((filterYear[j] >= dataset[i].year_start && filterYear[j] <= dataset[i].year_end) || !filterYear[j]) {
         matchYear = true;
         break;
       }
