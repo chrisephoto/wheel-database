@@ -1,3 +1,11 @@
+# Codebase changes and updates
+* Determine how to handle rebadges
+  * Option 1: Separate listing with unique ID and images (link to related wheels?)
+  * Option 2: 
+* Mobile view spec table width
+* Wheel details close button
+* Determine how to handle 2/3pc welded construction
+
 # Wheels to add
 * Starform Real Racing Model II (TWS)
 * Starform Real Racing R2 (TWS)
