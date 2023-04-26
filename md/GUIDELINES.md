@@ -19,8 +19,8 @@ The following are some guidlines for image and data formatting to help keep the 
 * brand: Brand name
 * model: Model name
 * manufacturer: Legal name of company that physically manufactured the wheel
-* yearStart: Earliest known reference in catalog or production date
-* yearEnd: Lastest known reference in catalog or production date
+* year_start: Earliest known reference in catalog or production date
+* year_end: Lastest known reference in catalog or production date
 * origin: Country of manufacture
 * construction: Method of construction (*should match values from pre-populated construction filter*)
 * style: Style of wheel (*should match values from pre-populated style filter*)
