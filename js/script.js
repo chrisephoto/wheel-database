@@ -13,6 +13,7 @@ window.onload=function(){
     if (dataset[i].id == URLid) {
       populateDetails[i]
     }
+  }
 }
 
 window.onkeydown=function(e){
