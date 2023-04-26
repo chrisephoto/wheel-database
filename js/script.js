@@ -5,6 +5,14 @@ window.onload=function(){
   for (let i = 0; i < dataset.length; i++) {
     populateGrid(i)
   }
+  const queryString = window.location.search;
+  console.log(queryString);
+  const URLid = urlParams.get("id")
+  console.log(URLid);
+  for (let i = 0; i < dataset.length; i++) {
+    if (dataset[i].id == URLid) {
+      populateDetails[i]
+    }
 }
 
 window.onkeydown=function(e){
