@@ -17,3 +17,5 @@
 * Hanbai M2
 * CST (Doall) Zero-1 Hyper (cast, by weds?)
   * http://doall.jp/csttop/zero1hyper/cstzero1hyper.html
+* K-One K-01 (rebadged S05, 2003-2005+)
+  * http://web.archive.org/web/20051018094530/http://www.k-one.to/parts/wheel/index.htm
