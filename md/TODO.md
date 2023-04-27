@@ -1,8 +1,6 @@
 # Codebase changes and updates
 * Determine how to handle 2/3pc welded construction
 * Determine how to handle rebadges
-  * Option 1: Separate listing with unique ID and images (link to related wheels?)
-  * Option 2: 
 * CSS: Mobile view spec table width
 * CSS: Wheel details close button
 
@@ -12,8 +10,8 @@
   * https://globalautoshop.com/wheels/starform
 * Dunlop Direzza RSC
 * Finalspeed Gear R
-* Down Hill Special ae033
-* Down Hill Special ae 034
+* Down Hill Special ae031/ae032/ae033/ae034
+  * http://web.archive.org/web/20050207064836/http://bim-cs.com/products/dhs/
 * Monster Sport ms857
 * Joustmeister Comp V1 - Taneisya T6/ Garage Dog House (7 spoke version, vol 106)/ Joustmeister/ Techni Craft T6 (TWS) / J cross JT6 (vol 77, 94, 97) / Doghouse D/H original wheel(vol 95, 103, 117)?
   * https://web.archive.org/web/20100118101246fw_/http://www.g-doghouse.co.jp/html/original/08.html
