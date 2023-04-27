@@ -585,14 +585,14 @@ dataset = [
     shortname: "Starform Real Racing R2",
     description: "",
     brand: "Starform",
-    model: "Real Racnig R2",
+    model: "Real Racing R2",
     manufacturer: "TAN-EI-SYA Co., Ltd.",
-    year_start: "Unverified",
-    year_end: "Unverified",
+    year_start: "1999",
+    year_end: "2003",
     origin: "Japan",
     construction: "1 Piece - Forged",
     style: "5 Spoke",
-    link: "http://web.archive.org/web/20070504060720/http://www.uras.co.jp:80/syohin/wheel.html",
+    link: "http://web.archive.org/web/20031229230549fw_/http://www.starform-jp.com/fr_R2_2.html",
     images: ["images/XEPK9WYCWZ9G-01.jpg"],
     sizes: [
       {
@@ -600,15 +600,65 @@ dataset = [
         width: "6.5",
         pcd: "4x100",
         offsets: "+34/+40",
-        colors: "White, Silver, Black"
+        colors: "White, Gunmetal, Black"
       },
       {
         diameter: "15",
         width: "7.0",
         pcd: "4x100",
-        offsets: "+34/+40",
-        colors: "White, Silver, Black"
+        offsets: "+39/+45",
+        colors: "White, Gunmetal, Black"
+      },
+      {
+        diameter: "15",
+        width: "7.0",
+        pcd: "4x114.3",
+        offsets: "+45",
+        colors: "White, Gunmetal, Black"
+      },
+      {
+        diameter: "15",
+        width: "7.0",
+        pcd: "5x114.3",
+        offsets: "+39/+45",
+        colors: "White, Gunmetal, Black"
+      },
+      {
+        diameter: "17",
+        width: "7.5",
+        pcd: "4x114.3",
+        offsets: "+32/+45",
+        colors: "White, Gunmetal, Black"
+      },
+      {
+        diameter: "17",
+        width: "7.5",
+        pcd: "5x100",
+        offsets: "+32/+45",
+        colors: "White, Gunmetal, Black"
+      },
+      {
+        diameter: "17",
+        width: "7.5",
+        pcd: "5x114.3",
+        offsets: "+30/+38/+45",
+        colors: "White, Gunmetal, Black"
+      },
+      {
+        diameter: "17",
+        width: "8.5",
+        pcd: "5x114.3",
+        offsets: "+30/+38/+45",
+        colors: "White, Gunmetal, Black"
+      },
+      {
+        diameter: "17",
+        width: "9.5",
+        pcd: "5x114.3",
+        offsets: "+15/+23/+38",
+        colors: "White, Gunmetal, Black"
       }
+      
     ]
   },
   /* Uras NS-01 */{
