@@ -120,12 +120,12 @@ dataset = [
   {
     id: "XUN1UOX4TSJA",
     shortname: "Southern Ways S-05",
-    description: "Manufactured by Tan-ei-sya and sold by its subsidiary Ijak (prior to their name change to TWS in 2008) under the Southern Way brand. The S-05 implemented wheel design and manufacturing technology that Tan-ei-sya developed while making wheels for F1 resulting in an incredibly strong and lightweight wheel that was widely used across many race series in Japan. This wheel was also sold in additional sizes as the Car Life Revolution K-One K-01.",
+    description: "Manufactured by Tan-ei-sya and sold by its subsidiary ijak under the Southern Way brand until their rebrand in 2008 to TWS. The S-05 implemented wheel design and manufacturing technology that Tan-ei-sya developed while making wheels for F1 resulting in an incredibly strong and lightweight wheel that was widely used across many race series in Japan. This wheel was also sold in additional sizes as the Car Life Revolution K-One K-01.",
     brand: "Southern Ways",
     model: "S-05",
     manufacturer: "TAN-EI-SYA Co., Ltd.",
     year_start: "2004",
-    year_end: "2008",
+    year_end: "2009",
     origin: "Japan",
     construction: "1 Piece - Forged",
     style: "Split 5 Spoke",
@@ -243,6 +243,37 @@ dataset = [
         pcd: "5x114.3",
         offsets: "+20/+35",
         colors: "White, Silver, Gold"
+      }
+    ]
+  },
+  {
+    id: "XEPK9WYCWZ9G",
+    shortname: "Starform Real Racing R2",
+    description: "",
+    brand: "Starform",
+    model: "Real Racnig R2",
+    manufacturer: "TAN-EI-SYA Co., Ltd.",
+    year_start: "Unverified",
+    year_end: "Unverified",
+    origin: "Japan",
+    construction: "1 Piece - Forged",
+    style: "5 Spoke",
+    link: "http://web.archive.org/web/20070504060720/http://www.uras.co.jp:80/syohin/wheel.html",
+    images: ["images/XEPK9WYCWZ9G-01.jpg"],
+    sizes: [
+      {
+        diameter: "15",
+        width: "6.5",
+        pcd: "4x100",
+        offsets: "+34/+40",
+        colors: "White, Silver, Black"
+      },
+      {
+        diameter: "15",
+        width: "7.0",
+        pcd: "4x100",
+        offsets: "+34/+40",
+        colors: "White, Silver, Black"
       }
     ]
   },
