@@ -1,5 +1,5 @@
 dataset = [
-  {
+  /* Bee R B5 */{
     id: "0YDS9EBJLVAB",
     shortname: "Bee&#8902;R B5",
     description: "Dual valvestem. Nismo LMGT4 style.",
@@ -30,7 +30,341 @@ dataset = [
       }
     ]
   },
-  {
+  /* Bridgestone Down Hill Special ae031 */{
+    id: "U4VL4KJ2P2SV",
+    shortname: "B.I.M. Down Hill Special ae031",
+    description: "A forged 6 spoke wheel from Bridgestone's B.I.M Creative Studio. Very similar in appearance to the cast ae034 but most easily identified by its hub section which features a machined center with harder edges than the ae034 and weight saving holes between the lug holes.",
+    brand: "B.I.M. Creative Studio",
+    model: "Down Hill Special ae031",
+    manufacturer: "Unverified",
+    year_start: "2004",
+    year_end: "2004",
+    origin: "Unverified",
+    construction: "1 Piece - Forged",
+    style: "Split 6 Spoke",
+    link: "http://web.archive.org/web/20050213145059/http://bim-cs.com/products/dhs/ae031/size.html",
+    images: ["images/U4VL4KJ2P2SV-01.jpg","images/U4VL4KJ2P2SV-02.jpg"],
+    sizes: [
+      {
+        diameter: "17",
+        width: "7.0",
+        pcd: "4x100",
+        offsets: "+38/+48",
+        colors: "Bronze, Gunmetal"
+      },
+      {
+        diameter: "17",
+        width: "7.0",
+        pcd: "4x114.3",
+        offsets: "+38/+48",
+        colors: "Bronze, Gunmetal"
+      },
+      {
+        diameter: "17",
+        width: "7.0",
+        pcd: "5x100",
+        offsets: "+38/+48",
+        colors: "Bronze, Gunmetal"
+      },
+      {
+        diameter: "17",
+        width: "7.0",
+        pcd: "5x114.3",
+        offsets: "+38/+48",
+        colors: "Bronze, Gunmetal"
+      }
+    ]
+  },
+  /* Bridgestone Down Hill Special ae032 */{
+    id: "DV3YB9P4LFDL",
+    shortname: "B.I.M. Down Hill Special ae032",
+    description: "A forged split 6 spoke wheel from Bridgestone's B.I.M Creative Studio. Extremely similar in appearance to the cast ae033 but most easily identified by the small webs between the spokes near the hub section which are absent from the ae033.",
+    brand: "B.I.M. Creative Studio",
+    model: "Down Hill Special ae032",
+    manufacturer: "Unverified",
+    year_start: "2004",
+    year_end: "2004",
+    origin: "Unverified",
+    construction: "1 Piece - Forged",
+    style: "6 Spoke",
+    link: "http://web.archive.org/web/20050213145059/http://bim-cs.com/products/dhs/ae032/size.html",
+    images: ["images/DV3YB9P4LFDL-01.jpg","images/DV3YB9P4LFDL-02.jpg"],
+    sizes: [
+      {
+        diameter: "17",
+        width: "7.0",
+        pcd: "4x100",
+        offsets: "+38/+48",
+        colors: "Gunmetal, Gold"
+      },
+      {
+        diameter: "17",
+        width: "7.0",
+        pcd: "4x114.3",
+        offsets: "+38/+48",
+        colors: "Gunmetal, Gold"
+      },
+      {
+        diameter: "17",
+        width: "7.0",
+        pcd: "5x100",
+        offsets: "+38/+48",
+        colors: "Gunmetal, Gold"
+      },
+      {
+        diameter: "17",
+        width: "7.0",
+        pcd: "5x114.3",
+        offsets: "+38/+48",
+        colors: "Gunmetal, Gold"
+      }
+    ]
+  },
+  /* Bridgestone Down Hill Special ae033 */{
+    id: "X7MDK0WHI5JM",
+    shortname: "B.I.M. Down Hill Special ae033",
+    description: "A cast split 6 spoke wheel from Bridgestone's B.I.M Creative Studio. Though not as strong or light as the forged ae032 that it shares it's design with, it is offered in a much larger array of sizes.",
+    brand: "B.I.M. Creative Studio",
+    model: "Down Hill Special ae033",
+    manufacturer: "Enkei Co., Ltd.",
+    year_start: "2004",
+    year_end: "2009",
+    origin: "Japan",
+    construction: "1 Piece - Cast",
+    style: "Split 6 Spoke",
+    link: "http://web.archive.org/web/20050213145059/http://bim-cs.com/products/dhs/ae033/size.html",
+    images: ["images/X7MDK0WHI5JM-01.jpg"],
+    sizes: [
+      {
+        diameter: "15",
+        width: "6.5",
+        pcd: "4x100",
+        offsets: "+30/+38/+42",
+        colors: "Gold, Gunmetal"
+      },
+      {
+        diameter: "15",
+        width: "6.5",
+        pcd: "4x114.3",
+        offsets: "+42",
+        colors: "Gold, Gunmetal"
+      },
+      {
+        diameter: "16",
+        width: "7.0",
+        pcd: "4x100",
+        offsets: "+30/+38/+42",
+        colors: "Gold, Gunmetal"
+      },
+      {
+        diameter: "16",
+        width: "7.0",
+        pcd: "4x114.3",
+        offsets: "+30/+42",
+        colors: "Gold, Gunmetal"
+      },
+      {
+        diameter: "16",
+        width: "7.0",
+        pcd: "5x100",
+        offsets: "+30/+48",
+        colors: "Gold, Gunmetal"
+      },
+      {
+        diameter: "16",
+        width: "7.0",
+        pcd: "5x114.3",
+        offsets: "+30/+38/+42/+48",
+        colors: "Gold, Gunmetal"
+      },
+      {
+        diameter: "16",
+        width: "8.0",
+        pcd: "5x114.3",
+        offsets: "+30/+38/+44",
+        colors: "Gold, Gunmetal"
+      },
+      {
+        diameter: "17",
+        width: "7.5",
+        pcd: "4x100",
+        offsets: "+38/+44",
+        colors: "Gold, Gunmetal"
+      },
+      {
+        diameter: "17",
+        width: "7.5",
+        pcd: "4x114.3",
+        offsets: "+38/+44",
+        colors: "Gold, Gunmetal"
+      },
+      {
+        diameter: "17",
+        width: "7.5",
+        pcd: "5x100",
+        offsets: "+30/+38/+48",
+        colors: "Gold, Gunmetal"
+      },
+      {
+        diameter: "17",
+        width: "7.5",
+        pcd: "5x114.3",
+        offsets: "+30/+38/+48",
+        colors: "Gold, Gunmetal"
+      },
+      {
+        diameter: "17",
+        width: "8.5",
+        pcd: "5x114.3",
+        offsets: "+30/+36/+44",
+        colors: "Gold, Gunmetal"
+      },
+      {
+        diameter: "18",
+        width: "7.5",
+        pcd: "5x100",
+        offsets: "+38/+48",
+        colors: "Gold, Gunmetal"
+      },
+      {
+        diameter: "18",
+        width: "7.5",
+        pcd: "5x114.3",
+        offsets: "+30/+38/+48",
+        colors: "Gold, Gunmetal"
+      },
+      {
+        diameter: "18",
+        width: "8.5",
+        pcd: "5x114.3",
+        offsets: "+32/+36/+46",
+        colors: "Bronze, Gunmetal"
+      }
+    ]
+  },
+  /* Bridgestone Down Hill Special ae034 */{
+    id: "SL7DDCFW05QZ",
+    shortname: "B.I.M. Down Hill Special ae034",
+    description: "A cast 6 spoke wheel from Bridgestone's B.I.M Creative Studio. Though not as strong or light as the forged ae031 that it shares it's design with, it is offered in a much larger array of sizes.",
+    brand: "B.I.M. Creative Studio",
+    model: "Down Hill Special ae034",
+    manufacturer: "Enkei Co., Ltd.",
+    year_start: "2004",
+    year_end: "2009",
+    origin: "Japan",
+    construction: "1 Piece - Cast",
+    style: "6 Spoke",
+    link: "http://web.archive.org/web/20050213145059/http://bim-cs.com/products/dhs/ae034/size.html",
+    images: ["images/SL7DDCFW05QZ-01.jpg","images/SL7DDCFW05QZ-02.jpg"],
+    sizes: [
+      {
+        diameter: "15",
+        width: "6.5",
+        pcd: "4x100",
+        offsets: "+30/+38/+42",
+        colors: "White, Gunmetal"
+      },
+      {
+        diameter: "15",
+        width: "6.5",
+        pcd: "4x114.3",
+        offsets: "+42",
+        colors: "White, Gunmetal"
+      },
+      {
+        diameter: "16",
+        width: "7.0",
+        pcd: "4x100",
+        offsets: "+30/+38/+42",
+        colors: "White, Gunmetal"
+      },
+      {
+        diameter: "16",
+        width: "7.0",
+        pcd: "4x114.3",
+        offsets: "+30/+42",
+        colors: "White, Gunmetal"
+      },
+      {
+        diameter: "16",
+        width: "7.0",
+        pcd: "5x100",
+        offsets: "+30/+48",
+        colors: "White, Gunmetal"
+      },
+      {
+        diameter: "16",
+        width: "7.0",
+        pcd: "5x114.3",
+        offsets: "+30/+38/+42/+48",
+        colors: "White, Gunmetal"
+      },
+      {
+        diameter: "16",
+        width: "8.0",
+        pcd: "5x114.3",
+        offsets: "+30/+38/+44",
+        colors: "White, Gunmetal"
+      },
+      {
+        diameter: "17",
+        width: "7.5",
+        pcd: "4x100",
+        offsets: "+38/+44",
+        colors: "White, Gunmetal"
+      },
+      {
+        diameter: "17",
+        width: "7.5",
+        pcd: "4x114.3",
+        offsets: "+38/+44",
+        colors: "White, Gunmetal"
+      },
+      {
+        diameter: "17",
+        width: "7.5",
+        pcd: "5x100",
+        offsets: "+30/+38/+48",
+        colors: "White, Gunmetal"
+      },
+      {
+        diameter: "17",
+        width: "7.5",
+        pcd: "5x114.3",
+        offsets: "+30/+38/+48",
+        colors: "White, Gunmetal"
+      },
+      {
+        diameter: "17",
+        width: "8.5",
+        pcd: "5x114.3",
+        offsets: "+30/+36/+44",
+        colors: "White, Gunmetal"
+      },
+      {
+        diameter: "18",
+        width: "7.5",
+        pcd: "5x100",
+        offsets: "+38/+48",
+        colors: "White, Gunmetal"
+      },
+      {
+        diameter: "18",
+        width: "7.5",
+        pcd: "5x114.3",
+        offsets: "+30/+38/+48",
+        colors: "White, Gunmetal"
+      },
+      {
+        diameter: "18",
+        width: "8.5",
+        pcd: "5x114.3",
+        offsets: "+32/+36/+46",
+        colors: "White, Gunmetal"
+      }
+    ]
+  },
+  /* Ings TS06 */{
     id: "T8HREQGJ1TRN",
     shortname: "Ings TS06",
     description: "Ings and Rays designed the TS06 with possible use in the Super-Taikyu race series in mind. A forged single piece structure and a twin 6 spoke were chosen to accomplish that goal. The end result is a strong and lightweight wheel well-suited for both the street and the racetrack.",
@@ -117,7 +451,7 @@ dataset = [
       }
     ]
   },
-  {
+  /* Southern Ways S-05 */{
     id: "XUN1UOX4TSJA",
     shortname: "Southern Ways S-05",
     description: "Manufactured by Tan-ei-sya and sold by its subsidiary ijak under the Southern Way brand until their rebrand in 2008 to TWS. The S-05 implemented wheel design and manufacturing technology that Tan-ei-sya developed while making wheels for F1 resulting in an incredibly strong and lightweight wheel that was widely used across many race series in Japan. This wheel was also sold in additional sizes as the Car Life Revolution K-One K-01.",
@@ -246,7 +580,7 @@ dataset = [
       }
     ]
   },
-  {
+  /* Starform Real Racing R2 */{
     id: "XEPK9WYCWZ9G",
     shortname: "Starform Real Racing R2",
     description: "",
@@ -277,7 +611,7 @@ dataset = [
       }
     ]
   },
-  {
+  /* Uras NS-01 */{
     id: "IPL5GT7KH9V1",
     shortname: "Uras NS-01",
     description: "Rebadged DoAll/CST D Spec. Possibly manufactured by Weds.",
@@ -315,7 +649,7 @@ dataset = [
       }
     ]
   },
-  {
+  /* Uras NS-02 */ {
     id: "214UPUFONY13",
     shortname: "Uras NS-02",
     description: "Rebadged DoAll?. Possibly manufactured by Weds.",
@@ -346,4 +680,30 @@ dataset = [
       }
     ]
   }
+  /* Template
+  {
+    id: "",
+    shortname: "",
+    description: "",
+    brand: "",
+    model: "",
+    manufacturer: "Unverified",
+    year_start: "Unverified",
+    year_end: "Unverified",
+    origin: "Unverified",
+    construction: "Unverified",
+    style: "",
+    link: "",
+    images: [""],
+    sizes: [
+      {
+        diameter: "",
+        width: "",
+        pcd: "",
+        offsets: "",
+        colors: ""
+      }
+    ]
+  },
+  */
 ];
