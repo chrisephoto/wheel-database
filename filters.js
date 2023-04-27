@@ -1,12 +1,14 @@
 filters =  {
   brand: [
     "Bee&#8902;R",
+    "B.I.M. Creative Studio",
     "Ings",
     "Southern Ways",
     "Uras"
     ],
   manufacturer: [
     "Unverified",
+    "Enkei Co., Ltd.",
     "Rays Co., Ltd.",
     "TAN-EI-SYA Co., Ltd."
     ],
