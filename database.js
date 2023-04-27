@@ -33,7 +33,7 @@ dataset = [
   /* Bridgestone Down Hill Special ae031 */{
     id: "U4VL4KJ2P2SV",
     shortname: "B.I.M. Down Hill Special ae031",
-    description: "A forged 6 spoke wheel from Bridgestone's B.I.M Creative Studio. Very similar in appearance to the cast ae034 but most easily identified by its hub section which features a machined center with harder edges than the ae034 and weight saving holes between the lug holes.",
+    description: "A forged split 6 spoke wheel from Bridgestone's B.I.M Creative Studio. Extremely similar in appearance to the cast ae033 but most easily identified by the small webs between the spokes near the hub section which are absent from the ae033.",
     brand: "B.I.M. Creative Studio",
     model: "Down Hill Special ae031",
     manufacturer: "Unverified",
@@ -78,7 +78,7 @@ dataset = [
   /* Bridgestone Down Hill Special ae032 */{
     id: "DV3YB9P4LFDL",
     shortname: "B.I.M. Down Hill Special ae032",
-    description: "A forged split 6 spoke wheel from Bridgestone's B.I.M Creative Studio. Extremely similar in appearance to the cast ae033 but most easily identified by the small webs between the spokes near the hub section which are absent from the ae033.",
+    description: "A forged 6 spoke wheel from Bridgestone's B.I.M Creative Studio. Very similar in appearance to the cast ae034 but most easily identified by its hub section which features a machined center with harder edges than the ae034 and weight saving holes between the lug holes.",
     brand: "B.I.M. Creative Studio",
     model: "Down Hill Special ae032",
     manufacturer: "Unverified",
@@ -123,7 +123,7 @@ dataset = [
   /* Bridgestone Down Hill Special ae033 */{
     id: "X7MDK0WHI5JM",
     shortname: "B.I.M. Down Hill Special ae033",
-    description: "A cast split 6 spoke wheel from Bridgestone's B.I.M Creative Studio. Though not as strong or light as the forged ae032 that it shares it's design with, it is offered in a much larger array of sizes.",
+    description: "A cast split 6 spoke wheel from Bridgestone's B.I.M Creative Studio. Though not as strong or light as the forged ae031 that it shares it's design with, it is offered in a much larger array of sizes.",
     brand: "B.I.M. Creative Studio",
     model: "Down Hill Special ae033",
     manufacturer: "Enkei Co., Ltd.",
@@ -245,7 +245,7 @@ dataset = [
   /* Bridgestone Down Hill Special ae034 */{
     id: "SL7DDCFW05QZ",
     shortname: "B.I.M. Down Hill Special ae034",
-    description: "A cast 6 spoke wheel from Bridgestone's B.I.M Creative Studio. Though not as strong or light as the forged ae031 that it shares it's design with, it is offered in a much larger array of sizes.",
+    description: "A cast 6 spoke wheel from Bridgestone's B.I.M Creative Studio. Though not as strong or light as the forged ae032 that it shares it's design with, it is offered in a much larger array of sizes.",
     brand: "B.I.M. Creative Studio",
     model: "Down Hill Special ae034",
     manufacturer: "Enkei Co., Ltd.",
