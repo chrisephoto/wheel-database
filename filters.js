@@ -4,6 +4,7 @@ filters =  {
     "B.I.M. Creative Studio",
     "Ings",
     "Southern Ways",
+    "Starform",
     "Uras"
     ],
   manufacturer: [
