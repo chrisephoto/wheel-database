@@ -6,12 +6,14 @@
 
 # Wheels to add
 * Starform Real Racing Model II (TWS)
+  * http://web.archive.org/web/20020203021941fw_/http://www.starform-jp.com/fr_model2_2.html
 * Starform Real Racing R2 (TWS)
-  * https://globalautoshop.com/wheels/starform
+  * http://web.archive.org/web/20020204003906fw_/http://www.starform-jp.com/fr_R2_2.html
 * Dunlop Direzza RSC
 * Finalspeed Gear R
-* Down Hill Special ae031/ae032/ae033/ae034
-  * http://web.archive.org/web/20050207064836/http://bim-cs.com/products/dhs/
+* Down Hill Special ae051/ae081
+  * http://web.archive.org/web/20081119135952/http://www.bim-cs.com/products/dhs/ae051/size.html
+  * http://web.archive.org/web/20081226155838/http://www.bim-cs.com/products/dhs/ae081/size.html
 * Monster Sport ms857
 * Joustmeister Comp V1 - Taneisya T6/ Garage Dog House (7 spoke version, vol 106)/ Joustmeister/ Techni Craft T6 (TWS) / J cross JT6 (vol 77, 94, 97) / Doghouse D/H original wheel(vol 95, 103, 117)?
   * https://web.archive.org/web/20100118101246fw_/http://www.g-doghouse.co.jp/html/original/08.html
