@@ -15,7 +15,8 @@
 * Down Hill Special ae033
 * Down Hill Special ae 034
 * Monster Sport ms857
-* Joustmeister Comp V1 - Taneisya T6/ Garage Dog House/ Joustmeister/ Techni Craft T6 (TWS) / J cross JT6 / Doghouse D/H original wheel?
+* Joustmeister Comp V1 - Taneisya T6/ Garage Dog House (7 spoke version, vol 106)/ Joustmeister/ Techni Craft T6 (TWS) / J cross JT6 (vol 77, 94, 97) / Doghouse D/H original wheel(vol 95, 103, 117)?
+  * https://web.archive.org/web/20100118101246fw_/http://www.g-doghouse.co.jp/html/original/08.html
 * Team Impul NS-GT II
 * JIC J-Force 05
 * EuroMagic Racing ST-05Air
@@ -27,5 +28,5 @@
   * http://web.archive.org/web/20090819092004/www.doall.jp/wheels/d-spec/d-spec.html
 * CST (Doall) Zero-1 Hyper (cast, by weds?)
   * http://doall.jp/csttop/zero1hyper/cstzero1hyper.html
-* K-One K-01 (rebadged S05, 2003-2005+)
+* K-One K-01 (rebadged S05, 2003-2005+) / crf crf-08 vol 114)
   * http://web.archive.org/web/20051018094530/http://www.k-one.to/parts/wheel/index.htm
