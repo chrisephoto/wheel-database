@@ -27,6 +27,7 @@ filters =  {
     ],
   style: [
     "Aero",
+    "Dish",
     "Mesh",
     "3 Spoke",
     "4 Spoke",
