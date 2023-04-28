@@ -32,3 +32,17 @@ The following are some guidlines for image and data formatting to help keep the 
   * pcd: For wheels with multi PCD write out all PCDs in full in ascending order separated by a forward slash (*ie: 4x114.3/5x114.3*) for wheels with multi holes at the same PCD only write the basic fitment (*ie: 4x100 not 8x100*)
   * offsets: Forward slash separated list of all offsets for the given diameter, width, and pcd (*may need to be separated if color availability changes per offset*)
   * colors: Forward slash separated list of all colors for the given diameter, width, pcd, and offsets
+
+## Other Tips
+Below are some tips for identifying the actual manufacturer of wheels. These aren't definitive, but given substantial similarity and no contradicting information, there can be high certainty of a match.
+Manufactured by:
+* Enkei Co., Ltd.
+  * Inspectors Y. Suzuki, K. Oishi
+  * Round date stamp (initials | date | initials)
+  * A356 (cast aluminum alloy) stamp
+  * MAT stamp
+* Rays Co., Ltd.
+  * 8 Digit (serial?) number on spec sticker w/ qr code
+  * Inverted triangle danger fitment sticker (5X112, 5X120 wheels)
+* TAN-EI-SYA Co., Ltd.
+  * Debossed text on inside of barrel ("JWL VIA ###KG ##X#JJ ## TAN ##. # JAPAN")
