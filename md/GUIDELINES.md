@@ -45,6 +45,7 @@ Manufactured by:
   * A356 (cast aluminum alloy) stamp
   * EK stamp
   * MAT stamp
+  * Triangle arrow stamp
 * Rays Co., Ltd.
   * JAWA Serial: 905
   * 8 Digit (serial?) number on spec sticker w/ qr code (post ~2000)
