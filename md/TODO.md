@@ -1,4 +1,5 @@
 # Codebase changes and updates
+* Update terminology to match ISO 3911
 * Determine how to handle 2/3pc welded construction
 * Determine how to handle rebadges
 * CSS: Mobile view spec table width
