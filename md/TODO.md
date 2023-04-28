@@ -30,3 +30,4 @@
   * http://doall.jp/csttop/zero1hyper/cstzero1hyper.html
 * K-One K-01 (rebadged S05, 2003-2005+) / crf crf-08 vol 114)
   * http://web.archive.org/web/20051018094530/http://www.k-one.to/parts/wheel/index.htm
+* Carving Head 40 (Enkei)
