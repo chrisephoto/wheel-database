@@ -20,6 +20,7 @@
   * https://web.archive.org/web/20100118101246fw_/http://www.g-doghouse.co.jp/html/original/08.html
 * Team Impul NS-GT II
 * JIC J-Force 05
+* Advan Connoisseur 51C
 * EuroMagic Racing ST-05Air
 * EuroMagic Racing GT-08F
 * RACING HART CP-035 (TWS)
