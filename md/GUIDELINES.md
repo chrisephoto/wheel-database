@@ -43,6 +43,7 @@ Manufactured by:
   * Inspectors Y. Suzuki, K. Oishi, K. Iguchi
   * Round date stamp (initials | date | initials)
   * A356 (cast aluminum alloy) stamp
+  * EK stamp
   * MAT stamp
 * Rays Co., Ltd.
   * JAWA Serial: 905
