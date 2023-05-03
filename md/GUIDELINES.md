@@ -52,7 +52,7 @@ Manufactured by:
   * Inverted triangle danger fitment sticker (5X112, 5X120 wheels)
 * Speed Star Racing Co., Ltd.
   * JAWA Serial: 305 (SSR) 413 (Tanabe)
-  * Inspectors T. Inoue, S. Toyoki, H. Ueno, H. Tamada
+  * Inspectors T. Inoue, S. Toyoki, H. Ueno, H. Tamada, Y. Minomura
   * 7/8 Digit (lot?) number on spec sticker w/ qr code (pre-Tanabe buyout)
 * TAN-EI-SYA Co., Ltd.
   * Debossed text on inside of barrel ("JWL VIA ###KG ##X#JJ ## TAN ##. # JAPAN")
