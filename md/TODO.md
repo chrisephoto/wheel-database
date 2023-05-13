@@ -30,8 +30,10 @@
   * http://web.archive.org/web/20090819092004/www.doall.jp/wheels/d-spec/d-spec.html
 * CST (Doall) Zero-1 Hyper (cast, by weds?)
   * http://doall.jp/csttop/zero1hyper/cstzero1hyper.html
-* K-One K-01 (rebadged S05, 2003-2005+) / crf crf-08 vol 114) / REVOWIN PS-05
+* K-One K-01 (rebadged S05, 2003-2005+) / crf crf-08 vol 114)
   * http://web.archive.org/web/20051018094530/http://www.k-one.to/parts/wheel/index.htm
+* REVOWIN PS-05 (rebadged S-05)
+  * 15x6.5 +35 (5x100)
 * Carving Head 40 (Enkei)
 * Carving Stark I (1992 Work)
 * Carving Stark II (Work)
