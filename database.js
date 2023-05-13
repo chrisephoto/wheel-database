@@ -464,7 +464,7 @@ dataset = [
     construction: "1 Piece - Forged",
     style: "Split 5 Spoke",
     link: "http://web.archive.org/web/20060509014028/http://www.ijak.co.jp/HPcatalog/s05size.html",
-    images: ["images/XUN1UOX4TSJA-01.jpg"],
+    images: ["images/XUN1UOX4TSJA-01.jpg","images/XUN1UOX4TSJA-02.jpg"],
     sizes: [
       {
         diameter: "15",
