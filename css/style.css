@@ -272,7 +272,7 @@ th {
 #wheel-list figure {
   aspect-ratio: 1.0;
   border-radius: var(--radius);
-  box-shadow: var(--shadow);
+  /*box-shadow: var(--shadow);*/
   margin: 0;
   overflow: hidden;
   position: relative;
