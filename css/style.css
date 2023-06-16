@@ -20,7 +20,7 @@
   --color-accent: 229,57,53;
   --color-background-01: 255,255,255;
   --color-background-02: 241,241,241;
-  --color-background-03: 232,232,232;
+  --color-background-03: 225,225,225;
   --color-text: 38,50,56;
   --shadow: 0 6px 12px rgba(0,0,0,0.15);
 }
@@ -46,7 +46,7 @@ h2 {
   color: var(--color-text);
   font-size: 1.2rem;
   font-weight: 600;
-  margin: 0;
+  margin: 0 0 0.5rem 0;
 }
 
 body {
@@ -144,7 +144,7 @@ table caption {
 }
 
 td, th {
-  background-color: rgb(var(--background-color-02));
+  background-color: rgb(var(--color-background-02));
   padding: 1ch;
 }
 
