@@ -211,10 +211,12 @@ th {
 #wheel-details-header {
   display: flex;
   flex-direction: row;
+  gap: var(--padding);
   align-items: end;
 }
 
 #wheel-details-hero {
+  flex-shrink: 0;
   width: 300px;
 }
 
@@ -278,11 +280,11 @@ th {
 }
 
 #wheel-info-shortname {
-  margin: 0 0 0.5rem 0;
+  margin: 1rem 0;
 }
 
 #wheel-info-description {
-  margin: 0 0 var(--padding) 0;
+  margin: 1rem 0;
 }
 
 #wheel-specs td {
