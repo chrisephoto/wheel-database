@@ -145,9 +145,11 @@ function populateDetails(i) {
     image.src = dataset[i].images[j];
   }
   document.getElementById('wheel-details').classList = 'open';
-  title = 'Wheel Database - ' & dataset[i].shortname;
-  document.title = title;
-  url.searchParams.set('uid', dataset[i].id);
+  
+  title = 'Wheel Database - ' + dataset[i].shortname;
+  let stateObj = { id: "100" }
+  window.history.pushState(stateObj, title, "/?uid=" + dataset[i].id);
+  
 }
 
 function closeDetails() {
