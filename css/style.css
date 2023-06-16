@@ -3,19 +3,23 @@
 @import url("https://fonts.googleapis.com/icon?family=Material+Icons");
 
 :root {
-  --radius: 3px;
+  --radius: 7px;
 }
 
 .theme-dark {
   --color-accent: 255,89,89;
-  --color-background: 19,25,28;
+  --color-background-01: 19,25,28;
+  --color-background-02: 19,25,28;
+  --color-background-03: 19,25,28;
   --color-text: 255, 255, 255;
   --shadow: 0 6px 12px rgba(0,0,0,0.35);
 }
 
 .theme-light {
   --color-accent: 229,57,53;
-  --color-background: 255, 255, 255;
+  --color-background-01: 255, 255, 255;
+  --color-background-02: 255, 255, 255;
+  --color-background-03: 255, 255, 255;
   --color-text: 38,50,56;
   --shadow: 0 6px 12px rgba(0,0,0,0.15);
 }
@@ -23,7 +27,7 @@
 /* element styles */
 
 body {
-  background-color: rgb(var(--color-background));
+  background-color: rgb(var(--color-background-01));
   color: rgb(var(--color-text));
   font-family: 'Jost', sans-serif;
   margin: 0;
@@ -55,14 +59,15 @@ input, option, select {
 
 input,
 select {
+  background: rgb(var(--color-background-02));
   border-radius: var(--radius);
-  border: 1px solid rgba(var(--color-text),0.2);
-  box-shadow: var(--shadow);
+  /*border: 1px solid rgba(var(--color-text),0.2);*/
+  /*box-shadow: var(--shadow);*/
   padding: 1ch;
 }
 
 input[type="reset"] {
-  background: rgb(var(--color-background));
+  background: rgb(var(--color-background-01));
   color: rgb(var(--color-text));
   cursor: pointer;
   margin-top: 1rem;
@@ -71,7 +76,7 @@ input[type="reset"] {
 input[type="button"] {
   background: rgb(var(--color-accent));
   border: none;
-  color: rgb(var(--color-background));
+  color: rgb(var(--color-background-01));
   cursor: pointer;
   margin-top: 1rem;
 }
@@ -145,9 +150,9 @@ th {
 /* specific styles */
 
 #wheel-details {
-  background: rgb(var(--color-background));
+  background: rgb(var(--color-background-01));
   border-radius: var(--radius);
-  box-shadow: var(--shadow), 0 0 0 max(100vw,100vh) rgba(var(--color-background),0.8);
+  box-shadow: var(--shadow), 0 0 0 max(100vw,100vh) rgba(var(--color-background-01),0.8);
   display: flex;
   flex-direction: column;
   gap: 2rem;
@@ -280,7 +285,7 @@ th {
   /*border: 2px solid var(--color-accent);*/
   /*border-radius: calc(var(--radius) + 1px);*/
   box-shadow: 0 0 0 10px var(--color-accent);
-  color: rgb(var(--color-background));
+  color: rgb(var(--color-background-01));
   cursor: pointer;
   display: flex;
   font-weight: 600;
