@@ -208,6 +208,20 @@ th {
   margin: 0 auto;
 }
 
+#wheel-details-header {
+  display: flex;
+  flex-direction: row;
+  align-items: end;
+}
+
+#wheel-details-hero {
+  width: 300px;
+}
+
+#wheel-details-hero img {
+  width: 100%;
+}
+
 #wheel-details-info {
   height: fit-content;
 }
