@@ -152,8 +152,6 @@ th {
 
 #wheel-details {
   background: rgb(var(--color-background-01));
-  border-radius: var(--radius);
-  box-shadow: var(--shadow), 0 0 0 max(100vw,100vh) rgba(var(--color-background-01),0.8);
   display: flex;
   flex-direction: column;
   gap: 2rem;
@@ -162,11 +160,11 @@ th {
   padding: 2rem;
   pointer-events: none;
   position: fixed;
-    bottom: 5vw;
-    left: max(5vw, calc(50vw - 70ch));
-    right: max(5vw, calc(50vw - 70ch));
-    top: 5vw;
-  transform: scale(0.9);
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+  transform: translateY(100%);
   transition: 0.2s;
   user-select: text;
   z-index: 200;
@@ -179,7 +177,7 @@ th {
 #wheel-details.open {
   opacity: 1.0;
   pointer-events: auto;
-  transform: scale(1.0);
+  transform: translateY(0%);
 }
 
 #wheel-details-close {
