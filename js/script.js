@@ -77,6 +77,7 @@ function populateFilters() {
     option.innerHTML = filters.pcd[i];
     input.appendChild(option);
   }
+  /*
   for (let i = 0; i < filters.year.length; i++) {
     const input = document.getElementById("input-year");
     const option = document.createElement("option");
@@ -84,6 +85,7 @@ function populateFilters() {
     option.innerHTML = filters.year[i];
     input.appendChild(option);
   }
+  */
 }
 
 function populateGrid(i) {
