@@ -92,7 +92,7 @@ select {
 }
 
 input[type="reset"] {
-  background: rgb(var(--color-background-01));
+  background: rgb(var(--color-background-02));
   color: rgb(var(--color-text));
   cursor: pointer;
   margin-top: calc(var(--padding) / 2);
@@ -123,7 +123,6 @@ summary {
 }
 
 table {
-  border: 1px solid rgba(var(--color-text),0.2);
   border-radius: var(--radius);
 }
 
@@ -145,7 +144,7 @@ table caption {
 }
 
 td, th {
-  padding: 0.5ch 1ch;
+  padding: 1ch;
 }
 
 tbody > :first-child > :first-child {
@@ -165,11 +164,12 @@ tbody > :last-child > :last-child {
 }
 
 tr:not(:last-child) td, tr:not(:last-child) th {
-  border-bottom: 1px solid rgba(var(--color-text),0.2);
+  border-bottom: 1px solid rgb(var(--color-background-03));
 }
 
-th {
-  background-color: rgb(var(--color-background-02));
+tr:hover td,
+tr:hover th {
+  background-color: rgb(var(--color-background-03));
 }
 
 /* specific styles */
@@ -287,7 +287,6 @@ th {
 }
 
 #wheel-info th {
-  border-right: 1px solid rgba(var(--color-text),0.2);
   text-align: right;
 }
 
