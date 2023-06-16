@@ -186,7 +186,7 @@ th {
 }
 
 #wheel-details > div {
-  flex: 1 0 0;
+  width: 100%;
 }
 
 #wheel-details.open {
@@ -201,6 +201,19 @@ th {
   position: absolute;
     right: 1.5rem;
     top: 1.5rem;
+}
+
+#wheel-details-container {
+  max-width: 100ch;
+  margin: 0 auto;
+}
+
+#wheel-details-info {
+  height: fit-content;
+}
+
+#wheel-details-info > :last-child {
+  margin-bottom: 0;
 }
 
 #wheel-filters {
@@ -230,14 +243,6 @@ th {
 
 #wheel-images img:first-child {
   /*grid-column: 1/-1;*/
-}
-
-#wheel-info-container {
-  height: fit-content;
-}
-
-#wheel-info-container > :last-child {
-  margin-bottom: 0;
 }
 
 #wheel-info,
@@ -327,8 +332,5 @@ th {
   #wheel-filters {
     flex: 0 0 25ch;
     padding: var(--padding) 0 var(--padding) var(--padding);
-  }
-  #wheel-details {
-    flex-direction: row;
   }
 }
