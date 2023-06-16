@@ -223,7 +223,7 @@ th {
 
 #wheel-details-hero {
   flex-shrink: 0;
-  width: 300px;
+  width: 100%;
 }
 
 #wheel-details-hero img {
@@ -352,6 +352,9 @@ th {
   }
   #wheel-details-header {
     flex-direction: row;
+  }
+  #wheel-details-hero {
+    width: 300px;
   }
   #wheel-filters {
     flex: 0 0 25ch;
