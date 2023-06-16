@@ -12,45 +12,43 @@
     <header>JWL DATABASE</header>
     <main>
       <section id="wheel-filters">
-        <details open>
-          <summary>Filter</summary>
-          <form id="wheel-filters-form">
-            <!--
-            <label for="input-search">Search</label>
-            <input id="input-search" type="text" placeholder="Search"/>
-            -->
-            <label for="input-brand">Brand</label>
-            <select id="input-brand">
-              <option value="" selected>All</option>
-            </select>
-            <label for="input-manufacturer">Manufacturer</label>
-            <select id="input-manufacturer">
-              <option value="" selected>All</option>
-            </select>
-            <label for="input-style">Style</label>
-            <select id="input-style">
-              <option value="" selected>All</option>
-            </select>
-            <label for="input-contruction">Construction</label>
-            <select id="input-construction">
-              <option value="" selected>All</option>
-            </select>
-            <label for="input-diameter">Diameter(s)</label>
-            <select id="input-diameter" multiple>
-              <option value="" selected>All</option>
-            </select>
-            <label for="input-pcd">PCD(s)</label>
-            <select id="input-pcd" multiple>
-              <option value="" selected>All</option>
-            </select>
-            <label for="input-year">Production Year(s)</label>
-            <select id="input-year" multiple>
-              <option value="" selected>All</option>
-            </select>
-            <input type="reset" value="Reset" onclick="resetFilter()"/>
-            <input type="button" value="Apply" onclick="applyFilter()"/>
-          </form>
-        </details>
+        <h2>Filters</h2>
+        <form id="wheel-filters-form">
+          <!--
+          <label for="input-search">Search</label>
+          <input id="input-search" type="text" placeholder="Search"/>
+          -->
+          <label for="input-brand">Brand</label>
+          <select id="input-brand">
+            <option value="" selected>All</option>
+          </select>
+          <label for="input-manufacturer">Manufacturer</label>
+          <select id="input-manufacturer">
+            <option value="" selected>All</option>
+          </select>
+          <label for="input-style">Style</label>
+          <select id="input-style">
+            <option value="" selected>All</option>
+          </select>
+          <label for="input-contruction">Construction</label>
+          <select id="input-construction">
+            <option value="" selected>All</option>
+          </select>
+          <label for="input-diameter">Diameter(s)</label>
+          <select id="input-diameter" multiple>
+            <option value="" selected>All</option>
+          </select>
+          <label for="input-pcd">PCD(s)</label>
+          <select id="input-pcd" multiple>
+            <option value="" selected>All</option>
+          </select>
+          <label for="input-year">Production Year(s)</label>
+          <select id="input-year" multiple>
+            <option value="" selected>All</option>
+          </select>
+          <input type="reset" value="Reset" onclick="resetFilter()"/>
+          <input type="button" value="Apply" onclick="applyFilter()"/>
+        </form>
       </section>
       <section id="wheel-list"></section>
       <section id="wheel-details">
