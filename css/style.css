@@ -27,6 +27,12 @@
 
 /* element styles */
 
+h1 {
+  color: var(--color-text);
+  font-size: 2rem;
+  font-weight: bold;
+}
+
 h2 {
   color: var(--color-text);
   font-size: 1rem;
