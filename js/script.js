@@ -136,8 +136,12 @@ function populateDetails(i) {
   }
   for (let j = 0; j < dataset[i].images.length; j++) {
     const target = document.getElementById("wheel-images");
+    const link = document.createElement("a");
     const image  = document.createElement("img");
-    target.appendChild(image);
+    target.appendChild(link);
+    link.href = dataset[i].images[j];
+    link.target = "_blank";
+    link.appendChild(image);
     image.src = dataset[i].images[j];
   }
   document.getElementById("wheel-details").classList = "open";
