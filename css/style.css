@@ -219,6 +219,8 @@ th {
 }
 
 #wheel-details-hero img {
+  border-radius: var(--radius);
+  display: block;
   width: 100%;
 }
 
