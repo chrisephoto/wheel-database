@@ -160,7 +160,7 @@ tr:not(:last-child) td, tr:not(:last-child) th {
 }
 
 th {
-  background-color: rgba(var(--color-text),0.1);
+  background-color: rgb(var(--color-background-02));
 }
 
 /* specific styles */
