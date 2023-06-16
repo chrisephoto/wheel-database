@@ -1,6 +1,6 @@
 // event listeners
 window.onload=function(){
-  document.getElementById("wheel-details-close").addEventListener("click", closeDetails);
+  document.getElementById('wheel-details-close').addEventListener('click', closeDetails);
   populateFilters();
   for (let i = 0; i < dataset.length; i++) {
     populateGrid(i)
@@ -8,7 +8,7 @@ window.onload=function(){
   const queryString = window.location.search;
   console.log(queryString);
   const urlParams = new URLSearchParams(queryString);
-  const urlId = urlParams.get("id")
+  const urlId = urlParams.get('id')
   console.log(urlId);
   for (let i = 0; i < dataset.length; i++) {
     if (dataset[i].id == urlId) {
@@ -23,10 +23,10 @@ window.onkeydown=function(e){
   }
 }
 
-document.addEventListener("click", event => {
-  if (document.getElementById("wheel-details").classList.contains("open")) {
-    const validClick1 = document.getElementById("wheel-details").contains(event.target)
-    const validClick2 = document.getElementById("wheel-list").contains(event.target)
+document.addEventListener('click', event => {
+  if (document.getElementById('wheel-details').classList.contains('open')) {
+    const validClick1 = document.getElementById('wheel-details').contains(event.target)
+    const validClick2 = document.getElementById('wheel-list').contains(event.target)
     if (!validClick1 && !validClick2) {
       closeDetails();
     }
@@ -36,51 +36,51 @@ document.addEventListener("click", event => {
 // functions
 function populateFilters() {
   for (let i = 0; i < filters.brand.length; i++) {
-    const input = document.getElementById("input-brand");
-    const option = document.createElement("option");
+    const input = document.getElementById('input-brand');
+    const option = document.createElement('option');
     option.value = filters.brand[i];
     option.innerHTML = filters.brand[i];
     input.appendChild(option);
   }
   for (let i = 0; i < filters.manufacturer.length; i++) {
-    const input = document.getElementById("input-manufacturer");
-    const option = document.createElement("option");
+    const input = document.getElementById('input-manufacturer');
+    const option = document.createElement('option');
     option.value = filters.manufacturer[i];
     option.innerHTML = filters.manufacturer[i];
     input.appendChild(option);
   }
   for (let i = 0; i < filters.style.length; i++) {
-    const input = document.getElementById("input-style");
-    const option = document.createElement("option");
+    const input = document.getElementById('input-style');
+    const option = document.createElement('option');
     option.value = filters.style[i];
     option.innerHTML = filters.style[i];
     input.appendChild(option);
   }
   for (let i = 0; i < filters.construction.length; i++) {
-    const input = document.getElementById("input-construction");
-    const option = document.createElement("option");
+    const input = document.getElementById('input-construction');
+    const option = document.createElement('option');
     option.value = filters.construction[i];
     option.innerHTML = filters.construction[i];
     input.appendChild(option);
   }
   for (let i = 0; i < filters.diameter.length; i++) {
-    const input = document.getElementById("input-diameter");
-    const option = document.createElement("option");
+    const input = document.getElementById('input-diameter');
+    const option = document.createElement('option');
     option.value = filters.diameter[i];
-    option.innerHTML = filters.diameter[i] + "&quot;";
+    option.innerHTML = filters.diameter[i] + '&quot;';
     input.appendChild(option);
   }
   for (let i = 0; i < filters.pcd.length; i++) {
-    const input = document.getElementById("input-pcd");
-    const option = document.createElement("option");
+    const input = document.getElementById('input-pcd');
+    const option = document.createElement('option');
     option.value = filters.pcd[i];
     option.innerHTML = filters.pcd[i];
     input.appendChild(option);
   }
   /*
   for (let i = 0; i < filters.year.length; i++) {
-    const input = document.getElementById("input-year");
-    const option = document.createElement("option");
+    const input = document.getElementById('input-year');
+    const option = document.createElement('option');
     option.value = filters.year[i];
     option.innerHTML = filters.year[i];
     input.appendChild(option);
@@ -89,11 +89,11 @@ function populateFilters() {
 }
 
 function populateGrid(i) {
-  const content = document.getElementById("wheel-list");
-  const figure = document.createElement("figure");
-  const img = document.createElement("img");
-  const figcaption = document.createElement("figcaption");
-  const div = document.createElement("div");
+  const content = document.getElementById('wheel-list');
+  const figure = document.createElement('figure');
+  const img = document.createElement('img');
+  const figcaption = document.createElement('figcaption');
+  const div = document.createElement('div');
   content.appendChild(figure);
   figure.id = dataset[i].id;
   figure.onclick = function(){populateDetails(i)};
@@ -104,52 +104,55 @@ function populateGrid(i) {
 }
 
 function populateDetails(i) {
-  const target = document.getElementById("wheel-details-hero");
-  const image  = document.createElement("img");
+  const target = document.getElementById('wheel-details-hero');
+  const image  = document.createElement('img');
   target.appendChild(image);
   image.src = dataset[i].images[0];
-  document.getElementById("wheel-info-shortname").innerHTML = dataset[i].shortname;
-  document.getElementById("wheel-info-description").innerHTML = dataset[i].description;
-  document.getElementById("wheel-info-brand").innerHTML = dataset[i].brand;
-  document.getElementById("wheel-info-model").innerHTML = dataset[i].model;
-  document.getElementById("wheel-info-manufacturer").innerHTML = dataset[i].manufacturer;
+  document.getElementById('wheel-info-shortname').innerHTML = dataset[i].shortname;
+  document.getElementById('wheel-info-description').innerHTML = dataset[i].description;
+  document.getElementById('wheel-info-brand').innerHTML = dataset[i].brand;
+  document.getElementById('wheel-info-model').innerHTML = dataset[i].model;
+  document.getElementById('wheel-info-manufacturer').innerHTML = dataset[i].manufacturer;
   if (dataset[i].year_start == dataset[i].year_end) {
-    document.getElementById("wheel-info-years").innerHTML = dataset[i].year_start;
+    document.getElementById('wheel-info-years').innerHTML = dataset[i].year_start;
   }
   else {
-    document.getElementById("wheel-info-years").innerHTML = dataset[i].year_start + " - " + dataset[i].year_end;
+    document.getElementById('wheel-info-years').innerHTML = dataset[i].year_start + ' - ' + dataset[i].year_end;
   }
-  document.getElementById("wheel-info-origin").innerHTML = dataset[i].origin;
-  document.getElementById("wheel-info-construction").innerHTML = dataset[i].construction;
-  document.getElementById("wheel-info-style").innerHTML = dataset[i].style;
-  document.querySelector("#wheel-info-link a").href = dataset[i].link;
+  document.getElementById('wheel-info-origin').innerHTML = dataset[i].origin;
+  document.getElementById('wheel-info-construction').innerHTML = dataset[i].construction;
+  document.getElementById('wheel-info-style').innerHTML = dataset[i].style;
+  document.querySelector('#wheel-info-link a').href = dataset[i].link;
   for (let j = 0; j < dataset[i].sizes.length; j++) {
-    const table = document.querySelector("#wheel-specs tbody");
-    const row  = document.createElement("tr");
+    const table = document.querySelector('#wheel-specs tbody');
+    const row  = document.createElement('tr');
     table.appendChild(row);
     for (const data in dataset[i].sizes[j]) {
-      const cell = document.createElement("td");
+      const cell = document.createElement('td');
       const text = document.createTextNode(dataset[i].sizes[j][data]);
       row.appendChild(cell);
       cell.appendChild(text);
     }
   }
   for (let j = 0; j < dataset[i].images.length; j++) {
-    const target = document.getElementById("wheel-images");
-    const link = document.createElement("a");
-    const image  = document.createElement("img");
+    const target = document.getElementById('wheel-images');
+    const link = document.createElement('a');
+    const image  = document.createElement('img');
     target.appendChild(link);
     link.href = dataset[i].images[j];
-    link.target = "_blank";
+    link.target = '_blank';
     link.appendChild(image);
     image.src = dataset[i].images[j];
   }
-  document.getElementById("wheel-details").classList = "open";
+  document.getElementById('wheel-details').classList = 'open';
+  title = 'Wheel Database - ' & dataset[i].shortname;
+  document.title = title;
+  url.searchParams.set('uid', dataset[i].id);
 }
 
 function closeDetails() {
   //remove class to hide modal
-  document.getElementById("wheel-details").classList = "";
+  document.getElementById('wheel-details').classList = '';
   
   //clear details from modal
   setTimeout(function(){
@@ -163,6 +166,7 @@ function closeDetails() {
       rows.remove();
     });
   }, 200)
+  document.title = 'Wheel Database';
 }
 
 function applyFilter() {
@@ -170,27 +174,27 @@ function applyFilter() {
   filterIndexes = []
   
   //set filter params
-  //filterSearch = document.getElementById("input-search").value;
-  filterBrand = document.getElementById("input-brand").value;
-  filterManufacturer = document.getElementById("input-manufacturer").value;
+  //filterSearch = document.getElementById('input-search').value;
+  filterBrand = document.getElementById('input-brand').value;
+  filterManufacturer = document.getElementById('input-manufacturer').value;
   /*
   filterYear = [];
-  for (var option of document.getElementById("input-year").options) {
+  for (var option of document.getElementById('input-year').options) {
       if (option.selected) {
           filterYear.push(option.value);
       }
   }
   */
-  filterConstruction = document.getElementById("input-construction").value;
-  filterStyle = document.getElementById("input-style").value;
+  filterConstruction = document.getElementById('input-construction').value;
+  filterStyle = document.getElementById('input-style').value;
   filterDiameter = [];
-  for (var option of document.getElementById("input-diameter").options) {
+  for (var option of document.getElementById('input-diameter').options) {
       if (option.selected) {
           filterDiameter.push(option.value);
       }
   }
   filterPCD = [];
-  for (var option of document.getElementById("input-pcd").options) {
+  for (var option of document.getElementById('input-pcd').options) {
       if (option.selected) {
           filterPCD.push(option.value);
       }
@@ -262,7 +266,7 @@ function applyFilter() {
   }
   
   //clear wheel list
-  document.getElementById("wheel-list").innerHTML = "";
+  document.getElementById('wheel-list').innerHTML = '';
   
   //populate wheel list
   for (let j = 0; j < filterIndexes.length; j++) {
@@ -272,7 +276,7 @@ function applyFilter() {
 
 function resetFilter() {
   //clear wheel list
-  document.getElementById("wheel-list").innerHTML = "";
+  document.getElementById('wheel-list').innerHTML = '';
   
   //populate wheel list
   for (let i = 0; i < dataset.length; i++) {
@@ -280,5 +284,5 @@ function resetFilter() {
   }
   
   //reset inputs
-  document.getElementById("wheel-filters-form").reset()
+  document.getElementById('wheel-filters-form').reset()
 }
