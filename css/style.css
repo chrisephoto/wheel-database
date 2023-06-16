@@ -199,13 +199,18 @@ th {
   cursor: pointer;
   padding: 0.5rem;
   position: absolute;
-    right: 1.5rem;
-    top: 1.5rem;
+    right: 0;
+    top: 0;
+}
+
+#wheel-details-close > span {
+  display: block;
 }
 
 #wheel-details-container {
-  max-width: 100ch;
   margin: 0 auto;
+  position: relative;
+  max-width: 100ch;
 }
 
 #wheel-details-header {
