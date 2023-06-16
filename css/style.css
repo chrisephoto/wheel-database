@@ -216,7 +216,7 @@ th {
 #wheel-details-header {
   align-items: end;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   gap: var(--padding);
   margin-bottom: var(--padding);
 }
@@ -348,6 +348,9 @@ th {
 
 @media (orientation:landscape) {
   main {
+    flex-direction: row;
+  }
+  #wheel-details-header {
     flex-direction: row;
   }
   #wheel-filters {
