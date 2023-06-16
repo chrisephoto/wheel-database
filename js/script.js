@@ -104,6 +104,10 @@ function populateGrid(i) {
 }
 
 function populateDetails(i) {
+  const target = document.getElementById("wheel-details-hero");
+  const image  = document.createElement("img");
+  target.appendChild(image);
+  image.src = dataset[i].images[0];
   document.getElementById("wheel-info-shortname").innerHTML = dataset[i].shortname;
   document.getElementById("wheel-info-description").innerHTML = dataset[i].description;
   document.getElementById("wheel-info-brand").innerHTML = dataset[i].brand;
