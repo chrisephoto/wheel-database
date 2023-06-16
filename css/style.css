@@ -27,6 +27,15 @@
 
 /* element styles */
 
+a {
+  color: rgba(var(--color-accent),1.0);
+  transition: color 0.2s;
+}
+
+a:hover {
+  color: rgba(var(--color-accent),0.7);
+}
+
 h1 {
   color: var(--color-text);
   font-size: 2rem;
