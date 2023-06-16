@@ -162,12 +162,14 @@ function applyFilter() {
   //filterSearch = document.getElementById("input-search").value;
   filterBrand = document.getElementById("input-brand").value;
   filterManufacturer = document.getElementById("input-manufacturer").value;
+  /*
   filterYear = [];
   for (var option of document.getElementById("input-year").options) {
       if (option.selected) {
           filterYear.push(option.value);
       }
   }
+  */
   filterConstruction = document.getElementById("input-construction").value;
   filterStyle = document.getElementById("input-style").value;
   filterDiameter = [];
@@ -188,7 +190,7 @@ function applyFilter() {
     //matchSearch = true;
     matchBrand = true;
     matchManufacturer = true;
-    matchYear = false;
+    //matchYear = false;
     matchConstruction = true;
     matchStyle = true;
     matchSize = false;
@@ -209,12 +211,14 @@ function applyFilter() {
     }
     
     //matchYear
+    /*
     for (let j = 0; j < filterYear.length; j++) {
       if ((filterYear[j] >= dataset[i].year_start && filterYear[j] <= dataset[i].year_end) || !filterYear[j]) {
         matchYear = true;
         break;
       }
     }
+    */
     
     //matchConstruction
     if (filterConstruction && dataset[i].construction != filterConstruction) {
@@ -241,7 +245,7 @@ function applyFilter() {
     }
     
     //add matches to index list
-    if (matchBrand && matchManufacturer && matchYear && matchConstruction && matchStyle && matchSize) {
+    if (matchBrand && matchManufacturer && matchConstruction && matchStyle && matchSize) {
       filterIndexes.push(i);
     }
   }
