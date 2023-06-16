@@ -59,9 +59,10 @@ input, option, select {
 
 input,
 select {
-  background: rgb(var(--color-background-02));
+  background-color: rgb(var(--color-background-02));
   border-radius: var(--radius);
   /*border: 1px solid rgba(var(--color-text),0.2);*/
+  border: none;
   /*box-shadow: var(--shadow);*/
   padding: 1ch;
 }
