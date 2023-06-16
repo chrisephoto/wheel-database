@@ -147,10 +147,9 @@ function populateDetails(i) {
   document.getElementById('wheel-details').classList = 'open';
   
   title = 'Wheel Database - ' + dataset[i].shortname;
-  id = dataset[i].id;
-  
-  var url = window.location.href;
-  url.searchParams.set('id', id);
+
+  var url = new URL(document.location);
+  url.searchParams.set('id', dataset[i].id);
 
   console.log(title);
   console.log(url);
