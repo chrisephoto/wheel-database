@@ -28,6 +28,7 @@
 /* element styles */
 
 h2 {
+  color: var(--color-text);
   font-size: 1rem;
   font-weight: bold;
   margin: 0;
@@ -71,6 +72,7 @@ select {
   /*border: 1px solid rgba(var(--color-text),0.2);*/
   border: none;
   /*box-shadow: var(--shadow);*/
+  color: var(--color-text);
   padding: 1ch;
 }
 
