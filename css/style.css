@@ -3,6 +3,7 @@
 @import url("https://fonts.googleapis.com/icon?family=Material+Icons");
 
 :root {
+  --padding: 2rem;
   --radius: 7px;
 }
 
@@ -42,7 +43,7 @@ body:has(#wheel-details.open) {
 footer {
   font-size: 0.8rem;
   opacity: 0.8;
-  padding: 2rem;
+  padding: var(--padding);
   text-align: center;
 }
 
@@ -50,7 +51,7 @@ header {
   box-shadow: var(--shadow);
   display: none;
   font-weight: 600;
-  padding: 2rem;
+  padding: var(--padding);
 }
 
 input, option, select {
@@ -71,7 +72,7 @@ input[type="reset"] {
   background: rgb(var(--color-background-01));
   color: rgb(var(--color-text));
   cursor: pointer;
-  margin-top: 1rem;
+  margin-top: calc(var(--padding) / 2);
 }
 
 input[type="button"] {
@@ -79,13 +80,13 @@ input[type="button"] {
   border: none;
   color: rgb(var(--color-background-01));
   cursor: pointer;
-  margin-top: 1rem;
+  margin-top: calc(var(--padding) / 2);
 }
 
 label {
   display: block;
   font-size: 0.8rem;
-  margin-top: 1rem;
+  margin-top: calc(var(--padding) / 2);
   user-select: none;
 }
 
@@ -154,10 +155,10 @@ th {
   background: rgb(var(--color-background-01));
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: var(--padding);
   opacity: 0;
   overflow-y: auto;
-  padding: 2rem;
+  padding: var(--padding);
   pointer-events: none;
   position: fixed;
     bottom: 0;
@@ -189,7 +190,7 @@ th {
 }
 
 #wheel-filters {
-  padding: 2rem 2rem 0 2rem;
+  padding: var(--padding) var(--padding) 0 var(--padding);
 }
 
 #wheel-filters input,
@@ -202,7 +203,7 @@ th {
 #wheel-images {
   display: grid;
   height: fit-content;
-  gap: 2rem;
+  gap: calc(var(--padding) / 2);
   grid-template-columns: repeat(auto-fit, minmax(12ch, 1fr));
 }
 
@@ -227,7 +228,7 @@ th {
 
 #wheel-info,
 #wheel-specs {
-  margin-bottom: 2rem;
+  margin-bottom: var(--padding);
   width: 100%;
 }
 
@@ -246,7 +247,7 @@ th {
 }
 
 #wheel-info-description {
-  margin: 0 0 2rem 0;
+  margin: 0 0 var(--padding) 0;
 }
 
 #wheel-specs td {
@@ -256,10 +257,10 @@ th {
 #wheel-list {
   display: grid;
   flex-grow: 1;
-  gap: 2rem;
+  gap: calc(var(--padding) / 2);
   grid-template-columns: repeat(auto-fill,minmax(15ch,1fr));
   height: fit-content;
-  padding: 2rem;
+  padding: var(--padding);
 }
 
 #wheel-list figure {
