@@ -317,8 +317,8 @@ th {
     flex-direction: row;
   }
   #wheel-filters {
-    padding: 2rem;
-    width: 25ch;
+    flex: 0 0 25ch;
+    padding: var(--padding) 0 var(--padding) var(--padding);
   }
   #wheel-details {
     flex-direction: row;
