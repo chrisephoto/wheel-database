@@ -147,8 +147,14 @@ function populateDetails(i) {
   document.getElementById('wheel-details').classList = 'open';
   
   title = 'Wheel Database - ' + dataset[i].shortname;
+  var url = window.location.href;
+  url.searchParams.set('uid', dataset[i].id);
+
+  console.log(title);
+  console.log(url);
+  
   let stateObj = { id: "100" }
-  window.history.pushState(stateObj, title, "/?uid=" + dataset[i].id);
+  window.history.pushState(stateObj, title, url);
   
 }
 
