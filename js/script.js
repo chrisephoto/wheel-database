@@ -153,7 +153,8 @@ function closeDetails() {
   
   //clear details from modal
   setTimeout(function(){
-    const images = document.querySelectorAll('#wheel-details img');
+    document.querySelector('#wheel-details-hero img').remove()
+    const images = document.querySelectorAll('#wheel-images a');
     images.forEach(images => {
       images.remove();
     });
