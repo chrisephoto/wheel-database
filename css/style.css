@@ -103,7 +103,7 @@ input[type="reset"] {
   background: rgb(var(--color-background-02));
   color: rgb(var(--color-text));
   cursor: pointer;
-  margin-top: calc(var(--padding) / 2);
+  grid-column: 1/-1;
   transition: background-color 0.2s;
 }
 
@@ -116,7 +116,7 @@ input[type="button"] {
   border: none;
   color: rgb(var(--color-background-01));
   cursor: pointer;
-  margin-top: calc(var(--padding) / 2);
+  grid-column: 1/-1;
   transition: background-color 0.2s;
 }
 
@@ -127,7 +127,6 @@ input[type="button"]:hover {
 label {
   display: block;
   font-size: 0.8rem;
-  margin-top: calc(var(--padding) / 2);
   user-select: none;
 }
 
@@ -271,6 +270,13 @@ tr:hover th {
 
 #wheel-filters {
   padding: var(--padding) var(--padding) 0 var(--padding);
+}
+
+#wheel-filters form {
+  align-items: baseline;
+  display: grid;
+  gap: calc(var(--padding) / 2);
+  grid-template-columns: auto 1fr;
 }
 
 #wheel-filters input,
