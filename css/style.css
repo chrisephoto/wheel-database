@@ -14,7 +14,7 @@
   --color-background-02: 24,26,28;
   --color-background-03: 36,37,39;
   --color-text: 255,255,255;
-  --shadow: 0 6px 12px rgba(0,0,0,0.35);
+  --shadow: 0 4px 12px rgba(0,0,0,0.35), 0 0 1px 1px rgba(0,0,0,0.23);
 }
 
 .theme-light {
@@ -24,7 +24,7 @@
   --color-background-02: 241,241,241;
   --color-background-03: 225,225,225;
   --color-text: 38,50,56;
-  --shadow: 0 6px 12px rgba(0,0,0,0.15);
+  --shadow: 0 4px 12px rgba(0,0,0,0.15), 0 0 1px 1px rgba(0,0,0,0.1);
 }
 
 /* element styles */
@@ -88,7 +88,7 @@ select {
   border-radius: var(--radius);
   /*border: 1px solid rgba(var(--color-text),0.2);*/
   border: none;
-  /*box-shadow: var(--shadow);*/
+  box-shadow: var(--shadow);
   color: var(--color-text);
   padding: 1ch;
   transition: background-color 0.2s;
@@ -256,6 +256,7 @@ tr:hover th {
 
 #wheel-details-hero img {
   border-radius: var(--radius);
+  box-shadow: var(--shadow);
   display: block;
   width: 100%;
 }
@@ -340,7 +341,7 @@ tr:hover th {
 #wheel-list figure {
   aspect-ratio: 1.0;
   border-radius: var(--radius);
-  /*box-shadow: var(--shadow);*/
+  box-shadow: var(--shadow);
   margin: 0;
   overflow: hidden;
   position: relative;
