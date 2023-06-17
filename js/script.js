@@ -10,11 +10,14 @@ window.onload=function(){
   const urlParams = new URLSearchParams(queryString);
   const urlId = urlParams.get('id')
   console.log(urlId);
-  for (let i = 0; i < dataset.length; i++) {
-    if (dataset[i].id == urlId) {
-      populateDetails[i]
+
+  setTimeout(function(){
+    for (let i = 0; i < dataset.length; i++) {
+      if (dataset[i].id == urlId) {
+        populateDetails[i]
+      }
     }
-  }
+  }, 1000)
 }
 
 window.onkeydown=function(e){
@@ -145,17 +148,12 @@ function populateDetails(i) {
     image.src = dataset[i].images[j];
   }
   document.getElementById('wheel-details').classList = 'open';
-  
-  title = 'Wheel Database - ' + dataset[i].shortname;
+  document.title = 'Wheel Database - ' + dataset[i].shortname;
 
   var url = new URL(document.location);
-  url.searchParams.set('id', dataset[i].id);
-
-  console.log(title);
-  console.log(url);
-  
+  url.searchParams.set('id', dataset[i].id);  
   let stateObj = { id: "100" }
-  window.history.pushState(stateObj, title, url);
+  window.history.pushState(stateObj, document.title, url);
   
 }
 
@@ -176,6 +174,10 @@ function closeDetails() {
     });
   }, 200)
   document.title = 'Wheel Database';
+  
+  var url = new URL(window.location.href.split('?')[0]);
+  let stateObj = { id: "100" }
+  window.history.pushState(stateObj, document.title, url);
 }
 
 function applyFilter() {
