@@ -67,7 +67,7 @@ body:has(#wheel-details.open) {
 footer {
   font-size: 0.8rem;
   opacity: 0.8;
-  padding: var(--padding);
+  padding: 0 0 calc(var(--padding) / 2) 0;
   text-align: center;
 }
 
