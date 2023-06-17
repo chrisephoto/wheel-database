@@ -1,4 +1,6 @@
 # Codebase changes and updates
+* History states and forward/backward navigation
+* Add filter params to URL?
 * Update terminology to match ISO 3911
 * Determine how to handle 2/3pc welded construction
 * Determine how to handle rebadges
