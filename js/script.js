@@ -22,7 +22,7 @@ window.onkeydown=function(e){
 }
 
 document.addEventListener('click', event => {
-  if (document.getElementById('wheel-details').classList.contains('open')) {
+  if(document.getElementById('wheel-details').classList.contains('open')) {
     const validClick1 = document.getElementById('wheel-details').contains(event.target)
     const validClick2 = document.getElementById('wheel-list').contains(event.target)
     if (!validClick1 && !validClick2) {
