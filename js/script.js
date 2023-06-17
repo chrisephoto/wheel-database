@@ -6,19 +6,13 @@ window.onload=function(){
     populateGrid(i)
   }
   const queryString = window.location.search;
-  console.log(queryString);
   const urlParams = new URLSearchParams(queryString);
   const urlId = urlParams.get('id')
-  console.log(urlId);
-
-  setTimeout(function(){
-    for (let i = 0; i < dataset.length; i++) {
-      if (dataset[i].id == urlId) {
-        console.log(i)
-        populateDetails[i]
-      }
+  for (let i = 0; i < dataset.length; i++) {
+    if (dataset[i].id == urlId) {
+      populateDetails(i);
     }
-  }, 10000)
+  }
 }
 
 window.onkeydown=function(e){
@@ -151,10 +145,10 @@ function populateDetails(i) {
   document.getElementById('wheel-details').classList = 'open';
   document.title = 'Wheel Database - ' + dataset[i].shortname;
 
-  var url = new URL(document.location);
-  url.searchParams.set('id', dataset[i].id);  
+  var queryString = new URL(document.location);
+  queryString.searchParams.set('id', dataset[i].id);  
   let stateObj = { id: "100" }
-  window.history.pushState(stateObj, document.title, url);
+  window.history.pushState(stateObj, document.title, queryString);
   
 }
 
@@ -176,9 +170,9 @@ function closeDetails() {
   }, 200)
   document.title = 'Wheel Database';
   
-  var url = new URL(window.location.href.split('?')[0]);
+  var queryString = new URL(window.location.href.split('?')[0]);
   let stateObj = { id: "100" }
-  window.history.pushState(stateObj, document.title, url);
+  window.history.pushState(stateObj, document.title, queryString);
 }
 
 function applyFilter() {
