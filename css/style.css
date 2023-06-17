@@ -125,7 +125,7 @@ input[type="button"]:hover {
 }
 
 label {
-  display: block;
+  display: none; /* block */
   font-size: 0.8rem;
   user-select: none;
 }
