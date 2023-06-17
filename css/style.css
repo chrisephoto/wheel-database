@@ -73,8 +73,21 @@ footer {
 
 header {
   box-shadow: var(--shadow);
+  display: flex;
   font-weight: 600;
   padding: var(--padding);
+}
+
+header #page-title {
+  flex: 1 0 0;
+  font-size: 1.44rem;
+  margin: 0;
+}
+
+header .material-icons {
+  flex: 0 0 0;
+  margin-left: 1rem;
+  user-select: none;
 }
 
 input, option, select {
