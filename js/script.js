@@ -1,6 +1,7 @@
 // event listeners
 window.onload=function(){
   document.getElementById('wheel-details-close').addEventListener('click', closeDetails);
+  document.getElementById('theme-toggle').addEventListener('click', toggleTheme);
   populateFilters();
   for (let i = 0; i < dataset.length; i++) {
     populateGrid(i)
@@ -164,6 +165,17 @@ function closeDetails() {
     });
   }, 200)
   document.title = 'Wheel Database';
+}
+
+function toggleTheme() {
+  if(document.querySelector('body').classList.contains('theme-light')) {
+    document.querySelector('body').classList = 'theme-dark';
+    document.getElementById('theme-toggle').innerHTML = 'light_mode';
+  }
+  else {
+    document.querySelector('body').classList = 'theme-light';
+    document.getElementById('theme-toggle').innerHTML = 'dark_mode';
+  }
 }
 
 function applyFilter() {
