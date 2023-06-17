@@ -23,7 +23,7 @@ window.onkeydown=function(e){
 
 window.onpopstate = function(event) {
   if(event.originalEvent.state!=null){
-    if (document.getElementById('wheel-details').classList.contains('open') {
+    if(document.getElementById('wheel-details').classList.contains('open')) {
       closeDetails();
     }
     else {
