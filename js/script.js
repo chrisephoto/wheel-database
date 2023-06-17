@@ -146,9 +146,8 @@ function populateDetails(i) {
   document.title = 'Wheel Database - ' + dataset[i].shortname;
 
   var queryString = new URL(document.location);
-  queryString.searchParams.set('id', dataset[i].id);  
-  let stateObj = { id: "100" }
-  window.history.pushState(stateObj, document.title, queryString);
+  queryString.searchParams.set('id', dataset[i].id);
+  window.history.pushState(null, "", queryString);
   
 }
 
@@ -171,8 +170,7 @@ function closeDetails() {
   document.title = 'Wheel Database';
   
   var queryString = new URL(window.location.href.split('?')[0]);
-  let stateObj = { id: "100" }
-  window.history.pushState(stateObj, document.title, queryString);
+  window.history.pushState(null, "", queryString);
 }
 
 function applyFilter() {
