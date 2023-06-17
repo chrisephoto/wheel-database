@@ -22,18 +22,16 @@ window.onkeydown=function(e){
 }
 
 window.onpopstate = function(event) {
-  if(event.originalEvent.state!=null){
-    if(document.getElementById('wheel-details').classList.contains('open')) {
-      closeDetails();
-    }
-    else {
-      const queryString = window.location.search;
-      const urlParams = new URLSearchParams(queryString);
-      const urlId = urlParams.get('id')
-      for (let i = 0; i < dataset.length; i++) {
-        if (dataset[i].id == urlId) {
-          populateDetails(i);
-        }
+  if(document.getElementById('wheel-details').classList.contains('open')) {
+    closeDetails();
+  }
+  else {
+    const queryString = window.location.search;
+    const urlParams = new URLSearchParams(queryString);
+    const urlId = urlParams.get('id')
+    for (let i = 0; i < dataset.length; i++) {
+      if (dataset[i].id == urlId) {
+        populateDetails(i);
       }
     }
   }
