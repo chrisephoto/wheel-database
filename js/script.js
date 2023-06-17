@@ -13,14 +13,12 @@ window.onload=function(){
 
   setTimeout(function(){
     for (let i = 0; i < dataset.length; i++) {
-      console.log("checked")
       if (dataset[i].id == urlId) {
-        console.log("matched")
-        console.log(dataset[i].shortname)
+        console.log(i)
         populateDetails[i]
       }
     }
-  }, 1000)
+  }, 10000)
 }
 
 window.onkeydown=function(e){
