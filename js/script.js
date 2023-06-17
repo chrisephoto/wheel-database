@@ -31,6 +31,17 @@ document.addEventListener('click', event => {
   }
 })
 
+window.onpopstate = function(event) {
+  const queryString = window.location.search;
+  const urlParams = new URLSearchParams(queryString);
+  const urlId = urlParams.get('id')
+  for (let i = 0; i < dataset.length; i++) {
+    if (dataset[i].id == urlId) {
+      populateDetails(i);
+    }
+  }
+}
+
 // functions
 function populateFilters() {
   for (let i = 0; i < filters.brand.length; i++) {
