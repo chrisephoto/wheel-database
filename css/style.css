@@ -277,7 +277,7 @@ tr:hover th {
   align-items: baseline;
   display: grid;
   gap: calc(var(--padding) / 2);
-  grid-template-columns: auto 1fr;
+  grid-template-columns: 1fr;
 }
 
 #wheel-filters input,
