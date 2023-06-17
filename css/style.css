@@ -8,7 +8,8 @@
 }
 
 .theme-dark {
-  --color-accent: 255,89,89;
+  --color-accent-01: 255,89,89;
+  --color-accent-02: 229,57,53;
   --color-background-01: 14,15,17;
   --color-background-02: 24,26,28;
   --color-background-03: 36,37,39;
@@ -17,7 +18,8 @@
 }
 
 .theme-light {
-  --color-accent: 229,57,53;
+  --color-accent-01: 229,57,53;
+  --color-accent-02: 255,89,89;
   --color-background-01: 255,255,255;
   --color-background-02: 241,241,241;
   --color-background-03: 225,225,225;
@@ -28,12 +30,12 @@
 /* element styles */
 
 a {
-  color: rgba(var(--color-accent),1.0);
+  color: rgba(var(--color-accent-01),1.0);
   transition: color 0.2s;
 }
 
 a:hover {
-  color: rgba(var(--color-accent),0.7);
+  color: rgba(var(--color-accent-01),0.7);
 }
 
 h1 {
@@ -91,6 +93,11 @@ select {
   padding: 1ch;
 }
 
+input:hover,
+select:hover {
+  background-color: rgb(var(--color-background-03));
+}
+
 input[type="reset"] {
   background: rgb(var(--color-background-02));
   color: rgb(var(--color-text));
@@ -98,12 +105,20 @@ input[type="reset"] {
   margin-top: calc(var(--padding) / 2);
 }
 
+input[type="reset"]:hover {
+  background-color: rgb(var(--color-background-03));
+}
+
 input[type="button"] {
-  background: rgb(var(--color-accent));
+  background: rgb(var(--color-accent-01));
   border: none;
   color: rgb(var(--color-background-01));
   cursor: pointer;
   margin-top: calc(var(--padding) / 2);
+}
+
+input[type="button"]:hover {
+  background-color: rgb(var(--color-accent-02));
 }
 
 label {
@@ -330,10 +345,10 @@ tr:hover th {
 
 #wheel-list figure figcaption {
   align-items: center;
-  background: rgba(var(--color-accent),0.9);
-  /*border: 2px solid var(--color-accent);*/
+  background: rgba(var(--color-accent-01),0.9);
+  /*border: 2px solid var(--color-accent-01);*/
   /*border-radius: calc(var(--radius) + 1px);*/
-  box-shadow: 0 0 0 10px var(--color-accent);
+  box-shadow: 0 0 0 10px var(--color-accent-01);
   color: rgb(var(--color-background-01));
   cursor: pointer;
   display: flex;
