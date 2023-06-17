@@ -25,16 +25,6 @@ window.onpopstate = function(event) {
   if(document.getElementById('wheel-details').classList.contains('open')) {
     closeDetails();
   }
-  else {
-    const queryString = window.location.search;
-    const urlParams = new URLSearchParams(queryString);
-    const urlId = urlParams.get('id')
-    for (let i = 0; i < dataset.length; i++) {
-      if (dataset[i].id == urlId) {
-        populateDetails(i);
-      }
-    }
-  }
 }
 
 // functions
@@ -174,9 +164,6 @@ function closeDetails() {
     });
   }, 200)
   document.title = 'Wheel Database';
-  
-  var queryString = new URL(window.location.href.split('?')[0]);
-  window.history.pushState(null, "", queryString);
 }
 
 function applyFilter() {
