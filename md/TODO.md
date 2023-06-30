@@ -42,3 +42,4 @@
 * Carving Stark III (1992 Work)
 * Weds TC05/TC005 (Asahi Tec)
 * Modex KS-CE (TWS)
+* Stern Aguzze S-07 (Hinodex/TWS)
