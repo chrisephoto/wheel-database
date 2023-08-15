@@ -133,7 +133,7 @@ dataset = [
     construction: "1 Piece - Cast",
     style: "Split 6 Spoke",
     link: "http://web.archive.org/web/20050213145059/http://bim-cs.com/products/dhs/ae033/size.html",
-    images: ["images/X7MDK0WHI5JM-01.jpg"],
+    images: ["images/X7MDK0WHI5JM-01.jpg","images/X7MDK0WHI5JM-02.jpg"],
     sizes: [
       {
         diameter: "15",
@@ -255,7 +255,7 @@ dataset = [
     construction: "1 Piece - Cast",
     style: "6 Spoke",
     link: "http://web.archive.org/web/20050213145059/http://bim-cs.com/products/dhs/ae034/size.html",
-    images: ["images/SL7DDCFW05QZ-01.jpg","images/SL7DDCFW05QZ-02.jpg"],
+    images: ["images/SL7DDCFW05QZ-01.jpg","images/SL7DDCFW05QZ-02.jpg","images/SL7DDCFW05QZ-03.jpg","images/SL7DDCFW05QZ-04.jpg"],
     sizes: [
       {
         diameter: "15",
