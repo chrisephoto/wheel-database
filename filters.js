@@ -3,6 +3,7 @@ filters =  {
     "Bee&#8902;R",
     "B.I.M. Creative Studio",
     "Ings",
+    "Revowin",
     "Southern Ways",
     "Starform",
     "Uras"
