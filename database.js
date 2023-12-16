@@ -580,6 +580,79 @@ dataset = [
       }
     ]
   },
+  /* Starform Real Racing Model II */{
+    id: "7AKI6FXXGMUE",
+    shortname: "Starform Real Racing Model II",
+    description: "",
+    brand: "Starform",
+    model: "Real Racing Model II",
+    manufacturer: "TAN-EI-SYA Co., Ltd.",
+    year_start: "Unverified",
+    year_end: "2003",
+    origin: "Japan",
+    construction: "1 Piece - Forged",
+    style: "Split 6 Spoke",
+    link: "http://web.archive.org/web/20040101121118fw_/http://www.starform-jp.com/fr_model2_2.html",
+    images: ["images/7AKI6FXXGMUE-01.jpg"],
+    sizes: [
+      {
+        diameter: "15",
+        width: "7.0",
+        pcd: "4x100",
+        offsets: "+35/+45",
+        colors: "White, Gunmetal, Black"
+      },
+      {
+        diameter: "15",
+        width: "7.0",
+        pcd: "4x114.3",
+        offsets: "+45",
+        colors: "White, Gunmetal, Black"
+      },
+      {
+        diameter: "15",
+        width: "7.0",
+        pcd: "5x114.3",
+        offsets: "+35/+45",
+        colors: "White, Gunmetal, Black"
+      },
+      {
+        diameter: "17",
+        width: "7.5",
+        pcd: "4x114.3",
+        offsets: "+32/+45",
+        colors: "White, Gunmetal, Black"
+      },
+      {
+        diameter: "17",
+        width: "7.5",
+        pcd: "5x100",
+        offsets: "+32/+45",
+        colors: "White, Gunmetal, Black"
+      },
+      {
+        diameter: "17",
+        width: "7.5",
+        pcd: "5x114.3",
+        offsets: "+30/+38/+45",
+        colors: "White, Gunmetal, Black"
+      },
+      {
+        diameter: "17",
+        width: "8.5",
+        pcd: "5x114.3",
+        offsets: "+30/+38/+45",
+        colors: "White, Gunmetal, Black"
+      },
+      {
+        diameter: "17",
+        width: "9.5",
+        pcd: "5x114.3",
+        offsets: "+38",
+        colors: "White, Gunmetal, Black"
+      }
+    ]
+  },
   /* Starform Real Racing R2 */{
     id: "XEPK9WYCWZ9G",
     shortname: "Starform Real Racing R2",
@@ -658,7 +731,6 @@ dataset = [
         offsets: "+15/+23/+38",
         colors: "White, Gunmetal, Black"
       }
-      
     ]
   },
   /* Revowin PS-05 */{
