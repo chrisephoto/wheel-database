@@ -661,6 +661,51 @@ dataset = [
       
     ]
   },
+  /* Revowin PS-05 */{
+    id: "ZACE9Q0VK89O",
+    shortname: "Revowin PS-05",
+    description: "Manufactured by Tan-ei-sya for Puma Co., Ltd. and sold through Autobacs in Toyama Prefecture. The PS-05 is a rebranded Southern Ways S-05, offered in sizes catering to smaller cars and heavily used in Japanese Motorsports series including: Yaris Cup, All Japan Rally Championship, TGR Rally Challenge, VITA Race Series, and more.",
+    brand: "Revowin",
+    model: "PS-05",
+    manufacturer: "TAN-EI-SYA Co., Ltd.",
+    year_start: "2012",
+    year_end: "Unverified",
+    origin: "Japan",
+    construction: "1 Piece - Forged",
+    style: "Split 5 Spoke",
+    link: "https://www.autobacs-toyama.com/revowin",
+    images: ["images/ZACE9Q0VK89O-01.jpg","images/ZACE9Q0VK89O-02.jpg","images/ZACE9Q0VK89O-03.jpg"],
+    sizes: [
+      {
+        diameter: "15",
+        width: "6.0",
+        pcd: "4x100",
+        offsets: "+39",
+        colors: "Racing White, Silver, Carbon Black , Black, Bronze, Gold, Blue, Red"
+      },
+      {
+        diameter: "15",
+        width: "6.0",
+        pcd: "5x100",
+        offsets: "+35",
+        colors: "Racing White, Silver, Carbon Black , Black, Bronze, Gold, Blue, Red"
+      },
+      {
+        diameter: "15",
+        width: "6.5",
+        pcd: "4x100",
+        offsets: "+37",
+        colors: "Racing White, Silver, Carbon Black , Black, Bronze, Gold, Blue, Red"
+      },
+      {
+        diameter: "15",
+        width: "7.0",
+        pcd: "4x100",
+        offsets: "+35/+48",
+        colors: "Racing White, Silver, Carbon Black , Black, Bronze, Gold, Blue, Red"
+      }
+    ]
+  },
   /* Uras NS-01 */{
     id: "IPL5GT7KH9V1",
     shortname: "Uras NS-01",
