@@ -666,7 +666,7 @@ dataset = [
     construction: "1 Piece - Forged",
     style: "5 Spoke",
     link: "http://web.archive.org/web/20031229230549fw_/http://www.starform-jp.com/fr_R2_2.html",
-    images: ["images/XEPK9WYCWZ9G-01.jpg","images/XEPK9WYCWZ9G-01.jpg"],
+    images: ["images/XEPK9WYCWZ9G-01.jpg","images/XEPK9WYCWZ9G-02.jpg"],
     sizes: [
       {
         diameter: "15",
