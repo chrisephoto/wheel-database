@@ -139,10 +139,10 @@ function populateDetails(i) {
     link.appendChild(image);
     image.src = dataset[i].images[j];
   }
-  if (dataset[i].variants.length > 0) {
+  if (dataset[i].related.length > 0) {
     const container = document.getElementById('wheel-related-container');
     container.classList = '';
-    for (let j = 0; j < dataset[i].variants.length; j++) {
+    for (let j = 0; j < dataset[i].related.length; j++) {
       const target = document.getElementById('wheel-related');
       const link = document.createElement('a');
       const figure = document.createElement('figure');
@@ -150,7 +150,7 @@ function populateDetails(i) {
       const figcaption = document.createElement('figcaption');
       const div = document.createElement('div');
       target.appendChild(link);
-      link.href = '?id=' + dataset[i].variants[j];
+      link.href = '?id=' + dataset[i].related[j];
       link.target = '_blank';
       link.appendChild(figure);
       figure.appendChild(img);
