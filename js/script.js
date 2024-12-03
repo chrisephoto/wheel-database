@@ -140,6 +140,8 @@ function populateDetails(i) {
     image.src = dataset[i].images[j];
   }
   if (dataset[i].variants.length > 0) {
+    const container = document.getElementById('wheel-related-container');
+    container.classList = '';
     for (let j = 0; j < dataset[i].variants.length; j++) {
       const target = document.getElementById('wheel-related');
       const link = document.createElement('a');
@@ -158,9 +160,8 @@ function populateDetails(i) {
     }    
   }
   else {
-    const target = document.getElementById('wheel-related');
-    const text = document.createTextNode('No matching wheels found');
-    target.appendChild(text);
+    const target = document.getElementById('wheel-related-container');
+    target.classList = 'hidden';
   }
   document.getElementById('wheel-details').classList = 'open';
   document.title = 'Wheel Database - ' + dataset[i].shortname;
@@ -182,7 +183,8 @@ function closeDetails() {
     images.forEach(images => {
       images.remove();
     });
-    document.getElementById('wheel-related').innerHTML = '';
+    const related = document.getElementById('wheel-related');
+    related.innerHTML = '';
     const rows = document.querySelectorAll('#wheel-specs tr:not(:first-of-type)');
     rows.forEach(rows => {
       rows.remove();
