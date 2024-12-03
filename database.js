@@ -34,7 +34,7 @@ dataset = [
   /* Bridgestone Down Hill Special ae031 */{
     id: "U4VL4KJ2P2SV",
     shortname: "B.I.M. Down Hill Special ae031",
-    description: "A forged split 6 spoke wheel from Bridgestone's B.I.M Creative Studio. Extremely similar in appearance to the cast ae033 but most easily identified by the small webs between the spokes near the hub section which are absent from the ae033.",
+    description: "A forged split 6 spoke wheel from Bridgestone's B.I.M Creative Studio. Extremely similar in appearance to the cast <a href="?id=X7MDK0WHI5JM">Bridgestone ae033</a> but most easily identified by the small webs between the spokes near the hub section which are absent from the ae033.",
     brand: "B.I.M. Creative Studio",
     model: "Down Hill Special ae031",
     manufacturer: "Unverified",
