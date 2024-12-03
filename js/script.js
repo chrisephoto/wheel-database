@@ -127,6 +127,7 @@ function populateDetails(i) {
       target.appendChild(link);
       if (j < dataset[i].variants.length) {
         target.innerHTML += ", ";
+      }
     }
   }
   else {
