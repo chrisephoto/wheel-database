@@ -9,7 +9,7 @@ window.onload=function(){
     if (parts.length === 2) return parts.pop().split(';').shift();
   }
   const theme = getCookie('theme');
-  console.log(theme);
+  document.querySelector('body').classList = theme;
   
   populateFilters();
   for (let i = 0; i < dataset.length; i++) {
