@@ -339,6 +339,56 @@ tr:hover th {
   margin: 1rem 0;
 }
 
+#wheel-related {
+  display: grid;
+  height: fit-content;
+  gap: calc(var(--padding) / 2);
+  grid-template-columns: repeat(auto-fill, minmax(15ch, 1fr));
+}
+
+#wheel-related figure {
+  aspect-ratio: 1.0;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  margin: 0;
+  overflow: hidden;
+  position: relative;
+}
+
+#wheel-related figure img {
+  display: block;
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+
+#wheel-related figure figcaption {
+  align-items: center;
+  background: rgba(var(--color-accent-01),0.9);
+  /*border: 2px solid var(--color-accent-01);*/
+  /*border-radius: calc(var(--radius) + 1px);*/
+  box-shadow: 0 0 0 10px var(--color-accent-01);
+  color: rgb(var(--color-background-01));
+  cursor: pointer;
+  display: flex;
+  font-weight: 600;
+  justify-content: center;
+  opacity: 0;
+  padding: 1ch;
+  position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+  text-align: center;
+  transition: opacity 0.2s;
+  z-index: 100;
+}
+
+#wheel-related figure:hover figcaption {
+  opacity: 1.0;
+}
+
 #wheel-specs td {
   text-align: center;
 }
