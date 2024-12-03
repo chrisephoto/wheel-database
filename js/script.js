@@ -9,7 +9,9 @@ window.onload=function(){
     if (parts.length === 2) return parts.pop().split(';').shift();
   }
   const theme = getCookie('theme');
-  document.querySelector('body').classList = theme;
+  if (theme == 'theme-dark') {
+    document.querySelector('body').classList = 'theme-dark';
+  }
   
   populateFilters();
   for (let i = 0; i < dataset.length; i++) {
