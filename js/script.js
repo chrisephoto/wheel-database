@@ -124,7 +124,7 @@ function populateDetails(i) {
       target.appendChild(link);
       link.href = "/?id=" + dataset[i].variants[j];
       link.innerHTML += dataset[i].variants[j];
-      target.appendchild(link);
+      target.appendChild(link);
     }
   }
   else {
