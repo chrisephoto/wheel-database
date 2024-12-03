@@ -182,7 +182,7 @@ function closeDetails() {
     images.forEach(images => {
       images.remove();
     });
-    document.getElementById('#wheel-related').innerHTML = '';
+    document.getElementById('wheel-related').innerHTML = '';
     const rows = document.querySelectorAll('#wheel-specs tr:not(:first-of-type)');
     rows.forEach(rows => {
       rows.remove();
