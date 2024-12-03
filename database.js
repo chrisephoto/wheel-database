@@ -29,7 +29,7 @@ dataset = [
         colors: "White, Silver, Bronze, Chrome"
       }
     ],
-    variants: ["U4VL4KJ2P2SV", "SL7DDCFW05QZ"]
+    related: ["U4VL4KJ2P2SV", "SL7DDCFW05QZ"]
   },
   /* Bridgestone Down Hill Special ae031 */{
     id: "U4VL4KJ2P2SV",
@@ -75,7 +75,7 @@ dataset = [
         colors: "Bronze, Gunmetal"
       }
     ],
-    variants: []
+    related: ['X7MDK0WHI5JM']
   },
   /* Bridgestone Down Hill Special ae032 */{
     id: "DV3YB9P4LFDL",
@@ -121,7 +121,7 @@ dataset = [
         colors: "Gunmetal, Gold"
       }
     ],
-    variants: []
+    related: []
   },
   /* Bridgestone Down Hill Special ae033 */{
     id: "X7MDK0WHI5JM",
@@ -244,7 +244,7 @@ dataset = [
         colors: "Bronze, Gunmetal"
       }
     ],
-    variants: []
+    related: []
   },
   /* Bridgestone Down Hill Special ae034 */{
     id: "SL7DDCFW05QZ",
@@ -367,7 +367,7 @@ dataset = [
         colors: "White, Gunmetal"
       }
     ],
-    variants: []
+    related: []
   },
   /* Ings TS06 */{
     id: "T8HREQGJ1TRN",
@@ -455,7 +455,7 @@ dataset = [
         colors: "Silver, Gunmetal"
       }
     ],
-    variants: []
+    related: []
   },
   /* Southern Ways S-05 */{
     id: "XUN1UOX4TSJA",
@@ -585,7 +585,7 @@ dataset = [
         colors: "White, Silver, Gold"
       }
     ],
-    variants: []
+    related: []
   },
   /* Starform Real Racing Model II */{
     id: "7AKI6FXXGMUE",
@@ -659,7 +659,7 @@ dataset = [
         colors: "White, Gunmetal, Black"
       }
     ],
-    variants: []
+    related: []
   },
   /* Starform Real Racing R2 */{
     id: "XEPK9WYCWZ9G",
@@ -740,7 +740,7 @@ dataset = [
         colors: "White, Gunmetal, Black"
       }
     ],
-    variants: []
+    related: []
   },
   /* Revowin PS-05 */{
     id: "ZACE9Q0VK89O",
@@ -786,7 +786,7 @@ dataset = [
         colors: "Racing White, Silver, Carbon Black , Black, Bronze, Gold, Blue, Red"
       }
     ],
-    variants: []
+    related: []
   },
   /* Uras NS-01 */{
     id: "IPL5GT7KH9V1",
@@ -825,7 +825,7 @@ dataset = [
         colors: "Silver, Black, Chrome"
       }
     ],
-    variants: []
+    related: []
   },
   /* Uras NS-02 */ {
     id: "214UPUFONY13",
@@ -857,7 +857,7 @@ dataset = [
         colors: "Chrome"
       }
     ],
-    variants: []
+    related: []
   }
   /* Template
   {
@@ -883,7 +883,7 @@ dataset = [
         colors: ""
       }
     ],
-    variants: []
+    related: []
   },
   */
 ];
