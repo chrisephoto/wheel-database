@@ -256,11 +256,12 @@ tr:hover th {
 }
 
 #wheel-details-header {
-  align-items: end;
+  align-items: center;
   display: flex;
   flex-direction: column;
   gap: var(--padding);
   margin-bottom: var(--padding);
+  text-align: center;
 }
 
 #wheel-details-hero {
@@ -451,7 +452,9 @@ tr:hover th {
     flex-direction: row;
   }
   #wheel-details-header {
+    align-items: end;
     flex-direction: row;
+    text-align: left;
   }
   #wheel-details-hero {
     width: 300px;
