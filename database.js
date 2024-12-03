@@ -28,7 +28,8 @@ dataset = [
         offsets: "+25/+38",
         colors: "White, Silver, Bronze, Chrome"
       }
-    ]
+    ],
+    variants: ["U4VL4KJ2P2SV", "SL7DDCFW05QZ"]
   },
   /* Bridgestone Down Hill Special ae031 */{
     id: "U4VL4KJ2P2SV",
