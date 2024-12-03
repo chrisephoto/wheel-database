@@ -118,11 +118,13 @@ function populateDetails(i) {
   document.getElementById('wheel-info-construction').innerHTML = dataset[i].construction;
   document.getElementById('wheel-info-style').innerHTML = dataset[i].style;
   if (dataset[i].variants.length > 0) {
+    document.getElementById('wheel-info-variants').innerHTML = "";
     for (let j = 0; j < dataset[i].variants.length; j++) {
       const target = document.getElementById('wheel-info-variants');
       const link = document.createElement('a');
       target.appendChild(link);
       link.href = "?id=" + dataset[i].variants[j];
+      link.target = '_blank';
       link.innerHTML += dataset[i].variants[j];
       target.appendChild(link);
       if (j < dataset[i].variants.length - 1) {
