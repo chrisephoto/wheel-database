@@ -2,8 +2,15 @@
 window.onload=function(){
   document.getElementById('wheel-details-close').addEventListener('click', closeDetails);
   document.getElementById('theme-toggle').addEventListener('click', toggleTheme);
+
+  function getCookie(name) {
+    const value = `; ${document.cookie}`;
+    const parts = value.split(`; ${name}=`);
+    if (parts.length === 2) return parts.pop().split(';').shift();
+  }
   const theme = getCookie('theme');
   console.log(theme);
+  
   populateFilters();
   for (let i = 0; i < dataset.length; i++) {
     populateGrid(i)
