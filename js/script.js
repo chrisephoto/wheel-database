@@ -122,9 +122,11 @@ function populateDetails(i) {
       const target = document.getElementById('wheel-info-variants');
       const link = document.createElement('a');
       target.appendChild(link);
-      link.href = "/?id=" + dataset[i].variants[j];
+      link.href = "?id=" + dataset[i].variants[j];
       link.innerHTML += dataset[i].variants[j];
       target.appendChild(link);
+      if (j < dataset[i].variants.length) {
+        target.innerHTML += ", ";
     }
   }
   else {
