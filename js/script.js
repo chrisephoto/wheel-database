@@ -2,6 +2,8 @@
 window.onload=function(){
   document.getElementById('wheel-details-close').addEventListener('click', closeDetails);
   document.getElementById('theme-toggle').addEventListener('click', toggleTheme);
+  const theme = getCookie('theme');
+  console.log(theme);
   populateFilters();
   for (let i = 0; i < dataset.length; i++) {
     populateGrid(i)
