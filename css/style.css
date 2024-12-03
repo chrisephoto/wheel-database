@@ -306,6 +306,7 @@ tr:hover th {
   height: fit-content;
   gap: calc(var(--padding) / 2);
   grid-template-columns: repeat(auto-fill, minmax(15ch, 1fr));
+  margin-bottom: var(--padding);
 }
 
 #wheel-images img {
