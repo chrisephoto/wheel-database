@@ -448,6 +448,10 @@ tr:hover th {
   opacity: 1.0;
 }
 
+.hidden {
+  display: none;
+}
+
 @media (orientation:landscape) {
   main {
     flex-direction: row;
