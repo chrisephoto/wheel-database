@@ -1,8 +1,9 @@
-// event listeners
 window.onload=function(){
+  // event listeners
   document.getElementById('wheel-details-close').addEventListener('click', closeDetails);
   document.getElementById('theme-toggle').addEventListener('click', toggleTheme);
 
+  // check for theme setting and update theme
   function getCookie(name) {
     const value = `; ${document.cookie}`;
     const parts = value.split(`; ${name}=`);
@@ -12,11 +13,16 @@ window.onload=function(){
   if (theme == 'theme-dark') {
     document.querySelector('body').classList = 'theme-dark';
   }
-  
+
+  // populate filters
   populateFilters();
+
+  // populate main wheel grid
   for (let i = 0; i < dataset.length; i++) {
     populateGrid(i)
   }
+
+  // check link for wheel details and open
   const queryString = window.location.search;
   const urlParams = new URLSearchParams(queryString);
   const urlId = urlParams.get('id')
@@ -154,20 +160,24 @@ function populateDetails(i) {
     const container = document.getElementById('wheel-related-container');
     container.classList = '';
     for (let j = 0; j < dataset[i].related.length; j++) {
-      const target = document.getElementById('wheel-related');
-      const link = document.createElement('a');
-      const figure = document.createElement('figure');
-      const img = document.createElement('img');
-      const figcaption = document.createElement('figcaption');
-      const div = document.createElement('div');
-      target.appendChild(link);
-      link.href = '?id=' + dataset[i].related[j];
-      link.target = '_blank';
-      link.appendChild(figure);
-      figure.appendChild(img);
-      img.src = dataset[i].images[0];
-      figure.appendChild(figcaption);
-      figcaption.innerHTML = dataset[i].shortname;
+      for (let k = 0; k < dataset.length; k++) {
+        if (dataset[k].id == dataset[i].related[j]) {
+          const target = document.getElementById('wheel-related');
+          const link = document.createElement('a');
+          const figure = document.createElement('figure');
+          const img = document.createElement('img');
+          const figcaption = document.createElement('figcaption');
+          const div = document.createElement('div');
+          target.appendChild(link);
+          link.href = '?id=' + dataset[i].related[j];
+          link.target = '_blank';
+          link.appendChild(figure);
+          figure.appendChild(img);
+          img.src = dataset[k].images[0];
+          figure.appendChild(figcaption);
+          figcaption.innerHTML = dataset[k].shortname;
+        }
+      }
     }    
   }
   else {
