@@ -117,13 +117,19 @@ function populateDetails(i) {
   document.getElementById('wheel-info-origin').innerHTML = dataset[i].origin;
   document.getElementById('wheel-info-construction').innerHTML = dataset[i].construction;
   document.getElementById('wheel-info-style').innerHTML = dataset[i].style;
-  for (let j = 0; j < dataset[i].variants.length; j++) {
+  if (dataset[i].variants.length > 0) {
+    for (let j = 0; j < dataset[i].variants.length; j++) {
+      const target = document.getElementById('wheel-info-variants');
+      const link = document.createElement('a');
+      target.appendChild(link);
+      link.href = "/?id=" + dataset[i].variants[j];
+      link.innerHTML += dataset[i].variants[j];
+      target.appendchild(link);
+    }
+  }
+  else {
     const target = document.getElementById('wheel-info-variants');
-    const link = document.createElement('a');
-    target.appendChild(link);
-    link.href = "/?id=" + dataset[i].variant[j];
-    link.innerHTML += dataset[i].variants[j];
-    target.appendchild(link);
+    target.innerHTML = "None";
   }
   document.querySelector('#wheel-info-link a').href = dataset[i].link;
   for (let j = 0; j < dataset[i].sizes.length; j++) {
