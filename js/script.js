@@ -197,10 +197,12 @@ function toggleTheme() {
   if(document.querySelector('body').classList.contains('theme-light')) {
     document.querySelector('body').classList = 'theme-dark';
     document.getElementById('theme-toggle').innerHTML = 'light_mode';
+    document.cookie = 'theme=theme-dark';
   }
   else {
     document.querySelector('body').classList = 'theme-light';
     document.getElementById('theme-toggle').innerHTML = 'dark_mode';
+    document.cookie = 'theme=theme-light';
   }
 }
 
