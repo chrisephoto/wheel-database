@@ -60,6 +60,7 @@ body {
 }
 
 body:has(#wheel-details.open) {
+  overflow: hidden;
   pointer-events: none;
   user-select: none;
 }
