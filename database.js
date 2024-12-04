@@ -1,9 +1,9 @@
 dataset = [
   /* Bee R B5 */{
     id: "0YDS9EBJLVAB",
-    shortname: "Bee&starf;R B5",
+    shortname: "Bee★R B5",
     description: "Dual valvestem. Nismo LMGT4 style.",
-    brand: "Bee&starf;R",
+    brand: "Bee★R",
     model: "B5",
     manufacturer: "Unverified",
     year_start: "Unverified",
