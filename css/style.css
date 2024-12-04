@@ -269,6 +269,7 @@ tr:hover th {
   align-items: center;
   background: rgb(var(--color-background-02));
   border-radius: var(--radius);
+  box-shadow: var(--shadow);
   display: flex;
   flex-direction: column;
   gap: 0 var(--padding);
@@ -331,6 +332,7 @@ tr:hover th {
 
 #wheel-info,
 #wheel-specs {
+  box-shadow: var(--shadow);
   margin-bottom: var(--padding);
   width: 100%;
 }
