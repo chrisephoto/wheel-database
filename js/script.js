@@ -170,7 +170,6 @@ function populateDetails(i) {
           const div = document.createElement('div');
           target.appendChild(link);
           link.href = '?id=' + dataset[i].related[j];
-          link.target = '_blank';
           link.appendChild(figure);
           figure.appendChild(img);
           img.src = dataset[k].images[0];
