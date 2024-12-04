@@ -2,7 +2,7 @@ dataset = [
   /* Bee R B5 */{
     id: "0YDS9EBJLVAB",
     shortname: "Bee★R B5",
-    description: "Dual valvestem. Nismo LMGT4 style.",
+    description: "",
     brand: "Bee★R",
     model: "B5",
     manufacturer: "Unverified",
@@ -11,8 +11,8 @@ dataset = [
     origin: "Unverified",
     construction: "1 Piece - Cast",
     style: "5 Spoke",
-    link: "http://web.archive.org/web/20100116090507/http://www.bee-r.com/main/parts/wheel/index.htm",
-    images: ["http://web.archive.org/web/20100116090507im_/http://www.bee-r.com/main/parts/wheel/photo/wheelgold01.jpg"],
+    link: "https://web.archive.org/web/20100116090507/http://www.bee-r.com/main/parts/wheel/index.htm",
+    images: ["images/0YDS9EBJLVAB-01.jpg"],
     sizes: [
       {
         diameter: "17",
@@ -43,7 +43,7 @@ dataset = [
     origin: "Unverified",
     construction: "1 Piece - Forged",
     style: "Split 6 Spoke",
-    link: "http://web.archive.org/web/20050213145059/http://bim-cs.com/products/dhs/ae031/size.html",
+    link: "https://web.archive.org/web/20050213145059/http://bim-cs.com/products/dhs/ae031/size.html",
     images: ["images/U4VL4KJ2P2SV-01.jpg","images/U4VL4KJ2P2SV-02.jpg"],
     sizes: [
       {
@@ -89,7 +89,7 @@ dataset = [
     origin: "Unverified",
     construction: "1 Piece - Forged",
     style: "6 Spoke",
-    link: "http://web.archive.org/web/20050213145059/http://bim-cs.com/products/dhs/ae032/size.html",
+    link: "https://web.archive.org/web/20050213145059/http://bim-cs.com/products/dhs/ae032/size.html",
     images: ["images/DV3YB9P4LFDL-01.jpg","images/DV3YB9P4LFDL-02.jpg"],
     sizes: [
       {
@@ -135,7 +135,7 @@ dataset = [
     origin: "Japan",
     construction: "1 Piece - Cast",
     style: "Split 6 Spoke",
-    link: "http://web.archive.org/web/20050213145059/http://bim-cs.com/products/dhs/ae033/size.html",
+    link: "https://web.archive.org/web/20050213145059/http://bim-cs.com/products/dhs/ae033/size.html",
     images: ["images/X7MDK0WHI5JM-01.jpg","images/X7MDK0WHI5JM-02.jpg"],
     sizes: [
       {
@@ -258,7 +258,7 @@ dataset = [
     origin: "Japan",
     construction: "1 Piece - Cast",
     style: "6 Spoke",
-    link: "http://web.archive.org/web/20050213145059/http://bim-cs.com/products/dhs/ae034/size.html",
+    link: "https://web.archive.org/web/20050213145059/http://bim-cs.com/products/dhs/ae034/size.html",
     images: ["images/SL7DDCFW05QZ-01.jpg","images/SL7DDCFW05QZ-02.jpg","images/SL7DDCFW05QZ-03.jpg","images/SL7DDCFW05QZ-04.jpg"],
     sizes: [
       {
@@ -381,7 +381,7 @@ dataset = [
     origin: "Japan",
     construction: "1 Piece - Forged",
     style: "Split 6 Spoke",
-    link: "https://www.ings-net.com/english/products/wheel.html",
+    link: "https://web.archive.org/web/20231001182932/www.ings-net.com/english/products/wheel.html",
     images: ["images/T8HREQGJ1TRN-01.jpg","images/T8HREQGJ1TRN-02.jpg","images/T8HREQGJ1TRN-03.jpg","images/T8HREQGJ1TRN-04.jpg","images/T8HREQGJ1TRN-05.jpg"],
     sizes: [
       {
@@ -460,7 +460,7 @@ dataset = [
   /* Southern Ways S-05 */{
     id: "XUN1UOX4TSJA",
     shortname: "Southern Ways S-05",
-    description: "Manufactured by Tan-ei-sya and sold by its subsidiary ijak under the Southern Way brand until their rebrand in 2008 to TWS. The S-05 implemented wheel design and manufacturing technology that Tan-ei-sya developed while making wheels for F1 resulting in an incredibly strong and lightweight wheel that was widely used across many race series in Japan. This wheel was also sold in additional sizes as the Car Life Revolution K-One K-01.",
+    description: "Manufactured by Tan-ei-sya and sold by its subsidiary ijak under the Southern Way brand until their rebrand in 2008 to TWS. The S-05 implemented wheel design and manufacturing technology that Tan-ei-sya developed while making wheels for F1 resulting in an incredibly strong and lightweight wheel that was widely used across many race series in Japan. This wheel has been sold by numerous other brands - including Car Life Revolution K-One K-01 and Revowin PS-05.",
     brand: "Southern Ways",
     model: "S-05",
     manufacturer: "TAN-EI-SYA Co., Ltd.",
@@ -469,7 +469,7 @@ dataset = [
     origin: "Japan",
     construction: "1 Piece - Forged",
     style: "Split 5 Spoke",
-    link: "http://web.archive.org/web/20060509014028/http://www.ijak.co.jp/HPcatalog/s05size.html",
+    link: "https://web.archive.org/web/20060509014028/http://www.ijak.co.jp/HPcatalog/s05size.html",
     images: ["images/XUN1UOX4TSJA-01.jpg","images/XUN1UOX4TSJA-02.jpg"],
     sizes: [
       {
@@ -585,7 +585,7 @@ dataset = [
         colors: "White, Silver, Gold"
       }
     ],
-    related: []
+    related: ['ZACE9Q0VK89O']
   },
   /* Starform Real Racing Model II */{
     id: "7AKI6FXXGMUE",
@@ -599,7 +599,7 @@ dataset = [
     origin: "Japan",
     construction: "1 Piece - Forged",
     style: "Split 6 Spoke",
-    link: "http://web.archive.org/web/20040101121118fw_/http://www.starform-jp.com/fr_model2_2.html",
+    link: "https://web.archive.org/web/20040101121118fw_/http://www.starform-jp.com/fr_model2_2.html",
     images: ["images/7AKI6FXXGMUE-01.jpg"],
     sizes: [
       {
@@ -673,7 +673,7 @@ dataset = [
     origin: "Japan",
     construction: "1 Piece - Forged",
     style: "5 Spoke",
-    link: "http://web.archive.org/web/20031229230549fw_/http://www.starform-jp.com/fr_R2_2.html",
+    link: "https://web.archive.org/web/20031229230549fw_/http://www.starform-jp.com/fr_R2_2.html",
     images: ["images/XEPK9WYCWZ9G-01.jpg","images/XEPK9WYCWZ9G-02.jpg"],
     sizes: [
       {
@@ -754,7 +754,7 @@ dataset = [
     origin: "Japan",
     construction: "1 Piece - Forged",
     style: "Split 5 Spoke",
-    link: "https://www.autobacs-toyama.com/revowin",
+    link: "https://web.archive.org/web/20240419050357/www.autobacs-toyama.com/revowin",
     images: ["images/ZACE9Q0VK89O-01.jpg","images/ZACE9Q0VK89O-02.jpg","images/ZACE9Q0VK89O-03.jpg"],
     sizes: [
       {
@@ -786,12 +786,12 @@ dataset = [
         colors: "Racing White, Silver, Carbon Black , Black, Bronze, Gold, Blue, Red"
       }
     ],
-    related: []
+    related: ['XUN1UOX4TSJA']
   },
   /* Uras NS-01 */{
     id: "IPL5GT7KH9V1",
     shortname: "Uras NS-01",
-    description: "Rebadged DoAll/CST D Spec. Possibly manufactured by Weds.",
+    description: "",
     brand: "Uras",
     model: "NS-01",
     manufacturer: "Unverified",
@@ -800,8 +800,8 @@ dataset = [
     origin: "Unverified",
     construction: "1 Piece - Cast",
     style: "5 Spoke",
-    link: "http://web.archive.org/web/20070504060720/http://www.uras.co.jp:80/syohin/wheel.html",
-    images: ["http://web.archive.org/web/20070504060720im_/http://www.uras.co.jp/2004_04image/wheel/black_org1.jpg"],
+    link: "https://web.archive.org/web/20070504060720/http://www.uras.co.jp:80/syohin/wheel.html",
+    images: ["images/IPL5GT7KH9V1-01.jpg"],
     sizes: [
       {
         diameter: "17",
@@ -830,7 +830,7 @@ dataset = [
   /* Uras NS-02 */ {
     id: "214UPUFONY13",
     shortname: "Uras NS-02",
-    description: "Rebadged DoAll?. Possibly manufactured by Weds.",
+    description: "",
     brand: "Uras",
     model: "NS-02",
     manufacturer: "Unverified",
@@ -839,8 +839,8 @@ dataset = [
     origin: "Unverified",
     construction: "1 Piece - Cast",
     style: "Split 6 Spoke",
-    link: "http://web.archive.org/web/20070504060427/http://www.uras.co.jp:80/syohin/wheel_ns02.html",
-    images: ["https://saufiles.s3.ap-southeast-2.amazonaws.com/post-41322-1242040115.jpg"],
+    link: "https://web.archive.org/web/20070504060427/http://www.uras.co.jp:80/syohin/wheel_ns02.html",
+    images: ["images/214UPUFONY13-01.jpg"],
     sizes: [
       {
         diameter: "17",
