@@ -285,6 +285,8 @@ tr:hover th {
 
 #wheel-details-hero img {
   display: block;
+  height: 100%;
+  object-fit: cover;
   width: 100%;
 }
 
@@ -485,6 +487,7 @@ tr:hover th {
     flex-direction: row;
   }
   #wheel-details-header {
+    align-items: stretch;
     flex-direction: row;
     text-align: left;
   }
