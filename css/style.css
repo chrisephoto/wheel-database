@@ -239,11 +239,18 @@ tr:hover th {
 }
 
 #wheel-details-close {
+  background: rgb(var(--color-accent-01));
+  border-radius: 0 var(--radius);
+  color: rgb(var(--color-background-01));
   cursor: pointer;
   padding: 0.5rem;
   position: absolute;
     right: 0;
     top: 0;
+}
+
+#wheel-details-close:hover {
+  background: rgb(var(--color-accent-02));
 }
 
 #wheel-details-close > span {
