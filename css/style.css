@@ -341,12 +341,15 @@ tr:hover th {
   margin: 1rem 0;
 }
 
+#wheel-related-container {
+  margin-top: var(--padding);
+}
+
 #wheel-related {
   display: grid;
   height: fit-content;
   gap: calc(var(--padding) / 2);
   grid-template-columns: repeat(auto-fill, minmax(15ch, 1fr));
-  margin-top: var(--padding);
 }
 
 #wheel-related figure {
