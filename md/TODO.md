@@ -1,13 +1,8 @@
 # Codebase changes and updates
 * Determine how to handle 2/3pc welded construction
 * CSS: Mobile view spec table width
-* CSS: Wheel details close button
 
 # Wheels to add
-* Starform Real Racing Model II (TWS)
-  * http://web.archive.org/web/20020203021941fw_/http://www.starform-jp.com/fr_model2_2.html
-* Starform Real Racing R2 (TWS)
-  * http://web.archive.org/web/20020204003906fw_/http://www.starform-jp.com/fr_R2_2.html
 * Dunlop Direzza RSC
 * Finalspeed Gear R
 * Down Hill Special ae051/ae081
