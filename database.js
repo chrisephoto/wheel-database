@@ -9,7 +9,7 @@ dataset = [
     year_start: "Unverified",
     year_end: "Unverified",
     origin: "Unverified",
-    construction: "1 Piece - Unverified",
+    construction: "1 Piece - Cast",
     style: "5 Spoke",
     link: "http://web.archive.org/web/20100116090507/http://www.bee-r.com/main/parts/wheel/index.htm",
     images: ["http://web.archive.org/web/20100116090507im_/http://www.bee-r.com/main/parts/wheel/photo/wheelgold01.jpg"],
