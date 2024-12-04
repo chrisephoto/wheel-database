@@ -272,7 +272,7 @@ tr:hover th {
   box-shadow: var(--shadow);
   display: flex;
   flex-direction: column;
-  gap: 0 var(--padding);
+  gap: 0;
   margin-bottom: var(--padding);
   overflow: hidden;
   text-align: center;
@@ -286,6 +286,18 @@ tr:hover th {
 #wheel-details-hero img {
   display: block;
   width: 100%;
+}
+
+#wheel-details-text {
+  padding: var(--padding);
+}
+
+#wheel-details-text > *:first-child {
+  margin-top: 0;
+}
+
+#wheel-details-text > *:last-child {
+  bottom: 0;
 }
 
 #wheel-details-info {
