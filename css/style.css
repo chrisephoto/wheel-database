@@ -487,11 +487,11 @@ tr:hover th {
     flex-direction: row;
   }
   #wheel-details-header {
-    align-items: stretch;
     flex-direction: row;
     text-align: left;
   }
   #wheel-details-hero {
+    align-self: stretch;
     width: 300px;
   }
   #wheel-filters {
