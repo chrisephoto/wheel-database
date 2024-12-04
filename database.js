@@ -29,7 +29,7 @@ dataset = [
         colors: "White, Silver, Bronze, Chrome"
       }
     ],
-    related: ["U4VL4KJ2P2SV", "SL7DDCFW05QZ"]
+    related: []
   },
   /* Bridgestone Down Hill Special ae031 */{
     id: "U4VL4KJ2P2SV",
