@@ -242,7 +242,7 @@ tr:hover th {
 
 #wheel-details-close {
   background: rgb(var(--color-accent-01));
-  border-radius: 0 var(--radius);
+  border-radius: 0 0 0 var(--radius);
   color: rgb(var(--color-white));
   cursor: pointer;
   padding: 0.5rem;
@@ -267,10 +267,13 @@ tr:hover th {
 
 #wheel-details-header {
   align-items: center;
+  background: rgb(var(--color-background-02);
+  border-radius: var(--radius);
   display: flex;
   flex-direction: column;
   gap: var(--padding);
   margin-bottom: var(--padding);
+  overflow: hidden;
   text-align: center;
 }
 
@@ -280,8 +283,6 @@ tr:hover th {
 }
 
 #wheel-details-hero img {
-  border-radius: var(--radius);
-  box-shadow: var(--shadow);
   display: block;
   width: 100%;
 }
