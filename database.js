@@ -460,7 +460,7 @@ dataset = [
   /* Southern Ways S-05 */{
     id: "XUN1UOX4TSJA",
     shortname: "Southern Ways S-05",
-    description: "Manufactured by Tan-ei-sya and sold by its subsidiary ijak under the Southern Way brand until their rebrand in 2008 to TWS. The S-05 implemented wheel design and manufacturing technology that Tan-ei-sya developed while making wheels for F1 resulting in an incredibly strong and lightweight wheel that was widely used across many race series in Japan. This wheel has been sold by numerous other brands - including Car Life Revolution K-One K-01 and Revowin PS-05.",
+    description: "Manufactured by Tan-ei-sya and sold by its subsidiary ijak under the Southern Way brand until their rebrand in 2008 to TWS. The S-05 implemented wheel design and manufacturing technology that Tan-ei-sya developed while making wheels for F1 resulting in an incredibly strong and lightweight wheel that was widely used across many race series in Japan. This wheel has been sold by numerous other brands - including Car Life Revolution K-One K-01 and <a href='?id=ZACE9Q0VK89O'>Revowin PS-05</a>.",
     brand: "Southern Ways",
     model: "S-05",
     manufacturer: "TAN-EI-SYA Co., Ltd.",
@@ -745,7 +745,7 @@ dataset = [
   /* Revowin PS-05 */{
     id: "ZACE9Q0VK89O",
     shortname: "Revowin PS-05",
-    description: "Manufactured by Tan-ei-sya for Puma Co., Ltd. and sold through Autobacs in Toyama Prefecture. The PS-05 is a rebranded Southern Ways S-05, offered in sizes catering to smaller cars and heavily used in Japanese Motorsports series including: Yaris Cup, All Japan Rally Championship, TGR Rally Challenge, VITA Race Series, and more.",
+    description: "Manufactured by Tan-ei-sya for Puma Co., Ltd. and sold through Autobacs in Toyama Prefecture. The PS-05 is a rebranded <a href='?id=XUN1UOX4TSJA'>Southern Ways S-05</a>, offered in sizes catering to smaller cars and heavily used in Japanese Motorsports series including: Yaris Cup, All Japan Rally Championship, TGR Rally Challenge, VITA Race Series, and more.",
     brand: "Revowin",
     model: "PS-05",
     manufacturer: "TAN-EI-SYA Co., Ltd.",
