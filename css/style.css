@@ -466,6 +466,9 @@ tr:hover th {
   main {
     flex-direction: row;
   }
+  #wheel-details-close {
+    border-radius: var(--radius);
+  }
   #wheel-details-header {
     align-items: end;
     flex-direction: row;
