@@ -5,11 +5,13 @@
 :root {
   --padding: 2rem;
   --radius: 7px;
+  --color-white: 255,255,255;
+  --color-black: 14,15,17;
 }
 
 .theme-dark {
-  --color-accent-01: 255,89,89;
-  --color-accent-02: 229,57,53;
+  --color-accent-01: 229,57,53;
+  --color-accent-02: 255,89,89;
   --color-background-01: 14,15,17;
   --color-background-02: 24,26,28;
   --color-background-03: 36,37,39;
@@ -129,7 +131,7 @@ input[type="reset"]:hover {
 input[type="button"] {
   background: rgb(var(--color-accent-01));
   border: none;
-  color: rgb(var(--color-background-01));
+  color: rgb(var(--color-white));
   cursor: pointer;
   grid-column: 1/-1;
   transition: background-color 0.2s;
@@ -241,7 +243,7 @@ tr:hover th {
 #wheel-details-close {
   background: rgb(var(--color-accent-01));
   border-radius: 0 var(--radius);
-  color: rgb(var(--color-background-01));
+  color: rgb(var(--color-white));
   cursor: pointer;
   padding: 0.5rem;
   position: absolute;
@@ -381,7 +383,7 @@ tr:hover th {
   /*border: 2px solid var(--color-accent-01);*/
   /*border-radius: calc(var(--radius) + 1px);*/
   box-shadow: 0 0 0 10px var(--color-accent-01);
-  color: rgb(var(--color-background-01));
+  color: rgb(var(--color-white));
   cursor: pointer;
   display: flex;
   font-weight: 600;
@@ -437,7 +439,7 @@ tr:hover th {
   /*border: 2px solid var(--color-accent-01);*/
   /*border-radius: calc(var(--radius) + 1px);*/
   box-shadow: 0 0 0 10px var(--color-accent-01);
-  color: rgb(var(--color-background-01));
+  color: rgb(var(--color-white));
   cursor: pointer;
   display: flex;
   font-weight: 600;
