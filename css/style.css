@@ -279,6 +279,7 @@ tr:hover th {
 }
 
 #wheel-details-hero {
+  aspect-ratio: 1.0;
   flex-shrink: 0;
   width: 100%;
 }
