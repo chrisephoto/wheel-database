@@ -1,6 +1,6 @@
 filters =  {
   brand: [
-    "Bee&starf;R",
+    "Bee★R",
     "B.I.M. Creative Studio",
     "Ings",
     "Revowin",
