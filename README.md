@@ -7,3 +7,58 @@ I do not claim this database to be complete or comprehensive but I do intend to 
 If you find this resource helpful and would like to support this project feel free to [buy me a coffee](https://paypal.me/chrisephoto).
 
 [View the live site](https://chrisephoto.github.io/wheel-database/)
+
+## Future Improvements
+
+* Fix specification table on mobile
+* Determine how to categorize 2/3pc welded construction
+* Add new wheels:
+  * Advan Connoisseur 51C
+  * Bridgestone Down Hill Special ae051
+    * http://web.archive.org/web/20081119135952/http://www.bim-cs.com/products/dhs/ae051/size.html
+  * Bridgestone Down Hill Special ae081
+    * http://web.archive.org/web/20081226155838/http://www.bim-cs.com/products/dhs/ae081/size.html
+  * Carving Head 40 (Enkei)
+  * Carving Stark I (1992 Work)
+  * Carving Stark II (Work)
+  * Carving Stark III (1992 Work)
+  * CST (Doall) D Spec
+    * Uras NS-01
+    * http://web.archive.org/web/20090819092004/www.doall.jp/wheels/d-spec/d-spec.html
+  * CST (Doall) Zero-1 Hyper
+    * Cast
+    * Manufactured by Weds?
+    * http://doall.jp/csttop/zero1hyper/cstzero1hyper.html
+  * Dunlop Direzza RSC
+  * EuroMagic Racing GT-08F
+  * EuroMagic Racing ST-05Air
+  * Finalspeed Gear R
+  * JIC J-Force 05
+  * Joustmeister Comp V1 (TWS)
+    * Doghouse D/H original wheel (Hyper Rev vol. 95, 103, 117)
+    * Garage Dog House (Hyper Rev vol. 106)
+      * https://web.archive.org/web/20100118101246fw_/http://www.g-doghouse.co.jp/html/original/08.html
+    * Ingolstadt Racing
+    * J cross JT6 (Hyper Rev vol. 77, 94, 97)
+    * Techni Craft T6
+    * Techni Craft S7
+  * K-One K-01
+    * 2003-2005+
+    * crf crf-08 vol 114?
+    * http://web.archive.org/web/20051018094530/http://www.k-one.to/parts/wheel/index.htm
+  * M2 Hanbai M2R
+  * M2 Hanbai DT-05R
+  * Modex KS-CE (TWS)
+  * Monster Sport ms857
+  * RACING HART CP-035 (TWS)
+  * RAMS PR6 (TWS)
+    * J's Racing PR6 (TWS)
+  * Stern Aguzze S-07 (Hinodex/TWS)
+  * Team Impul NS-GT II
+  * Weds TC05/TC005 (Asahi Tec)
+
+## Changelog
+ 
+ **2024-12-09**
+ * Changelog started
+ 
