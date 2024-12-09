@@ -14,20 +14,8 @@ dataset = [
     link: "https://web.archive.org/web/20100116090507/http://www.bee-r.com/main/parts/wheel/index.htm",
     images: ["images/0YDS9EBJLVAB-01.jpg"],
     sizes: [
-      {
-        diameter: "17",
-        width: "9.0",
-        pcd: "5x114.3",
-        offsets: "+25",
-        colors: "White, Silver, Bronze, Chrome"
-      },
-      {
-        diameter: "18",
-        width: "9.5",
-        pcd: "5x114.3",
-        offsets: "+25/+38",
-        colors: "White, Silver, Bronze, Chrome"
-      }
+      {diameter: "17", width: "9.0", pcd: "5x114.3", offsets: "+25", colors: "White, Silver, Bronze, Chrome"},
+      {diameter: "18", width: "9.5", pcd: "5x114.3", offsets: "+25/+38", colors: "White, Silver, Bronze, Chrome"}
     ],
     related: []
   },
@@ -46,36 +34,12 @@ dataset = [
     link: "https://web.archive.org/web/20050213145059/http://bim-cs.com/products/dhs/ae031/size.html",
     images: ["images/U4VL4KJ2P2SV-01.jpg","images/U4VL4KJ2P2SV-02.jpg"],
     sizes: [
-      {
-        diameter: "17",
-        width: "7.0",
-        pcd: "4x100",
-        offsets: "+38/+48",
-        colors: "Bronze, Gunmetal"
-      },
-      {
-        diameter: "17",
-        width: "7.0",
-        pcd: "4x114.3",
-        offsets: "+38/+48",
-        colors: "Bronze, Gunmetal"
-      },
-      {
-        diameter: "17",
-        width: "7.0",
-        pcd: "5x100",
-        offsets: "+38/+48",
-        colors: "Bronze, Gunmetal"
-      },
-      {
-        diameter: "17",
-        width: "7.0",
-        pcd: "5x114.3",
-        offsets: "+38/+48",
-        colors: "Bronze, Gunmetal"
-      }
+      {diameter: "17", width: "7.0", pcd: "4x100", offsets: "+38/+48", colors: "Bronze, Gunmetal"},
+      {diameter: "17", width: "7.0", pcd: "4x114.3", offsets: "+38/+48", colors: "Bronze, Gunmetal"},
+      {diameter: "17", width: "7.0", pcd: "5x100", offsets: "+38/+48", colors: "Bronze, Gunmetal"},
+      {diameter: "17", width: "7.0", pcd: "5x114.3", offsets: "+38/+48", colors: "Bronze, Gunmetal"}
     ],
-    related: ['X7MDK0WHI5JM']
+    related: ["X7MDK0WHI5JM"]
   },
   /* Bridgestone Down Hill Special ae032 */{
     id: "DV3YB9P4LFDL",
@@ -92,36 +56,12 @@ dataset = [
     link: "https://web.archive.org/web/20050213145059/http://bim-cs.com/products/dhs/ae032/size.html",
     images: ["images/DV3YB9P4LFDL-01.jpg","images/DV3YB9P4LFDL-02.jpg"],
     sizes: [
-      {
-        diameter: "17",
-        width: "7.0",
-        pcd: "4x100",
-        offsets: "+38/+48",
-        colors: "Gunmetal, Gold"
-      },
-      {
-        diameter: "17",
-        width: "7.0",
-        pcd: "4x114.3",
-        offsets: "+38/+48",
-        colors: "Gunmetal, Gold"
-      },
-      {
-        diameter: "17",
-        width: "7.0",
-        pcd: "5x100",
-        offsets: "+38/+48",
-        colors: "Gunmetal, Gold"
-      },
-      {
-        diameter: "17",
-        width: "7.0",
-        pcd: "5x114.3",
-        offsets: "+38/+48",
-        colors: "Gunmetal, Gold"
-      }
+      {diameter: "17", width: "7.0", pcd: "4x100", offsets: "+38/+48", colors: "Gunmetal, Gold"},
+      {diameter: "17", width: "7.0", pcd: "4x114.3", offsets: "+38/+48", colors: "Gunmetal, Gold"},
+      {diameter: "17", width: "7.0", pcd: "5x100", offsets: "+38/+48", colors: "Gunmetal, Gold"},
+      {diameter: "17", width: "7.0", pcd: "5x114.3", offsets: "+38/+48", colors: "Gunmetal, Gold"}
     ],
-    related: ['SL7DDCFW05QZ']
+    related: ["SL7DDCFW05QZ"]
   },
   /* Bridgestone Down Hill Special ae033 */{
     id: "X7MDK0WHI5JM",
@@ -138,113 +78,23 @@ dataset = [
     link: "https://web.archive.org/web/20050213145059/http://bim-cs.com/products/dhs/ae033/size.html",
     images: ["images/X7MDK0WHI5JM-01.jpg","images/X7MDK0WHI5JM-02.jpg"],
     sizes: [
-      {
-        diameter: "15",
-        width: "6.5",
-        pcd: "4x100",
-        offsets: "+30/+38/+42",
-        colors: "Gold, Gunmetal"
-      },
-      {
-        diameter: "15",
-        width: "6.5",
-        pcd: "4x114.3",
-        offsets: "+42",
-        colors: "Gold, Gunmetal"
-      },
-      {
-        diameter: "16",
-        width: "7.0",
-        pcd: "4x100",
-        offsets: "+30/+38/+42",
-        colors: "Gold, Gunmetal"
-      },
-      {
-        diameter: "16",
-        width: "7.0",
-        pcd: "4x114.3",
-        offsets: "+30/+42",
-        colors: "Gold, Gunmetal"
-      },
-      {
-        diameter: "16",
-        width: "7.0",
-        pcd: "5x100",
-        offsets: "+30/+48",
-        colors: "Gold, Gunmetal"
-      },
-      {
-        diameter: "16",
-        width: "7.0",
-        pcd: "5x114.3",
-        offsets: "+30/+38/+42/+48",
-        colors: "Gold, Gunmetal"
-      },
-      {
-        diameter: "16",
-        width: "8.0",
-        pcd: "5x114.3",
-        offsets: "+30/+38/+44",
-        colors: "Gold, Gunmetal"
-      },
-      {
-        diameter: "17",
-        width: "7.5",
-        pcd: "4x100",
-        offsets: "+38/+44",
-        colors: "Gold, Gunmetal"
-      },
-      {
-        diameter: "17",
-        width: "7.5",
-        pcd: "4x114.3",
-        offsets: "+38/+44",
-        colors: "Gold, Gunmetal"
-      },
-      {
-        diameter: "17",
-        width: "7.5",
-        pcd: "5x100",
-        offsets: "+30/+38/+48",
-        colors: "Gold, Gunmetal"
-      },
-      {
-        diameter: "17",
-        width: "7.5",
-        pcd: "5x114.3",
-        offsets: "+30/+38/+48",
-        colors: "Gold, Gunmetal"
-      },
-      {
-        diameter: "17",
-        width: "8.5",
-        pcd: "5x114.3",
-        offsets: "+30/+36/+44",
-        colors: "Gold, Gunmetal"
-      },
-      {
-        diameter: "18",
-        width: "7.5",
-        pcd: "5x100",
-        offsets: "+38/+48",
-        colors: "Gold, Gunmetal"
-      },
-      {
-        diameter: "18",
-        width: "7.5",
-        pcd: "5x114.3",
-        offsets: "+30/+38/+48",
-        colors: "Gold, Gunmetal"
-      },
-      {
-        diameter: "18",
-        width: "8.5",
-        pcd: "5x114.3",
-        offsets: "+32/+36/+46",
-        colors: "Bronze, Gunmetal"
-      }
+      {diameter: "15", width: "6.5", pcd: "4x100", offsets: "+30/+38/+42", colors: "Gold, Gunmetal"},
+      {diameter: "15", width: "6.5", pcd: "4x114.3", offsets: "+42", colors: "Gold, Gunmetal"},
+      {diameter: "16", width: "7.0", pcd: "4x100", offsets: "+30/+38/+42", colors: "Gold, Gunmetal"},
+      {diameter: "16", width: "7.0", pcd: "4x114.3", offsets: "+30/+42", colors: "Gold, Gunmetal"},
+      {diameter: "16", width: "7.0", pcd: "5x100", offsets: "+30/+48", colors: "Gold, Gunmetal"},
+      {diameter: "16", width: "7.0", pcd: "5x114.3", offsets: "+30/+38/+42/+48", colors: "Gold, Gunmetal"},
+      {diameter: "16", width: "8.0", pcd: "5x114.3", offsets: "+30/+38/+44", colors: "Gold, Gunmetal"},
+      {diameter: "17", width: "7.5", pcd: "4x100", offsets: "+38/+44", colors: "Gold, Gunmetal"},
+      {diameter: "17", width: "7.5", pcd: "4x114.3", offsets: "+38/+44", colors: "Gold, Gunmetal"},
+      {diameter: "17", width: "7.5", pcd: "5x100", offsets: "+30/+38/+48", colors: "Gold, Gunmetal"},
+      {diameter: "17", width: "7.5", pcd: "5x114.3", offsets: "+30/+38/+48", colors: "Gold, Gunmetal"},
+      {diameter: "17", width: "8.5", pcd: "5x114.3", offsets: "+30/+36/+44", colors: "Gold, Gunmetal"},
+      {diameter: "18", width: "7.5", pcd: "5x100", offsets: "+38/+48", colors: "Gold, Gunmetal"},
+      {diameter: "18", width: "7.5", pcd: "5x114.3", offsets: "+30/+38/+48", colors: "Gold, Gunmetal"},
+      {diameter: "18", width: "8.5", pcd: "5x114.3", offsets: "+32/+36/+46", colors: "Bronze, Gunmetal"}
     ],
-    related: ['U4VL4KJ2P2SV']
+    related: ["U4VL4KJ2P2SV"]
   },
   /* Bridgestone Down Hill Special ae034 */{
     id: "SL7DDCFW05QZ",
@@ -261,113 +111,23 @@ dataset = [
     link: "https://web.archive.org/web/20050213145059/http://bim-cs.com/products/dhs/ae034/size.html",
     images: ["images/SL7DDCFW05QZ-01.jpg","images/SL7DDCFW05QZ-02.jpg","images/SL7DDCFW05QZ-03.jpg","images/SL7DDCFW05QZ-04.jpg"],
     sizes: [
-      {
-        diameter: "15",
-        width: "6.5",
-        pcd: "4x100",
-        offsets: "+30/+38/+42",
-        colors: "White, Gunmetal"
-      },
-      {
-        diameter: "15",
-        width: "6.5",
-        pcd: "4x114.3",
-        offsets: "+42",
-        colors: "White, Gunmetal"
-      },
-      {
-        diameter: "16",
-        width: "7.0",
-        pcd: "4x100",
-        offsets: "+30/+38/+42",
-        colors: "White, Gunmetal"
-      },
-      {
-        diameter: "16",
-        width: "7.0",
-        pcd: "4x114.3",
-        offsets: "+30/+42",
-        colors: "White, Gunmetal"
-      },
-      {
-        diameter: "16",
-        width: "7.0",
-        pcd: "5x100",
-        offsets: "+30/+48",
-        colors: "White, Gunmetal"
-      },
-      {
-        diameter: "16",
-        width: "7.0",
-        pcd: "5x114.3",
-        offsets: "+30/+38/+42/+48",
-        colors: "White, Gunmetal"
-      },
-      {
-        diameter: "16",
-        width: "8.0",
-        pcd: "5x114.3",
-        offsets: "+30/+38/+44",
-        colors: "White, Gunmetal"
-      },
-      {
-        diameter: "17",
-        width: "7.5",
-        pcd: "4x100",
-        offsets: "+38/+44",
-        colors: "White, Gunmetal"
-      },
-      {
-        diameter: "17",
-        width: "7.5",
-        pcd: "4x114.3",
-        offsets: "+38/+44",
-        colors: "White, Gunmetal"
-      },
-      {
-        diameter: "17",
-        width: "7.5",
-        pcd: "5x100",
-        offsets: "+30/+38/+48",
-        colors: "White, Gunmetal"
-      },
-      {
-        diameter: "17",
-        width: "7.5",
-        pcd: "5x114.3",
-        offsets: "+30/+38/+48",
-        colors: "White, Gunmetal"
-      },
-      {
-        diameter: "17",
-        width: "8.5",
-        pcd: "5x114.3",
-        offsets: "+30/+36/+44",
-        colors: "White, Gunmetal"
-      },
-      {
-        diameter: "18",
-        width: "7.5",
-        pcd: "5x100",
-        offsets: "+38/+48",
-        colors: "White, Gunmetal"
-      },
-      {
-        diameter: "18",
-        width: "7.5",
-        pcd: "5x114.3",
-        offsets: "+30/+38/+48",
-        colors: "White, Gunmetal"
-      },
-      {
-        diameter: "18",
-        width: "8.5",
-        pcd: "5x114.3",
-        offsets: "+32/+36/+46",
-        colors: "White, Gunmetal"
-      }
+      {diameter: "15", width: "6.5", pcd: "4x100", offsets: "+30/+38/+42", colors: "White, Gunmetal"},
+      {diameter: "15", width: "6.5", pcd: "4x114.3", offsets: "+42", colors: "White, Gunmetal"},
+      {diameter: "16", width: "7.0", pcd: "4x100", offsets: "+30/+38/+42", colors: "White, Gunmetal"},
+      {diameter: "16", width: "7.0", pcd: "4x114.3", offsets: "+30/+42", colors: "White, Gunmetal"},
+      {diameter: "16", width: "7.0", pcd: "5x100", offsets: "+30/+48", colors: "White, Gunmetal"},
+      {diameter: "16", width: "7.0", pcd: "5x114.3", offsets: "+30/+38/+42/+48", colors: "White, Gunmetal"},
+      {diameter: "16", width: "8.0", pcd: "5x114.3", offsets: "+30/+38/+44", colors: "White, Gunmetal"},
+      {diameter: "17", width: "7.5", pcd: "4x100", offsets: "+38/+44", colors: "White, Gunmetal"},
+      {diameter: "17", width: "7.5", pcd: "4x114.3", offsets: "+38/+44", colors: "White, Gunmetal"},
+      {diameter: "17", width: "7.5", pcd: "5x100", offsets: "+30/+38/+48", colors: "White, Gunmetal"},
+      {diameter: "17", width: "7.5", pcd: "5x114.3", offsets: "+30/+38/+48", colors: "White, Gunmetal"},
+      {diameter: "17", width: "8.5", pcd: "5x114.3", offsets: "+30/+36/+44", colors: "White, Gunmetal"},
+      {diameter: "18", width: "7.5", pcd: "5x100", offsets: "+38/+48", colors: "White, Gunmetal"},
+      {diameter: "18", width: "7.5", pcd: "5x114.3", offsets: "+30/+38/+48", colors: "White, Gunmetal"},
+      {diameter: "18", width: "8.5", pcd: "5x114.3", offsets: "+32/+36/+46", colors: "White, Gunmetal"}
     ],
-    related: ['DV3YB9P4LFDL']
+    related: ["DV3YB9P4LFDL"]
   },
   /* Ings TS06 */{
     id: "T8HREQGJ1TRN",
@@ -384,76 +144,16 @@ dataset = [
     link: "https://web.archive.org/web/20231001182932/www.ings-net.com/english/products/wheel.html",
     images: ["images/T8HREQGJ1TRN-01.jpg","images/T8HREQGJ1TRN-02.jpg","images/T8HREQGJ1TRN-03.jpg","images/T8HREQGJ1TRN-04.jpg","images/T8HREQGJ1TRN-05.jpg"],
     sizes: [
-      {
-        diameter: "18",
-        width: "7.5",
-        pcd: "5x100",
-        offsets: "+43/+48",
-        colors: "Silver, Gunmetal, Gold"
-      },
-      {
-        diameter: "18",
-        width: "7.5",
-        pcd: "5x114.3",
-        offsets: "+43/+48",
-        colors: "Silver, Gunmetal, Gold"
-      },
-      {
-        diameter: "18",
-        width: "8.0",
-        pcd: "5x100",
-        offsets: "+38/+43",
-        colors: "Silver, Gunmetal, Gold"
-      },
-      {
-        diameter: "18",
-        width: "8.0",
-        pcd: "5x114.3",
-        offsets: "+38/+43",
-        colors: "Silver, Gunmetal, Gold"
-      },
-      {
-        diameter: "18",
-        width: "8.5",
-        pcd: "5x100",
-        offsets: "+43",
-        colors: "Silver, Gunmetal, Gold"
-      },
-      {
-        diameter: "18",
-        width: "8.5",
-        pcd: "5x114.3",
-        offsets: "+22/+30/+38",
-        colors: "Silver, Gunmetal"
-      },
-      {
-        diameter: "18",
-        width: "8.5",
-        pcd: "5x114.3",
-        offsets: "+43",
-        colors: "Silver, Gunmetal, Gold"
-      },
-      {
-        diameter: "18",
-        width: "9.0",
-        pcd: "5x114.3",
-        offsets: "+35/+50",
-        colors: "Silver, Gunmetal"
-      },
-      {
-        diameter: "18",
-        width: "9.5",
-        pcd: "5x114.3",
-        offsets: "+12/+22/+34/+40",
-        colors: "Silver, Gunmetal"
-      },
-      {
-        diameter: "18",
-        width: "10.5",
-        pcd: "5x114.3",
-        offsets: "+15/+22",
-        colors: "Silver, Gunmetal"
-      }
+      {diameter: "18", width: "7.5", pcd: "5x100", offsets: "+43/+48", colors: "Silver, Gunmetal, Gold"},
+      {diameter: "18", width: "7.5", pcd: "5x114.3", offsets: "+43/+48", colors: "Silver, Gunmetal, Gold"},
+      {diameter: "18", width: "8.0", pcd: "5x100", offsets: "+38/+43", colors: "Silver, Gunmetal, Gold"},
+      {diameter: "18", width: "8.0", pcd: "5x114.3", offsets: "+38/+43", colors: "Silver, Gunmetal, Gold"},
+      {diameter: "18", width: "8.5", pcd: "5x100", offsets: "+43", colors: "Silver, Gunmetal, Gold"},
+      {diameter: "18", width: "8.5", pcd: "5x114.3", offsets: "+22/+30/+38", colors: "Silver, Gunmetal"},
+      {diameter: "18", width: "8.5", pcd: "5x114.3", offsets: "+43", colors: "Silver, Gunmetal, Gold"},
+      {diameter: "18", width: "9.0", pcd: "5x114.3", offsets: "+35/+50", colors: "Silver, Gunmetal"},
+      {diameter: "18", width: "9.5", pcd: "5x114.3", offsets: "+12/+22/+34/+40", colors: "Silver, Gunmetal"},
+      {diameter: "18", width: "10.5", pcd: "5x114.3", offsets: "+15/+22", colors: "Silver, Gunmetal"}
     ],
     related: []
   },
@@ -472,120 +172,24 @@ dataset = [
     link: "https://web.archive.org/web/20060509014028/http://www.ijak.co.jp/HPcatalog/s05size.html",
     images: ["images/XUN1UOX4TSJA-01.jpg","images/XUN1UOX4TSJA-02.jpg"],
     sizes: [
-      {
-        diameter: "15",
-        width: "5.5",
-        pcd: "4x100",
-        offsets: "+38",
-        colors: "White, Silver, Gold"
-      },
-      {
-        diameter: "15",
-        width: "6.0",
-        pcd: "4x100",
-        offsets: "+39",
-        colors: "White, Silver, Gold"
-      },
-      {
-        diameter: "15",
-        width: "6.5",
-        pcd: "4x100",
-        offsets: "+37",
-        colors: "White, Silver, Gold"
-      },
-      {
-        diameter: "15",
-        width: "7.0",
-        pcd: "4x100",
-        offsets: "+35/+45/+48",
-        colors: "White, Silver, Gold"
-      },
-      {
-        diameter: "15",
-        width: "7.0",
-        pcd: "5x114.3",
-        offsets: "+42",
-        colors: "White, Silver, Gold"
-      },
-      {
-        diameter: "16",
-        width: "7.5",
-        pcd: "5x114.3",
-        offsets: "+45",
-        colors: "White, Silver, Gold"
-      },
-      {
-        diameter: "17",
-        width: "7.5",
-        pcd: "5x100",
-        offsets: "+48",
-        colors: "White, Silver, Gold"
-      },
-      {
-        diameter: "17",
-        width: "7.5",
-        pcd: "5x114.3",
-        offsets: "+35/+45",
-        colors: "White, Silver, Gold"
-      },
-      {
-        diameter: "17",
-        width: "8.0",
-        pcd: "5x114.3",
-        offsets: "+42",
-        colors: "White, Silver, Gold"
-      },
-      {
-        diameter: "17",
-        width: "8.5",
-        pcd: "5x100",
-        offsets: "+48",
-        colors: "White, Silver, Gold"
-      },
-      {
-        diameter: "17",
-        width: "8.5",
-        pcd: "5x114.3",
-        offsets: "+35",
-        colors: "White, Silver, Gold"
-      },
-      {
-        diameter: "17",
-        width: "9.5",
-        pcd: "5x114.3",
-        offsets: "+37",
-        colors: "White, Silver, Gold"
-      },
-      {
-        diameter: "18",
-        width: "7.5",
-        pcd: "5x100",
-        offsets: "+49",
-        colors: "White, Silver, Gold"
-      },
-      {
-        diameter: "18",
-        width: "8.5",
-        pcd: "5x100",
-        offsets: "+48",
-        colors: "White, Silver, Gold"
-      },
-      {
-        diameter: "18",
-        width: "8.5",
-        pcd: "5x114.3",
-        offsets: "+20/+35",
-        colors: "White, Silver, Gold"
-      },
-      {
-        diameter: "18",
-        width: "9.5",
-        pcd: "5x114.3",
-        offsets: "+20/+35",
-        colors: "White, Silver, Gold"
-      }
+      {diameter: "15", width: "5.5", pcd: "4x100", offsets: "+38", colors: "White, Silver, Gold"},
+      {diameter: "15", width: "6.0", pcd: "4x100", offsets: "+39", colors: "White, Silver, Gold"},
+      {diameter: "15", width: "6.5", pcd: "4x100", offsets: "+37", colors: "White, Silver, Gold"},
+      {diameter: "15", width: "7.0", pcd: "4x100", offsets: "+35/+45/+48", colors: "White, Silver, Gold"},
+      {diameter: "15", width: "7.0", pcd: "5x114.3", offsets: "+42", colors: "White, Silver, Gold"},
+      {diameter: "16", width: "7.5", pcd: "5x114.3", offsets: "+45", colors: "White, Silver, Gold"},
+      {diameter: "17", width: "7.5", pcd: "5x100", offsets: "+48", colors: "White, Silver, Gold"},
+      {diameter: "17", width: "7.5", pcd: "5x114.3", offsets: "+35/+45", colors: "White, Silver, Gold"},
+      {diameter: "17", width: "8.0", pcd: "5x114.3", offsets: "+42", colors: "White, Silver, Gold"},
+      {diameter: "17", width: "8.5", pcd: "5x100", offsets: "+48", colors: "White, Silver, Gold"},
+      {diameter: "17", width: "8.5", pcd: "5x114.3", offsets: "+35", colors: "White, Silver, Gold"},
+      {diameter: "17", width: "9.5", pcd: "5x114.3", offsets: "+37", colors: "White, Silver, Gold"},
+      {diameter: "18", width: "7.5", pcd: "5x100", offsets: "+49", colors: "White, Silver, Gold"},
+      {diameter: "18", width: "8.5", pcd: "5x100", offsets: "+48", colors: "White, Silver, Gold"},
+      {diameter: "18", width: "8.5", pcd: "5x114.3", offsets: "+20/+35", colors: "White, Silver, Gold"},
+      {diameter: "18", width: "9.5", pcd: "5x114.3", offsets: "+20/+35", colors: "White, Silver, Gold"}
     ],
-    related: ['ZACE9Q0VK89O']
+    related: ["ZACE9Q0VK89O"]
   },
   /* Starform Real Racing Model II */{
     id: "7AKI6FXXGMUE",
@@ -602,62 +206,14 @@ dataset = [
     link: "https://web.archive.org/web/20040101121118fw_/http://www.starform-jp.com/fr_model2_2.html",
     images: ["images/7AKI6FXXGMUE-01.jpg"],
     sizes: [
-      {
-        diameter: "15",
-        width: "7.0",
-        pcd: "4x100",
-        offsets: "+35/+45",
-        colors: "White, Gunmetal, Black"
-      },
-      {
-        diameter: "15",
-        width: "7.0",
-        pcd: "4x114.3",
-        offsets: "+45",
-        colors: "White, Gunmetal, Black"
-      },
-      {
-        diameter: "15",
-        width: "7.0",
-        pcd: "5x114.3",
-        offsets: "+35/+45",
-        colors: "White, Gunmetal, Black"
-      },
-      {
-        diameter: "17",
-        width: "7.5",
-        pcd: "4x114.3",
-        offsets: "+32/+45",
-        colors: "White, Gunmetal, Black"
-      },
-      {
-        diameter: "17",
-        width: "7.5",
-        pcd: "5x100",
-        offsets: "+32/+45",
-        colors: "White, Gunmetal, Black"
-      },
-      {
-        diameter: "17",
-        width: "7.5",
-        pcd: "5x114.3",
-        offsets: "+30/+38/+45",
-        colors: "White, Gunmetal, Black"
-      },
-      {
-        diameter: "17",
-        width: "8.5",
-        pcd: "5x114.3",
-        offsets: "+30/+38/+45",
-        colors: "White, Gunmetal, Black"
-      },
-      {
-        diameter: "17",
-        width: "9.5",
-        pcd: "5x114.3",
-        offsets: "+38",
-        colors: "White, Gunmetal, Black"
-      }
+      {diameter: "15", width: "7.0", pcd: "4x100", offsets: "+35/+45", colors: "White, Gunmetal, Black"},
+      {diameter: "15", width: "7.0", pcd: "4x114.3", offsets: "+45", colors: "White, Gunmetal, Black"},
+      {diameter: "15", width: "7.0", pcd: "5x114.3", offsets: "+35/+45", colors: "White, Gunmetal, Black"},
+      {diameter: "17", width: "7.5", pcd: "4x114.3", offsets: "+32/+45", colors: "White, Gunmetal, Black"},
+      {diameter: "17", width: "7.5", pcd: "5x100", offsets: "+32/+45", colors: "White, Gunmetal, Black"},
+      {diameter: "17", width: "7.5", pcd: "5x114.3", offsets: "+30/+38/+45", colors: "White, Gunmetal, Black"},
+      {diameter: "17", width: "8.5", pcd: "5x114.3", offsets: "+30/+38/+45", colors: "White, Gunmetal, Black"},
+      {diameter: "17", width: "9.5", pcd: "5x114.3", offsets: "+38", colors: "White, Gunmetal, Black"}
     ],
     related: []
   },
@@ -676,69 +232,15 @@ dataset = [
     link: "https://web.archive.org/web/20031229230549fw_/http://www.starform-jp.com/fr_R2_2.html",
     images: ["images/XEPK9WYCWZ9G-01.jpg","images/XEPK9WYCWZ9G-02.jpg"],
     sizes: [
-      {
-        diameter: "15",
-        width: "6.5",
-        pcd: "4x100",
-        offsets: "+34/+40",
-        colors: "White, Gunmetal, Black"
-      },
-      {
-        diameter: "15",
-        width: "7.0",
-        pcd: "4x100",
-        offsets: "+39/+45",
-        colors: "White, Gunmetal, Black"
-      },
-      {
-        diameter: "15",
-        width: "7.0",
-        pcd: "4x114.3",
-        offsets: "+45",
-        colors: "White, Gunmetal, Black"
-      },
-      {
-        diameter: "15",
-        width: "7.0",
-        pcd: "5x114.3",
-        offsets: "+39/+45",
-        colors: "White, Gunmetal, Black"
-      },
-      {
-        diameter: "17",
-        width: "7.5",
-        pcd: "4x114.3",
-        offsets: "+32/+45",
-        colors: "White, Gunmetal, Black"
-      },
-      {
-        diameter: "17",
-        width: "7.5",
-        pcd: "5x100",
-        offsets: "+32/+45",
-        colors: "White, Gunmetal, Black"
-      },
-      {
-        diameter: "17",
-        width: "7.5",
-        pcd: "5x114.3",
-        offsets: "+30/+38/+45",
-        colors: "White, Gunmetal, Black"
-      },
-      {
-        diameter: "17",
-        width: "8.5",
-        pcd: "5x114.3",
-        offsets: "+30/+38/+45",
-        colors: "White, Gunmetal, Black"
-      },
-      {
-        diameter: "17",
-        width: "9.5",
-        pcd: "5x114.3",
-        offsets: "+15/+23/+38",
-        colors: "White, Gunmetal, Black"
-      }
+      {diameter: "15", width: "6.5", pcd: "4x100", offsets: "+34/+40", colors: "White, Gunmetal, Black"},
+      {diameter: "15", width: "7.0", pcd: "4x100", offsets: "+39/+45", colors: "White, Gunmetal, Black"},
+      {diameter: "15", width: "7.0", pcd: "4x114.3", offsets: "+45", colors: "White, Gunmetal, Black"},
+      {diameter: "15", width: "7.0", pcd: "5x114.3", offsets: "+39/+45", colors: "White, Gunmetal, Black"},
+      {diameter: "17", width: "7.5", pcd: "4x114.3", offsets: "+32/+45", colors: "White, Gunmetal, Black"},
+      {diameter: "17", width: "7.5", pcd: "5x100", offsets: "+32/+45", colors: "White, Gunmetal, Black"},
+      {diameter: "17", width: "7.5", pcd: "5x114.3", offsets: "+30/+38/+45", colors: "White, Gunmetal, Black"},
+      {diameter: "17", width: "8.5", pcd: "5x114.3", offsets: "+30/+38/+45", colors: "White, Gunmetal, Black"},
+      {diameter: "17", width: "9.5", pcd: "5x114.3", offsets: "+15/+23/+38", colors: "White, Gunmetal, Black"}
     ],
     related: []
   },
@@ -755,45 +257,14 @@ dataset = [
     construction: "1 Piece - Forged",
     style: "Split 5 Spoke",
     link: "https://web.archive.org/web/20240419050357/www.autobacs-toyama.com/revowin",
-    images: ["images/ZACE9Q0VK89O-01.jpg","images/ZACE9Q0VK89O-02.jpg","images/ZACE9Q0VK89O-03.jpg"],
+    images: ["images/ZACE9Q0VK89O-01.jpg","images/ZACE9Q0VK89O-02.jpg","images/ZACE9Q0VK89O-03.jpg","images/ZACE9Q0VK89O-04.jpg"],
     sizes: [
-      {
-        diameter: "15",
-        width: "6.0",
-        pcd: "4x100",
-        offsets: "+39",
-        colors: "Racing White, Silver, Carbon Black , Black, Bronze, Gold, Blue, Red"
-      },
-      {
-        diameter: "15",
-        width: "6.0",
-        pcd: "5x100",
-        offsets: "+35",
-        colors: "Racing White, Silver, Carbon Black , Black, Bronze, Gold, Blue, Red"
-      },
-      {
-        diameter: "15",
-        width: "6.5",
-        pcd: "4x100",
-        offsets: "+37",
-        colors: "Racing White, Silver, Carbon Black , Black, Bronze, Gold, Blue, Red"
-      },
-      {
-        diameter: "15",
-        width: "6.5",
-        pcd: "5x100",
-        offsets: "+35",
-        colors: "Racing White, Silver, Carbon Black , Black, Bronze, Gold, Blue, Red"
-      },
-      {
-        diameter: "15",
-        width: "7.0",
-        pcd: "4x100",
-        offsets: "+35/+48",
-        colors: "Racing White, Silver, Carbon Black , Black, Bronze, Gold, Blue, Red"
-      }
+      {diameter: "15", width: "6.0", pcd: "4x100", offsets: "+39", colors: "Racing White, Silver, Carbon Black , Black, Bronze, Gold, Blue, Red"},
+      {diameter: "15", width: "6.5", pcd: "4x100", offsets: "+37", colors: "Racing White, Silver, Carbon Black , Black, Bronze, Gold, Blue, Red"},
+      {diameter: "15", width: "6.5", pcd: "5x100", offsets: "+35", colors: "Racing White, Silver, Carbon Black , Black, Bronze, Gold, Blue, Red"},
+      {diameter: "15", width: "7.0", pcd: "4x100", offsets: "+35/+48", colors: "Racing White, Silver, Carbon Black , Black, Bronze, Gold, Blue, Red"}
     ],
-    related: ['XUN1UOX4TSJA']
+    related: ["XUN1UOX4TSJA"]
   },
   /* Uras NS-01 */{
     id: "IPL5GT7KH9V1",
@@ -810,27 +281,9 @@ dataset = [
     link: "https://web.archive.org/web/20070504060720/http://www.uras.co.jp:80/syohin/wheel.html",
     images: ["images/IPL5GT7KH9V1-01.jpg"],
     sizes: [
-      {
-        diameter: "17",
-        width: "8.0",
-        pcd: "5x114.3",
-        offsets: "+30",
-        colors: "Silver, Black, Chrome"
-      },
-      {
-        diameter: "17",
-        width: "9.0",
-        pcd: "5x114.3",
-        offsets: "+30",
-        colors: "Silver, Black, Chrome"
-      },
-      {
-        diameter: "17",
-        width: "9.5",
-        pcd: "5x114.3",
-        offsets: "+15",
-        colors: "Silver, Black, Chrome"
-      }
+      {diameter: "17", width: "8.0", pcd: "5x114.3", offsets: "+30", colors: "Silver, Black, Chrome"},
+      {diameter: "17", width: "9.0", pcd: "5x114.3", offsets: "+30", colors: "Silver, Black, Chrome"},
+      {diameter: "17", width: "9.5", pcd: "5x114.3", offsets: "+15", colors: "Silver, Black, Chrome"}
     ],
     related: []
   },
@@ -849,20 +302,8 @@ dataset = [
     link: "https://web.archive.org/web/20070504060427/http://www.uras.co.jp:80/syohin/wheel_ns02.html",
     images: ["images/214UPUFONY13-01.jpg"],
     sizes: [
-      {
-        diameter: "17",
-        width: "8.0",
-        pcd: "5x114.3",
-        offsets: "+30",
-        colors: "Chrome"
-      },
-      {
-        diameter: "17",
-        width: "9.0",
-        pcd: "5x114.3",
-        offsets: "+15",
-        colors: "Chrome"
-      }
+      {diameter: "17", width: "8.0", pcd: "5x114.3", offsets: "+30", colors: "Chrome"},
+      {diameter: "17", width: "9.0", pcd: "5x114.3", offsets: "+15", colors: "Chrome"}
     ],
     related: []
   }
