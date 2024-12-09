@@ -780,6 +780,13 @@ dataset = [
       },
       {
         diameter: "15",
+        width: "6.5",
+        pcd: "5x100",
+        offsets: "+35",
+        colors: "Racing White, Silver, Carbon Black , Black, Bronze, Gold, Blue, Red"
+      },
+      {
+        diameter: "15",
         width: "7.0",
         pcd: "4x100",
         offsets: "+35/+48",
