@@ -14,6 +14,7 @@ If you find this resource helpful and would like to support this project feel fr
 * Determine how to categorize 2/3pc welded construction
 * Add new wheels:
   * Advan Connoisseur 51C
+  * Aimgain G2M (Work)
   * Bridgestone Down Hill Special ae051
     * http://web.archive.org/web/20081119135952/http://www.bim-cs.com/products/dhs/ae051/size.html
   * Bridgestone Down Hill Special ae081
