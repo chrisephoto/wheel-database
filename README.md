@@ -48,7 +48,7 @@ If you find this resource helpful and would like to support this project feel fr
     * 2003-2005+
     * crf crf-08 vol 114?
     * http://web.archive.org/web/20051018094530/http://www.k-one.to/parts/wheel/index.htm
-  * M2 Hanbai M2R
+  * M2 Hanbai M2R (Made by same company making 5Zigen Fireball)
   * M2 Hanbai DT-05R
   * Modex KS-CE (TWS)
   * Monster Sport ms857
