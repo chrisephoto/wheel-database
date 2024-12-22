@@ -43,6 +43,7 @@ If you find this resource helpful and would like to support this project feel fr
     * J cross JT6 (Hyper Rev vol. 77, 94, 97)
     * Techni Craft T6
     * Techni Craft S7
+  * Kid's Racing (Asahi Tec?)
   * K-One K-01
     * 2003-2005+
     * crf crf-08 vol 114?
