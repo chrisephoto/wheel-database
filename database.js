@@ -2,7 +2,7 @@ dataset = [
   /* Bee R B5 */{
     id: "0YDS9EBJLVAB",
     shortname: "Bee★R B5",
-    description: "",
+    description: "No doubt inspired by the Nismo LMGT4, the Bee★R B5 offered great style at an affordable price due to their cast construction. The twin valve stems allow quick and easy nitrogren filling.",
     brand: "Bee★R",
     model: "B5",
     manufacturer: "Unverified",
