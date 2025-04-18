@@ -10,7 +10,9 @@ filters =  {
     ],
   manufacturer: [
     "Unverified",
+    "Asahi Light Alloy Co., Ltd",
     "Enkei Co., Ltd.",
+    "Kosei Aluminum Co., Ltd",
     "Rays Co., Ltd.",
     "TAN-EI-SYA Co., Ltd."
     ],
