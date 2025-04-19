@@ -423,8 +423,18 @@ tr:hover th {
   opacity: 1.0;
 }
 
+#wheel-specs {
+  min-width: 60ch;
+}
+
 #wheel-specs td {
   text-align: center;
+}
+
+#wheel-specs-container {
+    overflow: auto;
+    margin: 0 calc(var(--padding) * -1);
+    padding: 0 var(--padding);
 }
 
 #wheel-list {
