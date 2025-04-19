@@ -10,8 +10,6 @@ If you find this resource helpful and would like to support this project feel fr
 
 ## Future Improvements
 
-* Fix specification table on mobile
-* Determine how to categorize 2/3pc welded construction
 * Add new wheels:
   * Advan Connoisseur 51C
   * Aimgain G2M (Work)
@@ -60,6 +58,11 @@ If you find this resource helpful and would like to support this project feel fr
   * Weds TC05/TC005 (Asahi Tec)
 
 ## Changelog
+
+ **2025-04-19**
+ * Made the specification table scrollable on mobile
+ * Added 2/3 piece welded construction - details will be written in the wheel summary
+ * Updated various wheel entries
  
  **2024-12-09**
  * Changelog started
