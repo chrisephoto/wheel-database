@@ -14,6 +14,7 @@ filters =  {
     "Enkei Co., Ltd.",
     "Kosei Aluminum Co., Ltd",
     "Rays Co., Ltd.",
+    "SuperAlloy Industrial Co., Ltd",
     "TAN-EI-SYA Co., Ltd."
     ],
   construction: [
