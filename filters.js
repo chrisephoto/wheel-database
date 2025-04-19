@@ -23,9 +23,11 @@ filters =  {
     "1 Piece - Unverified",
     "2 Piece - Cast",
     "2 Piece - Forged",
+    "2 Piece - Welded",
     "2 Piece - Unverified",
     "3 Piece - Cast",
     "3 Piece - Forged",
+    "3 Piece - Welded",
     "3 Piece - Unverified"
     ],
   style: [
