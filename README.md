@@ -15,7 +15,7 @@ If you find this resource helpful and would like to support this project feel fr
   * Aimgain G2M (Work)
   * Bridgestone Down Hill Special ae051
     * http://web.archive.org/web/20081119135952/http://www.bim-cs.com/products/dhs/ae051/size.html
-  * Bridgestone Down Hill Special ae081
+  * Bridgestone Down Hill Special ae081 / EuroMagic Racing GT-08F (Designed by Blest Japan, Made in Japan, By Enkei?)
     * http://web.archive.org/web/20081226155838/http://www.bim-cs.com/products/dhs/ae081/size.html
   * Carving Head 40 (Enkei)
   * Carving Stark I (1992 Work)
@@ -29,7 +29,6 @@ If you find this resource helpful and would like to support this project feel fr
     * Manufactured by Weds?
     * http://doall.jp/csttop/zero1hyper/cstzero1hyper.html
   * Dunlop Direzza RSC
-  * EuroMagic Racing GT-08F
   * EuroMagic Racing ST-05Air
   * Finalspeed Gear R
   * JIC J-Force 05
