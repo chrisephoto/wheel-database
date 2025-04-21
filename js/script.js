@@ -110,7 +110,7 @@ function populateGrid(i) {
   figure.id = dataset[i].id;
   figure.onclick = function(){populateDetails(i)};
   figure.appendChild(img);
-  img.src = dataset[i].images[0];
+  img.src = "images/" + dataset[i].id + "/" + dataset[i].images[0];
   figure.appendChild(figcaption);
   figcaption.innerHTML = dataset[i].shortname;
 }
@@ -119,7 +119,7 @@ function populateDetails(i) {
   const target = document.getElementById('wheel-details-hero');
   const image  = document.createElement('img');
   target.appendChild(image);
-  image.src = dataset[i].images[0];
+  image.src = "images/" + dataset[i].id + "/" + dataset[i].images[0];
   document.getElementById('wheel-info-shortname').innerHTML = dataset[i].shortname;
   document.getElementById('wheel-info-description').innerHTML = dataset[i].description;
   document.getElementById('wheel-info-brand').innerHTML = dataset[i].brand;
@@ -154,7 +154,7 @@ function populateDetails(i) {
     link.href = dataset[i].images[j];
     link.target = '_blank';
     link.appendChild(image);
-    image.src = dataset[i].images[j];
+    image.src = "images/" + dataset[i].id + "/" + dataset[i].images[j];
   }
   if (dataset[i].related.length > 0) {
     const container = document.getElementById('wheel-related-container');
@@ -172,7 +172,7 @@ function populateDetails(i) {
           link.href = '?id=' + dataset[i].related[j];
           link.appendChild(figure);
           figure.appendChild(img);
-          img.src = dataset[k].images[0];
+          img.src = "images/" + dataset[i].id + "/" + dataset[k].images[0];
           figure.appendChild(figcaption);
           figcaption.innerHTML = dataset[k].shortname;
         }
