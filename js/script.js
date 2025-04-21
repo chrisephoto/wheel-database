@@ -151,7 +151,7 @@ function populateDetails(i) {
     const link = document.createElement('a');
     const image  = document.createElement('img');
     target.appendChild(link);
-    link.href = dataset[i].images[j];
+    link.href = "images/" + dataset[i].id + "/" + dataset[i].images[j];
     link.target = '_blank';
     link.appendChild(image);
     image.src = "images/" + dataset[i].id + "/" + dataset[i].images[j];
