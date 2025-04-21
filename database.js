@@ -12,7 +12,7 @@ dataset = [
     construction: "1 Piece - Cast",
     style: "5 Spoke",
     link: "https://web.archive.org/web/20100116090507/http://www.bee-r.com/main/parts/wheel/index.htm",
-    images: ["images/0YDS9EBJLVAB-01.jpg"],
+    images: ["01.jpg"],
     sizes: [
       {diameter: "17", width: "9.0", pcd: "5x114.3", offsets: "+25", colors: "White, Silver, Bronze, Chrome"},
       {diameter: "18", width: "9.5", pcd: "5x114.3", offsets: "+25/+38", colors: "White, Silver, Bronze, Chrome"}
@@ -32,7 +32,7 @@ dataset = [
     construction: "1 Piece - Forged",
     style: "Split 6 Spoke",
     link: "https://web.archive.org/web/20050213145059/http://bim-cs.com/products/dhs/ae031/size.html",
-    images: ["images/U4VL4KJ2P2SV-01.jpg","images/U4VL4KJ2P2SV-02.jpg","images/U4VL4KJ2P2SV-03.jpg","images/U4VL4KJ2P2SV-04.jpg"],
+    images: ["01.jpg","02.jpg","03.jpg","04.jpg"],
     sizes: [
       {diameter: "17", width: "7.0", pcd: "4x100", offsets: "+38/+48", colors: "Bronze, Gunmetal"},
       {diameter: "17", width: "7.0", pcd: "4x114.3", offsets: "+38/+48", colors: "Bronze, Gunmetal"},
@@ -54,7 +54,7 @@ dataset = [
     construction: "1 Piece - Forged",
     style: "6 Spoke",
     link: "https://web.archive.org/web/20050213145059/http://bim-cs.com/products/dhs/ae032/size.html",
-    images: ["images/DV3YB9P4LFDL-01.jpg","images/DV3YB9P4LFDL-02.jpg","images/DV3YB9P4LFDL-03.jpg"],
+    images: ["01.jpg","02.jpg","03.jpg"],
     sizes: [
       {diameter: "17", width: "7.0", pcd: "4x100", offsets: "+38/+48", colors: "Gunmetal, Gold"},
       {diameter: "17", width: "7.0", pcd: "4x114.3", offsets: "+38/+48", colors: "Gunmetal, Gold"},
@@ -76,7 +76,7 @@ dataset = [
     construction: "1 Piece - Cast",
     style: "Split 6 Spoke",
     link: "https://web.archive.org/web/20050213145059/http://bim-cs.com/products/dhs/ae033/size.html",
-    images: ["images/X7MDK0WHI5JM-01.jpg","images/X7MDK0WHI5JM-02.jpg","images/X7MDK0WHI5JM-03.jpg"],
+    images: ["01.jpg","02.jpg","03.jpg"],
     sizes: [
       {diameter: "15", width: "6.5", pcd: "4x100", offsets: "+30/+38/+42", colors: "Gold, Gunmetal"},
       {diameter: "15", width: "6.5", pcd: "4x114.3", offsets: "+42", colors: "Gold, Gunmetal"},
@@ -109,7 +109,7 @@ dataset = [
     construction: "1 Piece - Cast",
     style: "6 Spoke",
     link: "https://web.archive.org/web/20050213145059/http://bim-cs.com/products/dhs/ae034/size.html",
-    images: ["images/SL7DDCFW05QZ-01.jpg","images/SL7DDCFW05QZ-02.jpg","images/SL7DDCFW05QZ-03.jpg","images/SL7DDCFW05QZ-04.jpg","images/SL7DDCFW05QZ-05.jpg","images/SL7DDCFW05QZ-06.jpg"],
+    images: ["01.jpg","02.jpg","03.jpg","04.jpg","05.jpg","06.jpg"],
     sizes: [
       {diameter: "15", width: "6.5", pcd: "4x100", offsets: "+30/+38/+42", colors: "White, Gunmetal"},
       {diameter: "15", width: "6.5", pcd: "4x114.3", offsets: "+42", colors: "White, Gunmetal"},
@@ -142,7 +142,7 @@ dataset = [
     construction: "1 Piece - Forged",
     style: "Split 6 Spoke",
     link: "https://web.archive.org/web/20231001182932/www.ings-net.com/english/products/wheel.html",
-    images: ["images/T8HREQGJ1TRN-01.jpg","images/T8HREQGJ1TRN-02.jpg","images/T8HREQGJ1TRN-03.jpg","images/T8HREQGJ1TRN-04.jpg","images/T8HREQGJ1TRN-05.jpg"],
+    images: ["01.jpg","02.jpg","03.jpg","04.jpg","05.jpg","06.jpg","07.jpg","08.jpg","09.jpg","10.jpg","11.jpg","12.jpg","13.jpg","14.jpg","15.jpg"],
     sizes: [
       {diameter: "18", width: "7.5", pcd: "5x100", offsets: "+43/+48", colors: "Silver, Gunmetal, Gold"},
       {diameter: "18", width: "7.5", pcd: "5x114.3", offsets: "+43/+48", colors: "Silver, Gunmetal, Gold"},
@@ -170,7 +170,7 @@ dataset = [
     construction: "1 Piece - Forged",
     style: "Split 5 Spoke",
     link: "https://web.archive.org/web/20060509014028/http://www.ijak.co.jp/HPcatalog/s05size.html",
-    images: ["images/XUN1UOX4TSJA-01.jpg","images/XUN1UOX4TSJA-02.jpg"],
+    images: ["01.jpg","02.jpg"],
     sizes: [
       {diameter: "15", width: "5.5", pcd: "4x100", offsets: "+38", colors: "White, Silver, Gold"},
       {diameter: "15", width: "6.0", pcd: "4x100", offsets: "+39", colors: "White, Silver, Gold"},
@@ -204,7 +204,7 @@ dataset = [
     construction: "1 Piece - Forged",
     style: "Split 6 Spoke",
     link: "https://web.archive.org/web/20040101121118fw_/http://www.starform-jp.com/fr_model2_2.html",
-    images: ["images/7AKI6FXXGMUE-01.jpg"],
+    images: ["01.jpg"],
     sizes: [
       {diameter: "15", width: "7.0", pcd: "4x100", offsets: "+35/+45", colors: "White, Gunmetal, Black"},
       {diameter: "15", width: "7.0", pcd: "4x114.3", offsets: "+45", colors: "White, Gunmetal, Black"},
@@ -230,7 +230,7 @@ dataset = [
     construction: "1 Piece - Forged",
     style: "5 Spoke",
     link: "https://web.archive.org/web/20031229230549fw_/http://www.starform-jp.com/fr_R2_2.html",
-    images: ["images/XEPK9WYCWZ9G-01.jpg","images/XEPK9WYCWZ9G-02.jpg"],
+    images: ["01.jpg","02.jpg"],
     sizes: [
       {diameter: "15", width: "6.5", pcd: "4x100", offsets: "+34/+40", colors: "White, Gunmetal, Black"},
       {diameter: "15", width: "7.0", pcd: "4x100", offsets: "+39/+45", colors: "White, Gunmetal, Black"},
@@ -257,7 +257,7 @@ dataset = [
     construction: "1 Piece - Forged",
     style: "Split 5 Spoke",
     link: "https://web.archive.org/web/20240419050357/www.autobacs-toyama.com/revowin",
-    images: ["images/ZACE9Q0VK89O-01.jpg","images/ZACE9Q0VK89O-02.jpg","images/ZACE9Q0VK89O-03.jpg","images/ZACE9Q0VK89O-04.jpg"],
+    images: ["01.jpg","02.jpg","03.jpg","04.jpg"],
     sizes: [
       {diameter: "15", width: "6.0", pcd: "4x100", offsets: "+39", colors: "Racing White, Silver, Carbon Black , Black, Bronze, Gold, Blue, Red"},
       {diameter: "15", width: "6.5", pcd: "4x100", offsets: "+37", colors: "Racing White, Silver, Carbon Black , Black, Bronze, Gold, Blue, Red"},
@@ -279,7 +279,7 @@ dataset = [
     construction: "1 Piece - Cast",
     style: "5 Spoke",
     link: "https://web.archive.org/web/20070504060720/http://www.uras.co.jp:80/syohin/wheel.html",
-    images: ["images/IPL5GT7KH9V1-01.jpg"],
+    images: ["01.jpg"],
     sizes: [
       {diameter: "17", width: "8.0", pcd: "5x114.3", offsets: "+30", colors: "Silver, Black, Chrome"},
       {diameter: "17", width: "9.0", pcd: "5x114.3", offsets: "+30", colors: "Silver, Black, Chrome"},
@@ -300,7 +300,7 @@ dataset = [
     construction: "1 Piece - Cast",
     style: "Split 6 Spoke",
     link: "https://web.archive.org/web/20070504060427/http://www.uras.co.jp:80/syohin/wheel_ns02.html",
-    images: ["images/214UPUFONY13-01.jpg"],
+    images: ["01.jpg"],
     sizes: [
       {diameter: "17", width: "8.0", pcd: "5x114.3", offsets: "+30", colors: "Chrome"},
       {diameter: "17", width: "9.0", pcd: "5x114.3", offsets: "+15", colors: "Chrome"}
