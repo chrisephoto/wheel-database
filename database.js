@@ -32,7 +32,7 @@ dataset = [
     construction: "1 Piece - Forged",
     style: "Split 6 Spoke",
     link: "https://web.archive.org/web/20050213145059/http://bim-cs.com/products/dhs/ae031/size.html",
-    images: ["images/U4VL4KJ2P2SV-01.jpg","images/U4VL4KJ2P2SV-02.jpg"],
+    images: ["images/U4VL4KJ2P2SV-01.jpg","images/U4VL4KJ2P2SV-02.jpg","images/U4VL4KJ2P2SV-03.jpg","images/U4VL4KJ2P2SV-04.jpg"],
     sizes: [
       {diameter: "17", width: "7.0", pcd: "4x100", offsets: "+38/+48", colors: "Bronze, Gunmetal"},
       {diameter: "17", width: "7.0", pcd: "4x114.3", offsets: "+38/+48", colors: "Bronze, Gunmetal"},
@@ -54,7 +54,7 @@ dataset = [
     construction: "1 Piece - Forged",
     style: "6 Spoke",
     link: "https://web.archive.org/web/20050213145059/http://bim-cs.com/products/dhs/ae032/size.html",
-    images: ["images/DV3YB9P4LFDL-01.jpg","images/DV3YB9P4LFDL-02.jpg"],
+    images: ["images/DV3YB9P4LFDL-01.jpg","images/DV3YB9P4LFDL-02.jpg","images/DV3YB9P4LFDL-03.jpg"],
     sizes: [
       {diameter: "17", width: "7.0", pcd: "4x100", offsets: "+38/+48", colors: "Gunmetal, Gold"},
       {diameter: "17", width: "7.0", pcd: "4x114.3", offsets: "+38/+48", colors: "Gunmetal, Gold"},
@@ -76,7 +76,7 @@ dataset = [
     construction: "1 Piece - Cast",
     style: "Split 6 Spoke",
     link: "https://web.archive.org/web/20050213145059/http://bim-cs.com/products/dhs/ae033/size.html",
-    images: ["images/X7MDK0WHI5JM-01.jpg","images/X7MDK0WHI5JM-02.jpg"],
+    images: ["images/X7MDK0WHI5JM-01.jpg","images/X7MDK0WHI5JM-02.jpg","images/X7MDK0WHI5JM-03.jpg"],
     sizes: [
       {diameter: "15", width: "6.5", pcd: "4x100", offsets: "+30/+38/+42", colors: "Gold, Gunmetal"},
       {diameter: "15", width: "6.5", pcd: "4x114.3", offsets: "+42", colors: "Gold, Gunmetal"},
@@ -109,7 +109,7 @@ dataset = [
     construction: "1 Piece - Cast",
     style: "6 Spoke",
     link: "https://web.archive.org/web/20050213145059/http://bim-cs.com/products/dhs/ae034/size.html",
-    images: ["images/SL7DDCFW05QZ-01.jpg","images/SL7DDCFW05QZ-02.jpg","images/SL7DDCFW05QZ-03.jpg","images/SL7DDCFW05QZ-04.jpg"],
+    images: ["images/SL7DDCFW05QZ-01.jpg","images/SL7DDCFW05QZ-02.jpg","images/SL7DDCFW05QZ-03.jpg","images/SL7DDCFW05QZ-04.jpg","images/SL7DDCFW05QZ-05.jpg","images/SL7DDCFW05QZ-06.jpg"],
     sizes: [
       {diameter: "15", width: "6.5", pcd: "4x100", offsets: "+30/+38/+42", colors: "White, Gunmetal"},
       {diameter: "15", width: "6.5", pcd: "4x114.3", offsets: "+42", colors: "White, Gunmetal"},
