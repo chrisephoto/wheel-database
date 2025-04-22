@@ -168,6 +168,29 @@ dataset = [
     ],
     related: []
   },
+  /* Bridgestone Down Hill Special ae081 */{
+    id: "NROW8INOVB8S",
+    shortname: "B.I.M. Down Hill Special ae081",
+    description: "Designed by Blest and sold by New Rayton as the <a href='?id=TGKY3WIFFEH7'>EuroMagic GT-08F</a>, the Down Hill Special ae081 combines a cast disk with a flow forming process to form the rim, providing a balance of high strength, light weight, and low cost.",
+    brand: "B.I.M. Creative Studio",
+    model: "Down Hill Special ae081",
+    manufacturer: "Unverified",
+    year_start: "Unverified",
+    year_end: "Unverified",
+    origin: "Japan",
+    construction: "1 Piece - Cast",
+    style: "8 Spoke",
+    link: "https://web.archive.org/web/20081226155838/http://www.bim-cs.com/products/dhs/ae081/size.html",
+    images: ["01.jpg","02.jpg"],
+    sizes: [
+      {diameter: "17", width: "7.0", pcd: "5x114.3", offsets: "+50", colors: "White, Silver, Bronze"},
+      {diameter: "17", width: "7.5", pcd: "5x100", offsets: "+48", colors: "White, Silver, Bronze"},
+      {diameter: "17", width: "7.5", pcd: "5x114.3", offsets: "+40/+48/+52", colors: "White, Silver, Bronze"},
+      {diameter: "18", width: "7.5", pcd: "5x114.3", offsets: "+38/+48/+54", colors: "White, Silver, Bronze"},
+      {diameter: "18", width: "8.5", pcd: "5x114.3", offsets: "+38/+45", colors: "White, Silver, Bronze"}
+    ],
+    related: ["TGKY3WIFFEH7"]
+  },
   /* Ings TS06 */{
     id: "T8HREQGJ1TRN",
     shortname: "Ings TS06",
@@ -195,6 +218,31 @@ dataset = [
       {diameter: "18", width: "10.5", pcd: "5x114.3", offsets: "+15/+22", colors: "Silver, Gunmetal"}
     ],
     related: []
+  },
+  /* New Rayton EuroMagic GT-08F */{
+    id: "TGKY3WIFFEH7",
+    shortname: "New Rayton EuroMagic GT-08F",
+    description: "New Rayton's EuroMagic series of wheels combines a cast disk with a flow forming process to form the rim, providing a balance of high strength, light weight, and low cost. Designed by Blest and sold under the EuroMagic brand as well as relabeled and sold by Bridgestone as the <a href='?id=NROW8INOVB8S'>Down Hill Special ae081</a>.",
+    brand: "New Rayton",
+    model: "EuroMagic GT-08F",
+    manufacturer: "Unverified",
+    year_start: "Unverified",
+    year_end: "Unverified",
+    origin: "Japan",
+    construction: "1 Piece - Cast",
+    style: "8 Spoke",
+    link: "https://web.archive.org/web/20051104010611/http://www.newrayton.co.jp/wheel/euro_racing_gt_08f/index.html",
+    images: ["01.jpg","02.jpg","03.jpg"],
+    sizes: [
+      {diameter: "17", width: "7.5", pcd: "5x100", offsets: "+48", colors: "Silver, Gunmetal, Gold"},
+      {diameter: "17", width: "7.5", pcd: "5x114.3", offsets: "+30/+40/+48/+52", colors: "Silver, Gunmetal, Gold"},
+      {diameter: "17", width: "8.5", pcd: "5x100", offsets: "+48", colors: "Silver, Gunmetal, Gold"},
+      {diameter: "17", width: "8.5", pcd: "5x114.3", offsets: "+30/+40/+48", colors: "Silver, Gunmetal, Gold"},
+      {diameter: "18", width: "7.5", pcd: "5x114.3", offsets: "+38/+48/+54", colors: "Silver, Gunmetal, Gold"},
+      {diameter: "18", width: "8.5", pcd: "5x100", offsets: "+45", colors: "Silver, Gunmetal, Gold"},
+      {diameter: "18", width: "8.5", pcd: "5x114.3", offsets: "+38/+45", colors: "Silver, Gunmetal, Gold"}
+    ],
+    related: ["NROW8INOVB8S"]
   },
   /* Southern Ways S-05 */{
     id: "XUN1UOX4TSJA",

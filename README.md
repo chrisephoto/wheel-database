@@ -13,10 +13,6 @@ If you find this resource helpful and would like to support this project feel fr
 * Add new wheels:
   * Advan Connoisseur 51C
   * Aimgain G2M (Work)
-  * Bridgestone Down Hill Special ae051
-    * http://web.archive.org/web/20081119135952/http://www.bim-cs.com/products/dhs/ae051/size.html
-  * Bridgestone Down Hill Special ae081 / EuroMagic Racing GT-08F (Designed by Blest Japan, Made in Japan, By Enkei?)
-    * http://web.archive.org/web/20081226155838/http://www.bim-cs.com/products/dhs/ae081/size.html
   * Carving Head 40 (Enkei)
   * Carving Stark I (1992 Work)
   * Carving Stark II (Work)
@@ -58,11 +54,21 @@ If you find this resource helpful and would like to support this project feel fr
 
 ## Changelog
 
- **2025-04-19**
- * Made the specification table scrollable on mobile
- * Added 2/3 piece welded construction - details will be written in the wheel summary
- * Updated various wheel entries
- 
- **2024-12-09**
- * Changelog started
+**2025-04-21**
+* Added:
+  * B.I.M. Down Hill Special ae051
+  * B.I.M. Down Hill Special ae081
+  * New Rayton EuroMagic GT-08F
+* Tweaked some CSS styles to make things more mobile friendly
+* Reorganized images to make files easier to browse and simplify `database.js`
+* Removed some unnecessary files
+
+
+**2025-04-19**
+* Made the specification table scrollable on mobile
+* Added 2/3 piece welded construction - details will be written in the wheel summary
+* Updated various wheel entries
+
+**2024-12-09**
+* Changelog started
  

@@ -172,7 +172,7 @@ function populateDetails(i) {
           link.href = '?id=' + dataset[i].related[j];
           link.appendChild(figure);
           figure.appendChild(img);
-          img.src = "images/" + dataset[i].id + "/" + dataset[k].images[0];
+          img.src = "images/" + dataset[i].related[j] + "/" + dataset[k].images[0];
           figure.appendChild(figcaption);
           figcaption.innerHTML = dataset[k].shortname;
         }
@@ -186,6 +186,7 @@ function populateDetails(i) {
   document.getElementById('wheel-details').classList = 'open';
   document.title = 'Wheel Database - ' + dataset[i].shortname;
 
+  //update browser url/history
   var queryString = new URL(document.location);
   queryString.searchParams.set('id', dataset[i].id);
   window.history.pushState(null, '', queryString);
@@ -211,6 +212,11 @@ function closeDetails() {
     });
   }, 200)
   document.title = 'Wheel Database';
+
+  //update browser url/history
+  var queryString = new URL(document.location);
+  queryString.searchParams.delete('id');
+  window.history.pushState(null, '', queryString);
 }
 
 function toggleTheme() {
