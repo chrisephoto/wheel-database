@@ -6,7 +6,8 @@ filters =  {
     "Revowin",
     "Southern Ways",
     "Starform",
-    "Uras"
+    "Uras",
+    "Yokohama"
     ],
   manufacturer: [
     "Unverified",

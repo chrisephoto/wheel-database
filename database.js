@@ -12,7 +12,7 @@ dataset = [
     construction: "1 Piece - Cast",
     style: "5 Spoke",
     link: "https://web.archive.org/web/20100116090507/http://www.bee-r.com/main/parts/wheel/index.htm",
-    images: ["01.jpg"],
+    images: ["01.jpg","02.jpg","03.jpg"],
     sizes: [
       {diameter: "17", width: "9.0", pcd: "5x114.3", offsets: "+25", colors: "White, Silver, Bronze, Chrome"},
       {diameter: "18", width: "9.5", pcd: "5x114.3", offsets: "+25/+38", colors: "White, Silver, Bronze, Chrome"}
@@ -219,6 +219,28 @@ dataset = [
     ],
     related: []
   },
+  /* New Rayton EuroMagic GT-05Air */{
+    id: "WJBPJCMTHH88",
+    shortname: "New Rayton EuroMagic GT-05Air",
+    description: "New Rayton's EuroMagic series of wheels combines a cast disk with a flow forming process to form the rim, providing a balance of high strength, light weight, and low cost. Designed by Blest and sold under the EuroMagic brand.",
+    brand: "New Rayton",
+    model: "EuroMagic GT-08F",
+    manufacturer: "Unverified",
+    year_start: "2005",
+    year_end: "Unverified",
+    origin: "Japan",
+    construction: "1 Piece - Cast",
+    style: "5 Spoke",
+    link: "https://web.archive.org/web/20050415010055/http://www.newrayton.co.jp/wheel/euro_racing_st_05air/index.html",
+    images: ["01.jpg"],
+    sizes: [
+      {diameter: "18", width: "7.5", pcd: "5x100", offsets: "+48", colors: "Silver, Gold"},
+      {diameter: "18", width: "7.5", pcd: "5x114.3", offsets: "+38/+52", colors: "Silver, Gold"},
+      {diameter: "18", width: "8.5", pcd: "5x114.3", offsets: "+24/+34/+38/+45", colors: "Silver, Gold"},
+      {diameter: "18", width: "9.5", pcd: "5x114.3", offsets: "+15/+25/+35/+45", colors: "Silver, Gold"}
+    ],
+    related: ["NROW8INOVB8S"]
+  },
   /* New Rayton EuroMagic GT-08F */{
     id: "TGKY3WIFFEH7",
     shortname: "New Rayton EuroMagic GT-08F",
@@ -374,7 +396,7 @@ dataset = [
     ],
     related: []
   },
-  /* Uras NS-02 */ {
+  /* Uras NS-02 */{
     id: "214UPUFONY13",
     shortname: "Uras NS-02",
     description: "",
@@ -393,9 +415,33 @@ dataset = [
       {diameter: "17", width: "9.0", pcd: "5x114.3", offsets: "+15", colors: "Chrome"}
     ],
     related: []
-  }
-  /* Template
-  {
+  },
+  /* Yokohama Connoisseur No. 51C */{
+    id: "CHSBALEGASCX",
+    shortname: "Yokohama Connoisseur No. 51C",
+    description: "With the Connoisseur No. 51C, Yokohama Wheel set out to create a geniune big-inch wheel devoid of pretense and perfect for driving. It gives a sporty look to early 2000's big body sedans like the Toyota Celsoir and Nissan Cima.",
+    brand: "Yokohama",
+    model: "Connoisseur No. 51C",
+    manufacturer: "Unverified",
+    year_start: "2002",
+    year_end: "Unverified",
+    origin: "Japan",
+    construction: "1 Piece - Cast",
+    style: "5 Spoke",
+    link: "https://web.archive.org/web/20060820145351/http://www.yokohamatire.jp/yrc/japan/wheel/brand/co_51c/index.html",
+    images: ["01.jpg","02.jpg","03.jpg","04.jpg","05.jpg","06.jpg","07.jpg"],
+    sizes: [
+      {diameter: "18", width: "7.5", pcd: "5x114.3", offsets: "+40/+45/+50", colors: "Silver, Bronze, Chrome"},
+      {diameter: "18", width: "8.5", pcd: "5x114.3", offsets: "+31/+38/+45", colors: "Silver, Bronze, Chrome"},
+      {diameter: "18", width: "9.5", pcd: "5x114.3", offsets: "+40", colors: "Silver, Bronze, Chrome"},
+      {diameter: "19", width: "8.5", pcd: "5x114.3", offsets: "+31/+38/+44", colors: "Silver, Bronze, Chrome"},
+      {diameter: "19", width: "9.5", pcd: "5x114.3", offsets: "+40", colors: "Silver, Bronze, Chrome"},
+      {diameter: "20", width: "9.0", pcd: "5x114.3", offsets: "+32/+42", colors: "Silver, Bronze, Chrome"},
+      {diameter: "20", width: "10.0", pcd: "5x114.3", offsets: "+39/+44", colors: "Silver, Bronze, Chrome"}
+    ],
+    related: []
+  },
+  /* Template{
     id: "",
     shortname: "",
     description: "",
@@ -419,6 +465,5 @@ dataset = [
       }
     ],
     related: []
-  },
-  */
+  },*/
 ];

@@ -11,7 +11,6 @@ If you find this resource helpful and would like to support this project feel fr
 ## Future Improvements
 
 * Add new wheels:
-  * Advan Connoisseur 51C
   * Aimgain G2M (Work)
   * Carving Head 40 (Enkei)
   * Carving Stark I (1992 Work)
@@ -22,10 +21,14 @@ If you find this resource helpful and would like to support this project feel fr
     * http://web.archive.org/web/20090819092004/www.doall.jp/wheels/d-spec/d-spec.html
   * CST (Doall) Zero-1 Hyper
     * Cast
+    * DW828 Marking
+    * CST logo sometimes present, sometimes not
+    * Made in China
     * Manufactured by Weds?
+    * Green oval inspection sticker 
     * http://doall.jp/csttop/zero1hyper/cstzero1hyper.html
+  * CST (Doall) Zero-1 Hyper V2
   * Dunlop Direzza RSC
-  * EuroMagic Racing ST-05Air
   * Finalspeed Gear R
   * JIC J-Force 05
   * Joustmeister Comp V1 (TWS)
@@ -43,16 +46,25 @@ If you find this resource helpful and would like to support this project feel fr
     * http://web.archive.org/web/20051018094530/http://www.k-one.to/parts/wheel/index.htm
   * M2 Hanbai M2R (Made by same company making 5Zigen Fireball)
   * M2 Hanbai DT-05R
+    * https://auctions.yahoo.co.jp/jp/auction/h1166265352
   * Modex KS-CE (TWS)
   * Monster Sport ms857
   * RACING HART CP-035 (TWS)
   * RAMS PR6 (TWS)
     * J's Racing PR6 (TWS)
+  * Ralliart Evolution R-01
   * Stern Aguzze S-07 (Hinodex/TWS)
   * Team Impul NS-GT II
+  * Uras NS-01
+    * https://auctions.yahoo.co.jp/jp/auction/u1142676814
   * Weds TC05/TC005 (Asahi Tec)
 
 ## Changelog
+
+**2025-07-03**
+* Added:
+  * Yokohama Connoisseur No. 51C
+  * EuroMagic Racing ST-05Air
 
 **2025-04-21**
 * Added:
