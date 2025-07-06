@@ -10,6 +10,8 @@ If you find this resource helpful and would like to support this project feel fr
 
 ## Future Improvements
 
+* Add text search
+* Add current filters to URL parameters
 * Add new wheels:
   * Aimgain G2M (Work)
   * Carving Head 40 (Enkei)
@@ -60,6 +62,10 @@ If you find this resource helpful and would like to support this project feel fr
   * Weds TC05/TC005 (Asahi Tec)
 
 ## Changelog
+
+**2025-07-06**
+* Significant redesign of page layout and details modal behavior to better suit larger screens
+* Added toggle to change between grid and list view
 
 **2025-07-03**
 * Added:

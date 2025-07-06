@@ -11,16 +11,17 @@
   <body class="theme-light">
     <header>
       <h1 id="page-title">Wheel Database</h1>
-      <span id="theme-toggle" class="material-icons">dark_mode</span>
+      <span id="display-toggle" class="material-symbols-rounded">view_list</span>
+      <span id="theme-toggle" class="material-symbols-rounded">dark_mode</span>
     </header>
+  
     <main>
       <section id="wheel-filters">
-        <h2>Filters</h2>
         <form id="wheel-filters-form">
           <!--
           <label for="input-search">Search</label>
-          <input id="input-search" type="text" placeholder="Search"/>
-          -->
+          <input id="input-search" type="search" placeholder="Search"/>
+        -->
           <label for="input-brand">Brand</label>
           <select id="input-brand">
             <option value="" selected>All Brands</option>
@@ -45,21 +46,21 @@
           <select id="input-pcd">
             <option value="" selected>All PCDs</option>
           </select>
-          <!--
-          <label for="input-year">Production Year(s)</label>
-          <select id="input-year" multiple>
-            <option value="" selected>All Years</option>
-          </select>
-          -->
           <input type="reset" value="Reset" onclick="resetFilter()"/>
           <input type="button" value="Apply" onclick="applyFilter()"/>
         </form>
       </section>
-      <section id="wheel-list"></section>
+      <section id="wheel-list" class="grid">
+        <div></div>
+        <footer>Made by <a href="//www.threads.net/@chrisephoto">@chrisphoto</a> | <a href="//github.com/chrisephoto/wheel-database">View on Github</a></footer>
+      </section>
       <section id="wheel-details">
-        <div id="wheel-details-container">
+        <div id="wheel-details-message">
+          <h2>Select a wheel to view details.</h2>
+        </div>
+        <div id="wheel-details-container" class="hidden">
           <div id="wheel-details-close">
-            <span class="material-icons">close</span>
+            <span class="material-symbols-rounded">close</span>
           </div>
           <div id="wheel-details-header">
             <div id="wheel-details-hero"></div>
@@ -74,31 +75,31 @@
               <tbody>
                 <tr>
                   <th>Brand</th>
-                  <td id="wheel-info-brand"></td>
+                  <td id="wheel-info-brand">N/A</td>
                 </tr>
                 <tr>
                   <th>Model</th>
-                  <td id="wheel-info-model"></td>
+                  <td id="wheel-info-model">N/A</td>
                 </tr>
                 <tr>
                   <th>Manufacturer</th>
-                  <td id="wheel-info-manufacturer"></td>
+                  <td id="wheel-info-manufacturer">N/A</td>
                 </tr>
                 <tr>
                   <th>Production Years</th>
-                  <td id="wheel-info-years"></td>
+                  <td id="wheel-info-years">N/A</td>
                 </tr>
                 <tr>
                   <th>Country of Origin</th>
-                  <td id="wheel-info-origin"></td>
+                  <td id="wheel-info-origin">N/A</td>
                 </tr>
                 <tr>
                   <th>Construction</th>
-                  <td id="wheel-info-construction"></td>
+                  <td id="wheel-info-construction">N/A</td>
                 </tr>
                 <tr>
                   <th>Style</th>
-                  <td id="wheel-info-style"></td>
+                  <td id="wheel-info-style">N/A</td>
                 </tr>
                 <tr>
                   <th>Additional Information</th>
@@ -122,7 +123,7 @@
             </div>
             <h2>Gallery</h2>
             <div id="wheel-images"></div>
-            <div id="wheel-related-container" class="hidden">
+            <div id="wheel-related-container">
               <h2>Related Wheels</h2>
               <div id="wheel-related"></div>
             </div>
@@ -130,6 +131,5 @@
         </div>
       </section>
     </main>
-    <footer>Made by <a href="//www.threads.net/@chrisephoto">@chrisphoto</a> | <a href="//github.com/chrisephoto/wheel-database">View on Github</a></footer>
   </body>
 </html>
