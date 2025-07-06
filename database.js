@@ -239,7 +239,7 @@ dataset = [
       {diameter: "18", width: "8.5", pcd: "5x114.3", offsets: "+24/+34/+38/+45", colors: "Silver, Gold"},
       {diameter: "18", width: "9.5", pcd: "5x114.3", offsets: "+15/+25/+35/+45", colors: "Silver, Gold"}
     ],
-    related: ["NROW8INOVB8S"]
+    related: []
   },
   /* New Rayton EuroMagic GT-08F */{
     id: "TGKY3WIFFEH7",
