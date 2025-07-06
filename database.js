@@ -222,9 +222,9 @@ dataset = [
   /* New Rayton EuroMagic GT-05Air */{
     id: "WJBPJCMTHH88",
     shortname: "New Rayton EuroMagic GT-05Air",
-    description: "New Rayton's EuroMagic series of wheels combines a cast disk with a flow forming process to form the rim, providing a balance of high strength, light weight, and low cost. Designed by Blest and sold under the EuroMagic brand.",
+    description: "New Rayton's EuroMagic series of wheels combines a cast disk with a flow forming process to form the rim, providing a balance of high strength, light weight, and low cost.",
     brand: "New Rayton",
-    model: "EuroMagic GT-08F",
+    model: "EuroMagic GT-05Air",
     manufacturer: "Unverified",
     year_start: "2005",
     year_end: "Unverified",
@@ -232,7 +232,7 @@ dataset = [
     construction: "1 Piece - Cast",
     style: "5 Spoke",
     link: "https://web.archive.org/web/20050415010055/http://www.newrayton.co.jp/wheel/euro_racing_st_05air/index.html",
-    images: ["01.jpg"],
+    images: ["01.jpg","02.jpg"],
     sizes: [
       {diameter: "18", width: "7.5", pcd: "5x100", offsets: "+48", colors: "Silver, Gold"},
       {diameter: "18", width: "7.5", pcd: "5x114.3", offsets: "+38/+52", colors: "Silver, Gold"},
