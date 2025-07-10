@@ -105,12 +105,15 @@ function populateGrid(i) {
   figure.id = dataset[i].id;
   figure.onclick = function(){populateDetails(i)};
   figure.appendChild(img);
-  img.src = "images/" + dataset[i].id + "/" + dataset[i].images[0];
+  img.src = "images/" + dataset[i].id + "/00.png";
   figure.appendChild(figcaption);
   figcaption.innerHTML = dataset[i].shortname;
 }
 
 function populateDetails(i) {
+  //scroll details to top of page
+  document.getElementById('wheel-details').scrollTo(0,0);
+
   //hide default message and show details
   document.querySelector('#wheel-details-message').classList = 'hidden';
   document.querySelector('#wheel-details-container').classList = '';
@@ -131,82 +134,91 @@ function populateDetails(i) {
   });
 
   //load new detail information
-  setTimeout(function(){
-    const target = document.getElementById('wheel-details-hero');
+  const target = document.getElementById('wheel-details-hero');
+  const image  = document.createElement('img');
+  target.appendChild(image);
+  image.src = "images/" + dataset[i].id + "/00.png";
+  document.getElementById('wheel-info-shortname').innerHTML = dataset[i].shortname;
+  document.getElementById('wheel-info-description').innerHTML = dataset[i].description;
+  document.getElementById('wheel-info-brand').innerHTML = dataset[i].brand;
+  document.getElementById('wheel-info-model').innerHTML = dataset[i].model;
+  document.getElementById('wheel-info-manufacturer').innerHTML = dataset[i].manufacturer;
+  if (dataset[i].year_start == dataset[i].year_end) {
+    document.getElementById('wheel-info-years').innerHTML = dataset[i].year_start;
+  }
+  else {
+    document.getElementById('wheel-info-years').innerHTML = dataset[i].year_start + ' - ' + dataset[i].year_end;
+  }
+  document.getElementById('wheel-info-origin').innerHTML = dataset[i].origin;
+  document.getElementById('wheel-info-construction').innerHTML = dataset[i].construction;
+  document.getElementById('wheel-info-style').innerHTML = dataset[i].style;
+  document.querySelector('#wheel-info-link a').href = dataset[i].link;
+  for (let j = 0; j < dataset[i].sizes.length; j++) {
+    const table = document.querySelector('#wheel-specs tbody');
+    const row  = document.createElement('tr');
+    table.appendChild(row);
+    for (const data in dataset[i].sizes[j]) {
+      const cell = document.createElement('td');
+      const text = document.createTextNode(dataset[i].sizes[j][data]);
+      row.appendChild(cell);
+      cell.appendChild(text);
+    }
+  }
+  for (let j = 0; j < dataset[i].images.length; j++) {
+    const target = document.getElementById('wheel-images');
+    const link = document.createElement('a');
     const image  = document.createElement('img');
-    target.appendChild(image);
-    image.src = "images/" + dataset[i].id + "/" + dataset[i].images[0];
-    document.getElementById('wheel-info-shortname').innerHTML = dataset[i].shortname;
-    document.getElementById('wheel-info-description').innerHTML = dataset[i].description;
-    document.getElementById('wheel-info-brand').innerHTML = dataset[i].brand;
-    document.getElementById('wheel-info-model').innerHTML = dataset[i].model;
-    document.getElementById('wheel-info-manufacturer').innerHTML = dataset[i].manufacturer;
-    if (dataset[i].year_start == dataset[i].year_end) {
-      document.getElementById('wheel-info-years').innerHTML = dataset[i].year_start;
-    }
-    else {
-      document.getElementById('wheel-info-years').innerHTML = dataset[i].year_start + ' - ' + dataset[i].year_end;
-    }
-    document.getElementById('wheel-info-origin').innerHTML = dataset[i].origin;
-    document.getElementById('wheel-info-construction').innerHTML = dataset[i].construction;
-    document.getElementById('wheel-info-style').innerHTML = dataset[i].style;
-    document.querySelector('#wheel-info-link a').href = dataset[i].link;
-    for (let j = 0; j < dataset[i].sizes.length; j++) {
-      const table = document.querySelector('#wheel-specs tbody');
-      const row  = document.createElement('tr');
-      table.appendChild(row);
-      for (const data in dataset[i].sizes[j]) {
-        const cell = document.createElement('td');
-        const text = document.createTextNode(dataset[i].sizes[j][data]);
-        row.appendChild(cell);
-        cell.appendChild(text);
-      }
-    }
-    for (let j = 0; j < dataset[i].images.length; j++) {
-      const target = document.getElementById('wheel-images');
-      const link = document.createElement('a');
-      const image  = document.createElement('img');
-      target.appendChild(link);
-      link.href = "images/" + dataset[i].id + "/" + dataset[i].images[j];
-      link.target = '_blank';
-      link.appendChild(image);
-      image.src = "images/" + dataset[i].id + "/" + dataset[i].images[j];
-    }
-    if (dataset[i].related.length > 0) {
-      const container = document.getElementById('wheel-related-container');
-      container.classList = '';
-      for (let j = 0; j < dataset[i].related.length; j++) {
-        for (let k = 0; k < dataset.length; k++) {
-          if (dataset[k].id == dataset[i].related[j]) {
-            const target = document.getElementById('wheel-related');
-            const link = document.createElement('a');
-            const figure = document.createElement('figure');
-            const img = document.createElement('img');
-            const figcaption = document.createElement('figcaption');
-            const div = document.createElement('div');
-            target.appendChild(link);
-            link.href = '?id=' + dataset[i].related[j];
-            link.appendChild(figure);
-            figure.appendChild(img);
-            img.src = "images/" + dataset[i].related[j] + "/" + dataset[k].images[0];
-            figure.appendChild(figcaption);
-            figcaption.innerHTML = dataset[k].shortname;
-          }
+    target.appendChild(link);
+    link.href = "images/" + dataset[i].id + "/" + dataset[i].images[j];
+    link.target = '_blank';
+    link.appendChild(image);
+    image.src = "images/" + dataset[i].id + "/" + dataset[i].images[j];
+  }
+  if (dataset[i].related.length > 0) {
+    const container = document.getElementById('wheel-related-container');
+    container.classList = '';
+    for (let j = 0; j < dataset[i].related.length; j++) {
+      for (let k = 0; k < dataset.length; k++) {
+        if (dataset[k].id == dataset[i].related[j]) {
+          const target = document.getElementById('wheel-related');
+          //const link = document.createElement('a');
+          const figure = document.createElement('figure');
+          const img = document.createElement('img');
+          const figcaption = document.createElement('figcaption');
+          const div = document.createElement('div');
+          //target.appendChild(link);
+          //link.href = '?id=' + dataset[i].related[j];
+          //link.appendChild(figure);
+          target.appendChild(figure);
+          figure.appendChild(img);
+          figure.onclick = function(){loadDetails(dataset[i].related[j])};
+          img.src = "images/" + dataset[i].related[j] + "/00.png";
+          figure.appendChild(figcaption);
+          figcaption.innerHTML = dataset[k].shortname;
         }
-      }    
-    }
-    else {
-      const target = document.getElementById('wheel-related-container');
-      target.classList = 'hidden';
-    }
-    document.getElementById('wheel-details').classList = 'open';
-    document.title = 'Wheel Database - ' + dataset[i].shortname;
+      }
+    }    
+  }
+  else {
+    const target = document.getElementById('wheel-related-container');
+    target.classList = 'hidden';
+  }
+  document.getElementById('wheel-details').classList = 'open';
+  document.title = 'Wheel Database - ' + dataset[i].shortname;
 
-    //update browser url/history
-    var queryString = new URL(document.location);
-    queryString.searchParams.set('id', dataset[i].id);
-    window.history.pushState(null, '', queryString);
-  }, 200)
+  //update browser url/history
+  var queryString = new URL(document.location);
+  queryString.searchParams.set('id', dataset[i].id);
+  window.history.pushState(null, '', queryString);
+}
+
+function loadDetails(id) {
+  for (let i = 0; i < dataset.length; i++) {
+    if (dataset[i].id == id) {
+      populateDetails(i);
+    }
+  }
+  document.getElementById('wheel-details').scrollTo(0,0);
 }
 
 function closeDetails() {

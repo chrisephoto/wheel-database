@@ -7,11 +7,12 @@ filters =  {
     "Southern Ways",
     "Starform",
     "Uras",
+    "Weds",
     "Yokohama"
     ],
   manufacturer: [
     "Unverified",
-    "Asahi Light Alloy Co., Ltd",
+    "Asahi Tec Co., Ltd",
     "Enkei Co., Ltd.",
     "Kosei Aluminum Co., Ltd",
     "Rays Co., Ltd.",

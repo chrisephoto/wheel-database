@@ -14,6 +14,7 @@ If you find this resource helpful and would like to support this project feel fr
 * Add current filters to URL parameters
 * Add new wheels:
   * Aimgain G2M (Work)
+  * BIM Zeit R
   * Carving Head 40 (Enkei)
   * Carving Stark I (1992 Work)
   * Carving Stark II (Work)
@@ -31,7 +32,10 @@ If you find this resource helpful and would like to support this project feel fr
     * http://doall.jp/csttop/zero1hyper/cstzero1hyper.html
   * CST (Doall) Zero-1 Hyper V2
   * Dunlop Direzza RSC
-  * Finalspeed Gear R
+  * Finalspeed Eraser (Taiwan, A-Tech, 2011 production end, replaced by Kai 2012, China, SMCS)
+    * https://web.archive.org/web/20040808004111/http://www.hotstuff-cp.co.jp/catalog/catalog.pdf
+  * Finalspeed Gear R (Taiwan, A-Tech, 2011 production end, replaced by Kai 2012, China, SMCS)
+  * Finalspeed Forged (Japan, Speed Star Racing, SSF)
   * JIC J-Force 05
   * Joustmeister Comp V1 (TWS)
     * Doghouse D/H original wheel (Hyper Rev vol. 95, 103, 117)
@@ -49,6 +53,8 @@ If you find this resource helpful and would like to support this project feel fr
   * M2 Hanbai M2R (Made by same company making 5Zigen Fireball)
   * M2 Hanbai DT-05R
     * https://auctions.yahoo.co.jp/jp/auction/h1166265352
+  * MB Motorsports Drifter (GT-05Air?)
+    * https://my350z.com/forum/wheels-tires/620146-mb-motorsports-drifter-18x9-5-15-5-114-3-wheels.html
   * Modex KS-CE (TWS)
   * Monster Sport ms857
   * RACING HART CP-035 (TWS)
@@ -57,11 +63,21 @@ If you find this resource helpful and would like to support this project feel fr
   * Ralliart Evolution R-01
   * Stern Aguzze S-07 (Hinodex/TWS)
   * Team Impul NS-GT II
-  * Uras NS-01
-    * https://auctions.yahoo.co.jp/jp/auction/u1142676814
-  * Weds TC05/TC005 (Asahi Tec)
 
 ## Changelog
+
+**2025-07-09**
+* Updated links Javascript to prevent page reload
+* Updated all hero images to "00.png" with transparent background
+* Updated:
+  * Real Racing Model II
+  * Real Racing R2
+  * Uras NS-01
+  * Uras NS-02
+  * Yokohama Connoisseur No. 51C
+* Added:
+  * WedsSport TC-05
+  * WedsSport TC-005
 
 **2025-07-06**
 * Significant redesign of page layout and details modal behavior to better suit larger screens
