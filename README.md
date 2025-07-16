@@ -1,6 +1,6 @@
 # Wheel Database
 
-I created this to serve as a searchable database of Japanese made wheels - especially those less known, including photos and specifications of each wheel. This was heavily inspired by the work done at [Kyusha Shoes](https://www.kyushashoes.com).
+I created this to serve as a searchable database of Japanese brand wheels - especially those less known, including photos and specifications of each wheel. This was heavily inspired by the work done at [Kyusha Shoes](https://www.kyushashoes.com).
 
 I do not claim this database to be complete or comprehensive but I do intend to make sure all of the data is as accurate as possible. Most of this data has been gathered from archives of the manufacturers websites and books such as Holiday Auto, Gold Car Top, and HyperRev.
 
@@ -10,8 +10,6 @@ If you find this resource helpful and would like to support this project feel fr
 
 ## Future Improvements
 
-* Add text search
-* Add current filters to URL parameters
 * Add new wheels:
   * Aimgain G2M (Work)
   * BIM Zeit R
@@ -32,10 +30,14 @@ If you find this resource helpful and would like to support this project feel fr
     * http://doall.jp/csttop/zero1hyper/cstzero1hyper.html
   * CST (Doall) Zero-1 Hyper V2
   * Dunlop Direzza RSC
+  * Enkei
+    * https://irs.co.jp/endlist/#
   * Finalspeed Eraser (Taiwan, A-Tech, 2011 production end, replaced by Kai 2012, China, SMCS)
     * https://web.archive.org/web/20040808004111/http://www.hotstuff-cp.co.jp/catalog/catalog.pdf
   * Finalspeed Gear R (Taiwan, A-Tech, 2011 production end, replaced by Kai 2012, China, SMCS)
   * Finalspeed Forged (Japan, Speed Star Racing, SSF)
+  * Gialla Vulcano
+    * http://web.archive.org/web/20081225051722/gialla.co.jp/gialla/catalog/wheel/vulcano/vulcano.html
   * JIC J-Force 05
   * Joustmeister Comp V1 (TWS)
     * Doghouse D/H original wheel (Hyper Rev vol. 95, 103, 117)
@@ -55,16 +57,27 @@ If you find this resource helpful and would like to support this project feel fr
     * https://auctions.yahoo.co.jp/jp/auction/h1166265352
   * MB Motorsports Drifter (GT-05Air?)
     * https://my350z.com/forum/wheels-tires/620146-mb-motorsports-drifter-18x9-5-15-5-114-3-wheels.html
-  * Modex KS-CE (TWS)
   * Monster Sport ms857
   * RACING HART CP-035 (TWS)
   * RAMS PR6 (TWS)
     * J's Racing PR6 (TWS)
   * Ralliart Evolution R-01
-  * Stern Aguzze S-07 (Hinodex/TWS)
   * Team Impul NS-GT II
 
 ## Changelog
+
+**2025-07-15**
+* Added filter parameters to URL so filtered results can be bookmarked/shared
+* Added text search filter
+* Updated filter logic to auto populate brands and manufacturers
+* Added remaining filters directly to HTML
+* Removed `filters.js`
+* Added:
+  * Hinodex Aguzze S-07
+  * Hinodex Aguzze S-07R
+  * Modex KS-CE
+* Updated:
+  * Yokohama Connoisseur No. 51C
 
 **2025-07-09**
 * Updated links Javascript to prevent page reload

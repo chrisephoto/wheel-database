@@ -17,11 +17,9 @@
   
     <main>
       <section id="wheel-filters">
-        <form id="wheel-filters-form">
-          <!--
+        <form id="wheel-filters-form" action="javascript:applyFilter()">
           <label for="input-search">Search</label>
           <input id="input-search" type="search" placeholder="Search"/>
-        -->
           <label for="input-brand">Brand</label>
           <select id="input-brand">
             <option value="" selected>All Brands</option>
@@ -29,22 +27,72 @@
           <label for="input-manufacturer">Manufacturer</label>
           <select id="input-manufacturer">
             <option value="" selected>All Manufacturers</option>
+            <option value="Unverified">Unverified</option>
           </select>
           <label for="input-style">Style</label>
           <select id="input-style">
             <option value="" selected>All Styles</option>
+            <option value="Aero">Aero</option>
+            <option value="Dish">Dish</option>
+            <option value="Mesh">Mesh</option>
+            <option value="3 Spoke">3 Spoke</option>
+            <option value="4 Spoke">4 Spoke</option>
+            <option value="5 Spoke">5 Spoke</option>
+            <option value="6 Spoke">6 Spoke</option>
+            <option value="7 Spoke">7 Spoke</option>
+            <option value="8 Spoke">8 Spoke</option>
+            <option value="9 Spoke">9 Spoke</option>
+            <option value="10 Spoke">10 Spoke</option>
+            <option value="11 Spoke">11 Spoke</option>
+            <option value="12 Spoke">12 Spoke</option>
+            <option value="16 Spoke">16 Spoke</option>
+            <option value="Split 3 Spoke">Split 3 Spoke</option>
+            <option value="Split 4 Spoke">Split 4 Spoke</option>
+            <option value="Split 5 Spoke">Split 5 Spoke</option>
+            <option value="Split 6 Spoke">Split 6 Spoke</option>
+            <option value="Split 7 Spoke">Split 7 Spoke</option>
+            <option value="Split 8 Spoke">Split 8 Spoke</option>
+            <option value="Split 9 Spoke">Split 9 Spoke</option>
           </select>
           <label for="input-construction">Construction</label>
           <select id="input-construction">
             <option value="" selected>All Construction Methods</option>
+            <option value="Unverified">Unverified</option>
+            <option value="1 Piece - Unverified">1 Piece - Unverified</option>
+            <option value="1 Piece - Cast">1 Piece - Cast</option>
+            <option value="1 Piece - Forged">1 Piece - Forged</option>
+            <option value="2 Piece - Unverified">2 Piece - Unverified</option>
+            <option value="2 Piece - Cast">2 Piece - Cast</option>
+            <option value="2 Piece - Forged">2 Piece - Forged</option>
+            <option value="2 Piece - Welded">2 Piece - Welded</option>
+            <option value="3 Piece - Unverified">3 Piece - Unverified</option>
+            <option value="3 Piece - Cast">3 Piece - Cast</option>
+            <option value="3 Piece - Forged">3 Piece - Forged</option>
+            <option value="3 Piece - Welded">3 Piece - Welded</option>
           </select>
           <label for="input-diameter">Diameter</label>
           <select id="input-diameter">
             <option value="" selected>All Diameters</option>
+            <option value="12">12"</option>
+            <option value="13">13"</option>
+            <option value="14">14"</option>
+            <option value="15">15"</option>
+            <option value="16">16"</option>
+            <option value="17">17"</option>
+            <option value="18">18"</option>
+            <option value="19">19"</option>
+            <option value="20">20"</option>
           </select>
           <label for="input-pcd">PCD</label>
           <select id="input-pcd">
             <option value="" selected>All PCDs</option>
+            <option value="4x100">4x100</option>
+            <option value="4x114.3">4x114.3</option>
+            <option value="5x100">5x100</option>
+            <option value="5x114.3">5x114.3</option>
+            <option value="5x120">5x120</option>
+            <option value="5x130">5x130</option>
+            <option value="6x139.7">6x139.7</option>
           </select>
           <input type="reset" value="Reset" onclick="resetFilter()"/>
           <input type="button" value="Apply" onclick="applyFilter()"/>

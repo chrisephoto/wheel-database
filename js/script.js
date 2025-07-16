@@ -1,8 +1,20 @@
-window.onload=function(){
-  // event listeners
+window.onload = function() {
+  initialize()
+};
+
+function initialize() {
+  // add event listeners
   document.getElementById('wheel-details-close').addEventListener('click', closeDetails);
   document.getElementById('theme-toggle').addEventListener('click', toggleTheme);
   document.getElementById('display-toggle').addEventListener('click', toggleDisplay);
+
+  // populate filters
+  populateFilters();
+
+  // populate wheel list
+  for (let i = 0; i < dataset.length; i++) {
+    populateGrid(i)
+  }
 
   // check cookies and apply preferences
   function getCookie(name) {
@@ -21,17 +33,78 @@ window.onload=function(){
     document.querySelector('#theme-toggle').innerHTML = 'light_mode';
   }
 
-  // populate filters
-  populateFilters();
-
-  // populate wheel list
-  for (let i = 0; i < dataset.length; i++) {
-    populateGrid(i)
-  }
-
-  // check url and apply details
+  // get current url with parameters
   const queryString = window.location.search;
   const urlParams = new URLSearchParams(queryString);
+
+  // add search query to search input
+  const urlSearch = urlParams.get('q')
+  document.getElementById('input-search').value = urlSearch;
+
+  // if brand parameter is valid, set brand input
+  const urlBrand = urlParams.get('b')
+  if (urlBrand) {
+    for (let i = 0; i < document.getElementById('input-brand').length; i++) {
+      if (urlBrand == document.getElementById('input-brand').options[i].value) {
+        document.getElementById('input-brand').value = urlBrand;
+      }
+    }
+  }
+
+  // if manufacturer parameter is valid, set manufacturer input
+  const urlManufacturer = urlParams.get('m')
+  if (urlManufacturer) {
+    for (let i = 0; i < document.getElementById('input-manufacturer').length; i++) {
+      if (urlManufacturer == document.getElementById('input-manufacturer').options[i].value) {
+        document.getElementById('input-manufacturer').value = urlManufacturer;
+      }
+    }
+  }
+
+  // if style parameter is valid, set style input
+  const urlStyle = urlParams.get('s')
+  if (urlStyle) {
+    for (let i = 0; i < document.getElementById('input-style').length; i++) {
+      if (urlStyle == document.getElementById('input-style').options[i].value) {
+        document.getElementById('input-style').value = urlStyle;
+      }
+    }
+  }
+
+  // if construction parameter is valid, set construction input
+  const urlConstruction = urlParams.get('c')
+  if (urlConstruction) {
+    for (let i = 0; i < document.getElementById('input-construction').length; i++) {
+      if (urlConstruction == document.getElementById('input-construction').options[i].value) {
+        document.getElementById('input-construction').value = urlConstruction;
+      }
+    }
+  }
+
+  // if diameter parameter is valid, set diameter input
+  const urlDiameter = urlParams.get('d')
+  if (urlDiameter) {
+    for (let i = 0; i < document.getElementById('input-diameter').length; i++) {
+      if (urlDiameter == document.getElementById('input-diameter').options[i].value) {
+        document.getElementById('input-diameter').value = urlDiameter;
+      }
+    }
+  }
+
+  // if pcd parameter is valid, set pcd input
+  const urlPCD = urlParams.get('p')
+  if (urlPCD) {
+    for (let i = 0; i < document.getElementById('input-pcd').length; i++) {
+      if (urlPCD == document.getElementById('input-pcd').options[i].value) {
+        document.getElementById('input-pcd').value = urlPCD;
+      }
+    }
+  }
+
+  // run applyFilter function
+  applyFilter();
+
+  // if wheel id is valid, run populateDetails function
   const urlId = urlParams.get('id')
   for (let i = 0; i < dataset.length; i++) {
     if (dataset[i].id == urlId) {
@@ -42,57 +115,41 @@ window.onload=function(){
 
 // functions
 function populateFilters() {
-  for (let i = 0; i < filters.brand.length; i++) {
-    const input = document.getElementById('input-brand');
-    const option = document.createElement('option');
-    option.value = filters.brand[i];
-    option.innerHTML = filters.brand[i];
-    input.appendChild(option);
-  }
-  for (let i = 0; i < filters.manufacturer.length; i++) {
-    const input = document.getElementById('input-manufacturer');
-    const option = document.createElement('option');
-    option.value = filters.manufacturer[i];
-    option.innerHTML = filters.manufacturer[i];
-    input.appendChild(option);
-  }
-  for (let i = 0; i < filters.style.length; i++) {
-    const input = document.getElementById('input-style');
-    const option = document.createElement('option');
-    option.value = filters.style[i];
-    option.innerHTML = filters.style[i];
-    input.appendChild(option);
-  }
-  for (let i = 0; i < filters.construction.length; i++) {
-    const input = document.getElementById('input-construction');
-    const option = document.createElement('option');
-    option.value = filters.construction[i];
-    option.innerHTML = filters.construction[i];
-    input.appendChild(option);
-  }
-  for (let i = 0; i < filters.diameter.length; i++) {
-    const input = document.getElementById('input-diameter');
-    const option = document.createElement('option');
-    option.value = filters.diameter[i];
-    option.innerHTML = filters.diameter[i] + '&quot;';
-    input.appendChild(option);
-  }
-  for (let i = 0; i < filters.pcd.length; i++) {
-    const input = document.getElementById('input-pcd');
-    const option = document.createElement('option');
-    option.value = filters.pcd[i];
-    option.innerHTML = filters.pcd[i];
-    input.appendChild(option);
-  }
-  /*
-  for (let i = 0; i < filters.year.length; i++) {
-    const input = document.getElementById('input-year');
-    const option = document.createElement('option');
-    option.value = filters.year[i];
-    option.innerHTML = filters.year[i];
-    input.appendChild(option);
-  }
-  */
+    // create array of all unique brands from the database
+    brandArray = [];
+    for (let i = 0; i < dataset.length; i++) {
+        if(brandArray.indexOf(dataset[i].brand) === -1) {
+            brandArray.push(dataset[i].brand);
+        }
+    }
+    brandArray = brandArray.sort(); // sort the array alphabetically
+
+    // populate DOM with brands
+    for (let i = 0; i < brandArray.length; i++) {
+        const input = document.getElementById('input-brand');
+        const option = document.createElement('option');
+        option.value = brandArray[i];
+        option.innerHTML = brandArray[i];
+        input.appendChild(option);
+    }
+
+    // create array of all unique brands from the database
+    manufacturerArray = [];
+    for (let i = 0; i < dataset.length; i++) {
+        if(manufacturerArray.indexOf(dataset[i].manufacturer) === -1 && dataset[i].manufacturer != 'Unverified') {
+            manufacturerArray.push(dataset[i].manufacturer);
+        }
+    }
+    manufacturerArray = manufacturerArray.sort(); // sort the array alphabetically
+
+    // populate DOM with manufacturers
+    for (let i = 0; i < manufacturerArray.length; i++) {
+        const input = document.getElementById('input-manufacturer');
+        const option = document.createElement('option');
+        option.value = manufacturerArray[i];
+        option.innerHTML = manufacturerArray[i];
+        input.appendChild(option);
+    }
 }
 
 function populateGrid(i) {
@@ -181,14 +238,10 @@ function populateDetails(i) {
       for (let k = 0; k < dataset.length; k++) {
         if (dataset[k].id == dataset[i].related[j]) {
           const target = document.getElementById('wheel-related');
-          //const link = document.createElement('a');
           const figure = document.createElement('figure');
           const img = document.createElement('img');
           const figcaption = document.createElement('figcaption');
           const div = document.createElement('div');
-          //target.appendChild(link);
-          //link.href = '?id=' + dataset[i].related[j];
-          //link.appendChild(figure);
           target.appendChild(figure);
           figure.appendChild(img);
           figure.onclick = function(){loadDetails(dataset[i].related[j])};
@@ -263,45 +316,31 @@ function applyFilter() {
   filterIndexes = []
   
   //set filter params
-  //filterSearch = document.getElementById('input-search').value;
+  filterSearch = document.getElementById('input-search').value;
   filterBrand = document.getElementById('input-brand').value;
   filterManufacturer = document.getElementById('input-manufacturer').value;
-  /*
-  filterYear = [];
-  for (var option of document.getElementById('input-year').options) {
-      if (option.selected) {
-          filterYear.push(option.value);
-      }
-  }
-  */
-  filterConstruction = document.getElementById('input-construction').value;
   filterStyle = document.getElementById('input-style').value;
-  filterDiameter = [];
-  for (var option of document.getElementById('input-diameter').options) {
-      if (option.selected) {
-          filterDiameter.push(option.value);
-      }
-  }
-  filterPCD = [];
-  for (var option of document.getElementById('input-pcd').options) {
-      if (option.selected) {
-          filterPCD.push(option.value);
-      }
-  }
+  filterConstruction = document.getElementById('input-construction').value;
+  filterDiameter = document.getElementById('input-diameter').value;
+  filterPCD = document.getElementById('input-pcd').value
     
   //check dataset for matches
   for (let i = 0; i < dataset.length; i++) {
-    //matchSearch = true;
+    matchSearch = false;
     matchBrand = true;
     matchManufacturer = true;
-    //matchYear = false;
-    matchConstruction = true;
     matchStyle = true;
-    matchSize = false;
+    matchConstruction = true;
+    matchDiameter = false;
+    matchPCD = false;
     
-    //matchSearch
-    if (filterBrand && dataset[i].brand != filterBrand) {
-      matchBrand = false;
+    //matchSearch 
+    if (!filterSearch) {
+      matchSearch = true;
+    }
+    else {
+      if (dataset[i].shortname.toUpperCase().includes(filterSearch.toUpperCase())) {matchSearch = true;}
+      if (dataset[i].description.toUpperCase().includes(filterSearch.toUpperCase())) {matchSearch = true;}
     }
     
     //matchBrand
@@ -313,43 +352,49 @@ function applyFilter() {
     if (filterManufacturer && dataset[i].manufacturer != filterManufacturer) {
       matchManufacturer = false;
     }
-    
-    //matchYear
-    /*
-    for (let j = 0; j < filterYear.length; j++) {
-      if ((filterYear[j] >= dataset[i].year_start && filterYear[j] <= dataset[i].year_end) || !filterYear[j]) {
-        matchYear = true;
-        break;
-      }
+
+    //matchStyle
+    if (filterStyle && dataset[i].style != filterStyle) {
+      matchStyle = false;
     }
-    */
     
     //matchConstruction
     if (filterConstruction && dataset[i].construction != filterConstruction) {
       matchConstruction = false;
     }
     
-    //matchStyle
-    if (filterStyle && dataset[i].style != filterStyle) {
-      matchStyle = false;
-    }
-    
-    //matchSize    
-    matchSizeLoop: for (let j = 0; j < filterDiameter.length; j++) {
-      for (let k = 0; k < dataset[i].sizes.length; k++) {
-        if (dataset[i].sizes[k].diameter.includes(filterDiameter[j]) || !filterDiameter[j]) {
-          for (let l = 0; l < filterPCD.length; l++) {
-            if (dataset[i].sizes[k].pcd.includes(filterPCD[l]) || !filterPCD[l]) {
-              matchSize = true;
-              break matchSizeLoop;
-            }
-          }
+    //matchDiameter and matchPCD
+    if (filterDiameter && filterPCD) {
+      for (let j = 0; j < dataset[i].sizes.length; j++) {
+        if (dataset[i].sizes[j].diameter == filterDiameter && dataset[i].sizes[j].pcd == filterPCD) {
+          matchDiameter = true;
+          matchPCD = true;
         }
       }
     }
+    else if (filterDiameter && !filterPCD) {
+      matchPCD = true;
+      for (let j = 0; j < dataset[i].sizes.length; j++) {
+        if (dataset[i].sizes[j].diameter == filterDiameter) {
+          matchDiameter = true;
+        }
+      }
+    }
+    else if (!filterDiameter && filterPCD) {
+      matchDiameter = true;
+      for (let j = 0; j < dataset[i].sizes.length; j++) {
+        if (dataset[i].sizes[j].pcd == filterPCD) {
+          matchPCD = true;
+        }
+      }
+    }
+    else {
+      matchDiameter = true;
+      matchPCD = true;
+    }
     
     //add matches to index list
-    if (matchBrand && matchManufacturer && matchConstruction && matchStyle && matchSize) {
+    if (matchSearch && matchBrand && matchManufacturer && matchStyle && matchConstruction && matchDiameter && matchPCD) {
       filterIndexes.push(i);
     }
   }
@@ -361,6 +406,17 @@ function applyFilter() {
   for (let j = 0; j < filterIndexes.length; j++) {
     populateGrid(filterIndexes[j])
   }
+
+  //update browser url/history
+  var queryString = new URL(document.location);
+  if (filterSearch){queryString.searchParams.set('q', filterSearch)};
+  if (filterBrand){queryString.searchParams.set('b', filterBrand)};
+  if (filterManufacturer){queryString.searchParams.set('m', filterManufacturer)};
+  if (filterStyle){queryString.searchParams.set('s', filterStyle)};
+  if (filterConstruction){queryString.searchParams.set('c', filterConstruction)};
+  if (filterDiameter){queryString.searchParams.set('d', filterDiameter)};
+  if (filterPCD){queryString.searchParams.set('p', filterPCD)};
+  window.history.pushState(null, '', queryString);
 }
 
 function resetFilter() {
@@ -374,4 +430,15 @@ function resetFilter() {
   
   //reset inputs
   document.getElementById('wheel-filters-form').reset()
+
+  //reset url params
+  var queryString = new URL(document.location);
+  queryString.searchParams.delete('q');
+  queryString.searchParams.delete('b');
+  queryString.searchParams.delete('m');
+  queryString.searchParams.delete('s');
+  queryString.searchParams.delete('c');
+  queryString.searchParams.delete('d');
+  queryString.searchParams.delete('p')
+  window.history.pushState(null, '', queryString);
 }
