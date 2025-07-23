@@ -58,6 +58,8 @@ If you find this resource helpful and would like to support this project feel fr
   * MB Motorsports Drifter (GT-05Air?)
     * https://my350z.com/forum/wheels-tires/620146-mb-motorsports-drifter-18x9-5-15-5-114-3-wheels.html
   * Monster Sport ms857
+  * Mugen M12 (OZ)
+  * Mugen MZ3X (Enkei)
   * RACING HART CP-035 (TWS)
   * RAMS PR6 (TWS)
     * J's Racing PR6 (TWS)
@@ -65,6 +67,13 @@ If you find this resource helpful and would like to support this project feel fr
   * Team Impul NS-GT II
 
 ## Changelog
+
+**2025-07-22**
+* Added:
+  * Mugen MC10L
+  * Mugen MF10L
+* Updated:
+  * Uras NS-02
 
 **2025-07-15**
 * Added filter parameters to URL so filtered results can be bookmarked/shared
