@@ -346,12 +346,12 @@ dataset =
     "link": "http://web.archive.org/web/20001109195400/http://www.carving.co.jp/cis/cismarino_vitz.htm",
     "images": ["01.jpg","02.jpg"],
     "sizes": [
-      {"diameter": "15", "width": "7.0", "pcd": "4x100", "offsets": "+30", "colors": "White, Silver"},
-      {"diameter": "15", "width": "7.5", "pcd": "4x100", "offsets": "+35", "colors": "White, Silver"},
-      {"diameter": "16", "width": "7.0", "pcd": "4x100", "offsets": "+30", "colors": "White, Silver"},
-      {"diameter": "16", "width": "7.5", "pcd": "4x100", "offsets": "+35", "colors": "White, Silver"},
-      {"diameter": "17", "width": "7.0", "pcd": "4x100", "offsets": "+30", "colors": "White, Silver"},
-      {"diameter": "17", "width": "7.5", "pcd": "4x100", "offsets": "+35", "colors": "White, Silver"}
+      {"diameter": "15", "width": "7.0", "pcd": "4x100", "offsets": "+35", "colors": "White, Silver"},
+      {"diameter": "15", "width": "7.5", "pcd": "4x100", "offsets": "+30", "colors": "White, Silver"},
+      {"diameter": "16", "width": "7.0", "pcd": "4x100", "offsets": "+35", "colors": "White, Silver"},
+      {"diameter": "16", "width": "7.5", "pcd": "4x100", "offsets": "+30", "colors": "White, Silver"},
+      {"diameter": "17", "width": "7.0", "pcd": "4x100", "offsets": "+35", "colors": "White, Silver"},
+      {"diameter": "17", "width": "7.5", "pcd": "4x100", "offsets": "+30", "colors": "White, Silver"}
     ],
     "related": ["QPTIDI3MCNQS"]
   },
@@ -370,12 +370,12 @@ dataset =
     "link": "http://web.archive.org/web/20001109195400/http://www.carving.co.jp/cis/cismarino_vitz.htm",
     "images": ["01.jpg","02.jpg"],
     "sizes": [
-      {"diameter": "15", "width": "7.0", "pcd": "4x100", "offsets": "+30", "colors": "White, Silver"},
-      {"diameter": "15", "width": "7.5", "pcd": "4x100", "offsets": "+35", "colors": "White, Silver"},
-      {"diameter": "16", "width": "7.0", "pcd": "4x100", "offsets": "+30", "colors": "White, Silver"},
-      {"diameter": "16", "width": "7.5", "pcd": "4x100", "offsets": "+35", "colors": "White, Silver"},
-      {"diameter": "17", "width": "7.0", "pcd": "4x100", "offsets": "+30", "colors": "White, Silver"},
-      {"diameter": "17", "width": "7.5", "pcd": "4x100", "offsets": "+35", "colors": "White, Silver"}
+      {"diameter": "15", "width": "7.0", "pcd": "4x100", "offsets": "+35", "colors": "White, Silver"},
+      {"diameter": "15", "width": "7.5", "pcd": "4x100", "offsets": "+30", "colors": "White, Silver"},
+      {"diameter": "16", "width": "7.0", "pcd": "4x100", "offsets": "+35", "colors": "White, Silver"},
+      {"diameter": "16", "width": "7.5", "pcd": "4x100", "offsets": "+30", "colors": "White, Silver"},
+      {"diameter": "17", "width": "7.0", "pcd": "4x100", "offsets": "+35", "colors": "White, Silver"},
+      {"diameter": "17", "width": "7.5", "pcd": "4x100", "offsets": "+30", "colors": "White, Silver"}
     ],
     "related": ["6NAU5RW9F7TQ"]
   },
