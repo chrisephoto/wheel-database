@@ -11,62 +11,77 @@ If you find this resource helpful and would like to support this project feel fr
 ## Future Improvements
 
 ### Add new wheels:
-|Brand|Model|Origin|Manufacturer|Notes|Link|
-|--|--|--|--|--|--|
-|5Zigen|FN-01R|Japan|Tan-ei-sya|||
-|5Zigen|FN01R-C|Taiwan|||[Link](https://auctions.yahoo.co.jp/jp/auction/t1188566276)|
-|Aimgain|G2M|Japan|Work|||
-|A-Tech|Final Mind|||||
-|Bee*R|B5|Korea|JW?||[Link](https://get-jpn.com/products/bee-r-b5-18-9-5j-25-9-5j-38-5x114-3)|
-|Bridgestone|BIM Zeit R|Japan||||
-|Carving|Head 40|Japan|Enkei|||
-|Carving|Stark I|Japan|Work|||
-|Carving|Stark II|Japan|Work|||
-|Carving|Stark III|Japan|Work|||
-|Doall|CST D-Spec|||Uras NS-01|[Link](http://web.archive.org/web/20090819092004/www.doall.jp/wheels/d-spec/d-spec.html)|
-|Doall|CST Zero-1 Hyper|China||Cast, DW828, Green Oval Inspection Sticker|[Link](http://doall.jp/csttop/zero1hyper/cstzero1hyper.html)|
-|Doall|CST Zero-1 Hyper V2|||||
-|Doghouse|D/H Original Wheel|Japan|Tan-ei-sya|Joustmeister, Hyper Rev vol. 95, 103, 106, 117|[Link](https://web.archive.org/web/20100118101246fw_/http://www.g-doghouse.co.jp/html/original/08.html)|
-|Dunlop|Direzza RSC|||||
-|Enkei|Various||||[Link](https://irs.co.jp/endlist/#)|
-|Finalspeed|Eraser|Taiwan|A-Tech?|2011 production end, replaced by Kai 2012, China, SMCS|[Link](https://web.archive.org/web/20040808004111/http://www.hotstuff-cp.co.jp/catalog/catalog.pdf)|
-|Finalspeed|Gear R|Taiwan|A-Tech?|2011 production end, replaced by Kai 2012, China, SMCS||
-|Finalspeed|Forged|Japan|Speed Star|SSF||
-|Gialla|Vulcano||||[Link](http://web.archive.org/web/20081225051722/gialla.co.jp/gialla/catalog/wheel/vulcano/vulcano.html)|
-|Hot Stuff|Cross Speed X6|China|Futek|Uras NS-02||
-|Impul|NS-GT II|||||
-|Ingolstadt Racing||Japan|Tan-ei-sya|Joustmeister||
-|J Cross|JT6|Japan|Tan-ei-sya|Joustmeister, Hyper Rev vol. 77, 94, 97||
-|JIC|J-Force 05|||||
-|Joustmeister|Comp V1|Japan|Tan-ei-sya|||
-|J's Racing|PR6|Japan|Tan-ei-sya|Rams PR6||
-|Kid's Racing||||7 Spoke TC-05||
-|K-One|K1|||2003-2005+, crf crf-08 vol 114?|[Link](http://web.archive.org/web/20051018094530/http://www.k-one.to/parts/wheel/index.htm)|
-|M2 Hanbai|M2R|||5Zigen Fireball manufacturer||
-|M2 Hanbai|DT-05R||||[Link](https://auctions.yahoo.co.jp/jp/auction/h1166265352)|
-|MB Motorsports|Drifter||A-Tech|GT-05Air|[Link](https://my350z.com/forum/wheels-tires/620146-mb-motorsports-drifter-18x9-5-15-5-114-3-wheels.html)|
-|Manaray|Sport|China|Manaray?|WTH Inspection Sticker|[Link](https://auctions.yahoo.co.jp/jp/auction/v1120886665)|
-|Monster Sport|ms857|||||
-|Mugen|M12|Japan|OZ|||
-|Mugen|MZ3X|Japan|Enkei|||
-|Racing Hart|CP-035|Japan|Tan-ei-sya|||
-|Racing Hart|CP-FtuneR|Japan|Tan-ei-sya|||
-|Rams|PR6|Japan|Tan-ei-sya|J'S Racing PR6||
-|Ralliart|Evolution R-01|||||
-|Techni Craft|T6|Japan|Tan-ei-sya|Joustmeister||
-|Techni Craft|S7|Japan|Tan-ei-sya|Joustmeister||
-|Tom's||China|Manaray?|WTH Inspection Sticker|[Link](https://auctions.yahoo.co.jp/jp/auction/s1191642456)|
-|Tom's|355T|Japan|Rays||[Link](https://auctions.yahoo.co.jp/jp/auction/k1174678289)|
-|Tom's|New Action|Japan||RC Stark Manufacturer, Jawa 702 (Maruka?)|[Link](https://auctions.yahoo.co.jp/jp/auction/l1148763478)|
-|Tom's|Spirit C3|Japan|Rays||[Link](https://auctions.yahoo.co.jp/jp/auction/l1185836593)|
-|Tom's|TN-05/TM05|China|Manaray?|WTH Inspection Sticker|[Link](https://auctions.yahoo.co.jp/jp/auction/l1180738570)|
-|Tom's|TN-06|Korea|JW?|Crimson Design|[1](https://auctions.yahoo.co.jp/jp/auction/r1189899292), [2](https://auctions.yahoo.co.jp/jp/auction/x1114747582)|
-|Tom's|VP-1|Japan|Tan-ei-sya||[Link](https://auctions.yahoo.co.jp/jp/auction/t1148780940)|
-|Tom's|VP-8|Japan|Tan-ei-sya||[Link](https://auctions.yahoo.co.jp/jp/auction/x1149867315)|
-|Tom's|VP-S|Japan|Tan-ei-sya||[Link](https://auctions.yahoo.co.jp/jp/auction/f1192712922)|
-|Work|Ryver Eurofin/Euro Type F|Japan||1995-1999?||
+|ID|Brand|Model|Origin|Manufacturer|Notes|Link|
+|--|--|--|--|--|--|--|
+|FP66PV4N1M3G|5Zigen|FN01R-C Alpha|Taiwan|||[Link](https://auctions.yahoo.co.jp/jp/auction/t1188566276)|
+|XGNJWK0PW0Y6|5Zigen|FN01R-C STV|Taiwan|||[Link](https://auctions.yahoo.co.jp/jp/auction/t1188566276)|
+|KVOQK1L75TLZ|5Zigen|GN+ Forged||||[Link](http://web.archive.org/web/20051227060333/http://www.5zigen.co.jp/product/proracer/gn_plus_w/index.html)|
+|TSJAT8HREQGJ|Aimgain|G2M|Japan|Work|||
+|1TRN0YDS9EBJ|A-Tech|Final Mind|||||
+|LVABIPL5GT7K|Bridgestone|BIM Zeit R|Japan||||
+|H9V1214UPUFO|Bridgestone|CR Edition Forged|Japan|Tan-ei-sya|||
+|NY13XEPK9WYC|Carving|Head 40|Japan|Enkei|||
+|WZ9GU4VL4KJ2|Carving|Stark I|Japan|Work|||
+|P2SVDV3YB9P4|Carving|Stark II|Japan|Work|||
+|LFDLX7MDK0WH|Carving|Stark III|Japan|Work|||
+|I5JMSL7DDCFW|Doall|CST D-Spec|||Uras NS-01|[Link](http://web.archive.org/web/20090819092004/www.doall.jp/wheels/d-spec/d-spec.html)|
+|05QZZACE9Q0V|Doall|CST Zero-1 Hyper|China||Cast, DW828, Green Oval Inspection Sticker|[Link](http://doall.jp/csttop/zero1hyper/cstzero1hyper.html)|
+|K89O7AKI6FXX|Doall|CST Zero-1 Hyper V2|||||
+|GMUERDU6O6EA|Doghouse|D/H Original Wheel|Japan|Tan-ei-sya|Joustmeister, Hyper Rev vol. 95, 103, 106, 117|[Link](https://web.archive.org/web/20100118101246fw_/http://www.g-doghouse.co.jp/html/original/08.html)|
+|FEH7CHSBALEG|Dunlop|Direzza RZF|Japan|Tan-ei-sya|||
+|VB8STGKY3WIF|Enkei|Various||||[Link](https://irs.co.jp/endlist/#)|
+|ASCXWJBPJCMT|Finalspeed|Eraser|Taiwan|A-Tech?|2011 production end, replaced by Kai 2012, China, SMCS|[Link](https://web.archive.org/web/20040808004111/http://www.hotstuff-cp.co.jp/catalog/catalog.pdf)|
+|HH88RX6P3O5H|Finalspeed|Gear R|Taiwan|A-Tech?|2011 production end, replaced by Kai 2012, China, SMCS||
+|QIGCOM2RY2Z8|Finalspeed|Forged|Japan|Speed Star|SSF||
+|JKZ06NAU5RW9|Gialla|Vulcano||||[Link](http://web.archive.org/web/20081225051722/gialla.co.jp/gialla/catalog/wheel/vulcano/vulcano.html)|
+|TA6QSESW1UGM|GP Sports|Gravity Gullflame||||[Link](http://www.jdm-option.com/archives/catalogue/06_12/wheel2.html), [Link](http://web.archive.org/web/20060618001835/http://www.gravity-style.com/whe/whe.html)|
+|NMP5AF098JMO|Gram Lights|57Motorsport G07GR|Japan|Rays|||
+|F7TQQPTIDI3M|Great Company|Grenade GX-01|||||
+|CNQSM3N8XUN1|Hot Stuff|Cross Speed X6|China|Futek|Uras NS-02||
+|UOX4TSJAT8HR|Impul|NS-GT II|||||
+|EQGJ1TRN0YDS|Ingolstadt Racing||Japan|Tan-ei-sya|Joustmeister||
+|9EBJLVABIPL5|J Cross|JT6|Japan|Tan-ei-sya|Joustmeister, Hyper Rev vol. 77, 94, 97||
+|GT7KH9V1214U|JIC|J-Force 05|||||
+|PUFONY13XEPK|Joustmeister|Comp V1|Japan|Tan-ei-sya|||
+|9WYCWZ9GU4VL|Kid's Racing||||7 Spoke TC-05||
+|4KJ2P2SVDV3Y|K-One|K1|||2003-2005+, crf crf-08 vol 114?|[Link](http://web.archive.org/web/20051018094530/http://www.k-one.to/parts/wheel/index.htm)|
+|B9P4LFDLX7MD|M2 Hanbai|M2R|||5Zigen Fireball manufacturer||
+|K0WHI5JMSL7D|M2 Hanbai|DT-05R||||[Link](https://auctions.yahoo.co.jp/jp/auction/h1166265352)|
+|DCFW05QZZACE|MB Motorsports|Drifter||A-Tech|GT-05Air|[Link](https://my350z.com/forum/wheels-tires/620146-mb-motorsports-drifter-18x9-5-15-5-114-3-wheels.html)|
+|9Q0VK89O7AKI|Manaray|Sport|China|Manaray?|WTH Inspection Sticker|[Link](https://auctions.yahoo.co.jp/jp/auction/v1120886665)|
+|6FXXGMUERDU6|Monster Sport|ms857|||||
+|O6EAMBRFNROW|Mugen|M12|Japan|OZ|||
+|8INOVB8STGKY|Mugen|MZ3X|Japan|Enkei|||
+|LIYDUPMU6GVN|Origin|DNA-01|||||
+|3WIFFEH7CHSB|Racing Hart|CP-035|Japan|Tan-ei-sya|||
+|ALEGASCXWJBP|Racing Hart|CP-FtuneR|Japan|Tan-ei-sya|||
+|JCMTHH88RX6P|Ralliart|Evolution R-01|||||
+|3O5HQIGCOM2R|Sparco|NT|Japan|Enkei|||
+|Y2Z8JKZ06NAU|Sparco|Viper R|Japan|Tan-ei-sya|||
+|5RW9F7TQQPTI|Techni Craft|T6|Japan|Tan-ei-sya|Joustmeister||
+|DI3MCNQSM3N8|Techni Craft|S7|Japan|Tan-ei-sya|Joustmeister||
+|TU89GWJ4E15J|Tom's||China|Manaray?|WTH Inspection Sticker|[Link](https://auctions.yahoo.co.jp/jp/auction/s1191642456)|
+|OH300Z2SNSDW|Tom's|355T|Japan|Rays||[Link](https://auctions.yahoo.co.jp/jp/auction/k1174678289)|
+|LXZ1VDXI74WA|Tom's|New Action|Japan||RC Stark Manufacturer, Jawa 702 (Maruka?)|[Link](https://auctions.yahoo.co.jp/jp/auction/l1148763478)|
+|4X7E22TK2IR0|Tom's|Spirit C3|Japan|Rays||[Link](https://auctions.yahoo.co.jp/jp/auction/l1185836593)|
+|O0QTB21W97N2|Tom's|TM-05/TM05|China|Manaray?|WTH Inspection Sticker|[Link](https://auctions.yahoo.co.jp/jp/auction/l1180738570)|
+|JNKSV5KLRYVF|Tom's|TN-06|Korea|JW?|Crimson Design|[1](https://auctions.yahoo.co.jp/jp/auction/r1189899292), [2](https://auctions.yahoo.co.jp/jp/auction/x1114747582)|
+|Q3HUQJ5BBAE3|Tom's|VP-1|Japan|Tan-ei-sya||[Link](https://auctions.yahoo.co.jp/jp/auction/t1148780940)|
+|Y3OXX8BC7OZT|Tom's|VP-8|Japan|Tan-ei-sya||[Link](https://auctions.yahoo.co.jp/jp/auction/x1149867315)|
+|I67M59IP4D4V|Tom's|VP-S|Japan|Tan-ei-sya||[Link](https://auctions.yahoo.co.jp/jp/auction/f1192712922)|
+|ETSCZB14M4C8|Work|Ryver Eurofin/Euro Type F|Japan||1995-1999?||
 
 ## Changelog
+
+**2025-10-19 **
+* Added:
+  * 5Zigen FN-01R
+  * 5Zigen FN01R-C
+  * 5Zigen FN01R-C Hot Version
+  * 5Zigen GN+
+  * Carving Cismarino Pietra
+  * Carving Cismarino Questra
+  * Direzza RSC
 
 **2025-07-22**
 * Added:
