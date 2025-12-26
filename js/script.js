@@ -6,7 +6,6 @@ function initialize() {
   // add event listeners
   document.getElementById('wheel-details-close').addEventListener('click', closeDetails);
   document.getElementById('theme-toggle').addEventListener('click', toggleTheme);
-  document.getElementById('display-toggle').addEventListener('click', toggleDisplay);
 
   // populate filters
   populateFilters();
@@ -21,11 +20,6 @@ function initialize() {
     const value = `; ${document.cookie}`;
     const parts = value.split(`; ${name}=`);
     if (parts.length === 2) return parts.pop().split(';').shift();
-  }
-  const display = getCookie('display');
-  if (display == 'list') {
-    document.querySelector('#wheel-list').classList = 'list';
-    document.querySelector('#display-toggle').innerHTML = 'grid_view';
   }
   const theme = getCookie('theme');
   if (theme == 'theme-dark') {
@@ -164,7 +158,7 @@ function populateGrid(i) {
   figure.appendChild(img);
   img.src = "images/" + dataset[i].id + "/00.png";
   figure.appendChild(figcaption);
-  figcaption.innerHTML = dataset[i].shortname;
+  figcaption.innerHTML = `<p>${dataset[i].brand}</p>\n<p>${dataset[i].model}</p>`;
 }
 
 function populateDetails(i) {
@@ -179,6 +173,9 @@ function populateDetails(i) {
   if (document.querySelector('#wheel-details-hero img')) {
     document.querySelector('#wheel-details-hero img').remove();
   }
+  document.getElementById('wheel-header-tags').innerHTML = "";
+  document.getElementById('wheel-info-construction').innerHTML = "";
+  document.getElementById('wheel-info-colors').innerHTML = "";
   const images = document.querySelectorAll('#wheel-images a');
   images.forEach(images => {
     images.remove();
@@ -189,17 +186,26 @@ function populateDetails(i) {
   rows.forEach(rows => {
     rows.remove();
   });
+  document.getElementById('wheel-links').innerHTML = "";
 
   //load new detail information
   const target = document.getElementById('wheel-details-hero');
   const image  = document.createElement('img');
   target.appendChild(image);
   image.src = "images/" + dataset[i].id + "/00.png";
-  document.getElementById('wheel-info-shortname').innerHTML = dataset[i].shortname;
-  document.getElementById('wheel-info-description').innerHTML = dataset[i].description;
-  document.getElementById('wheel-info-brand').innerHTML = dataset[i].brand;
+  document.getElementById('wheel-header-brand').innerHTML = dataset[i].brand;
+  document.getElementById('wheel-header-model').innerHTML = dataset[i].model;
+  for (let j = 0; j < dataset[i].construction.length; j++) {
+    document.getElementById('wheel-header-tags').innerHTML += `<span onclick="resetFilter();document.getElementById('input-search').value='${dataset[i].construction[j]}';applyFilter();">${dataset[i].construction[j]}</span>\n`;
+  }
+  document.getElementById('wheel-header-tags').innerHTML += `<span onclick="resetFilter();document.getElementById('input-style').value='${dataset[i].style}';applyFilter();">${dataset[i].style}</span>\n`;
+  for (let j = 0; j < dataset[i].tags.length; j++) {
+    document.getElementById('wheel-header-tags').innerHTML += `<span onclick="resetFilter();document.getElementById('input-search').value='${dataset[i].tags[j]}';applyFilter();">${dataset[i].tags[j]}</span>\n`;
+  }
+  document.getElementById('wheel-header-description').innerHTML = dataset[i].description;
+  document.getElementById('wheel-info-brand').innerHTML = `<a onclick="resetFilter();document.getElementById('input-brand').value = '${dataset[i].brand}';applyFilter();">${dataset[i].brand}</a>`;
   document.getElementById('wheel-info-model').innerHTML = dataset[i].model;
-  document.getElementById('wheel-info-manufacturer').innerHTML = dataset[i].manufacturer;
+  document.getElementById('wheel-info-manufacturer').innerHTML = `<a onclick="resetFilter();document.getElementById('input-manufacturer').value = '${dataset[i].manufacturer}';applyFilter();">${dataset[i].manufacturer}</a>`;
   if (dataset[i].year_start == dataset[i].year_end) {
     document.getElementById('wheel-info-years').innerHTML = dataset[i].year_start;
   }
@@ -207,9 +213,15 @@ function populateDetails(i) {
     document.getElementById('wheel-info-years').innerHTML = dataset[i].year_start + ' - ' + dataset[i].year_end;
   }
   document.getElementById('wheel-info-origin').innerHTML = dataset[i].origin;
-  document.getElementById('wheel-info-construction').innerHTML = dataset[i].construction;
-  document.getElementById('wheel-info-style').innerHTML = dataset[i].style;
-  document.querySelector('#wheel-info-link a').href = dataset[i].link;
+  for (let j = 0; j < dataset[i].construction.length; j++) {
+    if (j != 0) {
+      document.getElementById('wheel-info-construction').innerHTML += ", ";
+    }
+    document.getElementById('wheel-info-construction').innerHTML += `<span>${dataset[i].construction[j]}</span>`;
+  }
+  for (let j = 0; j < dataset[i].colors.length; j++) {
+    document.getElementById('wheel-info-colors').innerHTML += `<span>${dataset[i].colors[j]}</span>\n`;
+  }
   for (let j = 0; j < dataset[i].sizes.length; j++) {
     const table = document.querySelector('#wheel-specs tbody');
     const row  = document.createElement('tr');
@@ -247,7 +259,7 @@ function populateDetails(i) {
           figure.onclick = function(){loadDetails(dataset[i].related[j])};
           img.src = "images/" + dataset[i].related[j] + "/00.png";
           figure.appendChild(figcaption);
-          figcaption.innerHTML = dataset[k].shortname;
+          figcaption.innerHTML = `<p>${dataset[k].brand}</p>\n<p>${dataset[k].model}</p>`;
         }
       }
     }    
@@ -256,8 +268,17 @@ function populateDetails(i) {
     const target = document.getElementById('wheel-related-container');
     target.classList = 'hidden';
   }
+  if (dataset[i].links.length > 0) {
+    document.getElementById('wheel-links-container').classList = '';
+    for (let j = 0; j < dataset[i].links.length; j++) {
+      document.getElementById('wheel-links').innerHTML += `<a href="${dataset[i].links[j]}" target="_blank">${dataset[i].links[j]}</a>`;
+    }    
+  }
+  else {
+    document.getElementById('wheel-links-container').classList = 'hidden';
+  }
   document.getElementById('wheel-details').classList = 'open';
-  document.title = 'Wheel Database - ' + dataset[i].shortname;
+  document.title = 'Wheel Database - ' + dataset[i].brand + " " + dataset[i].model;
 
   //update browser url/history
   var queryString = new URL(document.location);
@@ -285,19 +306,6 @@ function closeDetails() {
   window.history.pushState(null, '', queryString);
 }
 
-function toggleDisplay() {
-  if(document.querySelector('#wheel-list').classList.contains('grid')) {
-    document.querySelector('#wheel-list').classList = 'list';
-    document.getElementById('display-toggle').innerHTML = 'grid_view';
-    document.cookie = 'display=list';
-  }
-  else {
-    document.querySelector('#wheel-list').classList = 'grid';
-    document.getElementById('display-toggle').innerHTML = 'view_list';
-    document.cookie = 'display=grid';
-  }
-}
-
 function toggleTheme() {
   if(document.querySelector('body').classList.contains('theme-light')) {
     document.querySelector('body').classList = 'theme-dark';
@@ -320,7 +328,7 @@ function applyFilter() {
   filterBrand = document.getElementById('input-brand').value;
   filterManufacturer = document.getElementById('input-manufacturer').value;
   filterStyle = document.getElementById('input-style').value;
-  filterConstruction = document.getElementById('input-construction').value;
+  //filterConstruction = document.getElementById('input-construction').value;
   filterDiameter = document.getElementById('input-diameter').value;
   filterPCD = document.getElementById('input-pcd').value
     
@@ -339,8 +347,15 @@ function applyFilter() {
       matchSearch = true;
     }
     else {
-      if (dataset[i].shortname.toUpperCase().includes(filterSearch.toUpperCase())) {matchSearch = true;}
+      wheelName = dataset[i].brand + " " + dataset[i].model;
+      if (wheelName.toUpperCase().includes(filterSearch.toUpperCase())) {matchSearch = true;}
       if (dataset[i].description.toUpperCase().includes(filterSearch.toUpperCase())) {matchSearch = true;}
+      for (let j = 0; j < dataset[i].tags.length; j++) {
+        if (dataset[i].tags[j].toUpperCase().includes(filterSearch.toUpperCase())) {matchSearch = true;}
+      }
+      for (let j = 0; j < dataset[i].construction.length; j++) {
+        if (dataset[i].construction[j].toUpperCase().includes(filterSearch.toUpperCase())) {matchSearch = true;}
+      }
     }
     
     //matchBrand
@@ -359,9 +374,9 @@ function applyFilter() {
     }
     
     //matchConstruction
-    if (filterConstruction && dataset[i].construction != filterConstruction) {
-      matchConstruction = false;
-    }
+    //if (filterConstruction && dataset[i].construction != filterConstruction) {
+    //  matchConstruction = false;
+    //}
     
     //matchDiameter and matchPCD
     if (filterDiameter && filterPCD) {
@@ -413,7 +428,7 @@ function applyFilter() {
   if (filterBrand){queryString.searchParams.set('b', filterBrand)};
   if (filterManufacturer){queryString.searchParams.set('m', filterManufacturer)};
   if (filterStyle){queryString.searchParams.set('s', filterStyle)};
-  if (filterConstruction){queryString.searchParams.set('c', filterConstruction)};
+  //if (filterConstruction){queryString.searchParams.set('c', filterConstruction)};
   if (filterDiameter){queryString.searchParams.set('d', filterDiameter)};
   if (filterPCD){queryString.searchParams.set('p', filterPCD)};
   window.history.pushState(null, '', queryString);

@@ -4,7 +4,8 @@
 
 :root {
   --padding: 2rem;
-  --radius: 7px;
+  --radius-sm: 5px;
+  --radius-lg: 20px;
   --color-white: 255,255,255;
   --color-black: 14,15,17;
 }
@@ -102,9 +103,10 @@ input, option, select {
 input,
 select {
   background-color: rgb(var(--color-background-02));
-  border-radius: var(--radius);
+  border-radius: var(--radius-lg);
   /*border: 1px solid rgba(var(--color-text),0.2);*/
   border: none;
+  border-right: 0.7rem solid transparent;
   box-shadow: var(--shadow);
   color: var(--color-text);
   padding: 1ch;
@@ -131,6 +133,7 @@ input[type="button"]:hover {
 
 input[type="reset"] {
   background: rgb(var(--color-background-02));
+  border: none;
   color: rgb(var(--color-text));
   cursor: pointer;
   grid-column: 1/-1;
@@ -142,7 +145,9 @@ input[type="reset"]:hover {
 }
 
 input[type="search"] {
+  border: none;
   grid-column: 1/-1;
+  padding: 1ch 1.5ch;
 }
 
 label {
@@ -159,7 +164,7 @@ main {
 }
 
 table {
-  border-radius: var(--radius);
+  border-radius: var(--radius-sm);
 }
 
 table,
@@ -186,19 +191,19 @@ td, th {
 }
 
 tbody > :first-child > :first-child {
-  border-radius: var(--radius) 0 0 0;
+  border-radius: var(--radius-sm) 0 0 0;
 }
 
 tbody > :first-child > :last-child {
-  border-radius: 0 var(--radius) 0 0;
+  border-radius: 0 var(--radius-sm) 0 0;
 }
 
 tbody > :last-child > :first-child {
-  border-radius: 0 0 0 var(--radius);
+  border-radius: 0 0 0 var(--radius-sm);
 }
 
 tbody > :last-child > :last-child {
-  border-radius: 0 0 var(--radius) 0;
+  border-radius: 0 0 var(--radius-sm) 0;
 }
 
 tr:not(:last-child) td, tr:not(:last-child) th {
@@ -251,56 +256,52 @@ tr:hover th {
   display: grid;
   flex-grow: 1;
   gap: calc(var(--padding) / 2);
-  grid-template-columns: repeat(auto-fill,minmax(15ch,1fr));
+  grid-template-columns: repeat(auto-fill,minmax(18ch,1fr));
   height: fit-content;
 }
 
 #wheel-list figure {
-  background: rgb(var(--color-background-02));
-  border-radius: var(--radius);
-  box-shadow: var(--shadow);
   cursor: pointer;
   margin: 0;
-  overflow: hidden;
   position: relative;
   transition: background-color 0.2s;
 }
 
-#wheel-list figure:hover {
-  background: rgb(var(--color-background-03));
-}
-
 #wheel-list figure img {
   aspect-ratio: 1.0;
+  background: rgb(var(--color-background-02));
+  border-radius: var(--radius-sm);
+  box-shadow: var(--shadow);
   display: block;
-  height: 100%;
+  filter: grayscale(0);
   object-fit: cover;
+  overflow: hidden;
+  transition: 0.2s;
   width: 100%;
 }
 
-#wheel-list figure figcaption {
-  align-items: center;
-  background: rgba(var(--color-black),0.9);
-  box-shadow: 0 0 0 10px var(--color-accent-01);
-  color: rgba(var(--color-white,1.0));
-  display: flex;
-  flex-grow: 1;
-  font-weight: 600;
-  justify-content: center;
-  opacity: 0;
-  padding: 1ch;
-  position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    top: 0;
-  text-align: center;
-  transition: opacity 0.2s;
-  z-index: 100;
+#wheel-list figure:hover img {
+  background: rgb(var(--color-background-03));
+  filter: grayscale(0);
 }
 
-#wheel-list figure:hover figcaption {
-  opacity: 1.0;
+figcaption > p:first-child {
+  display: block;
+  font-size: 0.8rem;
+  font-weight: normal;
+  margin: 0.5rem 0 0 0;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+figcaption > p:not(:first-child) {
+  font-size: 0.8rem;
+  font-weight: bold;
+  margin: 0;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 
 /* wheel-details */
@@ -348,7 +349,7 @@ tr:hover th {
 
 #wheel-details-close {
   background: rgb(var(--color-accent-01));
-  border-radius: 0 var(--radius);
+  border-radius: 0 var(--radius-sm);
   color: rgb(var(--color-white));
   cursor: pointer;
   padding: 0.5rem;
@@ -368,7 +369,7 @@ tr:hover th {
 #wheel-details-header {
   align-items: center;
   background: rgb(var(--color-background-02));
-  border-radius: var(--radius);
+  border-radius: var(--radius-sm);
   box-shadow: var(--shadow);
   display: flex;
   flex-direction: column;
@@ -387,7 +388,7 @@ tr:hover th {
 #wheel-details-hero img {
   display: block;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
   width: 100%;
 }
 
@@ -420,7 +421,7 @@ tr:hover th {
 
 #wheel-images img {
   aspect-ratio: 1.0;
-  border-radius: var(--radius);
+  border-radius: var(--radius-sm);
   box-shadow: var(--shadow);
   display: block;
   object-fit: cover;
@@ -443,12 +444,39 @@ tr:hover th {
   text-align: right;
 }
 
-#wheel-info-shortname {
+#wheel-header-brand {
+  font-size: 1rem;
+  margin: 1rem 0 0 0;
+}
+
+#wheel-header-model {
+  margin: 0;
+}
+
+#wheel-header-tags span {
+  background: rgb(var(--color-accent-01));
+  border-radius: var(--radius-lg);
+  color: rgb(var(--color-white));
+  cursor: pointer;
+  line-height: 2;
+  padding: 0 1ch;
+  white-space: nowrap;
+}
+
+#wheel-header-description {
   margin: 1rem 0;
 }
 
-#wheel-info-description {
-  margin: 1rem 0;
+#wheel-info-colors span:not(:last-child):after {
+  content: ', ';
+}
+
+#wheel-links-container {
+  margin-top: var(--padding);
+}
+
+#wheel-links a {
+  display: block;
 }
 
 #wheel-related-container {
@@ -463,45 +491,26 @@ tr:hover th {
 }
 
 #wheel-related figure {
-  aspect-ratio: 1.0;
-  border-radius: var(--radius);
-  box-shadow: var(--shadow);
   cursor: pointer;
   margin: 0;
-  overflow: hidden;
   position: relative;
+  transition: background-color 0.2s;
 }
 
 #wheel-related figure img {
+  aspect-ratio: 1.0;
+  background: rgb(var(--color-background-02));
+  border-radius: var(--radius-sm);
+  box-shadow: var(--shadow);
   display: block;
-  height: 100%;
   object-fit: cover;
+  overflow: hidden;
+  transition: 0.2s;
   width: 100%;
 }
 
-#wheel-related figure figcaption {
-  align-items: center;
-  background: rgba(var(--color-black),0.9);
-  box-shadow: 0 0 0 10px var(--color-accent-01);
-  color: rgba(var(--color-white,1.0));
-  display: flex;
-  flex-grow: 1;
-  font-weight: 600;
-  justify-content: center;
-  opacity: 0;
-  padding: 1ch;
-  position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    top: 0;
-  text-align: center;
-  transition: opacity 0.2s;
-  z-index: 100;
-}
-
-#wheel-related figure:hover figcaption {
-  opacity: 1.0;
+#wheel-related figure:hover img {
+  background: rgb(var(--color-background-03));
 }
 
 #wheel-specs {
@@ -549,7 +558,7 @@ tr:hover th {
 
 
 /* BIG SCREENS */
-@media (min-width: 160ch) {
+@media (min-width: 1530px) {
   #display-toggle {
     display: block;
   }
@@ -562,34 +571,6 @@ tr:hover th {
     overflow-x: hidden;
     overflow-y: auto;
     padding: var(--padding) calc(var(--padding) / 2);
-  }
-  #wheel-list.list > div {
-    grid-template-columns: repeat(auto-fill,minmax(15ch,1fr));
-  }
-  #wheel-list.list figure img {
-    width: auto;
-  }
-  #wheel-list.list figure figcaption {
-    opacity: 0;
-    position: initial;
-      bottom: initial;
-      left: initial;
-      right: initial;
-      top: initial;
-  }
-  #wheel-list.list > div {
-  grid-template-columns: repeat(auto-fill,minmax(45ch,1fr));
-  }
-  #wheel-list.list figure {
-    background: rgba(var(--color-background-02),0.9);
-    display: flex;
-    flex-direction: row;
-    height: 15ch;
-  }
-  #wheel-list.list figure figcaption {
-    background: transparent;
-    color: rgba(var(--color-text,1.0));
-    opacity: 1.0;
   }
   #wheel-details {
     background: transparent;

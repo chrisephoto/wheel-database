@@ -10,7 +10,6 @@
   <body class="theme-light">
     <header>
       <h1 id="page-title">Wheel Database</h1>
-      <span id="display-toggle" class="material-symbols-rounded">view_list</span>
       <span id="theme-toggle" class="material-symbols-rounded">dark_mode</span>
     </header>
   
@@ -53,6 +52,7 @@
             <option value="Split 8 Spoke">Split 8 Spoke</option>
             <option value="Split 9 Spoke">Split 9 Spoke</option>
           </select>
+          <!--
           <label for="input-construction">Construction</label>
           <select id="input-construction">
             <option value="" selected>All Construction Methods</option>
@@ -69,6 +69,7 @@
             <option value="3 Piece - Forged">3 Piece - Forged</option>
             <option value="3 Piece - Welded">3 Piece - Welded</option>
           </select>
+          -->
           <label for="input-diameter">Diameter</label>
           <select id="input-diameter">
             <option value="" selected>All Diameters</option>
@@ -112,8 +113,11 @@
           <div id="wheel-details-header">
             <div id="wheel-details-hero"></div>
             <div id="wheel-details-text">
-              <h1 id="wheel-info-shortname"></h1>
-              <p id="wheel-info-description"></p>
+              <h1 id="wheel-header-shortname"></h1>
+              <h1 id="wheel-header-brand"></h1>
+              <h2 id="wheel-header-model"></h2>
+              <div id="wheel-header-tags"></div>
+              <p id="wheel-header-description"></p>
             </div>
           </div>
           <div id="wheel-details-info">
@@ -144,14 +148,22 @@
                   <th>Construction</th>
                   <td id="wheel-info-construction">N/A</td>
                 </tr>
+                <!--
                 <tr>
                   <th>Style</th>
                   <td id="wheel-info-style">N/A</td>
                 </tr>
+                -->
+                <tr>
+                  <th>Colors</th>
+                  <td id="wheel-info-colors">N/A</td>
+                </tr>
+                <!--
                 <tr>
                   <th>Additional Information</th>
                   <td id="wheel-info-link"><a href="#" target="_blank">Link</a></td>
                 </tr>
+                -->
               </tbody>
             </table>
             <div id="wheel-specs-container">
@@ -163,7 +175,7 @@
                     <th>Width</th>
                     <th>PCD</th>
                     <th>Offset(s)</th>
-                    <th>Color(s)</th>
+                    <!--<th>Color(s)</th>-->
                   </tr>
                 </tbody>
               </table>
@@ -173,6 +185,10 @@
             <div id="wheel-related-container">
               <h2>Related Wheels</h2>
               <div id="wheel-related"></div>
+            </div>
+            <div id="wheel-links-container">
+              <h2>Additional Resources</h2>
+              <div id="wheel-links"></div>
             </div>
           </div>
         </div>
