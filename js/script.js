@@ -299,6 +299,9 @@ function closeDetails() {
   //remove class to hide modal
   document.getElementById('wheel-details').classList = '';
 
+  document.querySelector('#wheel-details-message').classList = '';
+  document.querySelector('#wheel-details-container').classList = 'hidden';
+
   //update browser url/history
   document.title = 'Wheel Database';
   var queryString = new URL(document.location);

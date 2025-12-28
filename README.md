@@ -10,7 +10,14 @@ If you find this resource helpful and would like to support this project feel fr
 
 ## Changelog
 
-**2025-12-28**
+**2026-12-28**
+* CSS updates:
+  * Fixed some issues on mobile caused by the previous changes
+  * Adjusted media queries
+* Added:
+  * Yokohama Super Advan Racing Version 2
+
+**2025-12-25**
 * CSS updates:
   * Separated radius variable into small and large variants for more control over UI elements
   * Adjusted padding on input elements

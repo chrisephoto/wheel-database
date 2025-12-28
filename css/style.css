@@ -1,4 +1,5 @@
 /* css variables */
+
 @import url("https://fonts.googleapis.com/css2?family=Jost:wght@400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,1,0");
 
@@ -66,6 +67,25 @@ body {
   margin: 0;
   overflow: hidden;
   padding: 0;
+}
+
+figcaption > p:first-child {
+  display: block;
+  font-size: 0.8rem;
+  font-weight: normal;
+  margin: 0.5rem 0 0 0;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+figcaption > p:not(:first-child) {
+  font-size: 0.8rem;
+  font-weight: bold;
+  margin: 0;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 
 footer {
@@ -146,7 +166,6 @@ input[type="reset"]:hover {
 
 input[type="search"] {
   border: none;
-  grid-column: 1/-1;
   padding: 1ch 1.5ch;
 }
 
@@ -215,12 +234,6 @@ tr:hover th {
   background-color: rgb(var(--color-background-03));
 }
 
-/* header elements */
-
-#display-toggle {
-    display: none;
-  }
-
 /* wheel-filters */
 
 #wheel-filters {
@@ -256,7 +269,7 @@ tr:hover th {
   display: grid;
   flex-grow: 1;
   gap: calc(var(--padding) / 2);
-  grid-template-columns: repeat(auto-fill,minmax(18ch,1fr));
+  grid-template-columns: repeat(auto-fill,minmax(15ch,1fr));
   height: fit-content;
 }
 
@@ -283,25 +296,6 @@ tr:hover th {
 #wheel-list figure:hover img {
   background: rgb(var(--color-background-03));
   filter: grayscale(0);
-}
-
-figcaption > p:first-child {
-  display: block;
-  font-size: 0.8rem;
-  font-weight: normal;
-  margin: 0.5rem 0 0 0;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
-}
-
-figcaption > p:not(:first-child) {
-  font-size: 0.8rem;
-  font-weight: bold;
-  margin: 0;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
 }
 
 /* wheel-details */
@@ -404,6 +398,29 @@ figcaption > p:not(:first-child) {
   bottom: 0;
 }
 
+#wheel-header-brand {
+  font-size: 1rem;
+  margin: 1rem 0 0 0;
+}
+
+#wheel-header-model {
+  margin: 0;
+}
+
+#wheel-header-tags span {
+  background: rgb(var(--color-accent-01));
+  border-radius: var(--radius-lg);
+  color: rgb(var(--color-white));
+  cursor: pointer;
+  line-height: 2;
+  padding: 0 1ch;
+  white-space: nowrap;
+}
+
+#wheel-header-description {
+  margin: 1rem 0;
+}
+
 #wheel-details-info {
   height: fit-content;
 }
@@ -442,29 +459,6 @@ figcaption > p:not(:first-child) {
 
 #wheel-info th {
   text-align: right;
-}
-
-#wheel-header-brand {
-  font-size: 1rem;
-  margin: 1rem 0 0 0;
-}
-
-#wheel-header-model {
-  margin: 0;
-}
-
-#wheel-header-tags span {
-  background: rgb(var(--color-accent-01));
-  border-radius: var(--radius-lg);
-  color: rgb(var(--color-white));
-  cursor: pointer;
-  line-height: 2;
-  padding: 0 1ch;
-  white-space: nowrap;
-}
-
-#wheel-header-description {
-  margin: 1rem 0;
 }
 
 #wheel-info-colors span:not(:last-child):after {
@@ -527,25 +521,24 @@ figcaption > p:not(:first-child) {
     padding: 0 var(--padding);
 }
 
+/* generic classes */
+
 .hidden {
   display: none !important;
 }
 
-@media (hover: none) {
-  #wheel-list figure figcaption {
-    background: linear-gradient(to top, black, transparent);
-    opacity: 1.0;
-    top: auto;
-  }
-  #wheel-related figure figcaption {
-    background: linear-gradient(to top, black, transparent);
-    opacity: 1.0;
-    top: auto;
-  }
-}
+/* landscape screens */
 
-/* MEDIUM SCREENS */
-@media (min-width: 80ch) {
+@media only screen and (orientation: landscape) {
+  main {
+    flex-direction: row;
+    overflow: hidden;
+    padding: 0 calc(var(--padding) / 2);
+  }
+  input[type="button"],
+  input[type="reset"] {
+    grid-column: initial;
+  }
   #wheel-details-header {
     flex-direction: row;
     text-align: left;
@@ -554,24 +547,26 @@ figcaption > p:not(:first-child) {
     align-self: stretch;
     width: 300px;
   }
-}
-
-
-/* BIG SCREENS */
-@media (min-width: 1530px) {
-  #display-toggle {
-    display: block;
-  }
-  main {
-    flex-direction: row;
-    overflow: hidden;
-    padding: 0 calc(var(--padding) / 2);
-  }
-  #wheel-list {
-    overflow-x: hidden;
-    overflow-y: auto;
+  #wheel-filters {
+    flex: 0 0 25ch;
     padding: var(--padding) calc(var(--padding) / 2);
   }
+  #wheel-filters form {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  #wheel-list {
+    padding: var(--padding) calc(var(--padding) / 2);
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+  #wheel-list > div {
+    grid-template-columns: repeat(auto-fill,minmax(18ch,1fr));
+  }
+}
+
+/* large screens */
+
+@media only screen and (min-width: 1880px) {
   #wheel-details {
     background: transparent;
     padding: var(--padding) calc(var(--padding) / 2);
@@ -581,12 +576,5 @@ figcaption > p:not(:first-child) {
   }
   #wheel-details-close {
     display: none;
-  }
-  #wheel-filters {
-    flex: 0 0 25ch;
-    padding: var(--padding) calc(var(--padding) / 2);
-  }
-  #wheel-filters form {
-    grid-template-columns: repeat(1, 1fr);
   }
 }

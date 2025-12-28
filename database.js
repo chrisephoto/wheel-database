@@ -1,6 +1,42 @@
 dataset = 
 [
-    {
+  {
+    "id": "JY7H4G79RJHD",
+    "description": "",
+    "brand": "5Zigen",
+    "model": "5ZR Copse",
+    "manufacturer": "Rays Co., Ltd.",
+    "year_start": "1998",
+    "year_end": "Unverified",
+    "origin": "Japan",
+    "construction": [
+      "2 Piece",
+      "Cast"
+    ],
+    "style": "5 Spoke",
+    "tags": [],
+    "colors": [
+      "White",
+      "Silver",
+      "Hyper Black",
+      "Bronze"
+    ],
+    "sizes": [
+      {"diameter": "18", "width": "7.5", "pcd": "4x100", "offsets": "+44/+49"},
+      {"diameter": "18", "width": "7.5", "pcd": "4x114.3", "offsets": "+44/+49"},
+      {"diameter": "18", "width": "7.5", "pcd": "5x114.3", "offsets": "+26/+35/+39/+44/+49"},
+      {"diameter": "18", "width": "8.0", "pcd": "5x114.3", "offsets": "+20/+32/+33/+38/+43/+46"},
+      {"diameter": "18", "width": "9.0", "pcd": "5x114.3", "offsets": "+14/+26/+27/+32/+37/+44/+45"},
+      {"diameter": "18", "width": "10.0", "pcd": "5x114.3", "offsets": "+39/+44"}
+    ],
+    "images": ["01.jpg","02.jpg"],
+    "related": [],
+    "links": [
+      "https://web.archive.org/web/20040618173021fw_/http://www.5zigen.co.jp/product/wheel/5zr_copse/index.html",
+      "https://web.archive.org/web/20040725050647fw_/http://www.5zigenusa.com/w_5zr.html"
+    ]
+  },
+  {
     "id": "RX6P3O5HQIGC",
     "description": "Developed by 5Zigen for use in the Super Taikyu race series, the FN-01R utilizes a forged construction &#0151; courtesy of Tan-ei-sya &#0151; to achieve the high rigidity and light weight required for circuit racing.",
     "brand": "5Zigen",
@@ -38,7 +74,7 @@ dataset =
     "images": ["01.jpg","02.jpg","03.jpg"],
     "related": ["IZA5UHJXHKUR","M3N8XUN1UOX4"],
     "links": [
-      "http://web.archive.org/web/20041025161946/http://www.5zigen.co.jp/product/wheel/becketts_fn01r/index.html"
+      "http://web.archive.org/web/20041025161946fw_/http://www.5zigen.co.jp/product/wheel/becketts_fn01r/index.html"
     ]
   },
   {
@@ -87,7 +123,7 @@ dataset =
     "images": ["01.jpg","02.jpg","03.jpg","04.jpg","05.jpg","06.jpg"],
     "related": ["RX6P3O5HQIGC","M3N8XUN1UOX4"],
     "links": [
-      "http://web.archive.org/web/20070101024229/http://www.5zigen.co.jp/product/wheel/becketts_fn01r_c/index.html"
+      "http://web.archive.org/web/20070101024229fw_/http://www.5zigen.co.jp/product/wheel/becketts_fn01r_c/index.html"
     ]
   },
   {
@@ -136,7 +172,7 @@ dataset =
     "images": ["01.jpg","02.jpg","03.jpg","04.jpg","05.jpg","06.jpg"],
     "related": ["RX6P3O5HQIGC","IZA5UHJXHKUR"],
     "links": [
-      "http://web.archive.org/web/20080513143042/http://www.5zigen.co.jp/products/wheel/proracer/fn01rchot.html"
+      "http://web.archive.org/web/20080513143042fw_/http://www.5zigen.co.jp/products/wheel/proracer/fn01rchot.html"
     ]
   },
   {
@@ -179,7 +215,7 @@ dataset =
     "images": ["01.jpg","02.jpg","03.jpg","04.jpg"],
     "related": [],
     "links": [
-      "http://web.archive.org/web/20071015045951/http://5zigenusa.com/english/products/wheel/proracer/GN+.html"
+      "http://web.archive.org/web/20071015045951fw_/http://5zigenusa.com/english/products/wheel/proracer/GN+.html"
     ]
   },
   {
@@ -210,7 +246,7 @@ dataset =
     "images": ["01.jpg","02.jpg","03.jpg"],
     "related": [],
     "links": [
-      "https://web.archive.org/web/20100116090507/http://www.bee-r.com/main/parts/wheel/index.htm"
+      "https://web.archive.org/web/20100116090507fw_/http://www.bee-r.com/main/parts/wheel/index.htm"
     ]
   },
   {
@@ -241,8 +277,8 @@ dataset =
     "images": ["01.jpg","02.jpg","03.jpg","04.jpg"],
     "related": ["X7MDK0WHI5JM"],
     "links": [
-      "https://web.archive.org/web/20040803035029/http://www.bim-cs.com/products/dhs/",
-      "https://web.archive.org/web/20050313145223/http://www.bs-awh.ne.jp:80/project_gz-top.html"
+      "https://web.archive.org/web/20040803035029fw_/http://www.bim-cs.com/products/dhs/",
+      "https://web.archive.org/web/20050313145223fw_/http://www.bs-awh.ne.jp:80/project_gz-top.html"
     ]
   },
   {
@@ -273,8 +309,8 @@ dataset =
     "images": ["01.jpg","02.jpg","03.jpg"],
     "related": ["SL7DDCFW05QZ"],
     "links": [
-      "https://web.archive.org/web/20040803035029/http://www.bim-cs.com/products/dhs/",
-      "https://web.archive.org/web/20050313145223/http://www.bs-awh.ne.jp:80/project_gz-top.html"
+      "https://web.archive.org/web/20040803035029fw_/http://www.bim-cs.com/products/dhs/",
+      "https://web.archive.org/web/20050313145223fw_/http://www.bs-awh.ne.jp:80/project_gz-top.html"
     ]
   },
   {
@@ -316,8 +352,8 @@ dataset =
     "images": ["01.jpg","02.jpg","03.jpg"],
     "related": ["U4VL4KJ2P2SV"],
     "links": [
-      "https://web.archive.org/web/20040803035029/http://www.bim-cs.com/products/dhs/",
-      "https://web.archive.org/web/20050313145223/http://www.bs-awh.ne.jp:80/project_gz-top.html"
+      "https://web.archive.org/web/20040803035029fw_/http://www.bim-cs.com/products/dhs/",
+      "https://web.archive.org/web/20050313145223fw_/http://www.bs-awh.ne.jp:80/project_gz-top.html"
     ]
   },
   {
@@ -359,8 +395,8 @@ dataset =
     "images": ["01.jpg","02.jpg","03.jpg","04.jpg","05.jpg","06.jpg"],
     "related": ["DV3YB9P4LFDL"],
     "links": [
-      "https://web.archive.org/web/20040803035029/http://www.bim-cs.com/products/dhs/",
-      "https://web.archive.org/web/20050313145223/http://www.bs-awh.ne.jp:80/project_gz-top.html"
+      "https://web.archive.org/web/20040803035029fw_/http://www.bim-cs.com/products/dhs/",
+      "https://web.archive.org/web/20050313145223fw_/http://www.bs-awh.ne.jp:80/project_gz-top.html"
     ]
   },
   {
@@ -409,8 +445,8 @@ dataset =
     "images": ["01.jpg","02.jpg","03.jpg"],
     "related": [],
     "links": [
-      "https://web.archive.org/web/20081119135952/http://www.bim-cs.com/products/dhs/ae051/size.html",
-      "https://web.archive.org/web/20080916210329/http://www.bs-awh.ne.jp/bim/dhs_051.html"
+      "https://web.archive.org/web/20081119135952fw_/http://www.bim-cs.com/products/dhs/ae051/size.html",
+      "https://web.archive.org/web/20080916210329fw_/http://www.bs-awh.ne.jp/bim/dhs_051.html"
     ]
   },
   {
@@ -443,8 +479,8 @@ dataset =
     "images": ["01.jpg","02.jpg"],
     "related": ["TGKY3WIFFEH7"],
     "links": [
-      "https://web.archive.org/web/20081226155838/http://www.bim-cs.com/products/dhs/ae081/size.html",
-      "https://web.archive.org/web/20080313032053/http://www.bs-awh.ne.jp/bim/dhs_081.html"
+      "https://web.archive.org/web/20081226155838fw_/http://www.bim-cs.com/products/dhs/ae081/size.html",
+      "https://web.archive.org/web/20080313032053fw_/http://www.bs-awh.ne.jp/bim/dhs_081.html"
     ]
   },
   {
@@ -479,7 +515,7 @@ dataset =
     "images": ["01.jpg","02.jpg"],
     "related": ["QPTIDI3MCNQS"],
     "links": [
-      "http://web.archive.org/web/20001109195400/http://www.carving.co.jp/cis/cismarino_vitz.htm"
+      "http://web.archive.org/web/20001109195400fw_/http://www.carving.co.jp/cis/cismarino_vitz.htm"
     ]
   },
   {
@@ -512,7 +548,7 @@ dataset =
     "images": ["01.jpg","02.jpg"],
     "related": ["6NAU5RW9F7TQ"],
     "links": [
-      "http://web.archive.org/web/20001109195400/http://www.carving.co.jp/cis/cismarino_vitz.htm"
+      "http://web.archive.org/web/20001109195400fw_/http://www.carving.co.jp/cis/cismarino_vitz.htm"
     ]
   },
   {
@@ -551,7 +587,7 @@ dataset =
     "images": ["01.jpg","02.jpg","03.jpg","04.jpg","05.jpg"],
     "related": [],
     "links": [
-      "http://web.archive.org/web/20080303043535/http://www.direzza.com:80/lineup/rsc/index.html"
+      "http://web.archive.org/web/20080303043535fw_/http://www.direzza.com:80/lineup/rsc/index.html"
     ]
   },
   {
@@ -587,7 +623,7 @@ dataset =
     "images": ["01.jpg","02.jpg"],
     "related": ["KQZIWHYAJB95"],
     "links": [
-      "https://web.archive.org/web/20011206111532/http://www.hinodex.co.jp/catalog/lineup/aguzze/s-07.htm"
+      "https://web.archive.org/web/20011206111532fw_/http://www.hinodex.co.jp/catalog/lineup/aguzze/s-07.htm"
     ]
   },
   {
@@ -623,7 +659,7 @@ dataset =
     "images": ["01.jpg","02.jpg"],
     "related": ["PC4IC5FMAA11"],
     "links": [
-      "https://web.archive.org/web/20011206112434/http://www.hinodex.co.jp/catalog/lineup/aguzze/s-07r.htm"
+      "https://web.archive.org/web/20011206112434fw_/http://www.hinodex.co.jp/catalog/lineup/aguzze/s-07r.htm"
     ]
   },
   {
@@ -660,7 +696,7 @@ dataset =
     "images": ["01.jpg","02.jpg","03.jpg","04.jpg","05.jpg","06.jpg","07.jpg","08.jpg","09.jpg","10.jpg","11.jpg","12.jpg","13.jpg","14.jpg","15.jpg"],
     "related": [],
     "links": [
-      "https://web.archive.org/web/20231001182932/www.ings-net.com/english/products/wheel.html"
+      "https://web.archive.org/web/20231001182932fw_/www.ings-net.com/english/products/wheel.html"
     ]
   },
   {
@@ -712,7 +748,7 @@ dataset =
     "images": ["01.jpg","02.jpg","03.jpg"],
     "related": [],
     "links": [
-      "https://web.archive.org/web/20031215023958/http://www.modex.co.jp/catalog_tutiya.htm"
+      "https://web.archive.org/web/20031215023958fw_/http://www.modex.co.jp/catalog_tutiya.htm"
     ]
   },
   {
@@ -740,7 +776,7 @@ dataset =
     "images": ["01.jpg","02.jpg","03.jpg","04.jpg","05.jpg","06.jpg"],
     "related": ["N9DRWPB887A0"],
     "links": [
-      "https://web.archive.org/web/20220215105154/mugen-power.com/english/news/detail/id=1179"
+      "https://web.archive.org/web/20220215105154fw_/mugen-power.com/english/news/detail/id=1179"
     ]
   },
   {
@@ -769,7 +805,7 @@ dataset =
     "images": ["01.jpg","02.jpg","03.jpg","04.jpg"],
     "related": ["GKHP1BHIO41L"],
     "links": [
-      "https://web.archive.org/web/20010419080349/http://www.mugen-honda.co.jp/lineup/wheel/wheel.htm#%EF%BC%AD%EF%BC%A6%EF%BC%91%EF%BC%90"
+      "https://web.archive.org/web/20010419080349fw_/http://www.mugen-honda.co.jp/lineup/wheel/wheel.htm#%EF%BC%AD%EF%BC%A6%EF%BC%91%EF%BC%90"
     ]
   },
   {
@@ -800,7 +836,7 @@ dataset =
     "images": ["01.jpg","02.jpg","03.jpg"],
     "related": [],
     "links": [
-      "https://web.archive.org/web/20050415010055/http://www.newrayton.co.jp/wheel/euro_racing_st_05air/index.html"
+      "https://web.archive.org/web/20050415010055fw_/http://www.newrayton.co.jp/wheel/euro_racing_st_05air/index.html"
     ]
   },
   {
@@ -835,7 +871,7 @@ dataset =
     "images": ["01.jpg","02.jpg","03.jpg"],
     "related": ["NROW8INOVB8S"],
     "links": [
-      "https://web.archive.org/web/20051104010611/http://www.newrayton.co.jp/wheel/euro_racing_gt_08f/index.html"
+      "https://web.archive.org/web/20051104010611fw_/http://www.newrayton.co.jp/wheel/euro_racing_gt_08f/index.html"
     ]
   },
   /*{
@@ -897,7 +933,7 @@ dataset =
     "images": ["01.jpg","02.jpg","03.jpg","04.jpg"],
     "related": ["XUN1UOX4TSJA"],
     "links": [
-      "https://web.archive.org/web/20240419050357/www.autobacs-toyama.com/revowin"
+      "https://web.archive.org/web/20240419050357fw_/www.autobacs-toyama.com/revowin"
     ]
   },
   {
@@ -941,7 +977,7 @@ dataset =
     "images": ["01.jpg","02.jpg"],
     "related": ["ZACE9Q0VK89O"],
     "links": [
-      "https://web.archive.org/web/20060509014028/http://www.ijak.co.jp/HPcatalog/s05size.html"
+      "https://web.archive.org/web/20060509014028fw_/http://www.ijak.co.jp/HPcatalog/s05size.html"
     ]
   },
   {
@@ -1045,7 +1081,7 @@ dataset =
     "images": ["01.jpg","02.jpg","03.jpg","04.jpg","05.jpg"],
     "related": [],
     "links": [
-      "https://web.archive.org/web/20070504060720/http://www.uras.co.jp:80/syohin/wheel.html"
+      "https://web.archive.org/web/20070504060720fw_/http://www.uras.co.jp:80/syohin/wheel.html"
     ]
   },
   {
@@ -1073,7 +1109,7 @@ dataset =
     "images": ["01.jpg"],
     "related": [],
     "links": [
-      "https://web.archive.org/web/20070504060427/http://www.uras.co.jp:80/syohin/wheel_ns02.html"
+      "https://web.archive.org/web/20070504060427fw_/http://www.uras.co.jp:80/syohin/wheel_ns02.html"
     ]
   },
   {
@@ -1127,7 +1163,7 @@ dataset =
     "images": ["01.jpg"],
     "related": [],
     "links": [
-      "https://web.archive.org/web/20020808141524/http://weds.co.jp/products/wedssport/tc-05/index.htm"
+      "https://web.archive.org/web/20020808141524fw_/http://weds.co.jp/products/wedssport/tc-05/index.htm"
     ]
   },
   {
@@ -1195,7 +1231,7 @@ dataset =
     "images": ["01.jpg","02.jpg"],
     "related": [],
     "links": [
-      "https://web.archive.org/web/20020808141524/http://weds.co.jp/products/wedssport/tc-005/index.htm"
+      "https://web.archive.org/web/20020808141524fw_/http://weds.co.jp/products/wedssport/tc-005/index.htm"
     ]
   },
   {
@@ -1230,7 +1266,56 @@ dataset =
     "images": ["01.jpg","02.jpg","03.jpg","04.jpg","05.jpg","06.jpg","07.jpg","08.jpg","09.jpg","10.jpg","11.jpg"],
     "related": [],
     "links": [
-      "https://web.archive.org/web/20060820145351/http://www.yokohamatire.jp/yrc/japan/wheel/brand/co_51c/index.html"
+      "https://web.archive.org/web/20060820145351fw_/http://www.yokohamatire.jp/yrc/japan/wheel/brand/co_51c/index.html"
+    ]
+  },
+  {
+    "id": "WTLZSMV3RQI8",
+    "description": "",
+    "brand": "Yokohama",
+    "model": "Super Advan Racing Version 2",
+    "manufacturer": "Enkei Co., Ltd.",
+    "year_start": "Unverified",
+    "year_end": "Unverified",
+    "origin": "Japan",
+    "construction": [
+      "2 Piece",
+      "Cast",
+      "Welded"
+    ],
+    "style": "Split 3 Spoke",
+    "tags": [],
+    "colors": [
+      "Silver Metalic",
+      "Titanium Gold",
+      "Bright Chrome",
+      "Blue Metallic",
+      "Red Metallic",
+      "Dark Gun Metallic"
+    ],
+    "sizes": [
+      {"diameter": "17", "width": "7.5", "pcd": "4x100", "offsets": "+40"},
+      {"diameter": "17", "width": "7.5", "pcd": "5x114.3", "offsets": "+46"},
+      {"diameter": "17", "width": "8.0", "pcd": "5x100", "offsets": "+38/+48"},
+      {"diameter": "17", "width": "8.0", "pcd": "5x114.3", "offsets": "+38/+48"},
+      {"diameter": "17", "width": "8.5", "pcd": "5x100", "offsets": "+45"},
+      {"diameter": "17", "width": "8.5", "pcd": "5x114.3", "offsets": "+27/+30/+37"},
+      {"diameter": "17", "width": "9.0", "pcd": "5x114.3", "offsets": "+24/+35/+45"},
+      {"diameter": "17", "width": "9.5", "pcd": "5x114.3", "offsets": "+35"},
+      {"diameter": "17", "width": "10.0", "pcd": "5x114.3", "offsets": "+24"},
+      {"diameter": "18", "width": "7.5", "pcd": "5x114.3", "offsets": "+46"},
+      {"diameter": "18", "width": "8.0", "pcd": "5x100", "offsets": "+38/+48"},
+      {"diameter": "18", "width": "8.0", "pcd": "5x114.3", "offsets": "+38/+48"},
+      {"diameter": "18", "width": "8.5", "pcd": "5x100", "offsets": "+45"},
+      {"diameter": "18", "width": "8.5", "pcd": "5x114.3", "offsets": "+27/+30/+37"},
+      {"diameter": "18", "width": "9.0", "pcd": "5x114.3", "offsets": "+24/+35/+45"},
+      {"diameter": "18", "width": "9.5", "pcd": "5x114.3", "offsets": "+35"},
+      {"diameter": "18", "width": "10.0", "pcd": "5x114.3", "offsets": "+24"}
+    ],
+    "images": ["01.jpg"],
+    "related": [],
+    "links": [
+      "https://web.archive.org/web/20051214221153fw_/http://www.yokohamatire.jp/yrc/japan/wheel/brand/superad_sa3rv2/index.html"
     ]
   }
 ]
