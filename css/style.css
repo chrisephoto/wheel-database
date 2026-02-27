@@ -97,15 +97,18 @@ footer {
 
 header {
   align-items: center;
+  background-color: rgb(var(--color-background-01));
   box-shadow: var(--shadow);
   display: flex;
   font-weight: 600;
   padding: calc(var(--padding) / 2) var(--padding);
+  z-index: 50;
 }
 
 header #page-title {
   flex: 1 0 0;
   font-size: 1.2rem;
+  line-height: 1;
   margin: 0;
 }
 
@@ -124,7 +127,6 @@ input,
 select {
   background-color: rgb(var(--color-background-02));
   border-radius: var(--radius-lg);
-  /*border: 1px solid rgba(var(--color-text),0.2);*/
   border: none;
   border-right: 0.7rem solid transparent;
   box-shadow: var(--shadow);
@@ -170,9 +172,7 @@ input[type="search"] {
 }
 
 label {
-  display: none; /* block */
-  font-size: 0.8rem;
-  user-select: none;
+  display: none;
 }
 
 main {
@@ -286,7 +286,6 @@ tr:hover th {
   border-radius: var(--radius-sm);
   box-shadow: var(--shadow);
   display: block;
-  filter: grayscale(0);
   object-fit: cover;
   overflow: hidden;
   transition: 0.2s;
@@ -295,10 +294,31 @@ tr:hover th {
 
 #wheel-list figure:hover img {
   background: rgb(var(--color-background-03));
-  filter: grayscale(0);
 }
 
 /* wheel-details */
+
+#wheel-details-spacer {
+  box-sizing: border-box;
+  display: none;
+  flex: 0 0 auto;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  padding: var(--padding);
+  width: 80ch;
+}
+
+#wheel-details-message h2 {
+  font-size: 2rem;
+}
+
+#wheel-details-message {
+  align-items: center;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+}
 
 #wheel-details {
   background: rgba(var(--color-background-01),1.0);
@@ -313,7 +333,7 @@ tr:hover th {
     right: 0;
     top: 100%;
   transition: top 0.2s;
-  z-index: 100;
+  z-index: 70;
 }
 
 #wheel-details.open {
@@ -322,17 +342,6 @@ tr:hover th {
 
 #wheel-details > div {
   width: 100%;
-}
-
-#wheel-details-message {
-  align-items: center;
-  display: flex;
-  height: 100%;
-  justify-content: center;
-}
-
-#wheel-details-message h2 {
-  font-size: 2rem;
 }
 
 #wheel-details-container {
@@ -350,6 +359,7 @@ tr:hover th {
   position: absolute;
     right: 0;
     top: 0;
+    user-select: none;
 }
 
 #wheel-details-close:hover {
@@ -411,9 +421,9 @@ tr:hover th {
   background: rgb(var(--color-accent-01));
   border-radius: var(--radius-lg);
   color: rgb(var(--color-white));
-  cursor: pointer;
   line-height: 2;
   padding: 0 1ch;
+  user-select: none;
   white-space: nowrap;
 }
 
@@ -471,6 +481,7 @@ tr:hover th {
 
 #wheel-links a {
   display: block;
+  word-wrap: break-word;
 }
 
 #wheel-related-container {
@@ -559,7 +570,9 @@ tr:hover th {
     overflow-x: hidden;
     overflow-y: auto;
   }
-  #wheel-list > div {
+  #wheel-list > div,
+  #wheel-images,
+  #wheel-related {
     grid-template-columns: repeat(auto-fill,minmax(18ch,1fr));
   }
 }
@@ -567,14 +580,23 @@ tr:hover th {
 /* large screens */
 
 @media only screen and (min-width: 1880px) {
-  #wheel-details {
-    background: transparent;
-    padding: var(--padding) calc(var(--padding) / 2);
-    position: initial;
-    max-width: 100ch;
-    width: 100%;
+  #wheel-details-spacer {
+    display: block;
   }
-  #wheel-details-close {
-    display: none;
+  #wheel-details {
+    bottom: 0;
+    height: auto;
+    padding: var(--padding) calc(var(--padding) / 2);
+    left: auto;
+    right: calc(var(--padding) / 2);
+    width: 80ch;
+    z-index: 30;
+  }
+  #wheel-details.open {
+    top: calc(var(--padding) + 24px);
+  }
+  #wheel-images,
+  #wheel-related {
+    grid-template-columns: repeat(auto-fill,minmax(15ch,1fr));
   }
 }

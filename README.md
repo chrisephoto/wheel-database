@@ -10,7 +10,24 @@ If you find this resource helpful and would like to support this project feel fr
 
 ## Changelog
 
-**2026-12-28**
+**2026-02-26**
+* CSS/HTML updates:
+  * Added ability to close details on desktop which required some rework of the details pane
+  * Temporarily removed clickable actions from tags and details until a better solution is found for mobile users
+  * Added:
+    * 5Zigen Heidfeld (1 Piece Version)
+    * 5Zigen Heidfeld (3 Piece Version)
+    * 5Zigen Heidfeld Mesh
+    * AME Circular Spec M
+    * AME Circular Spec R
+    * AME Shallen AX
+    * AME Tracer
+    * Racing Hart CP-FtuneR
+    * Southern Ways Achtec RF38
+    * Southern Ways Achtec RF42
+    * Sparco Viper R
+
+**2025-12-28**
 * CSS updates:
   * Fixed some issues on mobile caused by the previous changes
   * Adjusted media queries

@@ -26,7 +26,7 @@ dataset =
       {"diameter": "18", "width": "7.5", "pcd": "4x114.3", "offsets": "+44/+49"},
       {"diameter": "18", "width": "7.5", "pcd": "5x114.3", "offsets": "+26/+35/+39/+44/+49"},
       {"diameter": "18", "width": "8.0", "pcd": "5x114.3", "offsets": "+20/+32/+33/+38/+43/+46"},
-      {"diameter": "18", "width": "9.0", "pcd": "5x114.3", "offsets": "+14/+26/+27/+32/+37/+44/+45"},
+      {"diameter": "18", "width": "9.0", "pcd": "5x114.3", "offsets": "+14/+24/+26/+27/+32/+37/+44/+45"},
       {"diameter": "18", "width": "10.0", "pcd": "5x114.3", "offsets": "+39/+44"}
     ],
     "images": ["01.jpg","02.jpg"],
@@ -53,7 +53,7 @@ dataset =
     "tags": [],
     "colors": [
       "White",
-      "Black",
+      "Matte Black",
       "Bronze"
     ],
     "sizes": [
@@ -65,8 +65,8 @@ dataset =
       {"diameter": "16", "width": "7.0", "pcd": "5x114.3", "offsets": "+42"},
       {"diameter": "17", "width": "7.5", "pcd": "5x100", "offsets": "+48"},
       {"diameter": "17", "width": "7.5", "pcd": "5x114.3", "offsets": "+45"},
-      {"diameter": "17", "width": "8.0", "pcd": "5x100", "offsets": "+38"},
       {"diameter": "17", "width": "8.0", "pcd": "5x114.3", "offsets": "+33/+38/+43"},
+      {"diameter": "17", "width": "8.5", "pcd": "5x100", "offsets": "+48"},
       {"diameter": "17", "width": "8.5", "pcd": "5x114.3", "offsets": "+30/+40"},
       {"diameter": "17", "width": "9.0", "pcd": "5x114.3", "offsets": "+15/+38"},
       {"diameter": "17", "width": "9.5", "pcd": "5x114.3", "offsets": "+10/+40"}
@@ -74,7 +74,8 @@ dataset =
     "images": ["01.jpg","02.jpg","03.jpg"],
     "related": ["IZA5UHJXHKUR","M3N8XUN1UOX4"],
     "links": [
-      "http://web.archive.org/web/20041025161946fw_/http://www.5zigen.co.jp/product/wheel/becketts_fn01r/index.html"
+      "http://web.archive.org/web/20041025161946fw_/http://www.5zigen.co.jp/product/wheel/becketts_fn01r/index.html",
+      "https://web.archive.org/web/20040623110202fw_/http://www.5zigenusa.com/w_fn01r.html"
     ]
   },
   {
@@ -94,10 +95,10 @@ dataset =
     "tags": [],
     "colors": [
       "White",
-      "Silver",
+      "Solid Silver",
       "Hyper Black",
       "Matte Black",
-      "Black / Polished",
+      "Black Polish",
       "Titanium Bronze"
     ],
     "sizes": [
@@ -123,7 +124,114 @@ dataset =
     "images": ["01.jpg","02.jpg","03.jpg","04.jpg","05.jpg","06.jpg"],
     "related": ["RX6P3O5HQIGC","M3N8XUN1UOX4"],
     "links": [
-      "http://web.archive.org/web/20070101024229fw_/http://www.5zigen.co.jp/product/wheel/becketts_fn01r_c/index.html"
+      "https://web.archive.org/web/20070101024229fw_/http://www.5zigen.co.jp/product/wheel/becketts_fn01r_c/index.html",
+      "https://web.archive.org/web/20040623111809fw_/http://www.5zigenusa.com/w_fn01rc.html"
+    ]
+  },
+  {
+    "id": "VSKYSLV2QQH8",
+    "description": "",
+    "brand": "5Zigen",
+    "model": "Heidfeld (1 Piece Version)",
+    "manufacturer": "Unverified",
+    "year_start": "Unverified",
+    "year_end": "Unverified",
+    "origin": "Unverified",
+    "construction": [
+      "1 Piece",
+      "Cast"
+    ],
+    "style": "Split 8 Spoke",
+    "tags": [],
+    "colors": [
+      "White",
+      "Silver",
+      "Hyper Black",
+      "Gold"
+    ],
+    "sizes": [
+      {"diameter": "17", "width": "7.5", "pcd": "4x100", "offsets": "+43"},
+      {"diameter": "17", "width": "7.5", "pcd": "4x114.3", "offsets": "+43"},
+      {"diameter": "17", "width": "7.5", "pcd": "5x100", "offsets": "+48"},
+      {"diameter": "17", "width": "7.5", "pcd": "5x112", "offsets": "+35"},
+      {"diameter": "17", "width": "7.5", "pcd": "5x114.3", "offsets": "+48"},
+      {"diameter": "17", "width": "7.5", "pcd": "5x120", "offsets": "+35"}
+    ],
+    "images": ["01.jpg"],
+    "related": ["N5FAZMO2MPZ6","TQJXQKT0POF6"],
+    "links": [
+      "https://web.archive.org/web/20020614211213fw_/http://www.5zigenusa.com:80/Pages/5zigen_w/5zigenheidfeld.html"
+    ]
+  },
+  {
+    "id": "N5FAZMO2MPZ6",
+    "description": "",
+    "brand": "5Zigen",
+    "model": "Heidfeld (3 Piece Version)",
+    "manufacturer": "Arrow Enterprise Co., Ltd.",
+    "year_start": "1997",
+    "year_end": "Unverified",
+    "origin": "Japan",
+    "construction": [
+      "3 Piece",
+      "Cast",
+      "Overhead Mount"
+    ],
+    "style": "Split 8 Spoke",
+    "tags": [],
+    "colors": [
+      "White",
+      "Silver",
+      "Gold"
+    ],
+    "sizes": [
+      {"diameter": "18", "width": "7.5", "pcd": "4x100", "offsets": "+44/+50"},
+      {"diameter": "18", "width": "7.5", "pcd": "4x114.3", "offsets": "+44/+50"},
+      {"diameter": "18", "width": "7.5", "pcd": "5x114.3", "offsets": "+44/+50"},
+      {"diameter": "18", "width": "8.0", "pcd": "5x114.3", "offsets": "+38/+44/+50"},
+      {"diameter": "18", "width": "8.5", "pcd": "5x114.3", "offsets": "+24/+31/+38/+44/+50"},
+      {"diameter": "18", "width": "9.0", "pcd": "5x114.3", "offsets": "+31/+38/+44/+50"},
+      {"diameter": "18", "width": "9.5", "pcd": "5x114.3", "offsets": "+38/+44/+50"}
+    ],
+    "images": ["01.jpg","02.jpg"],
+    "related": ["VSKYSLV2QQH8","TQJXQKT0POF6"],
+    "links": [
+      "https://web.archive.org/web/20020614211213fw_/http://www.5zigenusa.com:80/Pages/5zigen_w/5zigenheidfeld.html"
+    ]
+  },
+  {
+    "id": "TQJXQKT0POF6",
+    "description": "A 1 piece cast wheel designed as a replacement for the original Heidfeld. Improvements, including an altered spoke pattern and lip design, resulted in a more elegant and refined appearance and an overall reduction of wheel weight.",
+    "brand": "5Zigen",
+    "model": "Heidfeld Mesh",
+    "manufacturer": "Unverified",
+    "year_start": "Unverified",
+    "year_end": "Unverified",
+    "origin": "Japan",
+    "construction": [
+      "1 Piece",
+      "Cast"
+    ],
+    "style": "Split 7 Spoke",
+    "tags": [],
+    "colors": [
+      "Hyper Silver",
+      "Hyber Black",
+      "Bronze"
+    ],
+    "sizes": [
+      {"diameter": "17", "width": "7.0", "pcd": "4x114.3", "offsets": "+42"},
+      {"diameter": "17", "width": "7.0", "pcd": "5x100", "offsets": "+48"},
+      {"diameter": "17", "width": "7.0", "pcd": "5x114.3", "offsets": "+42/+48/+53"},
+      {"diameter": "18", "width": "7.5", "pcd": "4x114.3", "offsets": "+42"},
+      {"diameter": "18", "width": "7.5", "pcd": "5x100", "offsets": "+48"},
+      {"diameter": "18", "width": "7.5", "pcd": "5x114.3", "offsets": "+42/+48/+53"}
+    ],
+    "images": ["01.jpg","03.jpg","02.jpg"],
+    "related": ["N5FAZMO2MPZ6","VSKYSLV2QQH8"],
+    "links": [
+      "https://web.archive.org/web/20040619060711fw_/http://www.5zigen.co.jp:80/product/wheel/heidfeld_mesh/index.html",
+      "https://web.archive.org/web/20031004041600fw_/http://5zigenusa.com:80/pages/wheels/heidfeld_mesh.html"
     ]
   },
   {
@@ -142,12 +250,12 @@ dataset =
     "style": "5 Spoke",
     "tags": [],
     "colors": [
+      "Face Polish",
       "Silver",
-      "Black",
-      "Black/Polished",
-      "Bronze",
-      "Black/Red",
-      "Polished"
+      "Matte Black",
+      "Black Polish",
+      "Redline (Black/Red)",
+      "Titanium (Bronze)"
     ],
     "sizes": [
       {"diameter": "15", "width": "7.0", "pcd": "4x100", "offsets": "+33/+42"},
@@ -169,7 +277,7 @@ dataset =
       {"diameter": "18", "width": "8.5", "pcd": "5x114.3", "offsets": "+30/+38/+48"},
       {"diameter": "18", "width": "9.5", "pcd": "5x114.3", "offsets": "+12/+35/+45"}
     ],
-    "images": ["01.jpg","02.jpg","03.jpg","04.jpg","05.jpg","06.jpg"],
+    "images": ["05.jpg","01.jpg","02.jpg","03.jpg","04.jpg","06.jpg"],
     "related": ["RX6P3O5HQIGC","IZA5UHJXHKUR"],
     "links": [
       "http://web.archive.org/web/20080513143042fw_/http://www.5zigen.co.jp/products/wheel/proracer/fn01rchot.html"
@@ -191,10 +299,10 @@ dataset =
     "style": "6 Spoke",
     "tags": [],
     "colors": [
-      "Silver",
+      "HMC (Polished)",
+      "Matte Silver",
       "Hyper Black",
-      "Bronze",
-      "Polished"
+      "Matte Bronze"
     ],
     "sizes": [
       {"diameter": "15", "width": "7.0", "pcd": "4x100", "offsets": "+35/+42"},
@@ -212,10 +320,294 @@ dataset =
       {"diameter": "18", "width": "8.5", "pcd": "5x114.3", "offsets": "+33/+38/+48"},
       {"diameter": "18", "width": "9.5", "pcd": "5x114.3", "offsets": "+12/+22/+38/+43"}
     ],
-    "images": ["01.jpg","02.jpg","03.jpg","04.jpg"],
+    "images": ["04.jpg","01.jpg","02.jpg","03.jpg"],
     "related": [],
     "links": [
       "http://web.archive.org/web/20071015045951fw_/http://5zigenusa.com/english/products/wheel/proracer/GN+.html"
+    ]
+  },
+  {
+    "id": "QN3IZ319BL01",
+    "description": "",
+    "brand": "Algernon",
+    "model": "Intelesse II",
+    "manufacturer": "Enkei Co., Ltd.",
+    "year_start": "Unverified",
+    "year_end": "Unverified",
+    "origin": "Japan",
+    "construction": [
+      "3 Piece",
+      "Cast",
+      "Overhead Mount"
+    ],
+    "style": "Split 10 Spoke",
+    "tags": [],
+    "colors": [
+      "Silver",
+      "Formula Black",
+      "Gold",
+      "Brilliant Cut",
+      "SMC"
+    ],
+    "sizes": [
+      {"diameter": "18", "width": "7.5", "pcd": "5x114.3", "offsets": "+2~+44"},
+      {"diameter": "18", "width": "7.5", "pcd": "5x120", "offsets": "+2~+44"},
+      {"diameter": "18", "width": "8.0", "pcd": "5x114.3", "offsets": "-7~+47"},
+      {"diameter": "18", "width": "8.0", "pcd": "5x120", "offsets": "-7~+47"},
+      {"diameter": "18", "width": "8.5", "pcd": "5x114.3", "offsets": "-6~+51"},
+      {"diameter": "18", "width": "8.5", "pcd": "5x120", "offsets": "-6~+51"},
+      {"diameter": "18", "width": "9.0", "pcd": "5x114.3", "offsets": "-6~+48"},
+      {"diameter": "18", "width": "9.0", "pcd": "5x120", "offsets": "-6~+48"},
+      {"diameter": "18", "width": "9.5", "pcd": "5x114.3", "offsets": "-6~+51"},
+      {"diameter": "18", "width": "9.5", "pcd": "5x120", "offsets": "-6~+51"},
+      {"diameter": "18", "width": "10.0", "pcd": "5x114.3", "offsets": "-8~+49"},
+      {"diameter": "18", "width": "10.0", "pcd": "5x120", "offsets": "-8~+49"},
+      {"diameter": "19", "width": "7.5", "pcd": "5x114.3", "offsets": "+2~+44"},
+      {"diameter": "19", "width": "7.5", "pcd": "5x120", "offsets": "+2~+44"},
+      {"diameter": "19", "width": "8.0", "pcd": "5x114.3", "offsets": "-7~+47"},
+      {"diameter": "19", "width": "8.0", "pcd": "5x120", "offsets": "-7~+47"},
+      {"diameter": "19", "width": "8.5", "pcd": "5x114.3", "offsets": "-6~+51"},
+      {"diameter": "19", "width": "8.5", "pcd": "5x120", "offsets": "-6~+51"},
+      {"diameter": "19", "width": "9.0", "pcd": "5x114.3", "offsets": "-6~+48"},
+      {"diameter": "19", "width": "9.0", "pcd": "5x120", "offsets": "-6~+48"},
+      {"diameter": "19", "width": "9.5", "pcd": "5x114.3", "offsets": "-6~+51"},
+      {"diameter": "19", "width": "9.5", "pcd": "5x120", "offsets": "-6~+51"},
+      {"diameter": "19", "width": "10.0", "pcd": "5x114.3", "offsets": "-8~+49"},
+      {"diameter": "19", "width": "10.0", "pcd": "5x120", "offsets": "-8~+49"}
+    ],
+    "images": ["03.jpg","02.jpg","01.jpg","04.jpg"],
+    "related": [],
+    "links": [
+      "https://web.archive.org/web/20040421050124fw_/http://www.algernon-div.com/intelesse/intelesse.htm"
+    ]
+  },
+  {
+    "id": "ZFNXKWNP7ZXT",
+    "description": "",
+    "brand": "AME",
+    "model": "Circlar Spec M",
+    "manufacturer": "Enkei Co., Ltd.",
+    "year_start": "2005",
+    "year_end": "Unverified",
+    "origin": "Japan",
+    "construction": [
+      "2 Piece",
+      "Cast"
+    ],
+    "style": "5 Spoke",
+    "tags": [],
+    "colors": [
+      "Hyper Silver",
+      "Super Black Coat",
+      "Blue"
+    ],
+    "sizes": [
+      {"diameter": "19", "width": "8.5", "pcd": "5x114.3", "offsets": "+25/+35"},
+      {"diameter": "19", "width": "9.0", "pcd": "5x114.3", "offsets": "+17"},
+      {"diameter": "19", "width": "9.5", "pcd": "5x114.3", "offsets": "+22/+30"},
+      {"diameter": "19", "width": "10.0", "pcd": "5x114.3", "offsets": "+22"}
+    ],
+    "images": ["02.jpg","03.jpg","01.jpg"],
+    "related": ["41T70U4BZZQG"],
+    "links": [
+      "https://web.archive.org/web/20050310034012fw_/http://www.kyh.co.jp/products/ame/circlar_spec_m/ame_circlar_spec_m.htm"
+    ]
+  },
+  {
+    "id": "41T70U4BZZQG",
+    "description": "",
+    "brand": "AME",
+    "model": "Circlar Spec R",
+    "manufacturer": "Enkei Co., Ltd.",
+    "year_start": "2005",
+    "year_end": "Unverified",
+    "origin": "Japan",
+    "construction": [
+      "2 Piece",
+      "Cast",
+      "Welded"
+    ],
+    "style": "5 Spoke",
+    "tags": [],
+    "colors": [
+      "Carbon Silver",
+      "Brilliant Buff Finish",
+      "Blue"
+    ],
+    "sizes": [
+      {"diameter": "17", "width": "7.0", "pcd": "4x100", "offsets": "+35/+45"},
+      {"diameter": "17", "width": "7.0", "pcd": "5x100", "offsets": "+35/+45/+50"},
+      {"diameter": "17", "width": "7.0", "pcd": "5x114.3", "offsets": "+25/+30/+35/+45/+48"},
+      {"diameter": "17", "width": "7.5", "pcd": "4x100", "offsets": "+34/+45"},
+      {"diameter": "17", "width": "7.5", "pcd": "5x114.3", "offsets": "+25/+34/+35/+45"},
+      {"diameter": "17", "width": "8.0", "pcd": "5x100", "offsets": "+34/+35/+45/+48"},
+      {"diameter": "17", "width": "8.0", "pcd": "5x114.3", "offsets": "+25/+34/+35/+45"},
+      {"diameter": "17", "width": "8.5", "pcd": "5x100", "offsets": "+35/+45/+48"},
+      {"diameter": "17", "width": "8.5", "pcd": "5x114.3", "offsets": "+25/+35/+38/+45/+50"},
+      {"diameter": "17", "width": "9.0", "pcd": "5x114.3", "offsets": "+20/+35/+38/+42/+45"},
+      {"diameter": "18", "width": "7.5", "pcd": "4x100", "offsets": "+38/+45"},
+      {"diameter": "18", "width": "7.5", "pcd": "5x100", "offsets": "+35/+38/+45/+50"},
+      {"diameter": "18", "width": "7.5", "pcd": "5x114.3", "offsets": "+35/+38/+45/+48"},
+      {"diameter": "18", "width": "8.0", "pcd": "5x100", "offsets": "+45/+48"},
+      {"diameter": "18", "width": "8.0", "pcd": "5x114.3", "offsets": "+25/+34/+35/+38/+42/+45/+48"},
+      {"diameter": "18", "width": "8.5", "pcd": "5x100", "offsets": "+45/+48"},
+      {"diameter": "18", "width": "8.5", "pcd": "5x114.3", "offsets": "+18/+25/+30/+35/+38/+42/+45/+50"},
+      {"diameter": "18", "width": "9.0", "pcd": "5x114.3", "offsets": "+15/+25/+35/+38/+45"},
+      {"diameter": "18", "width": "9.5", "pcd": "5x114.3", "offsets": "+18/+25/+30/+38/+45"},
+      {"diameter": "18", "width": "10.0", "pcd": "5x114.3", "offsets": "+18/+25/+38/+45"},
+      {"diameter": "19", "width": "7.5", "pcd": "5x114.3", "offsets": "+38/+45"},
+      {"diameter": "19", "width": "8.0", "pcd": "5x114.3", "offsets": "+25/+30/+35/+38/+45"},
+      {"diameter": "19", "width": "8.5", "pcd": "5x114.3", "offsets": "+18/+25/+30/+35/+38/+42/+45/+48"},
+      {"diameter": "19", "width": "9.0", "pcd": "5x114.3", "offsets": "+15/+25/+35/+38/+45"},
+      {"diameter": "19", "width": "9.5", "pcd": "5x114.3", "offsets": "+18/+25/+30/+38/+45"},
+      {"diameter": "19", "width": "10.0", "pcd": "5x114.3", "offsets": "+18/+25/+38/+45"}
+    ],
+    "images": ["02.jpg","03.jpg","01.jpg"],
+    "related": ["ZFNXKWNP7ZXT"],
+    "links": [
+      "https://web.archive.org/web/20050130050719fw_/http://www.kyh.co.jp/products/ame/circlar_spec_r/ame_circlar_spec_r.htm"
+    ]
+  },
+  {
+    "id": "M91G92CJ77YY",
+    "description": "Due to the welded nature of the AME Shallen AX, Enkei produced these wheels in numerous standard offsets and Kyoho also allowed customers to order these wheels in custom offsets in 1mm increments.",
+    "brand": "AME",
+    "model": "Shallen AX",
+    "manufacturer": "Enkei Co., Ltd.",
+    "year_start": "Unverified",
+    "year_end": "Unverified",
+    "origin": "Japan",
+    "construction": [
+      "2 Piece",
+      "Cast",
+      "Welded"
+    ],
+    "style": "7 Spoke",
+    "tags": [],
+    "colors": [
+      "Polish",
+      "Chrome"
+    ],
+    "sizes": [
+      {"diameter": "15", "width": "5.0", "pcd": "4x100", "offsets": "+35/+45"},
+      {"diameter": "15", "width": "5.5", "pcd": "4x100", "offsets": "+35/+38/+42/+45"},
+      {"diameter": "15", "width": "6.0", "pcd": "4x100", "offsets": "+26/+32/+35/+38/+45"},
+      {"diameter": "15", "width": "6.5", "pcd": "4x100", "offsets": "+25/+32/+35/+38/+45"},
+      {"diameter": "15", "width": "7.0", "pcd": "4x100", "offsets": "+20/+25/+32/+35/+38/+45"},
+      {"diameter": "15", "width": "7.5", "pcd": "4x100", "offsets": "+15/+18/+25/+32/+35/+38/+45"},
+      {"diameter": "15", "width": "8.0", "pcd": "4x100", "offsets": "+10/+12/+20/+25/+32/+35/+38/+45"},
+      {"diameter": "18", "width": "7.5", "pcd": "5x100", "offsets": "+38/+43/+48/+53"},
+      {"diameter": "18", "width": "7.5", "pcd": "5x114.3", "offsets": "+38/+43/+48/+53"},
+      {"diameter": "18", "width": "8.0", "pcd": "5x100", "offsets": "+25/+35/+38/+43/+48"},
+      {"diameter": "18", "width": "8.0", "pcd": "5x114.3", "offsets": "+25/+35/+38/+42/+43/+48"},
+      {"diameter": "18", "width": "8.5", "pcd": "5x100", "offsets": "+25/+38/+43/+48"},
+      {"diameter": "18", "width": "8.5", "pcd": "5x114.3", "offsets": "+25/+35/+38/+42/+43/+48"},
+      {"diameter": "18", "width": "9.0", "pcd": "5x100", "offsets": "+25/+32/+38/+43"},
+      {"diameter": "18", "width": "9.0", "pcd": "5x114.3", "offsets": "+25/+32/+35/+38/+42/+43"},
+      {"diameter": "18", "width": "9.5", "pcd": "5x100", "offsets": "+25/+32/+38/+43"},
+      {"diameter": "18", "width": "9.5", "pcd": "5x114.3", "offsets": "+25/+32/+38/+43"},
+      {"diameter": "18", "width": "10.0", "pcd": "5x100", "offsets": "+25/+35/+43"},
+      {"diameter": "18", "width": "10.0", "pcd": "5x114.3", "offsets": "+25/+35/+43"},
+      {"diameter": "19", "width": "7.5", "pcd": "5x114.3", "offsets": "+38/+43/+48/+53"},
+      {"diameter": "19", "width": "8.0", "pcd": "5x114.3", "offsets": "+25/+35/+38/+42/+43/+48"},
+      {"diameter": "19", "width": "8.5", "pcd": "5x114.3", "offsets": "+25/+35/+38/+42/+43/+48"},
+      {"diameter": "19", "width": "9.0", "pcd": "5x114.3", "offsets": "+25/+32/+35/+38/+42/+43"},
+      {"diameter": "19", "width": "9.5", "pcd": "5x114.3", "offsets": "+25/+32/+38/+43"},
+      {"diameter": "19", "width": "10.0", "pcd": "5x114.3", "offsets": "+25/+35/+43"},
+      {"diameter": "20", "width": "8.0", "pcd": "5x114.3", "offsets": "+38/+43/+48/+53"},
+      {"diameter": "20", "width": "8.5", "pcd": "5x114.3", "offsets": "+25/+35/+38/+42/+43/+48"},
+      {"diameter": "20", "width": "9.0", "pcd": "5x114.3", "offsets": "+25/+35/+38/+42/+43/+48"},
+      {"diameter": "20", "width": "9.5", "pcd": "5x114.3", "offsets": "+25/+32/+35/+38/+42/+43"},
+      {"diameter": "20", "width": "10.0", "pcd": "5x114.3", "offsets": "+25/+32/+38/+43"},
+      {"diameter": "20", "width": "10.5", "pcd": "5x114.3", "offsets": "+25/+35/+43"}
+    ],
+    "images": ["01.jpg","02.jpg"],
+    "related": [],
+    "links": [
+      "https://web.archive.org/web/20050309011735fw_/http://www.kyh.co.jp/products/ame/shallen_ax/ame_shallen_ax.html"
+    ]
+  },
+  {
+    "id": "IA84HFUJQVS0",
+    "description": "",
+    "brand": "AME",
+    "model": "Tracer",
+    "manufacturer": "Enkei Co., Ltd.",
+    "year_start": "1999",
+    "year_end": "Unverified",
+    "origin": "Japan",
+    "construction": [
+      "1 Piece",
+      "Cast"
+    ],
+    "style": "Split 6 Spoke",
+    "tags": [],
+    "colors": [
+      "White",
+      "Silver",
+      "Solid Gunmetalic",
+      "Hyper Gold",
+      "SMC Red",
+      "SMC Blue"
+    ],
+    "sizes": [
+      {"diameter": "15", "width": "7.0", "pcd": "4x100", "offsets": "+35/+45"},
+      {"diameter": "16", "width": "7.0", "pcd": "4x100", "offsets": "+32/+42"},
+      {"diameter": "16", "width": "7.0", "pcd": "4x114.3", "offsets": "+32/+42"},
+      {"diameter": "16", "width": "7.0", "pcd": "5x100", "offsets": "+48"},
+      {"diameter": "16", "width": "7.0", "pcd": "5x114.3", "offsets": "+32/+42"},
+      {"diameter": "16", "width": "8.0", "pcd": "4x114.3", "offsets": "+32"},
+      {"diameter": "16", "width": "8.0", "pcd": "5x114.3", "offsets": "+32"},
+      {"diameter": "17", "width": "7.0", "pcd": "4x100", "offsets": "+38"},
+      {"diameter": "17", "width": "7.0", "pcd": "4x114.3", "offsets": "+38"},
+      {"diameter": "17", "width": "7.0", "pcd": "5x100", "offsets": "+48"},
+      {"diameter": "17", "width": "7.0", "pcd": "5x114.3", "offsets": "+32/+38/+48"},
+      {"diameter": "17", "width": "8.0", "pcd": "5x114.3", "offsets": "+35/+45"},
+      {"diameter": "17", "width": "9.0", "pcd": "5x114.3", "offsets": "+35/+45"},
+      {"diameter": "18", "width": "7.5", "pcd": "5x100", "offsets": "+48"},
+      {"diameter": "18", "width": "7.5", "pcd": "5x114.3", "offsets": "+38/+48"},
+      {"diameter": "18", "width": "8.5", "pcd": "5x100", "offsets": "+45"},
+      {"diameter": "18", "width": "8.5", "pcd": "5x114.3", "offsets": "+30/+40/+45"},
+      {"diameter": "18", "width": "9.5", "pcd": "5x114.3", "offsets": "+38/+45"}
+    ],
+    "images": ["04.jpg","01.jpg","02.jpg","05.jpg","03.jpg","06.jpg","07.jpg"],
+    "related": ["A7ZD609H54WM"],
+    "links": [
+      "https://web.archive.org/web/20050309003736fw_/http://www.kyh.co.jp/products/ame/tracer/ame_tracer.html",
+      "https://web.archive.org/web/20021003181448fw_/http://www.kyh.co.jp/products/cd/cd_tre_spec.html"
+    ]
+  },
+   {
+    "id": "A7ZD609H54WM",
+    "description": "",
+    "brand": "AME",
+    "model": "Tracer Spec M",
+    "manufacturer": "Enkei Co., Ltd.",
+    "year_start": "2005",
+    "year_end": "Unverified",
+    "origin": "Japan",
+    "construction": [
+      "1 Piece",
+      "Cast"
+    ],
+    "style": "Split 6 Spoke",
+    "tags": [],
+    "colors": [
+      "Silver",
+      "SBC",
+      "Red",
+      "Blue"
+    ],
+    "sizes": [
+      {"diameter": "19", "width": "8.5", "pcd": "5x114.3", "offsets": "+25/+35"},
+      {"diameter": "19", "width": "9.0", "pcd": "5x114.3", "offsets": "+15"},
+      {"diameter": "19", "width": "9.5", "pcd": "5x114.3", "offsets": "+22/+30"},
+      {"diameter": "19", "width": "10.0", "pcd": "5x114.3", "offsets": "+25"}
+    ],
+    "images": ["01.jpg","02.jpg","04.jpg","03.jpg"],
+    "related": ["IA84HFUJQVS0"],
+    "links": [
+      "https://web.archive.org/web/20051103002715fw_/http://www.kyh.co.jp/products/ame/tracer_spec_m/ame_tracer_spec_m.htm"
     ]
   },
   {
@@ -235,15 +627,15 @@ dataset =
     "tags": ["Dual Valvestem"],
     "colors": [
       "White",
+      "Chrome",
       "Silver",
-      "Bronze",
-      "Chrome"
+      "Bronze"
     ],
     "sizes": [
       {"diameter": "17", "width": "9.0", "pcd": "5x114.3", "offsets": "+25"},
       {"diameter": "18", "width": "9.5", "pcd": "5x114.3", "offsets": "+25/+38"}
     ],
-    "images": ["01.jpg","02.jpg","03.jpg"],
+    "images": ["03.jpg","02.jpg","01.jpg"],
     "related": [],
     "links": [
       "https://web.archive.org/web/20100116090507fw_/http://www.bee-r.com/main/parts/wheel/index.htm"
@@ -549,6 +941,57 @@ dataset =
     "related": ["6NAU5RW9F7TQ"],
     "links": [
       "http://web.archive.org/web/20001109195400fw_/http://www.carving.co.jp/cis/cismarino_vitz.htm"
+    ]
+  },
+  {
+    "id": "3RT7RU3APYPG",
+    "description": "17 and 18 inch options featuring a changeable trim ring covering the lug nuts",
+    "brand": "Crimson",
+    "model": "Racing Sparco Viper R",
+    "manufacturer": "Tan-ei-sya Co., Ltd.",
+    "year_start": "1999",
+    "year_end": "Unverified",
+    "origin": "Japan",
+    "construction": [
+      "1 Piece",
+      "Forged"
+    ],
+    "style": "Split 6 Spoke",
+    "tags": [],
+    "colors": [
+      "White",
+      "Sparkling Silver"
+    ],
+    "sizes": [
+      {"diameter": "15", "width": "6.5", "pcd": "4x100", "offsets": "+33/+40"},
+      {"diameter": "15", "width": "6.5", "pcd": "4x114.3", "offsets": "+33/+40"},
+      {"diameter": "15", "width": "6.5", "pcd": "5x100", "offsets": "+33/+40"},
+      {"diameter": "15", "width": "6.5", "pcd": "5x114.3", "offsets": "+33/+40"},
+      {"diameter": "16", "width": "7.0", "pcd": "4x100", "offsets": "+33/+40/+45"},
+      {"diameter": "16", "width": "7.0", "pcd": "4x114.3", "offsets": "+33/+40/+45"},
+      {"diameter": "16", "width": "7.0", "pcd": "5x100", "offsets": "+33/+40/+45"},
+      {"diameter": "16", "width": "7.0", "pcd": "5x114.3", "offsets": "+33/+40/+45"},
+      {"diameter": "16", "width": "8.0", "pcd": "5x100", "offsets": "+40"},
+      {"diameter": "16", "width": "8.0", "pcd": "4x114.3", "offsets": "+40"},
+      {"diameter": "16", "width": "8.0", "pcd": "5x114.3", "offsets": "+40"},
+      {"diameter": "17", "width": "7.0", "pcd": "4x100", "offsets": "+45"},
+      {"diameter": "17", "width": "7.0", "pcd": "4x114.3", "offsets": "+45"},
+      {"diameter": "17", "width": "7.0", "pcd": "5x100", "offsets": "+45"},
+      {"diameter": "17", "width": "7.0", "pcd": "5x114.3", "offsets": "+45"},
+      {"diameter": "17", "width": "7.5", "pcd": "5x100", "offsets": "+30/+40/+45"},
+      {"diameter": "17", "width": "7.5", "pcd": "4x114.3", "offsets": "+30/+40/+45"},
+      {"diameter": "17", "width": "7.5", "pcd": "5x114.3", "offsets": "+30/+40/+45"},
+      {"diameter": "17", "width": "8.5", "pcd": "4x114.3", "offsets": "+35"},
+      {"diameter": "17", "width": "8.5", "pcd": "5x114.3", "offsets": "+30/+35/+43"},
+      {"diameter": "17", "width": "9.5", "pcd": "5x114.3", "offsets": "+20/+35/+40"},
+      {"diameter": "18", "width": "8.5", "pcd": "5x114.3", "offsets": "+30/+38"},
+      {"diameter": "18", "width": "9.5", "pcd": "5x114.3", "offsets": "+18/+35/+40"},
+      {"diameter": "18", "width": "10.0", "pcd": "5x114.3", "offsets": "+14"}
+    ],
+    "images": ["01.jpg"],
+    "related": [],
+    "links": [
+      "https://web.archive.org/web/20031123102211fw_/http://www.crimson-inc.co.jp/sparco/viper-r.html"
     ]
   },
   {
@@ -874,7 +1317,8 @@ dataset =
       "https://web.archive.org/web/20051104010611fw_/http://www.newrayton.co.jp/wheel/euro_racing_gt_08f/index.html"
     ]
   },
-  /*{
+  /*
+  {
     "id": "OM2RY2Z8JKZ0",
     "description": "Commissioned by Fukuoka based brake specialist Ram's, designed by Right-Man, and manufactured by Tan-ei-sya, the Ram's PR-6 was developed for use in the Civic One-Make race series.",
     "brand": "Ram's",
@@ -883,22 +1327,36 @@ dataset =
     "year_start": "1996",
     "year_end": "2000",
     "origin": "Japan",
-    "construction": "1 Piece - Forged",
-    "style": "6 Spoke",
-    "link": "http://web.archive.org/web/20010309235925/http://www.rams-net.co.jp:80/products/wheel/wheel_white.html",
-    "images": ["01.jpg"],
-    "sizes": [
-      {"diameter": "15", "width": "6.5", "pcd": "4x100", "offsets": "+35/+45", "colors": "White, Pearl White, Gunmetal, Black, Blue Black"},
-      {"diameter": "15", "width": "6.5", "pcd": "4x114.3", "offsets": "+35/+45", "colors": "White, Pearl White, Gunmetal, Black, Blue Black"},
-      {"diameter": "15", "width": "6.5", "pcd": "5x100", "offsets": "+35/+45", "colors": "White, Pearl White, Gunmetal, Black, Blue Black"},
-      {"diameter": "15", "width": "6.5", "pcd": "5x114.3", "offsets": "+35/+45", "colors": "White, Pearl White, Gunmetal, Black, Blue Black"},
-      {"diameter": "15", "width": "7.0", "pcd": "4x100", "offsets": "+33/+38/+42/+46", "colors": "White, Pearl White, Gunmetal, Black, Blue Black"},
-      {"diameter": "15", "width": "7.0", "pcd": "4x114.3", "offsets": "+33/+38/+42/+46", "colors": "White, Pearl White, Gunmetal, Black, Blue Black"},
-      {"diameter": "15", "width": "7.0", "pcd": "5x100", "offsets": "+33/+38/+42/+46", "colors": "White, Pearl White, Gunmetal, Black, Blue Black"},
-      {"diameter": "15", "width": "7.0", "pcd": "5x114.3", "offsets": "+33/+38/+42/+46", "colors": "White, Pearl White, Gunmetal, Black, Blue Black"}
+    "construction": [
+      "1 Piece",
+      "Forged"
     ],
-    "related": []
-  },*/
+    "style": "6 Spoke",
+    "tags": [],
+    "colors": [
+      "White",
+      "Pearl White",
+      "Gunmetal",
+      "Black",
+      "Blue Black"
+    ],
+    "sizes": [
+      {"diameter": "15", "width": "6.5", "pcd": "4x100", "offsets": "+35/+45"},
+      {"diameter": "15", "width": "6.5", "pcd": "4x114.3", "offsets": "+35/+45"},
+      {"diameter": "15", "width": "6.5", "pcd": "5x100", "offsets": "+35/+45"},
+      {"diameter": "15", "width": "6.5", "pcd": "5x114.3", "offsets": "+35/+45"},
+      {"diameter": "15", "width": "7.0", "pcd": "4x100", "offsets": "+33/+38/+42/+46"},
+      {"diameter": "15", "width": "7.0", "pcd": "4x114.3", "offsets": "+33/+38/+42/+46"},
+      {"diameter": "15", "width": "7.0", "pcd": "5x100", "offsets": "+33/+38/+42/+46"},
+      {"diameter": "15", "width": "7.0", "pcd": "5x114.3", "offsets": "+33/+38/+42/+46"}
+    ],
+    "images": ["01.jpg"],
+    "related": [],
+    "links": [
+      "http://web.archive.org/web/20010309235925/http://www.rams-net.co.jp:80/products/wheel/wheel_white.html"
+    ]
+  },
+  */
   {
     "id": "ZACE9Q0VK89O",
     "description": "Manufactured by Tan-ei-sya for Puma Co., Ltd. and sold through Autobacs in Toyama Prefecture. The PS-05 is a rebranded <a onclick='loadDetails(&quot;XUN1UOX4TSJA&quot;)'>Southern Ways S-05</a>, offered in sizes catering to smaller cars and heavily used in Japanese Motorsports series including: Yaris Cup, All Japan Rally Championship, TGR Rally Challenge, VITA Race Series, and more.",
@@ -934,6 +1392,75 @@ dataset =
     "related": ["XUN1UOX4TSJA"],
     "links": [
       "https://web.archive.org/web/20240419050357fw_/www.autobacs-toyama.com/revowin"
+    ]
+  },
+  {
+    "id": "TW6DS1SJ1HGZ",
+    "description": "",
+    "brand": "Southern Ways",
+    "model": "Achtec RF38",
+    "manufacturer": "Tan-ei-sya Co., Ltd.",
+    "year_start": "Unverified",
+    "year_end": "Unverified",
+    "origin": "Japan",
+    "construction": [
+      "1 Piece",
+      "Forged"
+    ],
+    "style": "8 Spoke",
+    "tags": [],
+    "colors": [
+      "Hyper Silver",
+      "Euro Black",
+      "Platinum Gold"
+    ],
+    "sizes": [
+      {"diameter": "17", "width": "7.0", "pcd": "4x100", "offsets": "+45"},
+      {"diameter": "17", "width": "7.5", "pcd": "5x100", "offsets": "+49"},
+      {"diameter": "17", "width": "8.0", "pcd": "5x100", "offsets": "+45"},
+      {"diameter": "18", "width": "7.5", "pcd": "5x100", "offsets": "+49"},
+      {"diameter": "18", "width": "8.0", "pcd": "5x100", "offsets": "+45"},
+      {"diameter": "19", "width": "7.5", "pcd": "5x100", "offsets": "+49"}
+    ],
+    "images": ["02.jpg","01.jpg","03.jpg"],
+    "related": ["NZPSAS0W86M1"],
+    "links": [
+      "https://web.archive.org/web/20070203150143fw_/http://www.ijak.co.jp/HPcatalog/achtecsize.html"
+    ]
+  },
+  {
+    "id": "NZPSAS0W86M1",
+    "description": "",
+    "brand": "Southern Ways",
+    "model": "Achtech RF42",
+    "manufacturer": "Tan-ei-sya Co., Ltd.",
+    "year_start": "Unverified",
+    "year_end": "Unverified",
+    "origin": "Japan",
+    "construction": [
+      "1 Piece",
+      "Forged"
+    ],
+    "style": "8 Spoke",
+    "tags": [],
+    "colors": [
+      "Hyper Silver",
+      "Euro Black",
+      "Platinum Gold"
+    ],
+    "sizes": [
+      {"diameter": "17", "width": "7.5", "pcd": "5x114.3", "offsets": "+45"},
+      {"diameter": "17", "width": "8.0", "pcd": "5x114.3", "offsets": "+47"},
+      {"diameter": "17", "width": "8.5", "pcd": "5x114.3", "offsets": "+37"},
+      {"diameter": "18", "width": "7.5", "pcd": "5x100", "offsets": "+47"},
+      {"diameter": "18", "width": "7.5", "pcd": "5x114.3", "offsets": "+45"},
+      {"diameter": "18", "width": "8.0", "pcd": "5x114.3", "offsets": "+47"},
+      {"diameter": "18", "width": "8.5", "pcd": "5x114.3", "offsets": "+37"}
+    ],
+    "images": ["02.jpg","01.jpg","03.jpg"],
+    "related": ["TW6DS1SJ1HGZ"],
+    "links": [
+      "https://web.archive.org/web/20070203150143fw_/http://www.ijak.co.jp/HPcatalog/achtecsize.html"
     ]
   },
   {
@@ -1051,6 +1578,73 @@ dataset =
     "related": ["7AKI6FXXGMUE"],
     "links": [
       "https://web.archive.org/web/20031229230549fw_/http://www.starform-jp.com/fr_R2_2.html"
+    ]
+  },
+  {
+    "id": "7IKMGYI3SPHV",
+    "description": "",
+    "brand": "Takechi Project",
+    "model": "Racing Hart CP-FtuneR",
+    "manufacturer": "Tan-ei-sya Co., Ltd.",
+    "year_start": "2002",
+    "year_end": "Unverified",
+    "origin": "Japan",
+    "construction": [
+      "2 Piece",
+      "Forged",
+      "Welded"
+    ],
+    "style": "5 Spoke",
+    "tags": [],
+    "colors": [
+      "White",
+      "Silver",
+      "Gunmetallic",
+      "Bronze"
+    ],
+    "sizes": [
+      {"diameter": "15", "width": "5.0", "pcd": "4x100", "offsets": "+28"},
+      {"diameter": "15", "width": "5.5", "pcd": "4x100", "offsets": "+28/+34"},
+      {"diameter": "15", "width": "6.0", "pcd": "4x100", "offsets": "+35/+40"},
+      {"diameter": "15", "width": "6.5", "pcd": "4x100", "offsets": "+29/+35/+42"},
+      {"diameter": "15", "width": "7.0", "pcd": "4x100", "offsets": "+27/+35/+42"},
+      {"diameter": "15", "width": "7.5", "pcd": "4x100", "offsets": "+17/+24/+30/+40"},
+      {"diameter": "15", "width": "8.0", "pcd": "4x100", "offsets": "+15/+23/+32/+40"},
+      {"diameter": "17", "width": "7.0", "pcd": "5x100", "offsets": "+27/+28/+35/+38/+44"},
+      {"diameter": "17", "width": "7.0", "pcd": "5x114.3", "offsets": "+27/+28/+35/+38/+44"},
+      {"diameter": "17", "width": "7.5", "pcd": "5x100", "offsets": "+27/+30/+31/+37/+38/+47/+50"},
+      {"diameter": "17", "width": "7.5", "pcd": "5x114.3", "offsets": "+27/+30/+31/+37/+38/+47/+50"},
+      {"diameter": "17", "width": "8.0", "pcd": "5x100", "offsets": "+15/+24/+29/+30/+34/+35/+41/+42/+47/+48/+52"},
+      {"diameter": "17", "width": "8.0", "pcd": "5x114.3", "offsets": "+15/+24/+29/+30/+34/+35/+41/+42/+47/+48/+52"},
+      {"diameter": "17", "width": "8.5", "pcd": "5x100", "offsets": "+21/+29/+30/+34/+35/+41/+42/+47/+50/+52/+55"},
+      {"diameter": "17", "width": "8.5", "pcd": "5x114.3", "offsets": "+21/+29/+30/+34/+35/+41/+42/+47/+50/+52/+55"},
+      {"diameter": "17", "width": "9.0", "pcd": "5x100", "offsets": "+19/+24/+29/+30/+34/+35/+41/+42/+47/+52/+60"},
+      {"diameter": "17", "width": "9.0", "pcd": "5x114.3", "offsets": "+19/+24/+29/+30/+34/+35/+41/+42/+47/+52/+60"},
+      {"diameter": "17", "width": "9.5", "pcd": "5x100", "offsets": "+21/+28/+30/+34/+35/+42"},
+      {"diameter": "17", "width": "9.5", "pcd": "5x114.3", "offsets": "+21/+28/+30/+34/+35/+42"},
+      {"diameter": "17", "width": "10.0", "pcd": "5x100", "offsets": "+18/+24/+34/+35/+42"},
+      {"diameter": "17", "width": "10.0", "pcd": "5x114.3", "offsets": "+18/+24/+34/+35/+42"},
+      {"diameter": "18", "width": "7.5", "pcd": "5x100", "offsets": "+23/+26/+31/+32/+37/+38/+42/+48/+51"},
+      {"diameter": "18", "width": "7.5", "pcd": "5x114.3", "offsets": "+23/+26/+31/+32/+37/+38/+42/+48/+51"},
+      {"diameter": "18", "width": "8.0", "pcd": "5x100", "offsets": "+23/+31/+32/+35/+38/+47/+48/+52"},
+      {"diameter": "18", "width": "8.0", "pcd": "5x114.3", "offsets": "+23/+31/+32/+35/+38/+47/+48/+52"},
+      {"diameter": "18", "width": "8.5", "pcd": "5x100", "offsets": "+17/+25/+26/+34/+35/+41/+42/+47/+50/+52/+55"},
+      {"diameter": "18", "width": "8.5", "pcd": "5x114.3", "offsets": "+17/+25/+26/+34/+35/+41/+42/+47/+50/+52/+55"},
+      {"diameter": "18", "width": "9.0", "pcd": "5x100", "offsets": "+23/+32/+34/+38/+41/+42/+49/+50/+60"},
+      {"diameter": "18", "width": "9.0", "pcd": "5x114.3", "offsets": "+23/+32/+34/+38/+41/+42/+49/+50/+60"},
+      {"diameter": "18", "width": "9.5", "pcd": "5x100", "offsets": "+17/+22/+26/+34/+35/+41/+42"},
+      {"diameter": "18", "width": "9.5", "pcd": "5x114.3", "offsets": "+17/+22/+26/+34/+35/+41/+42"},
+      {"diameter": "18", "width": "10.0", "pcd": "5x100", "offsets": "+23/+34/+35/+41/+42"},
+      {"diameter": "18", "width": "10.0", "pcd": "5x114.3", "offsets": "+23/+34/+35/+41/+42"},
+      {"diameter": "18", "width": "10.5", "pcd": "5x100", "offsets": "+20/+31/+32/+40"},
+      {"diameter": "18", "width": "10.5", "pcd": "5x114.3", "offsets": "+20/+31/+32/+40"},
+      {"diameter": "18", "width": "11.0", "pcd": "5x100", "offsets": "+23/+31/+32/+40"},
+      {"diameter": "18", "width": "11.0", "pcd": "5x114.3", "offsets": "+23/+31/+32/+40"}
+    ],
+    "images": ["01.jpg","02.jpg","03.jpg"],
+    "related": [],
+    "links": [
+      "http://web.archive.org/web/20031006164938fw_/http://www.hartwheels.co.jp/cat_030730_racinghart_ftuner/cat_racinghart_cp-ftuner_spec.htm"
     ]
   },
   {

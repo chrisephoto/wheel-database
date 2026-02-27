@@ -166,8 +166,8 @@ function populateDetails(i) {
   document.getElementById('wheel-details').scrollTo(0,0);
 
   //hide default message and show details
-  document.querySelector('#wheel-details-message').classList = 'hidden';
-  document.querySelector('#wheel-details-container').classList = '';
+  //document.querySelector('#wheel-details-message').classList = 'hidden';
+  //document.querySelector('#wheel-details-container').classList = '';
   
   //clear detail information
   if (document.querySelector('#wheel-details-hero img')) {
@@ -196,16 +196,16 @@ function populateDetails(i) {
   document.getElementById('wheel-header-brand').innerHTML = dataset[i].brand;
   document.getElementById('wheel-header-model').innerHTML = dataset[i].model;
   for (let j = 0; j < dataset[i].construction.length; j++) {
-    document.getElementById('wheel-header-tags').innerHTML += `<span onclick="resetFilter();document.getElementById('input-search').value='${dataset[i].construction[j]}';applyFilter();">${dataset[i].construction[j]}</span>\n`;
+    document.getElementById('wheel-header-tags').innerHTML += `<span>${dataset[i].construction[j]}</span>\n`;
   }
-  document.getElementById('wheel-header-tags').innerHTML += `<span onclick="resetFilter();document.getElementById('input-style').value='${dataset[i].style}';applyFilter();">${dataset[i].style}</span>\n`;
+  document.getElementById('wheel-header-tags').innerHTML += `<span>${dataset[i].style}</span>\n`;
   for (let j = 0; j < dataset[i].tags.length; j++) {
-    document.getElementById('wheel-header-tags').innerHTML += `<span onclick="resetFilter();document.getElementById('input-search').value='${dataset[i].tags[j]}';applyFilter();">${dataset[i].tags[j]}</span>\n`;
+    document.getElementById('wheel-header-tags').innerHTML += `<span>${dataset[i].tags[j]}</span>\n`;
   }
   document.getElementById('wheel-header-description').innerHTML = dataset[i].description;
-  document.getElementById('wheel-info-brand').innerHTML = `<a onclick="resetFilter();document.getElementById('input-brand').value = '${dataset[i].brand}';applyFilter();">${dataset[i].brand}</a>`;
+  document.getElementById('wheel-info-brand').innerHTML = `<span>${dataset[i].brand}</span>`;
   document.getElementById('wheel-info-model').innerHTML = dataset[i].model;
-  document.getElementById('wheel-info-manufacturer').innerHTML = `<a onclick="resetFilter();document.getElementById('input-manufacturer').value = '${dataset[i].manufacturer}';applyFilter();">${dataset[i].manufacturer}</a>`;
+  document.getElementById('wheel-info-manufacturer').innerHTML = `<span>${dataset[i].manufacturer}</span>`;
   if (dataset[i].year_start == dataset[i].year_end) {
     document.getElementById('wheel-info-years').innerHTML = dataset[i].year_start;
   }
@@ -299,8 +299,8 @@ function closeDetails() {
   //remove class to hide modal
   document.getElementById('wheel-details').classList = '';
 
-  document.querySelector('#wheel-details-message').classList = '';
-  document.querySelector('#wheel-details-container').classList = 'hidden';
+  //document.querySelector('#wheel-details-message').classList = '';
+  //document.querySelector('#wheel-details-container').classList = 'hidden';
 
   //update browser url/history
   document.title = 'Wheel Database';
