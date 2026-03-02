@@ -15,6 +15,17 @@ function initialize() {
     populateGrid(i)
   }
 
+  // add 'to top' button
+  insertToTop();
+
+  // update display count
+  if (document.querySelectorAll("#wheel-list > div > figure").length == 0) {
+    document.getElementById("display-count").innerHTML = "No results found. <a onclick='resetFilter()'>Clear filters</a>."
+  }
+  else {
+    document.getElementById("display-count").innerHTML = "Displaying " + document.querySelectorAll("#wheel-list > div > figure").length + " of " + dataset.length + " wheels";
+  }
+
   // check cookies and apply preferences
   function getCookie(name) {
     const value = `; ${document.cookie}`;
@@ -159,6 +170,20 @@ function populateGrid(i) {
   img.src = "images/" + dataset[i].id + "/00.png";
   figure.appendChild(figcaption);
   figcaption.innerHTML = `<p>${dataset[i].brand}</p>\n<p>${dataset[i].model}</p>`;
+}
+
+function insertToTop() {
+  const content = document.querySelector('#wheel-list > div');
+  const figure = document.createElement('figure');
+  figure.id = "to-top";
+  figure.onclick = function(){document.getElementById('wheel-select').scrollTo(0,0);window.scrollTo(0,0);};
+  figure.innerHTML = `
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=">
+    <figcaption>
+      <p>Return to top</p>
+    </figcaption>
+  `
+  //content.appendChild(figure);
 }
 
 function populateDetails(i) {
@@ -425,6 +450,17 @@ function applyFilter() {
     populateGrid(filterIndexes[j])
   }
 
+  // add 'to top' button
+  insertToTop();
+
+  // update display count
+  if (document.querySelectorAll("#wheel-list > div > figure").length == 0) {
+    document.getElementById("display-count").innerHTML = "No results found. <a onclick='resetFilter()'>Clear filters</a>."
+  }
+  else {
+    document.getElementById("display-count").innerHTML = "Displaying " + document.querySelectorAll("#wheel-list > div > figure").length + " of " + dataset.length + " wheels";
+  }
+
   //update browser url/history
   var queryString = new URL(document.location);
   if (filterSearch){queryString.searchParams.set('q', filterSearch)};
@@ -444,6 +480,17 @@ function resetFilter() {
   //populate wheel list
   for (let i = 0; i < dataset.length; i++) {
     populateGrid(i)
+  }
+
+  // add 'to top' button
+  insertToTop();
+
+  // update display count
+  if (document.querySelectorAll("#wheel-list > div > figure").length == 0) {
+    document.getElementById("display-count").innerHTML = "No results found. <a onclick='resetFilter()'>Clear filters</a>."
+  }
+  else {
+    document.getElementById("display-count").innerHTML = "Displaying " + document.querySelectorAll("#wheel-list > div > figure").length + " of " + dataset.length + " wheels";
   }
   
   //reset inputs

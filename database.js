@@ -1,5 +1,6 @@
 dataset = 
 [
+  /* 5Zigen 5ZR Copse*/
   {
     "id": "JY7H4G79RJHD",
     "description": "",
@@ -11,7 +12,8 @@ dataset =
     "origin": "Japan",
     "construction": [
       "2 Piece",
-      "Cast"
+      "Cast",
+      "Overhead Mount"
     ],
     "style": "5 Spoke",
     "tags": [],
@@ -36,6 +38,7 @@ dataset =
       "https://web.archive.org/web/20040725050647fw_/http://www.5zigenusa.com/w_5zr.html"
     ]
   },
+  /* 5Zigen Becketts FN-01R */
   {
     "id": "RX6P3O5HQIGC",
     "description": "Developed by 5Zigen for use in the Super Taikyu race series, the FN-01R utilizes a forged construction &#0151; courtesy of Tan-ei-sya &#0151; to achieve the high rigidity and light weight required for circuit racing.",
@@ -78,6 +81,7 @@ dataset =
       "https://web.archive.org/web/20040623110202fw_/http://www.5zigenusa.com/w_fn01r.html"
     ]
   },
+  /* 5Zigen Becketts FN01R-C */
   {
     "id": "IZA5UHJXHKUR",
     "description": "5Zigen introduced the FN01R-C as an affordable cast alternative to their successful FN-01R.",
@@ -128,6 +132,7 @@ dataset =
       "https://web.archive.org/web/20040623111809fw_/http://www.5zigenusa.com/w_fn01rc.html"
     ]
   },
+  /* 5Zigen Heidfeld (1 Piece Version) */
   {
     "id": "VSKYSLV2QQH8",
     "description": "",
@@ -163,6 +168,7 @@ dataset =
       "https://web.archive.org/web/20020614211213fw_/http://www.5zigenusa.com:80/Pages/5zigen_w/5zigenheidfeld.html"
     ]
   },
+  /* 5Zigen Heidfeld (3 Piece Version) */
   {
     "id": "N5FAZMO2MPZ6",
     "description": "",
@@ -199,6 +205,7 @@ dataset =
       "https://web.archive.org/web/20020614211213fw_/http://www.5zigenusa.com:80/Pages/5zigen_w/5zigenheidfeld.html"
     ]
   },
+  /* 5Zigen Heidfeld Mesh */
   {
     "id": "TQJXQKT0POF6",
     "description": "A 1 piece cast wheel designed as a replacement for the original Heidfeld. Improvements, including an altered spoke pattern and lip design, resulted in a more elegant and refined appearance and an overall reduction of wheel weight.",
@@ -234,6 +241,7 @@ dataset =
       "https://web.archive.org/web/20031004041600fw_/http://5zigenusa.com:80/pages/wheels/heidfeld_mesh.html"
     ]
   },
+  /* 5Zigen ProRacer FN01R-C Hot Version */
   {
     "id": "M3N8XUN1UOX4",
     "description": "An updated version of the original FN01R-C featuring a new carbon-look center cap and an engraved logo replacing the spoke sticker.",
@@ -283,9 +291,10 @@ dataset =
       "http://web.archive.org/web/20080513143042fw_/http://www.5zigen.co.jp/products/wheel/proracer/fn01rchot.html"
     ]
   },
+  /* 5Zigen ProRacer GN+ */
   {
     "id": "D6ROPNRGLQ2K",
-    "description": "5Zigen used the knowledge gained through years of racing to design the ProRacer GN+ to be the ultimate road wheel, expertly balancing strength, weight, and cost. ",
+    "description": "5Zigen used the knowledge gained through years of racing to design the ProRacer GN+ to be the ultimate road wheel, expertly balancing strength, weight, and cost.",
     "brand": "5Zigen",
     "model": "ProRacer GN+",
     "manufacturer": "Patec Co., Ltd.",
@@ -326,6 +335,368 @@ dataset =
       "http://web.archive.org/web/20071015045951fw_/http://5zigenusa.com/english/products/wheel/proracer/GN+.html"
     ]
   },
+  /* 5Zigen ProRacer GN+ Forged - add images
+  {
+    "id": "SRUKFK5EDPRT",
+    "description": "",
+    "brand": "5Zigen",
+    "model": "ProRacer GN+ Forged",
+    "manufacturer": "Tan-ei-sya Co., Ltd.",
+    "year_start": "Unverified",
+    "year_end": "Unverified",
+    "origin": "Japan",
+    "construction": [
+      "1 Piece",
+      "Forged"
+    ],
+    "style": "6 Spoke",
+    "tags": [],
+    "colors": [
+      "Dark Bronze"
+    ],
+    "sizes": [
+      {"diameter": "15", "width": "6.5", "pcd": "5x100", "offsets": "+48"},
+      {"diameter": "17", "width": "7.5", "pcd": "5x100", "offsets": "+48"},
+      {"diameter": "17", "width": "8.0", "pcd": "5x114.3", "offsets": "+33/+40"},
+      {"diameter": "17", "width": "9.5", "pcd": "5x114.3", "offsets": "+62"}
+    ],
+    "images": [],
+    "related": [],
+    "links": [
+      "http://web.archive.org/web/20051227060333fw_/http://www.5zigen.co.jp/product/proracer/gn_plus_w/index.html"
+    ]
+  },*/
+  /* A-Tech Final Speed Forged */
+  {
+    "id": "2E793K4POB4I",
+    "description": "",
+    "brand": "A-Tech",
+    "model": "Final Speed Forged",
+    "manufacturer": "Speed Star Co., Ltd.",
+    "year_start": "Unverified",
+    "year_end": "Unverified",
+    "origin": "Japan",
+    "construction": [
+      "1 Piece",
+      "Semi Solid Forged"
+    ],
+    "style": "5 Spoke",
+    "tags": [],
+    "colors": [
+      "Silver",
+      "Bronze"
+    ],
+    "sizes": [
+      {"diameter": "17", "width": "7.5", "pcd": "5x100", "offsets": "+33/+43/+49"},
+      {"diameter": "17", "width": "7.5", "pcd": "5x114.3", "offsets": "+25/+33/+43/+48"},
+      {"diameter": "17", "width": "8.5", "pcd": "5x100", "offsets": "+50"},
+      {"diameter": "17", "width": "8.5", "pcd": "5x114.3", "offsets": "+25/+30/+40/+48"},
+      {"diameter": "17", "width": "9.5", "pcd": "5x114.3", "offsets": "+15/+35/+42"}
+    ],
+    "images": ["01.jpg"],
+    "related": [],
+    "links": [
+      "https://web.archive.org/web/20040830151703fw_/http://www.marukanet.co.jp/wheel/a-tech/forged.html",
+      "https://web.archive.org/web/20050209235012fw_/http://www.hotstuff-cp.co.jp:80/product/DATA/fs_for.pdf",
+      "https://web.archive.org/web/20041205131006fw_/http://www.hotstuff-cp.co.jp/catalog/catalog.pdf"
+    ]
+  },
+  /* Abe Shokai Auto Strada Genova Finestra */
+  {
+    "id": "YVN2VOY5TTKB",
+    "description": "Due to Abe Shokai's Build-to-Order system for the Auto Strada Genova series, these magnesium wheels forged by Tan-ei-sya were offered in a huge array of PCDs, sizes, offsets, and colors.",
+    "brand": "Abe Shokai",
+    "model": "Auto Strada Genova Finestra",
+    "manufacturer": "Tan-ei-sya Co., Ltd.",
+    "year_start": "1996",
+    "year_end": "Unverified",
+    "origin": "Japan",
+    "construction": [
+      "1 Piece",
+      "Forged"
+    ],
+    "style": "5 Spoke",
+    "tags": ["Magnesium"],
+    "colors": [
+      "Super Pearl White",
+      "German Silver",
+      "Flash Silver",
+      "Blended Silver Gray",
+      "Titanium Black",
+      "Champagne Gold",
+      "Platinum Gold",
+      "Prestige Gold",
+      "Speed Yellow"
+    ],
+    "sizes": [
+      {"diameter": "17", "width": "7.0~8.0", "pcd": "5x108", "offsets": "±0~+60"},
+      {"diameter": "17", "width": "7.0~8.0", "pcd": "5x114.3", "offsets": "±0~+60"},
+      {"diameter": "17", "width": "7.0~8.0", "pcd": "5x120.65", "offsets": "+12~+60"},
+      {"diameter": "17", "width": "7.0~8.0", "pcd": "5x130", "offsets": "+35~+60"},
+      {"diameter": "18", "width": "7.0~13.0", "pcd": "5x108", "offsets": "±0~+70"},
+      {"diameter": "18", "width": "7.0~13.0", "pcd": "5x114.3", "offsets": "-11~+70"},
+      {"diameter": "18", "width": "7.0~13.0", "pcd": "5x120.65", "offsets": "-11~+70"},
+      {"diameter": "18", "width": "7.0~13.0", "pcd": "5x130", "offsets": "-11~+70"},
+      {"diameter": "19", "width": "8.0~10.5", "pcd": "5x108", "offsets": "+8~+65"},
+      {"diameter": "19", "width": "8.0~10.5", "pcd": "5x114.3", "offsets": "+5~+65"},
+      {"diameter": "19", "width": "8.0~10.5", "pcd": "5x120.65", "offsets": "+25~+65"},
+      {"diameter": "19", "width": "8.0~10.5", "pcd": "5x130", "offsets": "+40~+65"}
+    ],
+    "images": ["01.jpg"],
+    "related": ["XD0KVIMZ5YJG","U9ISFRHK2USO","JPM6HU8LHAW2","0YETAECKMWBC"],
+    "links": [
+      "https://web.archive.org/web/20060222150853fw_/www.abeshokai.co.jp/products/wheel/astrd/genova_01.html",
+      "https://web.archive.org/web/20080326201015fw_/http://abeshokai.jp/products/autostrada/gnv_spec01.html#01"
+    ]
+  },
+  /* Abe Shokai Auto Strada Genova Firo */
+  {
+    "id": "XD0KVIMZ5YJG",
+    "description": "Due to Abe Shokai's Build-to-Order system for the Auto Strada Genova series, these magnesium wheels forged by Tan-ei-sya were offered in a huge array of PCDs, sizes, offsets, and colors.",
+    "brand": "Abe Shokai",
+    "model": "Auto Strada Genova Firo",
+    "manufacturer": "Tan-ei-sya Co., Ltd.",
+    "year_start": "1996",
+    "year_end": "Unverified",
+    "origin": "Japan",
+    "construction": [
+      "1 Piece",
+      "Forged"
+    ],
+    "style": "15 Spoke",
+    "tags": ["Magnesium"],
+    "colors": [
+      "Super Pearl White",
+      "German Silver",
+      "Flash Silver",
+      "Blended Silver Gray",
+      "Titanium Black",
+      "Champagne Gold",
+      "Platinum Gold",
+      "Prestige Gold",
+      "Speed Yellow"
+    ],
+    "sizes": [
+      {"diameter": "17", "width": "7.0~8.0", "pcd": "5x108", "offsets": "±0~+60"},
+      {"diameter": "17", "width": "7.0~8.0", "pcd": "5x114.3", "offsets": "±0~+60"},
+      {"diameter": "17", "width": "7.0~8.0", "pcd": "5x120.65", "offsets": "+12~+60"},
+      {"diameter": "17", "width": "7.0~8.0", "pcd": "5x130", "offsets": "+35~+60"},
+      {"diameter": "18", "width": "7.0~13.0", "pcd": "5x108", "offsets": "±0~+70"},
+      {"diameter": "18", "width": "7.0~13.0", "pcd": "5x114.3", "offsets": "-11~+70"},
+      {"diameter": "18", "width": "7.0~13.0", "pcd": "5x120.65", "offsets": "-11~+70"},
+      {"diameter": "18", "width": "7.0~13.0", "pcd": "5x130", "offsets": "-11~+70"},
+      {"diameter": "19", "width": "8.0~10.5", "pcd": "5x108", "offsets": "+8~+65"},
+      {"diameter": "19", "width": "8.0~10.5", "pcd": "5x114.3", "offsets": "+5~+65"},
+      {"diameter": "19", "width": "8.0~10.5", "pcd": "5x120.65", "offsets": "+25~+65"},
+      {"diameter": "19", "width": "8.0~10.5", "pcd": "5x130", "offsets": "+40~+65"}
+    ],
+    "images": ["01.jpg"],
+    "related": ["YVN2VOY5TTKB","U9ISFRHK2USO","JPM6HU8LHAW2","0YETAECKMWBC"],
+    "links": [
+      "https://web.archive.org/web/20060222150853fw_/www.abeshokai.co.jp/products/wheel/astrd/genova_01.html",
+      "https://web.archive.org/web/20080326201015fw_/http://abeshokai.jp/products/autostrada/gnv_spec01.html#03"
+    ]
+  },
+  /* Abe Shokai Auto Strada Genova Garza */
+  {
+    "id": "U9ISFRHK2USO",
+    "description": "Due to Abe Shokai's Build-to-Order system for the Auto Strada Genova series, these magnesium wheels forged by Tan-ei-sya were offered in a huge array of PCDs, sizes, offsets, and colors.",
+    "brand": "Abe Shokai",
+    "model": "Auto Strada Genova Garza",
+    "manufacturer": "Tan-ei-sya Co., Ltd.",
+    "year_start": "1996",
+    "year_end": "Unverified",
+    "origin": "Japan",
+    "construction": [
+      "1 Piece",
+      "Forged"
+    ],
+    "style": "Split 8 Spoke",
+    "tags": ["Magnesium"],
+    "colors": [
+      "Super Pearl White",
+      "German Silver",
+      "Flash Silver",
+      "Blended Silver Gray",
+      "Titanium Black",
+      "Champagne Gold",
+      "Platinum Gold",
+      "Prestige Gold",
+      "Speed Yellow"
+    ],
+    "sizes": [
+      {"diameter": "17", "width": "7.0~8.0", "pcd": "5x108", "offsets": "±0~+60"},
+      {"diameter": "17", "width": "7.0~8.0", "pcd": "5x114.3", "offsets": "±0~+60"},
+      {"diameter": "17", "width": "7.0~8.0", "pcd": "5x120.65", "offsets": "+12~+60"},
+      {"diameter": "17", "width": "7.0~8.0", "pcd": "5x130", "offsets": "+35~+60"},
+      {"diameter": "18", "width": "7.0~13.0", "pcd": "5x108", "offsets": "±0~+70"},
+      {"diameter": "18", "width": "7.0~13.0", "pcd": "5x114.3", "offsets": "-11~+70"},
+      {"diameter": "18", "width": "7.0~13.0", "pcd": "5x120.65", "offsets": "-11~+70"},
+      {"diameter": "18", "width": "7.0~13.0", "pcd": "5x130", "offsets": "-11~+70"},
+      {"diameter": "19", "width": "8.0~10.5", "pcd": "5x108", "offsets": "+8~+65"},
+      {"diameter": "19", "width": "8.0~10.5", "pcd": "5x114.3", "offsets": "+5~+65"},
+      {"diameter": "19", "width": "8.0~10.5", "pcd": "5x120.65", "offsets": "+25~+65"},
+      {"diameter": "19", "width": "8.0~10.5", "pcd": "5x130", "offsets": "+40~+65"}
+    ],
+    "images": ["01.jpg"],
+    "related": ["YVN2VOY5TTKB","XD0KVIMZ5YJG","JPM6HU8LHAW2","0YETAECKMWBC"],
+    "links": [
+      "https://web.archive.org/web/20060222150853fw_/www.abeshokai.co.jp/products/wheel/astrd/genova_01.html",
+      "https://web.archive.org/web/20080326201015fw_/http://abeshokai.jp/products/autostrada/gnv_spec01.html#04"
+    ]
+  },
+  /* Abe Shokai Auto Strada Genova Piatto */
+  {
+    "id": "JPM6HU8LHAW2",
+    "description": "Due to Abe Shokai's Build-to-Order system for the Auto Strada Genova series, these magnesium wheels forged by Tan-ei-sya were offered in a huge array of PCDs, sizes, offsets, and colors.",
+    "brand": "Abe Shokai",
+    "model": "Auto Strada Genova Piatto",
+    "manufacturer": "Tan-ei-sya Co., Ltd.",
+    "year_start": "1996",
+    "year_end": "Unverified",
+    "origin": "Japan",
+    "construction": [
+      "1 Piece",
+      "Forged"
+    ],
+    "style": "8 Spoke",
+    "tags": ["Magnesium"],
+    "colors": [
+      "Super Pearl White",
+      "German Silver",
+      "Flash Silver",
+      "Blended Silver Gray",
+      "Titanium Black",
+      "Champagne Gold",
+      "Platinum Gold",
+      "Prestige Gold",
+      "Speed Yellow"
+    ],
+    "sizes": [
+      {"diameter": "17", "width": "7.0~8.0", "pcd": "5x108", "offsets": "±0~+60"},
+      {"diameter": "17", "width": "7.0~8.0", "pcd": "5x114.3", "offsets": "±0~+60"},
+      {"diameter": "17", "width": "7.0~8.0", "pcd": "5x120.65", "offsets": "+12~+60"},
+      {"diameter": "17", "width": "7.0~8.0", "pcd": "5x130", "offsets": "+35~+60"},
+      {"diameter": "18", "width": "7.0~13.0", "pcd": "5x108", "offsets": "±0~+70"},
+      {"diameter": "18", "width": "7.0~13.0", "pcd": "5x114.3", "offsets": "-11~+70"},
+      {"diameter": "18", "width": "7.0~13.0", "pcd": "5x120.65", "offsets": "-11~+70"},
+      {"diameter": "18", "width": "7.0~13.0", "pcd": "5x130", "offsets": "-11~+70"},
+      {"diameter": "19", "width": "8.0~10.5", "pcd": "5x108", "offsets": "+8~+65"},
+      {"diameter": "19", "width": "8.0~10.5", "pcd": "5x114.3", "offsets": "+5~+65"},
+      {"diameter": "19", "width": "8.0~10.5", "pcd": "5x120.65", "offsets": "+25~+65"},
+      {"diameter": "19", "width": "8.0~10.5", "pcd": "5x130", "offsets": "+40~+65"}
+    ],
+    "images": ["01.jpg"],
+    "related": ["YVN2VOY5TTKB","XD0KVIMZ5YJG","U9ISFRHK2USO","0YETAECKMWBC"],
+    "links": [
+      "https://web.archive.org/web/20060222150853fw_/www.abeshokai.co.jp/products/wheel/astrd/genova_01.html"
+    ]
+  },
+  /* Abe Shokai Auto Strada Genova Stera */
+  {
+    "id": "0YETAECKMWBC",
+    "description": "Due to Abe Shokai's Build-to-Order system for the Auto Strada Genova series, these magnesium wheels forged by Tan-ei-sya were offered in a huge array of PCDs, sizes, offsets, and colors.",
+    "brand": "Abe Shokai",
+    "model": "Auto Strada Genova Stera",
+    "manufacturer": "Tan-ei-sya Co., Ltd.",
+    "year_start": "1996",
+    "year_end": "Unverified",
+    "origin": "Japan",
+    "construction": [
+      "1 Piece",
+      "Forged"
+    ],
+    "style": "5 Spoke",
+    "tags": ["Magnesium"],
+    "colors": [
+      "Super Pearl White",
+      "German Silver",
+      "Flash Silver",
+      "Blended Silver Gray",
+      "Titanium Black",
+      "Champagne Gold",
+      "Platinum Gold",
+      "Prestige Gold",
+      "Speed Yellow"
+    ],
+    "sizes": [
+      {"diameter": "17", "width": "7.0~8.0", "pcd": "5x108", "offsets": "±0~+60"},
+      {"diameter": "17", "width": "7.0~8.0", "pcd": "5x114.3", "offsets": "±0~+60"},
+      {"diameter": "17", "width": "7.0~8.0", "pcd": "5x120.65", "offsets": "+12~+60"},
+      {"diameter": "17", "width": "7.0~8.0", "pcd": "5x130", "offsets": "+35~+60"},
+      {"diameter": "18", "width": "7.0~13.0", "pcd": "5x108", "offsets": "±0~+70"},
+      {"diameter": "18", "width": "7.0~13.0", "pcd": "5x114.3", "offsets": "-11~+70"},
+      {"diameter": "18", "width": "7.0~13.0", "pcd": "5x120.65", "offsets": "-11~+70"},
+      {"diameter": "18", "width": "7.0~13.0", "pcd": "5x130", "offsets": "-11~+70"},
+      {"diameter": "19", "width": "8.0~10.5", "pcd": "5x108", "offsets": "+8~+65"},
+      {"diameter": "19", "width": "8.0~10.5", "pcd": "5x114.3", "offsets": "+5~+65"},
+      {"diameter": "19", "width": "8.0~10.5", "pcd": "5x120.65", "offsets": "+25~+65"},
+      {"diameter": "19", "width": "8.0~10.5", "pcd": "5x130", "offsets": "+40~+65"}
+    ],
+    "images": ["01.jpg"],
+    "related": ["YVN2VOY5TTKB","XD0KVIMZ5YJG","U9ISFRHK2USO","JPM6HU8LHAW2"],
+    "links": [
+      "https://web.archive.org/web/20060222150853fw_/www.abeshokai.co.jp/products/wheel/astrd/genova_01.html",
+      "https://web.archive.org/web/20080326201015fw_/http://abeshokai.jp/products/autostrada/gnv_spec01.html#02"
+    ]
+  },
+  /* Aimgain GIIM  - add images, sizes
+  {
+    "id": "DHEMY8EFL2YI",
+    "description": "",
+    "brand": "Aimgain",
+    "model": "GIIM",
+    "manufacturer": "Work Co., Ltd.",
+    "year_start": "Unverified",
+    "year_end": "Unverified",
+    "origin": "Japan",
+    "construction": [
+      "2 Piece",
+      "Cast"
+    ],
+    "style": "Split 7 Spoke",
+    "tags": [],
+    "colors": [
+      "All"
+    ],
+    "sizes": [
+      {"diameter": "", "width": "", "pcd": "", "offsets": ""}
+    ],
+    "images": [],
+    "related": [],
+    "links": [
+      "https://web.archive.org/web/20251123061408fw_/aimgain.net/products/wheel/g2m.html"
+    ]
+  }, */
+  /* Aimgain GIIM-R - add images, sizes
+  {
+    "id": "7NV5S4VXF751",
+    "description": "",
+    "brand": "Aimgain",
+    "model": "GIIM-R",
+    "manufacturer": "Work Co., Ltd.",
+    "year_start": "Unverified",
+    "year_end": "Unverified",
+    "origin": "Japan",
+    "construction": [
+      "2 Piece",
+      "Cast"
+    ],
+    "style": "Split 7 Spoke",
+    "tags": [],
+    "colors": [
+      "All"
+    ],
+    "sizes": [
+      {"diameter": "", "width": "", "pcd": "", "offsets": ""}
+    ],
+    "images": [],
+    "related": [],
+    "links": [
+      "https://web.archive.org/web/20250805002717fw_/aimgain.net/products/wheel/g2m_r.html"
+    ]
+  }, */
+  /* Algernon Intelesse II */
   {
     "id": "QN3IZ319BL01",
     "description": "",
@@ -381,6 +752,158 @@ dataset =
       "https://web.archive.org/web/20040421050124fw_/http://www.algernon-div.com/intelesse/intelesse.htm"
     ]
   },
+  /* Allies Deerfield Baja Spec I */
+  {
+    "id": "TG8NG9JQEE55",
+    "description": "",
+    "brand": "Allies",
+    "model": "Deerfield Baja Spec I",
+    "manufacturer": "Enkei Co., Ltd.",
+    "year_start": "2001",
+    "year_end": "Unverified",
+    "origin": "Japan",
+    "construction": [
+      "1 Piece",
+      "Cast"
+    ],
+    "style": "6 Spoke",
+    "tags": [],
+    "colors": [
+      "White",
+      "Polished",
+      "Gun Metallic"
+    ],
+    "sizes": [
+      {"diameter": "16", "width": "6.5", "pcd": "6x139.7", "offsets": "+24"},
+      {"diameter": "16", "width": "8.0", "pcd": "6x139.7", "offsets": "±0/+30"}
+    ],
+    "images": ["01.jpg"],
+    "related": [],
+    "links": [
+      "https://web.archive.org/web/20040925113927fw_/http://www.allies.co.jp/wheel/bj_sp1/bj_sp1.htm"
+    ]
+  },
+  /* Allies Deerfield Baja Spec II */
+  {
+    "id": "OU3M0M2FNFD9",
+    "description": "",
+    "brand": "Allies",
+    "model": "Deerfield Baja Spec II",
+    "manufacturer": "Enkei Co., Ltd.",
+    "year_start": "2001",
+    "year_end": "Unverified",
+    "origin": "Japan",
+    "construction": [
+      "1 Piece",
+      "Cast"
+    ],
+    "style": "5 Spoke",
+    "tags": [],
+    "colors": [
+      "White",
+      "Competition Silver",
+      "Gun Metallic"
+    ],
+    "sizes": [
+      {"diameter": "16", "width": "5.5", "pcd": "5x139.7", "offsets": "+20"}
+    ],
+    "images": ["01.jpg"],
+    "related": [],
+    "links": [
+      "https://web.archive.org/web/20040925113937fw_/http://www.allies.co.jp/wheel/bj_sp2/bj_sp2.htm"
+    ]
+  },
+  /* Allies Deerfield Baja Spec III */
+  {
+    "id": "LJZOVZX5HHWX",
+    "description": "",
+    "brand": "Allies",
+    "model": "Deerfield Baja Spec III",
+    "manufacturer": "Enkei Co., Ltd.",
+    "year_start": "2001",
+    "year_end": "Unverified",
+    "origin": "Japan",
+    "construction": [
+      "1 Piece",
+      "Cast"
+    ],
+    "style": "Dish",
+    "tags": [],
+    "colors": [
+      "Polished",
+      "Gun Metallic",
+      "Bright Chrome"
+    ],
+    "sizes": [
+      {"diameter": "16", "width": "8.0", "pcd": "6x139.7", "offsets": "-30/±0"}
+    ],
+    "images": ["01.jpg"],
+    "related": [],
+    "links": [
+      "https://web.archive.org/web/20040926063935fw_/http://www.allies.co.jp/wheel/bj_sp3/bj_sp3.htm"
+    ]
+  },
+  /* Allies Deerfield Baja Spec TT */
+  {
+    "id": "1YQ4XR18WWND",
+    "description": "",
+    "brand": "Allies",
+    "model": "Deerfield Baja Spec TT",
+    "manufacturer": "Enkei Co., Ltd.",
+    "year_start": "Unverified",
+    "year_end": "Unverified",
+    "origin": "Japan",
+    "construction": [
+      "1 Piece",
+      "Cast"
+    ],
+    "style": "6 Spoke",
+    "tags": [],
+    "colors": [
+      "Pearl White",
+      "Polish",
+      "Gun Metallic",
+      "Champagne Gold"
+    ],
+    "sizes": [
+      {"diameter": "17", "width": "8.0", "pcd": "6x139.7", "offsets": "+25"}
+    ],
+    "images": ["01.jpg","02.jpg","03.jpg","04.jpg"],
+    "related": [],
+    "links": [
+      "https://web.archive.org/web/20040926063952fw_/http://www.allies.co.jp/wheel/bj_sptt/bj_tt.htm"
+    ]
+  },
+  /* Allies Elkfield 100 */
+  {
+    "id": "WCKUHUKN5WVQ",
+    "description": "",
+    "brand": "Allies",
+    "model": "Elkfield 100",
+    "manufacturer": "Work Co., Ltd.",
+    "year_start": "1998",
+    "year_end": "Unverified",
+    "origin": "Japan",
+    "construction": [
+      "2 Piece",
+      "Cast",
+      "Overhead Mount"
+    ],
+    "style": "5 Spoke",
+    "tags": [],
+    "colors": [
+      "Polish"
+    ],
+    "sizes": [
+      {"diameter": "18", "width": "9.0", "pcd": "5x150", "offsets": "+50"}
+    ],
+    "images": ["01.jpg"],
+    "related": [],
+    "links": [
+      "https://web.archive.org/web/20040926064012fw_/http://www.allies.co.jp/wheel/ef_100/ef_100.htm"
+    ]
+  },
+  /* AME Circlar Spec M */
   {
     "id": "ZFNXKWNP7ZXT",
     "description": "",
@@ -392,7 +915,8 @@ dataset =
     "origin": "Japan",
     "construction": [
       "2 Piece",
-      "Cast"
+      "Cast",
+      "Overhead Mount"
     ],
     "style": "5 Spoke",
     "tags": [],
@@ -413,6 +937,7 @@ dataset =
       "https://web.archive.org/web/20050310034012fw_/http://www.kyh.co.jp/products/ame/circlar_spec_m/ame_circlar_spec_m.htm"
     ]
   },
+  /* AME Circlar Spec R */
   {
     "id": "41T70U4BZZQG",
     "description": "",
@@ -468,6 +993,74 @@ dataset =
       "https://web.archive.org/web/20050130050719fw_/http://www.kyh.co.jp/products/ame/circlar_spec_r/ame_circlar_spec_r.htm"
     ]
   },
+  /* AME Nobley Final */
+  {
+    "id": "27I10B461I2N",
+    "description": "Commonly referred to as AME Nobel, AME Mesh, or AME Fin, the uniquely named AME Nobley Final ",
+    "brand": "AME",
+    "model": "Nobley Final",
+    "manufacturer": "Enkei Co., Ltd.",
+    "year_start": "1997",
+    "year_end": "Unverified",
+    "origin": "Japan",
+    "construction": [
+      "3 Piece",
+      "Cast",
+      "Overhead Mount"
+    ],
+    "style": "Split 10 Spoke",
+    "tags": [],
+    "colors": [
+      "Silver",
+      "Hyper Silver",
+      "Chrome",
+      "Gold Chrome"
+    ],
+    "sizes": [
+      {"diameter": "17", "width": "7.0", "pcd": "4x100", "offsets": "+36/+43"},
+      {"diameter": "17", "width": "7.0", "pcd": "4x114.3", "offsets": "+36/+43/+49"},
+      {"diameter": "17", "width": "7.0", "pcd": "5x100", "offsets": "+36/+43/+49"},
+      {"diameter": "17", "width": "7.0", "pcd": "5x114.3", "offsets": "+23/+36/+43/+49"},
+      {"diameter": "17", "width": "8.0", "pcd": "4x114.3", "offsets": "+36/+43"},
+      {"diameter": "17", "width": "8.0", "pcd": "5x114.3", "offsets": "+10/+23/+30/+35/+36/+42/+43"},
+      {"diameter": "17", "width": "9.0", "pcd": "4x114.3", "offsets": "+36"},
+      {"diameter": "17", "width": "9.0", "pcd": "5x114.3", "offsets": "+10/+23/+30/+36/+43"},
+      {"diameter": "18", "width": "7.0", "pcd": "4x114.3", "offsets": "+36/+43"},
+      {"diameter": "18", "width": "7.0", "pcd": "5x100", "offsets": "+36/+43"},
+      {"diameter": "18", "width": "7.0", "pcd": "5x114.3", "offsets": "+36/+43"},
+      {"diameter": "18", "width": "7.5", "pcd": "4x114.3", "offsets": "+30/+36/+43"},
+      {"diameter": "18", "width": "7.5", "pcd": "5x100", "offsets": "+30/+36/+43"},
+      {"diameter": "18", "width": "7.5", "pcd": "5x114.3", "offsets": "+30/+36/+43"},
+      {"diameter": "18", "width": "8.0", "pcd": "4x114.3", "offsets": "+23/+30/+36/+43"},
+      {"diameter": "18", "width": "8.0", "pcd": "5x114.3", "offsets": "+10/+22/+23/+30/+35/+36/+42/+43"},
+      {"diameter": "18", "width": "8.5", "pcd": "5x114.3", "offsets": "+10/+17/+22/+23/+30/+35/+36/+42/+43"},
+      {"diameter": "18", "width": "9.0", "pcd": "4x114.3", "offsets": "+23/+36"},
+      {"diameter": "18", "width": "9.0", "pcd": "5x114.3", "offsets": "+4/+10/+17/+22/+23/+30/+35/+36/+42/+43"},
+      {"diameter": "18", "width": "9.5", "pcd": "5x114.3", "offsets": "+4/+10/+17/+22/+23/+30/+36/+43"},
+      {"diameter": "18", "width": "10.0", "pcd": "5x114.3", "offsets": "+3/+4/+10/+17/+22/+23/+30/+36/+43"},
+      {"diameter": "18", "width": "10.5", "pcd": "5x114.3", "offsets": "+3/+10/+17/+23/+30/+36"},
+      {"diameter": "18", "width": "11.0", "pcd": "5x114.3", "offsets": "+9/+17/+23/+30"},
+      {"diameter": "18", "width": "11.5", "pcd": "5x114.3", "offsets": "+9/+23"},
+      {"diameter": "19", "width": "8.0", "pcd": "5x114.3", "offsets": "+22/+23/+29/+30/+35/+36/+42/+43"},
+      {"diameter": "19", "width": "8.5", "pcd": "5x114.3", "offsets": "+17/+23/+29/+30/+35/+36/+42/+43"},
+      {"diameter": "19", "width": "9.0", "pcd": "5x114.3", "offsets": "+16/+22/+23/+30/+35/+36/+42/+43"},
+      {"diameter": "19", "width": "9.5", "pcd": "5x114.3", "offsets": "+17/+22/+30/+35/+36/+43"},
+      {"diameter": "19", "width": "10.0", "pcd": "5x114.3", "offsets": "+9/+10/+22/+23/+29/+36/+43"},
+      {"diameter": "19", "width": "10.5", "pcd": "5x114.3", "offsets": "+3/+17/+30"},
+      {"diameter": "19", "width": "11.0", "pcd": "5x114.3", "offsets": "+9/+23"},
+      {"diameter": "20", "width": "8.0", "pcd": "5x114.3", "offsets": "+23/+30/+36/+37/+43/+44"},
+      {"diameter": "20", "width": "8.5", "pcd": "5x114.3", "offsets": "+23/+30/+36/+37/+43/+44"},
+      {"diameter": "20", "width": "9.0", "pcd": "5x114.3", "offsets": "+18/+30/+36/+37/+43/+44/+49"},
+      {"diameter": "20", "width": "9.5", "pcd": "5x114.3", "offsets": "+18/+30/+36/+37/+43/+49"},
+      {"diameter": "20", "width": "10.0", "pcd": "5x114.3", "offsets": "+18/+30/+36/+43"}
+    ],
+    "images": ["01.jpg"],
+    "related": [],
+    "links": [
+      "https://web.archive.org/web/20030407025627fw_/http://www.kyh.co.jp:80/products/ame/ame_nob_spec.html"
+    ]
+  },
+  /* AME Shallen AX */
   {
     "id": "M91G92CJ77YY",
     "description": "Due to the welded nature of the AME Shallen AX, Enkei produced these wheels in numerous standard offsets and Kyoho also allowed customers to order these wheels in custom offsets in 1mm increments.",
@@ -527,6 +1120,7 @@ dataset =
       "https://web.archive.org/web/20050309011735fw_/http://www.kyh.co.jp/products/ame/shallen_ax/ame_shallen_ax.html"
     ]
   },
+  /* AME Tracer */
   {
     "id": "IA84HFUJQVS0",
     "description": "",
@@ -577,7 +1171,8 @@ dataset =
       "https://web.archive.org/web/20021003181448fw_/http://www.kyh.co.jp/products/cd/cd_tre_spec.html"
     ]
   },
-   {
+  /* AME Tracer Spec M */
+  {
     "id": "A7ZD609H54WM",
     "description": "",
     "brand": "AME",
@@ -610,6 +1205,105 @@ dataset =
       "https://web.archive.org/web/20051103002715fw_/http://www.kyh.co.jp/products/ame/tracer_spec_m/ame_tracer_spec_m.htm"
     ]
   },
+  /* Arrow Enterprise Black Racing Pro N1 */
+  {
+    "id": "5C9T4HV84XJP",
+    "description": "",
+    "brand": "Arrow Enterprise",
+    "model": "Black Racing Pro N1",
+    "manufacturer": "Patec Co., Ltd.",
+    "year_start": "Unverified",
+    "year_end": "Unverified",
+    "origin": "Japan",
+    "construction": [
+      "1 Piece",
+      "Cast"
+    ],
+    "style": "6 Spoke",
+    "tags": [],
+    "colors": [
+      "White",
+      "Black",
+      "Bronze"
+    ],
+    "sizes": [
+      {"diameter": "14", "width": "6.0", "pcd": "4x100", "offsets": "+23/+30/+40"},
+      {"diameter": "14", "width": "6.5", "pcd": "4x100", "offsets": "+23"},
+      {"diameter": "15", "width": "5.5", "pcd": "4x100", "offsets": "+40/+47"},
+      {"diameter": "15", "width": "7.0", "pcd": "4x100", "offsets": "+27/+38/+45"},
+      {"diameter": "15", "width": "7.0", "pcd": "4x114.3", "offsets": "+21/+30/+44"},
+      {"diameter": "15", "width": "7.0", "pcd": "5x114.3", "offsets": "+31/+44"},
+      {"diameter": "15", "width": "7.5", "pcd": "4x100", "offsets": "+43"},
+      {"diameter": "15", "width": "7.5", "pcd": "4x114.3", "offsets": "+21/+30/+43"},
+      {"diameter": "15", "width": "7.5", "pcd": "5x100", "offsets": "+43"},
+      {"diameter": "15", "width": "7.5", "pcd": "5x114.3", "offsets": "+30/+43"},
+      {"diameter": "15", "width": "8.0", "pcd": "4x114.3", "offsets": "+30"},
+      {"diameter": "15", "width": "8.0", "pcd": "5x114.3", "offsets": "+30"},
+      {"diameter": "16", "width": "7.0", "pcd": "4x100", "offsets": "+29/+44"},
+      {"diameter": "16", "width": "7.0", "pcd": "4x114.3", "offsets": "+25/+35/+44"},
+      {"diameter": "16", "width": "7.0", "pcd": "5x100", "offsets": "+35/+47"},
+      {"diameter": "16", "width": "7.0", "pcd": "5x114.3", "offsets": "+35/+45"},
+      {"diameter": "16", "width": "7.5", "pcd": "5x100", "offsets": "+35/+45"},
+      {"diameter": "16", "width": "7.5", "pcd": "5x114.3", "offsets": "+29/+44"},
+      {"diameter": "16", "width": "8.0", "pcd": "4x100", "offsets": "+35"},
+      {"diameter": "16", "width": "8.0", "pcd": "4x114.3", "offsets": "+25/+35"},
+      {"diameter": "16", "width": "8.0", "pcd": "5x100", "offsets": "+35/+46"},
+      {"diameter": "16", "width": "8.0", "pcd": "5x114.3", "offsets": "+20/+30/+35/+37/+46"},
+      {"diameter": "17", "width": "7.5", "pcd": "4x100", "offsets": "+33/+48"},
+      {"diameter": "17", "width": "7.5", "pcd": "4x114.3", "offsets": "+25/+33/+45"},
+      {"diameter": "17", "width": "7.5", "pcd": "5x100", "offsets": "+35/+48"},
+      {"diameter": "17", "width": "7.5", "pcd": "5x114.3", "offsets": "+29/+35/+45/+48"},
+      {"diameter": "17", "width": "8.0", "pcd": "5x100", "offsets": "+38"},
+      {"diameter": "17", "width": "8.0", "pcd": "5x114.3", "offsets": "+20/+31/+35/+45"},
+      {"diameter": "17", "width": "9.0", "pcd": "5x114.3", "offsets": "+18/+30/+38/+45"},
+      {"diameter": "18", "width": "7.5", "pcd": "5x114.3", "offsets": "+38/+45"},
+      {"diameter": "18", "width": "8.0", "pcd": "5x100", "offsets": "+45"},
+      {"diameter": "18", "width": "8.0", "pcd": "5x114.3", "offsets": "+20/+30/+38/+45"},
+      {"diameter": "18", "width": "9.0", "pcd": "5x114.3", "offsets": "+18/+30/+38/+45"}
+    ],
+    "images": ["07.jpg","06.jpg","01.jpg","02.jpg","03.jpg","04.jpg","05.jpg"],
+    "related": ["KH9NGAKRFF6W"],
+    "links": [
+      "https://web.archive.org/web/20021227212144fw_/http://www.arw.co.jp/wheels/brn1_spec.html"
+    ]
+  },
+  /* Arrow Enterprise Black Racing Pro N1+R */
+  {
+    "id": "KH9NGAKRFF6W",
+    "description": "",
+    "brand": "Arrow Enterprise",
+    "model": "Black Racing Pro N1+R",
+    "manufacturer": "Unverified",
+    "year_start": "Unverified",
+    "year_end": "Unverified",
+    "origin": "Unverified",
+    "construction": [
+      "1 Piece",
+      "Cast"
+    ],
+    "style": "6 Spoke",
+    "tags": [],
+    "colors": [
+      "Super Shining White",
+      "Super Shining Black"
+    ],
+    "sizes": [
+      {"diameter": "14", "width": "5.0", "pcd": "4x100", "offsets": "+45"},
+      {"diameter": "15", "width": "5.5", "pcd": "4x100", "offsets": "+47"},
+      {"diameter": "15", "width": "6.0", "pcd": "4x100", "offsets": "+38/+48"},
+      {"diameter": "16", "width": "7.0", "pcd": "4x100", "offsets": "+38/+44"},
+      {"diameter": "17", "width": "7.5", "pcd": "5x100", "offsets": "+48"},
+      {"diameter": "17", "width": "7.5", "pcd": "5x114.3", "offsets": "+45"},
+      {"diameter": "17", "width": "8.0", "pcd": "5x114.3", "offsets": "+38"},
+      {"diameter": "17", "width": "9.0", "pcd": "5x114.3", "offsets": "+38"}
+    ],
+    "images": ["01.jpg"],
+    "related": ["5C9T4HV84XJP"],
+    "links": [
+      "https://web.archive.org/web/20080212090959fw_/http://www.hirano-tire.co.jp/p1191.htm"
+    ]
+  },
+  /* Bee★R B5 */
   {
     "id": "0YDS9EBJLVAB",
     "description": "No doubt inspired by the Nismo LMGT4, the Bee★R B5 offered great style at an affordable price due to their cast construction. The twin valve stems allow quick and easy nitrogren filling.",
@@ -641,6 +1335,7 @@ dataset =
       "https://web.archive.org/web/20100116090507fw_/http://www.bee-r.com/main/parts/wheel/index.htm"
     ]
   },
+  /* Bridgestone B.I.M Down Hill Special ae031 */
   {
     "id": "U4VL4KJ2P2SV",
     "description": "A forged split 6 spoke wheel from Bridgestone's B.I.M Creative Studio. Extremely similar in appearance to the <a onclick='loadDetails(&quot;X7MDK0WHI5JM&quot;)'>ae033</a> but most easily identified by the small webs between the spokes near the hub section which are absent from the ae033.",
@@ -673,6 +1368,7 @@ dataset =
       "https://web.archive.org/web/20050313145223fw_/http://www.bs-awh.ne.jp:80/project_gz-top.html"
     ]
   },
+  /* Bridgestone B.I.M Down Hill Special ae032 */
   {
     "id": "DV3YB9P4LFDL",
     "description": "A forged 6 spoke wheel from Bridgestone's B.I.M Creative Studio. Very similar in appearance to the <a onclick='loadDetails(&quot;SL7DDCFW05QZ&quot;)'>ae034</a> but most easily identified by its hub section which features a machined center with harder edges than the ae034 and weight saving holes between the lug holes.",
@@ -705,6 +1401,7 @@ dataset =
       "https://web.archive.org/web/20050313145223fw_/http://www.bs-awh.ne.jp:80/project_gz-top.html"
     ]
   },
+  /* Bridgestone B.I.M Down Hill Special ae033 */
   {
     "id": "X7MDK0WHI5JM",
     "description": "A cast split 6 spoke wheel from Bridgestone's B.I.M Creative Studio. Though not as strong or light as the <a onclick='loadDetails(&quot;U4VL4KJ2P2SV&quot;)'>ae031</a> that it shares it's design with, it is offered in a much larger array of sizes.",
@@ -748,6 +1445,7 @@ dataset =
       "https://web.archive.org/web/20050313145223fw_/http://www.bs-awh.ne.jp:80/project_gz-top.html"
     ]
   },
+  /* Bridgestone B.I.M Down Hill Special ae034 */
   {
     "id": "SL7DDCFW05QZ",
     "description": "A cast 6 spoke wheel from Bridgestone's B.I.M Creative Studio. Though not as strong or light as the <a onclick='loadDetails(&quot;DV3YB9P4LFDL&quot;)'>ae032</a> that it shares it's design with, it is offered in a much larger array of sizes.",
@@ -791,6 +1489,7 @@ dataset =
       "https://web.archive.org/web/20050313145223fw_/http://www.bs-awh.ne.jp:80/project_gz-top.html"
     ]
   },
+  /* Bridgestone B.I.M Down Hill Special ae051 */
   {
     "id": "RDU6O6EAMBRF",
     "description": "",
@@ -841,6 +1540,7 @@ dataset =
       "https://web.archive.org/web/20080916210329fw_/http://www.bs-awh.ne.jp/bim/dhs_051.html"
     ]
   },
+  /* Bridgestone B.I.M Down Hill Special ae081 */
   {
     "id": "NROW8INOVB8S",
     "description": "Designed by Blest and sold by New Rayton as the <a onclick='loadDetails(&quot;TGKY3WIFFEH7&quot;)'>EuroMagic GT-08F</a>, the Down Hill Special ae081 combines a cast disk with a flow forming process to form the rim, providing a balance of high strength, light weight, and low cost.",
@@ -875,6 +1575,7 @@ dataset =
       "https://web.archive.org/web/20080313032053fw_/http://www.bs-awh.ne.jp/bim/dhs_081.html"
     ]
   },
+  /* Carving Cismarion Pietra */
   {
     "id": "6NAU5RW9F7TQ",
     "description": "Carving released their CisMarino line with the goal of adding an Italian style to Japanese subcompacts like the Toyota Vitz, Honda Capa, and Daihatsu Storia. In addition to their forged aluminum wheels, Carving also released aero parts for cars in this segment.",
@@ -910,6 +1611,7 @@ dataset =
       "http://web.archive.org/web/20001109195400fw_/http://www.carving.co.jp/cis/cismarino_vitz.htm"
     ]
   },
+  /* Carving Cismarion Questa */
   {
     "id": "QPTIDI3MCNQS",
     "description": "Carving released their CisMarino line with the goal of adding an Italian style to Japanese subcompacts like the Toyota Vitz, Honda Capa, and Daihatsu Storia. In addition to their forged aluminum wheels, Carving also released aero parts for cars in this segment.",
@@ -943,6 +1645,7 @@ dataset =
       "http://web.archive.org/web/20001109195400fw_/http://www.carving.co.jp/cis/cismarino_vitz.htm"
     ]
   },
+  /* Crimson Racing Sparco Viper R */
   {
     "id": "3RT7RU3APYPG",
     "description": "17 and 18 inch options featuring a changeable trim ring covering the lug nuts",
@@ -994,6 +1697,7 @@ dataset =
       "https://web.archive.org/web/20031123102211fw_/http://www.crimson-inc.co.jp/sparco/viper-r.html"
     ]
   },
+  /* Dunlop Direzza RSC */
   {
     "id": "HSXY5LH23QU7",
     "description": "When Dunlop introduced their Direzza brand at the 2003 Tokyo Auto Salon, in addition to their now well known tires, they also announced the Direzza RSC, a lightweight cast wheel designed to pair perfectly with their latest tires.",
@@ -1033,6 +1737,7 @@ dataset =
       "http://web.archive.org/web/20080303043535fw_/http://www.direzza.com:80/lineup/rsc/index.html"
     ]
   },
+  /* Hinodex Aguzze S-07 */
   {
     "id": "PC4IC5FMAA11",
     "description": "Sharing it's silhouette with the bigger <a onclick='loadDetails(&quot;KQZIWHYAJB95&quot;)'>S-07R</a>, the S-07 still offered great performance at a reduced cost due to its cast construction.",
@@ -1069,6 +1774,7 @@ dataset =
       "https://web.archive.org/web/20011206111532fw_/http://www.hinodex.co.jp/catalog/lineup/aguzze/s-07.htm"
     ]
   },
+  /* Hinodex Aguzze S-07R */
   {
     "id": "KQZIWHYAJB95",
     "description": "When it came to their flagship sports wheel, Hinodex tapped Tan-ei-sya to manufacture the S-07R. The resulting wheel was incredibly light, the the heaviest size in the lineup (18x9.5 +15) weighing just 8.2 kg (18.1 lbs) .",
@@ -1105,6 +1811,7 @@ dataset =
       "https://web.archive.org/web/20011206112434fw_/http://www.hinodex.co.jp/catalog/lineup/aguzze/s-07r.htm"
     ]
   },
+  /* Ings TS06 */
   {
     "id": "T8HREQGJ1TRN",
     "description": "Ings and Rays designed the TS06 with possible use in the Super Taikyu race series in mind. A forged single piece structure and a twin 6 spoke were chosen to accomplish that goal. The end result is a strong and lightweight wheel well-suited for both the street and the racetrack.",
@@ -1142,6 +1849,7 @@ dataset =
       "https://web.archive.org/web/20231001182932fw_/www.ings-net.com/english/products/wheel.html"
     ]
   },
+  /* Modex KS-CE */
   {
     "id": "5AL43E793L5Q",
     "description": "Keiichi Tsuchiya's signature model wheel. Modex developed these wheels with input from the Drift King himself and contracted Tan-ei-sya to manufacture them and managed to produce an ulta-lightweight wheel.",
@@ -1194,6 +1902,7 @@ dataset =
       "https://web.archive.org/web/20031215023958fw_/http://www.modex.co.jp/catalog_tutiya.htm"
     ]
   },
+  /* Mugen MC10L */
   {
     "id": "GKHP1BHIO41L",
     "description": "Inspired by the classic MF10L competition wheel, the new cast aluminum MC10L combines visual appeal with Mugen's signature styling. To meet the rigorous demands of track use, the MC10L features an anti-skid offset flange to improve tire adhesion and a spoke profile that provides clearance for large brake systems.",
@@ -1222,6 +1931,7 @@ dataset =
       "https://web.archive.org/web/20220215105154fw_/mugen-power.com/english/news/detail/id=1179"
     ]
   },
+  /* Mugen MF10L */
   {
     "id": "N9DRWPB887A0",
     "description": "Mugen MF series of forged wheels expertly combined  light weight, strength, and precision with a timeless design. The MF10L was designed to offer these qualities for smaller cars and was only offered in 15&quot; diameters and a 4x100 bolt pattern.",
@@ -1251,6 +1961,7 @@ dataset =
       "https://web.archive.org/web/20010419080349fw_/http://www.mugen-honda.co.jp/lineup/wheel/wheel.htm#%EF%BC%AD%EF%BC%A6%EF%BC%91%EF%BC%90"
     ]
   },
+  /* New Rayton EuroMagic GT-05Air */
   {
     "id": "WJBPJCMTHH88",
     "description": "New Rayton's EuroMagic series of wheels combines a cast disk with a flow forming process to form the rim, providing a balance of high strength, light weight, and low cost.",
@@ -1282,6 +1993,7 @@ dataset =
       "https://web.archive.org/web/20050415010055fw_/http://www.newrayton.co.jp/wheel/euro_racing_st_05air/index.html"
     ]
   },
+  /* New Rayton EuroMagic GT-08F */
   {
     "id": "TGKY3WIFFEH7",
     "description": "New Rayton's EuroMagic series of wheels combines a cast disk with a flow forming process to form the rim, providing a balance of high strength, light weight, and low cost. Designed by Blest and sold under the EuroMagic brand as well as relabeled and sold by Bridgestone as the <a onclick='loadDetails(&quot;NROW8INOVB8S&quot;)'>Down Hill Special ae081</a>.",
@@ -1317,7 +2029,7 @@ dataset =
       "https://web.archive.org/web/20051104010611fw_/http://www.newrayton.co.jp/wheel/euro_racing_gt_08f/index.html"
     ]
   },
-  /*
+  /* Ram's PR-6
   {
     "id": "OM2RY2Z8JKZ0",
     "description": "Commissioned by Fukuoka based brake specialist Ram's, designed by Right-Man, and manufactured by Tan-ei-sya, the Ram's PR-6 was developed for use in the Civic One-Make race series.",
@@ -1355,8 +2067,8 @@ dataset =
     "links": [
       "http://web.archive.org/web/20010309235925/http://www.rams-net.co.jp:80/products/wheel/wheel_white.html"
     ]
-  },
-  */
+  },*/
+  /* Revowin PS-05 */
   {
     "id": "ZACE9Q0VK89O",
     "description": "Manufactured by Tan-ei-sya for Puma Co., Ltd. and sold through Autobacs in Toyama Prefecture. The PS-05 is a rebranded <a onclick='loadDetails(&quot;XUN1UOX4TSJA&quot;)'>Southern Ways S-05</a>, offered in sizes catering to smaller cars and heavily used in Japanese Motorsports series including: Yaris Cup, All Japan Rally Championship, TGR Rally Challenge, VITA Race Series, and more.",
@@ -1394,6 +2106,7 @@ dataset =
       "https://web.archive.org/web/20240419050357fw_/www.autobacs-toyama.com/revowin"
     ]
   },
+  /* Southern Ways Achtec RF38 */
   {
     "id": "TW6DS1SJ1HGZ",
     "description": "",
@@ -1428,6 +2141,7 @@ dataset =
       "https://web.archive.org/web/20070203150143fw_/http://www.ijak.co.jp/HPcatalog/achtecsize.html"
     ]
   },
+  /* Southern Ways Achtec RF42 */
   {
     "id": "NZPSAS0W86M1",
     "description": "",
@@ -1463,6 +2177,7 @@ dataset =
       "https://web.archive.org/web/20070203150143fw_/http://www.ijak.co.jp/HPcatalog/achtecsize.html"
     ]
   },
+  /* Southern Ways S-05 */
   {
     "id": "XUN1UOX4TSJA",
     "description": "Manufactured by Tan-ei-sya and sold by its subsidiary ijak under the Southern Way brand until their rebrand in 2008 to TWS. The S-05 implemented wheel design and manufacturing technology that Tan-ei-sya developed while making wheels for F1 resulting in an incredibly strong and lightweight wheel that was widely used across many race series in Japan. This wheel has been sold by numerous other brands &#0151; including Car Life Revolution K-One K-01 and <a onclick='loadDetails(&quot;ZACE9Q0VK89O&quot;)'>Revowin PS-05</a>.",
@@ -1507,6 +2222,7 @@ dataset =
       "https://web.archive.org/web/20060509014028fw_/http://www.ijak.co.jp/HPcatalog/s05size.html"
     ]
   },
+  /* Starform Real Racing Model II */
   {
     "id": "7AKI6FXXGMUE",
     "description": "When Starform decided to start producing lightweight forged wheels they looked to Tan-ei-sya for manufacturing. They followed up on the <a onclick='loadDetails(&quot;XEPK9WYCWZ9G&quot;)'>Real Racing R2</a> with the aptly named Real Racing Model II.",
@@ -1543,6 +2259,7 @@ dataset =
       "https://web.archive.org/web/20040101121118fw_/http://www.starform-jp.com/fr_model2_2.html"
     ]
   },
+  /* Starform Real Racing R2 */
   {
     "id": "XEPK9WYCWZ9G",
     "description": "When Starform decided to start producing lightweight forged wheels they looked to Tan-ei-sya for manufacturing. The Real Racing R2 originally launched in just one diameter &#0151; 15 inch &#0151; but 17 inch options were quickly added to the lineup in 2000.",
@@ -1580,6 +2297,7 @@ dataset =
       "https://web.archive.org/web/20031229230549fw_/http://www.starform-jp.com/fr_R2_2.html"
     ]
   },
+  /* Takechi Project Racing Hart CP-FtuneR */
   {
     "id": "7IKMGYI3SPHV",
     "description": "",
@@ -1647,6 +2365,7 @@ dataset =
       "http://web.archive.org/web/20031006164938fw_/http://www.hartwheels.co.jp/cat_030730_racinghart_ftuner/cat_racinghart_cp-ftuner_spec.htm"
     ]
   },
+  /* Uras NS-01 */
   {
     "id": "IPL5GT7KH9V1",
     "description": "Originally manufactured for Doall as the CST D-Spec. Uras offered this Nismo LMGT4 inspired wheel as the NS-01 in sizes suitable for S-chassis Nissans.",
@@ -1678,6 +2397,7 @@ dataset =
       "https://web.archive.org/web/20070504060720fw_/http://www.uras.co.jp:80/syohin/wheel.html"
     ]
   },
+  /* Uras NS-02 */
   {
     "id": "214UPUFONY13",
     "description": "Manufactured by Futek and sold by a number of companies, Uras offered this cast wheel as the NS-02 in sizes suitable for S-chassis Nissans.",
@@ -1706,6 +2426,7 @@ dataset =
       "https://web.archive.org/web/20070504060427fw_/http://www.uras.co.jp:80/syohin/wheel_ns02.html"
     ]
   },
+  /* Weds WedsSport TC-05 */
   {
     "id": "ZG3NYKP280MJ",
     "description": "The WedsSport TC Series has long been WedsSport's flagship line of wheels and it all started with the release of the TC-05 in 1993.",
@@ -1760,6 +2481,7 @@ dataset =
       "https://web.archive.org/web/20020808141524fw_/http://weds.co.jp/products/wedssport/tc-05/index.htm"
     ]
   },
+  /* Weds WedsSport TC-005 */
   {
     "id": "HFVKRVT1CDST",
     "description": "The WedsSport TC Series has long been WedsSport's flagship line of wheels. Weds followed up the original TC-05 with the TC-005 which saw great success at every level of motorsports.",
@@ -1828,6 +2550,7 @@ dataset =
       "https://web.archive.org/web/20020808141524fw_/http://weds.co.jp/products/wedssport/tc-005/index.htm"
     ]
   },
+  /* Yokohama Connoisseur No. 51C */
   {
     "id": "CHSBALEGASCX",
     "description": "Yokohama's Connoisseur brand started with the release of the No. 51C. The brand was developed to provide a product suitable for Japanese luxury sedans &#0151; such as the Celsior and Cima &#0151; with the goal of looking not overly dressed up, but rather to be comparable to European super luxury sedans that pursue driving above all else.",
@@ -1863,13 +2586,97 @@ dataset =
       "https://web.archive.org/web/20060820145351fw_/http://www.yokohamatire.jp/yrc/japan/wheel/brand/co_51c/index.html"
     ]
   },
+  /* Yokohama Super Advan SA-3 */
+  {
+    "id": "SPHVPISZNNE4",
+    "description": "",
+    "brand": "Yokohama",
+    "model": "Super Advan SA-3",
+    "manufacturer": "Enkei Co., Ltd.",
+    "year_start": "Unverified",
+    "year_end": "Unverified",
+    "origin": "Japan",
+    "construction": [
+      "2 Piece",
+      "Cast",
+      "Underhead Mount"
+    ],
+    "style": "Split 3 Spoke",
+    "tags": [],
+    "colors": [
+      "Super Pearl White",
+      "Metallic Silver",
+      "Advan Red"
+    ],
+    "sizes": [
+      {"diameter": "16", "width": "7.0", "pcd": "4x114.3", "offsets": "+32/+51"},
+      {"diameter": "16", "width": "7.0", "pcd": "5x114.3", "offsets": "+31/+32/+38"},
+      {"diameter": "16", "width": "8.0", "pcd": "4x114.3", "offsets": "+32"},
+      {"diameter": "16", "width": "8.0", "pcd": "5x114.3", "offsets": "+11/+31/+32"},
+      {"diameter": "17", "width": "7.0", "pcd": "4x114.3", "offsets": "+32"},
+      {"diameter": "17", "width": "7.5", "pcd": "4x114.3", "offsets": "+51"},
+      {"diameter": "17", "width": "7.5", "pcd": "5x114.3", "offsets": "+31/+38"},
+      {"diameter": "17", "width": "8.0", "pcd": "4x114.3", "offsets": "+32"},
+      {"diameter": "17", "width": "8.0", "pcd": "5x114.3", "offsets": "+31/+38/+40/+45"},
+      {"diameter": "17", "width": "9.0", "pcd": "5x114.3", "offsets": "+19/+31/+38/+45"},
+      {"diameter": "18", "width": "8.5", "pcd": "5x114.3", "offsets": "+35/+38/+45"},
+      {"diameter": "18", "width": "9.0", "pcd": "5x114.3", "offsets": "+22/+35/+42"},
+      {"diameter": "18", "width": "9.5", "pcd": "5x114.3", "offsets": "+42/+45"}
+    ],
+    "images": ["01.jpg"],
+    "related": ["X1A8W5NN6CK4","WTLZSMV3RQI8"],
+    "links": []
+  },
+  /* Yokohama Super Advan Racing SA3R */
+  {
+    "id": "X1A8W5NN6CK4",
+    "description": "",
+    "brand": "Yokohama",
+    "model": "Super Advan Racing SA3R",
+    "manufacturer": "Enkei Co., Ltd.",
+    "year_start": "1993",
+    "year_end": "Unverified",
+    "origin": "Japan",
+    "construction": [
+      "2 Piece",
+      "Cast",
+      "Welded"
+    ],
+    "style": "Split 3 Spoke",
+    "tags": [],
+    "colors": [
+      "Silver",
+      "Black & Red",
+      "Black & Blue"
+    ],
+    "sizes": [
+      {"diameter": "15", "width": "6.5", "pcd": "4x100", "offsets": "+32/+42"},
+      {"diameter": "16", "width": "7.0", "pcd": "4x100", "offsets": "+35"},
+      {"diameter": "16", "width": "7.0", "pcd": "4x114.3", "offsets": "+35/+45"},
+      {"diameter": "16", "width": "7.0", "pcd": "5x114.3", "offsets": "+25/+35"},
+      {"diameter": "16", "width": "8.0", "pcd": "4x114.3", "offsets": "+38"},
+      {"diameter": "16", "width": "8.0", "pcd": "5x114.3", "offsets": "+28/+38"},
+      {"diameter": "17", "width": "7.0", "pcd": "4x114.3", "offsets": "+35"},
+      {"diameter": "17", "width": "7.0", "pcd": "5x114.3", "offsets": "+35"},
+      {"diameter": "17", "width": "8.0", "pcd": "4x114.3", "offsets": "+35"},
+      {"diameter": "17", "width": "8.0", "pcd": "5x114.3", "offsets": "+35"},
+      {"diameter": "17", "width": "9.0", "pcd": "5x114.3", "offsets": "+22/+38/+42"},
+      {"diameter": "18", "width": "8.5", "pcd": "5x114.3", "offsets": "+35/+45"},
+      {"diameter": "18", "width": "9.0", "pcd": "5x114.3", "offsets": "+22/+42"},
+      {"diameter": "18", "width": "9.5", "pcd": "5x114.3", "offsets": "+22/+38"}
+    ],
+    "images": ["01.jpg"],
+    "related": ["SPHVPISZNNE4","WTLZSMV3RQI8"],
+    "links": []
+  },
+  /* Yokohama Super Advan Racing Version 2 */
   {
     "id": "WTLZSMV3RQI8",
     "description": "",
     "brand": "Yokohama",
     "model": "Super Advan Racing Version 2",
     "manufacturer": "Enkei Co., Ltd.",
-    "year_start": "Unverified",
+    "year_start": "2004",
     "year_end": "Unverified",
     "origin": "Japan",
     "construction": [
@@ -1907,7 +2714,7 @@ dataset =
       {"diameter": "18", "width": "10.0", "pcd": "5x114.3", "offsets": "+24"}
     ],
     "images": ["01.jpg"],
-    "related": [],
+    "related": ["SPHVPISZNNE4","X1A8W5NN6CK4"],
     "links": [
       "https://web.archive.org/web/20051214221153fw_/http://www.yokohamatire.jp/yrc/japan/wheel/brand/superad_sa3rv2/index.html"
     ]

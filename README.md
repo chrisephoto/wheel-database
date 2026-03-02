@@ -10,22 +10,49 @@ If you find this resource helpful and would like to support this project feel fr
 
 ## Changelog
 
+**2026-03-02**
+* HTML updates:
+  * Reorganized page layout to give more space to wheel list and details
+  * Removed 12" and 13" diameters from filters - no applicable wheels
+  * Added 5x108, 5x112, 5x120.65, 5x139.7, 5x150 PCD to filters
+  * Added 15 Spoke and Split 10 Spoke to filters
+  * Added count of displayed and total wheels at bottom of grid
+* Added:
+  * A-Tech Final Speed Forged
+  * Abe Shokai Auto Strada Genova Finestra
+  * Abe Shokai Auto Strada Genova Firo
+  * Abe Shokai Auto Strada Genova Garza
+  * Abe Shokai Auto Strada Genova Piatoo
+  * Abe Shokai Auto Strada Genova Stera
+  * Aimgain GIIM
+  * Aimgain GIIM-R
+  * Allies Deerfield Baja Spec I
+  * Allies Deerfield Baja Spec II
+  * Allies Deerfield Baja Spec III
+  * Allies Deerfield Baja Spec TT
+  * Allies Elkfield 100
+  * AME Nobley Final
+  * Arrow Enterprise Black Racing Pro N1
+  * Arrow Enterprise Black Racing Pro N1+R
+  * Yokohama Super Advan SA-3
+  * Yokohama Super Advan Racing SA3R
+
 **2026-02-26**
 * CSS/HTML updates:
   * Added ability to close details on desktop which required some rework of the details pane
   * Temporarily removed clickable actions from tags and details until a better solution is found for mobile users
-  * Added:
-    * 5Zigen Heidfeld (1 Piece Version)
-    * 5Zigen Heidfeld (3 Piece Version)
-    * 5Zigen Heidfeld Mesh
-    * AME Circular Spec M
-    * AME Circular Spec R
-    * AME Shallen AX
-    * AME Tracer
-    * Racing Hart CP-FtuneR
-    * Southern Ways Achtec RF38
-    * Southern Ways Achtec RF42
-    * Sparco Viper R
+* Added:
+  * 5Zigen Heidfeld (1 Piece Version)
+  * 5Zigen Heidfeld (3 Piece Version)
+  * 5Zigen Heidfeld Mesh
+  * AME Circular Spec M
+  * AME Circular Spec R
+  * AME Shallen AX
+  * AME Tracer
+  * Racing Hart CP-FtuneR
+  * Southern Ways Achtec RF38
+  * Southern Ways Achtec RF42
+  * Sparco Viper R
 
 **2025-12-28**
 * CSS updates:

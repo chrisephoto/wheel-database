@@ -95,6 +95,10 @@ footer {
   text-align: center;
 }
 
+footer #display-count {
+  margin-bottom: var(--padding);
+}
+
 header {
   align-items: center;
   background-color: rgb(var(--color-background-01));
@@ -126,7 +130,7 @@ input, option, select {
 input,
 select {
   background-color: rgb(var(--color-background-02));
-  border-radius: var(--radius-lg);
+  border-radius: var(--radius-sm);
   border: none;
   border-right: 0.7rem solid transparent;
   box-shadow: var(--shadow);
@@ -239,8 +243,6 @@ tr:hover th {
 #wheel-filters {
   box-sizing: border-box;
   flex: 0 0 auto;
-  overflow-x: hidden;
-  overflow-y: auto;
   padding: calc(var(--padding) / 2);
 }
 
@@ -280,6 +282,20 @@ tr:hover th {
   transition: background-color 0.2s;
 }
 
+#wheel-list figure#to-top img {
+  background: rgb(var(--color-accent-01));
+}
+
+#wheel-list figure#to-top figcaption {
+  bottom: 0;
+  left: 0;
+  padding: var(--padding);
+  position: absolute;
+  right: 0;
+  top: 0;
+  text-align: center;
+}
+
 #wheel-list figure img {
   aspect-ratio: 1.0;
   background: rgb(var(--color-background-02));
@@ -306,7 +322,7 @@ tr:hover th {
   overflow-x: hidden;
   overflow-y: auto;
   padding: var(--padding);
-  width: 80ch;
+  width: 90ch;
 }
 
 #wheel-details-message h2 {
@@ -481,7 +497,9 @@ tr:hover th {
 
 #wheel-links a {
   display: block;
-  word-wrap: break-word;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 #wheel-related-container {
@@ -560,20 +578,22 @@ tr:hover th {
   }
   #wheel-filters {
     flex: 0 0 25ch;
-    padding: var(--padding) calc(var(--padding) / 2);
+    padding: var(--padding) calc(var(--padding) / 2) calc(var(--padding) / 2) calc(var(--padding) / 2);
   }
   #wheel-filters form {
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(4, minmax(0,1fr));
   }
   #wheel-list {
-    padding: var(--padding) calc(var(--padding) / 2);
-    overflow-x: hidden;
-    overflow-y: auto;
+    padding: calc(var(--padding) / 2) calc(var(--padding) / 2) var(--padding) calc(var(--padding) / 2);
   }
   #wheel-list > div,
   #wheel-images,
   #wheel-related {
     grid-template-columns: repeat(auto-fill,minmax(18ch,1fr));
+  }
+  #wheel-select {
+    flex: 1 0 0;
+    overflow-y: auto;
   }
 }
 
@@ -583,13 +603,16 @@ tr:hover th {
   #wheel-details-spacer {
     display: block;
   }
+  #wheel-details-container {
+    max-width: none;
+  }
   #wheel-details {
     bottom: 0;
     height: auto;
     padding: var(--padding) calc(var(--padding) / 2);
     left: auto;
     right: calc(var(--padding) / 2);
-    width: 80ch;
+    width: 90ch;
     z-index: 30;
   }
   #wheel-details.open {
