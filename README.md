@@ -10,6 +10,21 @@ If you find this resource helpful and would like to support this project feel fr
 
 ## Changelog
 
+**2026-04-15**
+* Added:
+  * Arrow Enterprise Gewalt Evolution
+  * Arrow Enterprise Gewalt Mesh 
+  * Arrow Enterprise Gewalt Mesh 3 Piece
+  * Arrow Enterprise Gewalt Spoke 
+  * Arrow Enterprise Gewalt Spoke 3 Piece
+  * Clear Ways TT-10F (2010 Model)
+  * Clear Ways TT-10F (2012 Model)
+  * Clear Ways TT-10F (2014 Model)
+  * Clear Ways TT-10F (2015 Model)
+  * Clear Ways TT-10F (ASM Version)
+  * TM-Square TM-031
+  * TM-Square TM-10F
+
 **2026-03-02**
 * HTML updates:
   * Reorganized page layout to give more space to wheel list and details

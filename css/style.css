@@ -400,16 +400,19 @@ tr:hover th {
 }
 
 #wheel-details-hero {
+  align-items: center;
   aspect-ratio: 1.0;
+  display: flex;
   flex-shrink: 0;
+  justify-content: center;
   width: 100%;
 }
 
 #wheel-details-hero img {
   display: block;
-  height: 100%;
+  max-height: 100%;
   object-fit: contain;
-  width: 100%;
+  max-width: 100%;
 }
 
 #wheel-details-text {

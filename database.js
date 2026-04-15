@@ -200,7 +200,7 @@ dataset =
       {"diameter": "18", "width": "9.5", "pcd": "5x114.3", "offsets": "+38/+44/+50"}
     ],
     "images": ["01.jpg","02.jpg"],
-    "related": ["VSKYSLV2QQH8","TQJXQKT0POF6"],
+    "related": ["VSKYSLV2QQH8","TQJXQKT0POF6","ECSHOSQY9APQ"],
     "links": [
       "https://web.archive.org/web/20020614211213fw_/http://www.5zigenusa.com:80/Pages/5zigen_w/5zigenheidfeld.html"
     ]
@@ -1303,6 +1303,246 @@ dataset =
       "https://web.archive.org/web/20080212090959fw_/http://www.hirano-tire.co.jp/p1191.htm"
     ]
   },
+  /* Arrow Enterprise Gewalt Evolution */
+  {
+    "id": "ECSHOSQY9APQ",
+    "description": "",
+    "brand": "Arrow Enterprise",
+    "model": "Gewalt Evolution",
+    "manufacturer": "Arrow Enterprise Co., Ltd.",
+    "year_start": "1997",
+    "year_end": "Unverified",
+    "origin": "Japan",
+    "construction": [
+      "3 Piece",
+      "Cast",
+      "Overhead Mount"
+    ],
+    "style": "Split 8 Spoke",
+    "tags": [],
+    "colors": [
+      "Silver",
+      "Gold"
+    ],
+    "sizes": [
+      {"diameter": "17", "width": "7.0", "pcd": "5x114.3", "offsets": "+4/+11/+18/+24/+25/+30/+31/+38/+44/+50"},
+      {"diameter": "17", "width": "7.5", "pcd": "5x114.3", "offsets": "-2/+4/+11/+18/+24/+25/+30/+31/+37/+38/+44/+50"},
+      {"diameter": "17", "width": "8.0", "pcd": "5x114.3", "offsets": "-2/+4/+11/+18/+24/+25/+30/+31/+37/+38/+43/+44/+50"},
+      {"diameter": "17", "width": "8.5", "pcd": "5x114.3", "offsets": "-9/+4/+11/+18/+24/+25/+30/+31/+37/+38/+43/+44/+50"},
+      {"diameter": "17", "width": "9.0", "pcd": "5x114.3", "offsets": "-2/+11/+18/+25/+30/+31/+37/+38/+44/+50"},
+      {"diameter": "17", "width": "9.5", "pcd": "5x114.3", "offsets": "+4/+18/+24/+25/+30/+38/+44/+50"},
+      {"diameter": "17", "width": "10.0", "pcd": "5x114.3", "offsets": "+11/+25/+31/+44"},
+      {"diameter": "17", "width": "10.5", "pcd": "5x114.3", "offsets": "+18/+38"},
+      {"diameter": "18", "width": "7.0", "pcd": "5x114.3", "offsets": "+4/+11/+18/+24/+25/+30/+31/+38/+44/+50"},
+      {"diameter": "18", "width": "7.5", "pcd": "5x114.3", "offsets": "-2/+4/+11/+18/+24/+25/+30/+31/+37/+38/+44/+50"},
+      {"diameter": "18", "width": "8.0", "pcd": "5x114.3", "offsets": "-9/-2/+4/+11/+18/+24/+25/+30/+31/+37/+38/+43/+44/+50"},
+      {"diameter": "18", "width": "8.5", "pcd": "5x114.3", "offsets": "-15/-9/-2/+4/+5/+11/+18/+24/+25/+30/+31/+37/+38/+43/+44/+50"},
+      {"diameter": "18", "width": "9.0", "pcd": "5x114.3", "offsets": "-9/-2/+4/+11/+18/+24/+25/+30/+31/+37/+38/+44/+50"},
+      {"diameter": "18", "width": "9.5", "pcd": "5x114.3", "offsets": "-2/+4/+11/+18/+24/+25/+30/+31/+38/+44/+50"},
+      {"diameter": "18", "width": "10.0", "pcd": "5x114.3", "offsets": "+4/+11/+18/+24/+31/+38/+44"}
+    ],
+    "images": ["01.jpg","02.jpg","03.jpg"],
+    "related": ["N5FAZMO2MPZ6"],
+    "links": [
+      "https://web.archive.org/web/20010708190237fw_/http://www.arw.co.jp/wheels/gw_evolution.html"
+    ]
+  },
+  /* Arrow Enterprise Gewalt Mesh */
+  {
+    "id": "FC4IC5FMAA1R",
+    "description": "",
+    "brand": "Arrow Enterprise",
+    "model": "Gewalt Mesh",
+    "manufacturer": "Arrow Enterprise Co., Ltd.",
+    "year_start": "1994",
+    "year_end": "Unverified",
+    "origin": "Japan",
+    "construction": [
+      "1 Piece",
+      "Cast"
+    ],
+    "style": "Split 10 Spoke",
+    "tags": [],
+    "colors": [
+      "Silver"
+    ],
+    "sizes": [
+      {"diameter": "16", "width": "7.0", "pcd": "4x100", "offsets": "+38/+50"},
+      {"diameter": "16", "width": "7.0", "pcd": "4x114.3", "offsets": "+24/+38/+50"},
+      {"diameter": "16", "width": "7.0", "pcd": "5x100", "offsets": "+38/+50"},
+      {"diameter": "16", "width": "7.0", "pcd": "5x114.3", "offsets": "+24/+38/+50"},
+      {"diameter": "16", "width": "8.0", "pcd": "4x114.3", "offsets": "+38/+48"},
+      {"diameter": "16", "width": "8.0", "pcd": "5x114.3", "offsets": "+38/+48"},
+      {"diameter": "17", "width": "7.0", "pcd": "4x114.3", "offsets": "+32/+38/+45/+50"},
+      {"diameter": "17", "width": "7.0", "pcd": "5x100", "offsets": "+50"},
+      {"diameter": "17", "width": "7.0", "pcd": "5x114.3", "offsets": "+32/+38/+45/+50"},
+      {"diameter": "17", "width": "8.0", "pcd": "4x114.3", "offsets": "+32/+38/+45"},
+      {"diameter": "17", "width": "8.0", "pcd": "5x114.3", "offsets": "+32/+38/+45"},
+      {"diameter": "17", "width": "9.0", "pcd": "4x114.3", "offsets": "+38/+45"},
+      {"diameter": "17", "width": "9.0", "pcd": "5x114.3", "offsets": "+38/+45"}
+    ],
+    "images": ["01.jpg"],
+    "related": ["AQY8W8Y1JA94"],
+    "links": [
+      "https://web.archive.org/web/20010820234917fw_/http://www.arw.co.jp/wheels/gw_mesh.html"
+    ]
+  },
+  /* Arrow Enterprise Gewalt Mesh 3 Piece */
+  {
+    "id": "AQY8W8Y1JA94",
+    "description": "",
+    "brand": "Arrow Enterprise",
+    "model": "Gewalt Mesh 3 Piece",
+    "manufacturer": "Arrow Enterprise Co., Ltd.",
+    "year_start": "1997",
+    "year_end": "Unverified",
+    "origin": "Japan",
+    "construction": [
+      "3 Piece",
+      "Cast",
+      "Overhead Mount"
+    ],
+    "style": "Split 10 Spoke",
+    "tags": [],
+    "colors": [
+      "Silver",
+      "Chrome"
+    ],
+    "sizes": [
+      {"diameter": "17", "width": "7.0", "pcd": "4x114.3", "offsets": "+24/+31/+38/+44/+50"},
+      {"diameter": "17", "width": "7.0", "pcd": "5x114.3", "offsets": "+4/+11/+18/+24/+25/+30/+31/+38/+44/+50"},
+      {"diameter": "17", "width": "7.5", "pcd": "4x114.3", "offsets": "+18/+24/+31/+38/+44/+50"},
+      {"diameter": "17", "width": "7.5", "pcd": "5x114.3", "offsets": "-2/+4/+11/+18/+24/+25/+30/+31/+37/+38/+44/+50"},
+      {"diameter": "17", "width": "8.0", "pcd": "4x114.3", "offsets": "+18/+24/+31/+38/+44/+50"},
+      {"diameter": "17", "width": "8.0", "pcd": "5x114.3", "offsets": "-2/+4/+11/+18/+24/+25/+30/+31/+37/+38/+43/+44/+50"},
+      {"diameter": "17", "width": "8.5", "pcd": "4x114.3", "offsets": "+11/+24/+31/+38/+44/+50"},
+      {"diameter": "17", "width": "8.5", "pcd": "5x114.3", "offsets": "-9/+4/+11/+18/+24/+25/+30/+31/+37/+38/+43/+44/+50"},
+      {"diameter": "17", "width": "9.0", "pcd": "4x114.3", "offsets": "+18/+31/+38/+44/+50"},
+      {"diameter": "17", "width": "9.0", "pcd": "5x114.3", "offsets": "-2/+11/+18/+25/+30/+31/+37/+38/+44/+50"},
+      {"diameter": "17", "width": "9.5", "pcd": "4x114.3", "offsets": "+24/+38/+44/+50"},
+      {"diameter": "17", "width": "9.5", "pcd": "5x114.3", "offsets": "+4/+18/+24/+25/+30/+38/+44/+50"},
+      {"diameter": "17", "width": "10.0", "pcd": "4x114.3", "offsets": "+31/+44"},
+      {"diameter": "17", "width": "10.0", "pcd": "5x114.3", "offsets": "+11/+25/+31/+44"},
+      {"diameter": "17", "width": "10.5", "pcd": "4x114.3", "offsets": "+38"},
+      {"diameter": "17", "width": "10.5", "pcd": "5x114.3", "offsets": "+18/+38"},
+      {"diameter": "18", "width": "7.0", "pcd": "4x114.3", "offsets": "+24/+31/+38/+44/+50"},
+      {"diameter": "18", "width": "7.0", "pcd": "5x114.3", "offsets": "+4/+11/+18/+24/+25/+30/+31/+38/+44/+50"},
+      {"diameter": "18", "width": "7.5", "pcd": "4x114.3", "offsets": "+18/+24/+31/+38/+44/+50"},
+      {"diameter": "18", "width": "7.5", "pcd": "5x114.3", "offsets": "-2/+4/+11/+18/+24/+25/+30/+31/+37/+38/+44/+50"},
+      {"diameter": "18", "width": "8.0", "pcd": "4x114.3", "offsets": "+11/+18/+24/+31/+38/+44/+50"},
+      {"diameter": "18", "width": "8.0", "pcd": "5x114.3", "offsets": "-9/-2/+4/+11/+18/+24/+25/+30/+31/+37/+38/+43/+44/+50"},
+      {"diameter": "18", "width": "8.5", "pcd": "4x114.3", "offsets": "+5/+11/+18/+24/+31/+38/+44/+50"},
+      {"diameter": "18", "width": "8.5", "pcd": "5x114.3", "offsets": "-15/-9/-2/+4/+5/+11/+18/+24/+25/+30/+31/+37/+38/+43/+44/+50"},
+      {"diameter": "18", "width": "9.0", "pcd": "4x114.3", "offsets": "+11/+18/+24/+31/+38/+44/+50"},
+      {"diameter": "18", "width": "9.0", "pcd": "5x114.3", "offsets": "-9/-2/+4/+11/+18/+24/+25/+30/+31/+37/+38/+44/+50"},
+      {"diameter": "18", "width": "9.5", "pcd": "4x114.3", "offsets": "+18/+24/+31/+38/+44/+50"},
+      {"diameter": "18", "width": "9.5", "pcd": "5x114.3", "offsets": "-2/+4/+11/+18/+24/+25/+30/+31/+38/+44/+50"},
+      {"diameter": "18", "width": "10.0", "pcd": "4x114.3", "offsets": "+24/+31/+38/+44"},
+      {"diameter": "18", "width": "10.0", "pcd": "5x114.3", "offsets": "+4/+11/+18/+24/+31/+38/+44"}
+    ],
+    "images": ["01.jpg","02.jpg"],
+    "related": ["FC4IC5FMAA1R"],
+    "links": [
+      "https://web.archive.org/web/20010820234917fw_/http://www.arw.co.jp/wheels/gw_mesh.html"
+    ]
+  },
+  /* Arrow Enterprise Gewalt Spoke */
+  {
+    "id": "GW5F2E47PHFB",
+    "description": "",
+    "brand": "Arrow Enterprise",
+    "model": "Gewalt Spoke",
+    "manufacturer": "Arrow Enterprise Co., Ltd.",
+    "year_start": "1994",
+    "year_end": "Unverified",
+    "origin": "Japan",
+    "construction": [
+      "1 Piece",
+      "Cast"
+    ],
+    "style": "Split 5 Spoke",
+    "tags": [],
+    "colors": [
+      "Silver"
+    ],
+    "sizes": [
+      {"diameter": "16", "width": "7.0", "pcd": "4x100", "offsets": "+38"},
+      {"diameter": "16", "width": "7.0", "pcd": "4x114.3", "offsets": "+38/+50"},
+      {"diameter": "16", "width": "7.0", "pcd": "5x100", "offsets": "+38"},
+      {"diameter": "16", "width": "7.0", "pcd": "5x114.3", "offsets": "+38/+50"},
+      {"diameter": "16", "width": "8.0", "pcd": "4x114.3", "offsets": "+38/+48"},
+      {"diameter": "16", "width": "8.0", "pcd": "5x114.3", "offsets": "+10/+38/+48"},
+      {"diameter": "17", "width": "7.0", "pcd": "4x114.3", "offsets": "+32/+38/+45"},
+      {"diameter": "17", "width": "7.0", "pcd": "5x114.3", "offsets": "+32/+38/+45"},
+      {"diameter": "17", "width": "8.0", "pcd": "4x114.3", "offsets": "+32/+38/+45"},
+      {"diameter": "17", "width": "8.0", "pcd": "5x114.3", "offsets": "+32/+38/+45"},
+      {"diameter": "17", "width": "9.0", "pcd": "4x114.3", "offsets": "+38/+45"},
+      {"diameter": "17", "width": "9.0", "pcd": "5x114.3", "offsets": "+38/+45"}
+    ],
+    "images": ["01.jpg"],
+    "related": ["MJBPICLTHG8Y"],
+    "links": [
+      "https://web.archive.org/web/20010708190427fw_/http://www.arw.co.jp/wheels/gw_spoke.html"
+    ]
+  },
+  /* Arrow Enterprise Gewalt Spoke 3 Piece */
+  {
+    "id": "MJBPICLTHG8Y",
+    "description": "",
+    "brand": "Arrow Enterprise",
+    "model": "Gewalt Spoke 3 Piece",
+    "manufacturer": "Arrow Enterprise Co., Ltd.",
+    "year_start": "Unverified",
+    "year_end": "Unverified",
+    "origin": "Japan",
+    "construction": [
+      "3 Piece",
+      "Cast",
+      "Overhead Mount"
+    ],
+    "style": "Split 5 Spoke",
+    "tags": [],
+    "colors": [
+      "Silver"
+    ],
+    "sizes": [
+      {"diameter": "17", "width": "7.0", "pcd": "4x114.3", "offsets": "+24/+31/+38/+44/+50"},
+      {"diameter": "17", "width": "7.0", "pcd": "5x114.3", "offsets": "+4/+11/+18/+24/+25/+30/+31/+38/+44/+50"},
+      {"diameter": "17", "width": "7.5", "pcd": "4x114.3", "offsets": "+18/+24/+31/+38/+44/+50"},
+      {"diameter": "17", "width": "7.5", "pcd": "5x114.3", "offsets": "-2/+4/+11/+18/+24/+25/+30/+31/+37/+38/+44/+50"},
+      {"diameter": "17", "width": "8.0", "pcd": "4x114.3", "offsets": "+18/+24/+31/+38/+44/+50"},
+      {"diameter": "17", "width": "8.0", "pcd": "5x114.3", "offsets": "-2/+4/+11/+18/+24/+25/+30/+31/+37/+38/+43/+44/+50"},
+      {"diameter": "17", "width": "8.5", "pcd": "4x114.3", "offsets": "+11/+24/+31/+38/+44/+50"},
+      {"diameter": "17", "width": "8.5", "pcd": "5x114.3", "offsets": "-9/+4/+11/+18/+24/+25/+30/+31/+37/+38/+43/+44/+50"},
+      {"diameter": "17", "width": "9.0", "pcd": "4x114.3", "offsets": "+18/+31/+38/+44/+50"},
+      {"diameter": "17", "width": "9.0", "pcd": "5x114.3", "offsets": "-2/+11/+18/+25/+30/+31/+37/+38/+44/+50"},
+      {"diameter": "17", "width": "9.5", "pcd": "4x114.3", "offsets": "+24/+38/+44/+50"},
+      {"diameter": "17", "width": "9.5", "pcd": "5x114.3", "offsets": "+4/+18/+24/+25/+30/+38/+44/+50"},
+      {"diameter": "17", "width": "10.0", "pcd": "4x114.3", "offsets": "+31/+44"},
+      {"diameter": "17", "width": "10.0", "pcd": "5x114.3", "offsets": "+11/+25/+31/+44"},
+      {"diameter": "17", "width": "10.5", "pcd": "4x114.3", "offsets": "+38"},
+      {"diameter": "17", "width": "10.5", "pcd": "5x114.3", "offsets": "+18/+38"},
+      {"diameter": "18", "width": "7.0", "pcd": "4x114.3", "offsets": "+24/+31/+38/+44/+50"},
+      {"diameter": "18", "width": "7.0", "pcd": "5x114.3", "offsets": "+4/+11/+18/+24/+25/+30/+31/+38/+44/+50"},
+      {"diameter": "18", "width": "7.5", "pcd": "4x114.3", "offsets": "+18/+24/+31/+38/+44/+50"},
+      {"diameter": "18", "width": "7.5", "pcd": "5x114.3", "offsets": "-2/+4/+11/+18/+24/+25/+30/+31/+37/+38/+44/+50"},
+      {"diameter": "18", "width": "8.0", "pcd": "4x114.3", "offsets": "+11/+18/+24/+31/+38/+44/+50"},
+      {"diameter": "18", "width": "8.0", "pcd": "5x114.3", "offsets": "-9/-2/+4/+11/+18/+24/+25/+30/+31/+37/+38/+43/+44/+50"},
+      {"diameter": "18", "width": "8.5", "pcd": "4x114.3", "offsets": "+5/+11/+18/+24/+31/+38/+44/+50"},
+      {"diameter": "18", "width": "8.5", "pcd": "5x114.3", "offsets": "-15/-9/-2/+4/+5/+11/+18/+24/+25/+30/+31/+37/+38/+43/+44/+50"},
+      {"diameter": "18", "width": "9.0", "pcd": "4x114.3", "offsets": "+11/+18/+24/+31/+38/+44/+50"},
+      {"diameter": "18", "width": "9.0", "pcd": "5x114.3", "offsets": "-9/-2/+4/+11/+18/+24/+25/+30/+31/+37/+38/+44/+50"},
+      {"diameter": "18", "width": "9.5", "pcd": "4x114.3", "offsets": "+18/+24/+31/+38/+44/+50"},
+      {"diameter": "18", "width": "9.5", "pcd": "5x114.3", "offsets": "-2/+4/+11/+18/+24/+25/+30/+31/+38/+44/+50"},
+      {"diameter": "18", "width": "10.0", "pcd": "4x114.3", "offsets": "+24/+31/+38/+44"},
+      {"diameter": "18", "width": "10.0", "pcd": "5x114.3", "offsets": "+4/+11/+18/+24/+31/+38/+44"}
+    ],
+    "images": ["01.jpg","02.jpg"],
+    "related": ["GW5F2E47PHFB"],
+    "links": [
+      "https://web.archive.org/web/20010708190427fw_/http://www.arw.co.jp/wheels/gw_spoke.html"
+    ]
+  },
   /* Bee★R B5 */
   {
     "id": "0YDS9EBJLVAB",
@@ -1643,6 +1883,152 @@ dataset =
     "related": ["6NAU5RW9F7TQ"],
     "links": [
       "http://web.archive.org/web/20001109195400fw_/http://www.carving.co.jp/cis/cismarino_vitz.htm"
+    ]
+  },
+  /* Clear Ways TT-10F (2010 Model) */
+  {
+    "id": "VELHUS7N4YV4",
+    "description": "Launched in 2010 by TM-Square in a single size: 16x7.5J +46 for the ZC31S Suzuki Swift featuring a vehicle specific 60.1mm hub bore. A 16x8.0J +30 was added in 2011 to allow wider tires and more strut clearance when running large amounts of front camber.",
+    "brand": "Clear Ways",
+    "model": "TT-10F (2010 Model)",
+    "manufacturer": "Washi Beam Co., Ltd.",
+    "year_start": "2010",
+    "year_end": "Unverified",
+    "origin": "Japan",
+    "construction": [
+      "1 Piece",
+      "Forged"
+    ],
+    "style": "10 Spoke",
+    "tags": [],
+    "colors": [
+      "Diamond Silver Clear",
+      "Gunmetal"
+    ],
+    "sizes": [
+      {"diameter": "16", "width": "7.5", "pcd": "5x114.3", "offsets": "+30/+46"}
+    ],
+    "images": ["01.jpg","02.jpg"],
+    "related": ["NKCRKENUII90","41T71U4BZZQH","NKCQJDMUIH9Z","JY7H4G69RJHD","FC4IC5FMAA1S"],
+    "links": [
+      "https://web.archive.org/web/20150205045641fw_/http://www.tm-square.com/?page_id=1699",
+      "https://web.archive.org/web/20130915040127fw_/http://www.clearways-bbs.com/products.html"
+    ]
+  },
+  /* Clear Ways TT-10F (2012 Model) */
+  {
+    "id": "NKCRKENUII90",
+    "description": "In 2012, an 18-inch version of the TT-10F was launched for the Z33 Nissan Fairlady featuring a few design changes from the original 16-inch model.",
+    "brand": "Clear Ways",
+    "model": "TT-10F (2012 Model)",
+    "manufacturer": "Washi Beam Co., Ltd.",
+    "year_start": "2012",
+    "year_end": "Unverified",
+    "origin": "Japan",
+    "construction": [
+      "1 Piece",
+      "Forged"
+    ],
+    "style": "10 Spoke",
+    "tags": [],
+    "colors": [
+      "Diamond Black Clear",
+      "Matte Black"
+    ],
+    "sizes": [
+      {"diameter": "18", "width": "10.0", "pcd": "5x114.3", "offsets": "+25"},
+      {"diameter": "18", "width": "10.5", "pcd": "5x114.3", "offsets": "+20"}
+    ],
+    "images": ["01.jpg","02.jpg"],
+    "related": ["VELHUS7N4YV4","41T71U4BZZQH","NKCQJDMUIH9Z","JY7H4G69RJHD","FC4IC5FMAA1S"],
+    "links": [
+      "https://web.archive.org/web/20150627204350/http://www.clearways-bbs.com/products.html"
+    ]
+  },
+  /* Clear Ways TT-10F (2014 Model) */
+  {
+    "id": "41T71U4BZZQH",
+    "description": "The 16-inch TT-10F underwent a redesign in August 2014 to match the 18-inch version adding better brake clearance, ZC32S Swift sizes, and broader hub compatibility.",
+    "brand": "Clear Ways",
+    "model": "TT-10F (2014 Model)",
+    "manufacturer": "Washi Beam Co., Ltd.",
+    "year_start": "2014",
+    "year_end": "Unverified",
+    "origin": "Japan",
+    "construction": [
+      "1 Piece",
+      "Forged"
+    ],
+    "style": "10 Spoke",
+    "tags": [],
+    "colors": [
+      "Gunmetal"    ],
+    "sizes": [
+      {"diameter": "16", "width": "7.5", "pcd": "5x114.3", "offsets": "+50"},
+      {"diameter": "16", "width": "8.0", "pcd": "5x114.3", "offsets": "+30"}
+    ],
+    "images": ["01.jpg","02.jpg"],
+    "related": ["VELHUS7N4YV4","NKCRKENUII90","NKCQJDMUIH9Z","JY7H4G69RJHD","FC4IC5FMAA1S"],
+    "links": [
+      "https://web.archive.org/web/20150205010230fw_/http://www.tm-square.com/?page_id=3190",
+      "https://web.archive.org/web/20150627204350/http://www.clearways-bbs.com/products.html"
+    ]
+  },
+  /* Clear Ways TT-10F (2015 Model) */
+  {
+    "id": "NKCQJDMUIH9Z",
+    "description": "The 18-inch version of the TT-10F received an update in 2015 further increasing rigidity to cope with larger, stickier tires and increasing vehicle weights.",
+    "brand": "Clear Ways",
+    "model": "TT-10F (2015 Model)",
+    "manufacturer": "Washi Beam Co., Ltd.",
+    "year_start": "2015",
+    "year_end": "Unverified",
+    "origin": "Japan",
+    "construction": [
+      "1 Piece",
+      "Forged"
+    ],
+    "style": "10 Spoke",
+    "tags": [],
+    "colors": [
+      "Diamond Black Clear"
+    ],
+    "sizes": [
+      {"diameter": "18", "width": "10.0", "pcd": "5x114.3", "offsets": "+25"},
+      {"diameter": "18", "width": "10.5", "pcd": "5x114.3", "offsets": "+20"}
+    ],
+    "images": ["01.jpg","02.jpg"],
+    "related": ["VELHUS7N4YV4","NKCRKENUII90","41T71U4BZZQH","JY7H4G69RJHD","FC4IC5FMAA1S"],
+    "links": [
+      "https://web.archive.org/web/20160502155033fw_/http://www.clearways-bbs.com/products.html"
+    ]
+  },
+  /* Clear Ways TT-10F (ASM Version) */
+  {
+    "id": "JY7H4G69RJHD",
+    "description": "A special verision of the Clear Ways TT-10F was developed for ASM for use on their time attack S2000 and sold by ASM to their customers. It features upgrades like steel lug nut seats and anti-slip paint on the bead seat.",
+    "brand": "Clear Ways",
+    "model": "TT-10F (ASM Version)",
+    "manufacturer": "Washi Beam Co., Ltd.",
+    "year_start": "2015",
+    "year_end": "Unverified",
+    "origin": "Japan",
+    "construction": [
+      "1 Piece",
+      "Forged"
+    ],
+    "style": "10 Spoke",
+    "tags": [],
+    "colors": [
+      "Diamond Black Clear"
+    ],
+    "sizes": [
+      {"diameter": "18", "width": "9.5", "pcd": "5x114.3", "offsets": "+45"}
+    ],
+    "images": ["01.jpg","02.jpg","03.jpg","04.jpg","05.jpg","06.jpg","07.jpg","08.jpg","09.jpg","10.jpg"],
+    "related": ["VELHUS7N4YV4","NKCRKENUII90","41T71U4BZZQH","NKCQJDMUIH9Z","FC4IC5FMAA1S"],
+    "links": [
+      "https://web.archive.org/web/20210423030816/https://autobacs-asm.com/original2008/original_sub.cgi?PARTSNO=TM007DB"
     ]
   },
   /* Crimson Racing Sparco Viper R */
@@ -2363,6 +2749,65 @@ dataset =
     "related": [],
     "links": [
       "http://web.archive.org/web/20031006164938fw_/http://www.hartwheels.co.jp/cat_030730_racinghart_ftuner/cat_racinghart_cp-ftuner_spec.htm"
+    ]
+  },
+  /* TM-Square TM-031 */
+  {
+    "id": "ZFOXLXNQ8ZYT",
+    "description": "A wheel designed specifically for the ZC31S Suzuki Swift Sport, featuring a vehicle specific 60.1mm hub bore and with a focus on rigidity over weight, the TM-Square TM-031 offers high performance at a low cost due to its cast construction.",
+    "brand": "TM-Square",
+    "model": "TM-031",
+    "manufacturer": "Unverified",
+    "year_start": "2009",
+    "year_end": "Unverified",
+    "origin": "Unverified",
+    "construction": [
+      "1 Piece",
+      "Cast"
+    ],
+    "style": "7 Spoke",
+    "tags": [],
+    "colors": [
+      "White",
+      "Hyper Black",
+      "Black Polish"
+    ],
+    "sizes": [
+      {"diameter": "17", "width": "7.5", "pcd": "5x114.3", "offsets": "+43"}
+    ],
+    "images": ["01.jpg","02.jpg","03.jpg","04.jpg"],
+    "related": [],
+    "links": [
+      "https://web.archive.org/web/20100309093732fw_/http://www.tm-square.com/?page_id=14"
+    ]
+  },
+  /* TM-Square TM-10F */
+  {
+    "id": "FC4IC5FMAA1S",
+    "description": "The successor to the Clearways TT-10F, the TM-Square TM-10F was designed for the Swift Sport, featuring a 60.1mm hub bore, and inherits the 10-spoke design of the original.",
+    "brand": "TM-Square",
+    "model": "TM-10F",
+    "manufacturer": "Unverified",
+    "year_start": "2025",
+    "year_end": "Unverified",
+    "origin": "Unverified",
+    "construction": [
+      "1 Piece",
+      "Cast"
+    ],
+    "style": "10 Spoke",
+    "tags": [],
+    "colors": [
+      "Gunmetal"
+    ],
+    "sizes": [
+      {"diameter": "17", "width": "7.5", "pcd": "5x114.3", "offsets": "+48"},
+      {"diameter": "17", "width": "8.0", "pcd": "5x114.3", "offsets": "+35"}
+    ],
+    "images": ["01.jpg","02.jpg","03.jpg","04.jpg","05.jpg","06.jpg","07.jpg","08.jpg","09.jpg","10.jpg","11.jpg","12.jpg","13.jpg","14.jpg","15.jpg","16.jpg","17.jpg"],
+    "related": ["VELHUS7N4YV4","NKCRKENUII90","41T71U4BZZQH","NKCQJDMUIH9Z","JY7H4G69RJHD"],
+    "links": [
+      "https://web.archive.org/web/20260208110712fw_/www.tm-square.com/%3Fpage_id=4088"
     ]
   },
   /* Uras NS-01 */
