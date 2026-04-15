@@ -1997,7 +1997,7 @@ dataset =
       {"diameter": "18", "width": "10.0", "pcd": "5x114.3", "offsets": "+25"},
       {"diameter": "18", "width": "10.5", "pcd": "5x114.3", "offsets": "+20"}
     ],
-    "images": ["01.jpg","02.jpg"],
+    "images": ["01.jpg","02.jpg","03.jpg"],
     "related": ["VELHUS7N4YV4","NKCRKENUII90","41T71U4BZZQH","JY7H4G69RJHD","FC4IC5FMAA1S"],
     "links": [
       "https://web.archive.org/web/20160502155033fw_/http://www.clearways-bbs.com/products.html"
