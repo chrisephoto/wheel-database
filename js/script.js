@@ -1,531 +1,462 @@
 window.onload = function() {
-  initialize()
+  // Initialize event listeners
+  document.getElementById('wheel-details-close').addEventListener('click', () => closeDetails(false));
+  document.getElementById('theme-toggle').addEventListener('click', toggleTheme);
+  document.addEventListener('keydown', handleKeyboardShortcuts);
+  window.addEventListener('popstate', () => updatePage(true));
+
+  // Apply user preferences, populate UI, and load initial state
+  applyCookies();
+  populateFilters();
+  updatePage(); // updatePage handles the initial filtering, grid population, and counting
 };
 
-function initialize() {
-  // add event listeners
-  document.getElementById('wheel-details-close').addEventListener('click', ()=>closeDetails(true));
-  document.getElementById('theme-toggle').addEventListener('click', toggleTheme);
+// ==========================================
+// Core Functions
+// ==========================================
 
-  window.addEventListener('popstate', (event) => {
-    // get current url with parameters
-    const queryString = window.location.search;
-    const urlParams = new URLSearchParams(queryString);
-    const urlId = urlParams.get('id')
-  
-    matchFound = false;
-    for (let i = 0; i < dataset.length; i++) {
-      if (dataset[i].id == urlId) {
-        populateDetails(i, false);
-        matchFound = true;
-      }
-    }
-    if (!matchFound) {
-      closeDetails(false);
-    }
-  });
-
-  // populate filters
-  populateFilters();
-
-  // populate wheel list
-  for (let i = 0; i < dataset.length; i++) {
-    populateGrid(i)
-  }
-
-  // add 'to top' button
-  insertToTop();
-
-  // update display count
-  if (document.querySelectorAll("#wheel-list > div > figure").length == 0) {
-    document.getElementById("display-count").innerHTML = "No results found. <a onclick='resetFilter()'>Clear filters</a>."
-  }
-  else {
-    document.getElementById("display-count").innerHTML = "Displaying " + document.querySelectorAll("#wheel-list > div > figure").length + " of " + dataset.length + " wheels";
-  }
-
-  // check cookies and apply preferences
+function applyCookies() {
+  // Helper to extract a specific cookie by name
   function getCookie(name) {
     const value = `; ${document.cookie}`;
     const parts = value.split(`; ${name}=`);
     if (parts.length === 2) return parts.pop().split(';').shift();
   }
+
+  // Apply the theme if a cookie exists
   const theme = getCookie('theme');
-  if (theme == 'theme-dark') {
-    document.querySelector('body').classList = 'theme-dark';
+  if (theme === 'theme-dark') {
+    document.body.classList.add('theme-dark');
+    document.body.classList.remove('theme-light');
     document.querySelector('#theme-toggle').innerHTML = 'light_mode';
   }
+}
 
-  // get current url with parameters
-  const queryString = window.location.search;
-  const urlParams = new URLSearchParams(queryString);
-
-  // add search query to search input
-  const urlSearch = urlParams.get('q')
-  document.getElementById('input-search').value = urlSearch;
-
-  // if brand parameter is valid, set brand input
-  const urlBrand = urlParams.get('b')
-  if (urlBrand) {
-    for (let i = 0; i < document.getElementById('input-brand').length; i++) {
-      if (urlBrand == document.getElementById('input-brand').options[i].value) {
-        document.getElementById('input-brand').value = urlBrand;
-      }
+function applyFilter(skipHistory = false) {
+  // Retrieve current filter values
+  const filterSearch = document.getElementById('input-search').value.toUpperCase();
+  const filterBrand = document.getElementById('input-brand').value;
+  const filterManufacturer = document.getElementById('input-manufacturer').value;
+  const filterStyle = document.getElementById('input-style').value;
+  const filterDiameter = document.getElementById('input-diameter').value;
+  const filterPCD = document.getElementById('input-pcd').value;
+    
+  // Filter the dataset using modern array methods
+  const filteredIndexes = dataset.reduce((acc, wheel, i) => {
+    // Check search term across multiple fields
+    let matchSearch = true;
+    if (filterSearch) {
+      const wheelName = `${wheel.brand} ${wheel.model}`.toUpperCase();
+      matchSearch = wheelName.includes(filterSearch) || 
+                    wheel.description.toUpperCase().includes(filterSearch) ||
+                    wheel.tags.some(tag => tag.toUpperCase().includes(filterSearch)) ||
+                    wheel.construction.some(c => c.toUpperCase().includes(filterSearch));
     }
+    
+    // Check exact matches for dropdowns
+    const matchBrand = !filterBrand || wheel.brand === filterBrand;
+    const matchManufacturer = !filterManufacturer || wheel.manufacturer === filterManufacturer;
+    const matchStyle = !filterStyle || wheel.style === filterStyle;
+
+    // Check sizes array for diameter and PCD matches
+    const matchDiameter = !filterDiameter || wheel.sizes.some(size => size.diameter == filterDiameter);
+    const matchPCD = !filterPCD || wheel.sizes.some(size => size.pcd == filterPCD);
+    
+    // If all conditions are met, save the index
+    if (matchSearch && matchBrand && matchManufacturer && matchStyle && matchDiameter && matchPCD) {
+      acc.push(i);
+    }
+    return acc;
+  }, []);
+  
+  // Clear and repopulate the wheel list
+  const listContainer = document.querySelector('#wheel-list > div');
+  listContainer.innerHTML = '';
+  filteredIndexes.forEach(index => populateGrid(index, listContainer));
+
+  updateCount(filteredIndexes.length);
+
+  if (!skipHistory) {
+    updateHistory();
+  }
+}
+
+function closeDetails(skipHistory = false) {
+  document.getElementById('wheel-details').classList.remove('open');
+  if (!skipHistory) {
+    updateHistory();
+  }
+}
+
+function getDetails(id) {
+  // Find the index of the wheel by its ID and open details
+  const index = dataset.findIndex(wheel => wheel.id == id);
+  if (index !== -1) {
+    populateDetails(index, false);
+  }
+  document.getElementById('wheel-details').scrollTo(0,0);
+}
+
+function handleKeyboardShortcuts(event) {
+  const detailsModal = document.getElementById('wheel-details');
+  const isOpen = detailsModal.classList.contains('open');
+
+  // 1. Escape Key: Close details
+  if (event.key === 'Escape' && isOpen) {
+    closeDetails(); // No need to pass skipHistory; let it default to false
+    return;
   }
 
-  // if manufacturer parameter is valid, set manufacturer input
-  const urlManufacturer = urlParams.get('m')
-  if (urlManufacturer) {
-    for (let i = 0; i < document.getElementById('input-manufacturer').length; i++) {
-      if (urlManufacturer == document.getElementById('input-manufacturer').options[i].value) {
-        document.getElementById('input-manufacturer').value = urlManufacturer;
-      }
+  // 2. Left/Right Arrow Keys: Navigate previous/next
+  if ((event.key === 'ArrowLeft' || event.key === 'ArrowRight') && isOpen) {
+    event.preventDefault(); // Prevent horizontal page scrolling
+
+    const displayedFigures = Array.from(document.querySelectorAll('#wheel-list > div > figure'));
+    if (displayedFigures.length === 0) return;
+
+    const currentId = document.getElementById('wheel-id').textContent;
+    const currentIndex = displayedFigures.findIndex(fig => fig.id === currentId);
+
+    if (currentIndex === -1) return;
+
+    let newIndex;
+    if (event.key === 'ArrowLeft') {
+      newIndex = currentIndex - 1;
+      if (newIndex < 0) newIndex = displayedFigures.length - 1;
+    } else if (event.key === 'ArrowRight') {
+      newIndex = currentIndex + 1;
+      if (newIndex >= displayedFigures.length) newIndex = 0;
     }
+
+    const targetId = displayedFigures[newIndex].id;
+    const globalDatasetIndex = dataset.findIndex(wheel => wheel.id == targetId);
+
+    if (globalDatasetIndex !== -1) {
+      populateDetails(globalDatasetIndex);
+    }
+    return;
   }
 
-  // if style parameter is valid, set style input
-  const urlStyle = urlParams.get('s')
-  if (urlStyle) {
-    for (let i = 0; i < document.getElementById('input-style').length; i++) {
-      if (urlStyle == document.getElementById('input-style').options[i].value) {
-        document.getElementById('input-style').value = urlStyle;
+  // 3. Search Shortcut: Ctrl+K / Cmd+K OR forward slash (/)
+  // We check if the user is ALREADY typing in an input field to prevent interrupting them
+  const isTyping = document.activeElement.tagName === 'INPUT' || document.activeElement.tagName === 'TEXTAREA';
+
+  if (!isTyping) {
+    // Check for Ctrl+K (Windows/Linux) or Cmd+K (Mac)
+    const isCmdK = (event.ctrlKey || event.metaKey) && event.key.toLowerCase() === 'k';
+    // Check for forward slash
+    const isSlash = event.key === '/';
+
+    if (isCmdK || isSlash) {
+      event.preventDefault(); // Prevents the browser's default search bar or typing the '/' character
+      
+      if (isOpen) {
+        closeDetails(); // Close the modal if it's open
       }
-    }
-  }
-
-  // if construction parameter is valid, set construction input
-  const urlConstruction = urlParams.get('c')
-  if (urlConstruction) {
-    for (let i = 0; i < document.getElementById('input-construction').length; i++) {
-      if (urlConstruction == document.getElementById('input-construction').options[i].value) {
-        document.getElementById('input-construction').value = urlConstruction;
-      }
-    }
-  }
-
-  // if diameter parameter is valid, set diameter input
-  const urlDiameter = urlParams.get('d')
-  if (urlDiameter) {
-    for (let i = 0; i < document.getElementById('input-diameter').length; i++) {
-      if (urlDiameter == document.getElementById('input-diameter').options[i].value) {
-        document.getElementById('input-diameter').value = urlDiameter;
-      }
-    }
-  }
-
-  // if pcd parameter is valid, set pcd input
-  const urlPCD = urlParams.get('p')
-  if (urlPCD) {
-    for (let i = 0; i < document.getElementById('input-pcd').length; i++) {
-      if (urlPCD == document.getElementById('input-pcd').options[i].value) {
-        document.getElementById('input-pcd').value = urlPCD;
-      }
-    }
-  }
-
-  // run applyFilter function
-  applyFilter();
-
-  // if wheel id is valid, run populateDetails function
-  const urlId = urlParams.get('id')
-  for (let i = 0; i < dataset.length; i++) {
-    if (dataset[i].id == urlId) {
-      populateDetails(i, true);
+      
+      const searchInput = document.getElementById('input-search');
+      searchInput.focus();
+      searchInput.select(); // Highlights existing text so they can instantly type over it
     }
   }
 }
 
-// functions
-function populateFilters() {
-    // create array of all unique brands from the database
-    brandArray = [];
-    for (let i = 0; i < dataset.length; i++) {
-        if(brandArray.indexOf(dataset[i].brand) === -1) {
-            brandArray.push(dataset[i].brand);
-        }
-    }
-    brandArray = brandArray.sort(); // sort the array alphabetically
-
-    // populate DOM with brands
-    for (let i = 0; i < brandArray.length; i++) {
-        const input = document.getElementById('input-brand');
-        const option = document.createElement('option');
-        option.value = brandArray[i];
-        option.innerHTML = brandArray[i];
-        input.appendChild(option);
-    }
-
-    // create array of all unique brands from the database
-    manufacturerArray = [];
-    for (let i = 0; i < dataset.length; i++) {
-        if(manufacturerArray.indexOf(dataset[i].manufacturer) === -1 && dataset[i].manufacturer != 'Unverified') {
-            manufacturerArray.push(dataset[i].manufacturer);
-        }
-    }
-    manufacturerArray = manufacturerArray.sort(); // sort the array alphabetically
-
-    // populate DOM with manufacturers
-    for (let i = 0; i < manufacturerArray.length; i++) {
-        const input = document.getElementById('input-manufacturer');
-        const option = document.createElement('option');
-        option.value = manufacturerArray[i];
-        option.innerHTML = manufacturerArray[i];
-        input.appendChild(option);
-    }
+function openDetails(skipHistory = false) {
+  document.getElementById('wheel-details').classList.add('open');
+  if (!skipHistory) {
+    updateHistory();
+  }
 }
 
-function populateGrid(i) {
-  const content = document.querySelector('#wheel-list > div');
-  const figure = document.createElement('figure');
-  const img = document.createElement('img');
-  const figcaption = document.createElement('figcaption');
-  const div = document.createElement('div');
-  content.appendChild(figure);
-  figure.id = dataset[i].id;
-  figure.onclick = function(){populateDetails(i, true)};
-  figure.appendChild(img);
-  img.src = "images/" + dataset[i].id + "/00.png";
-  figure.appendChild(figcaption);
-  figcaption.innerHTML = `<p>${dataset[i].brand}</p>\n<p>${dataset[i].model}</p>`;
-}
-
-function insertToTop() {
-  const content = document.querySelector('#wheel-list > div');
-  const figure = document.createElement('figure');
-  figure.id = "to-top";
-  figure.onclick = function(){document.getElementById('wheel-select').scrollTo(0,0);window.scrollTo(0,0);};
-  figure.innerHTML = `
-    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=">
-    <figcaption>
-      <p>Return to top</p>
-    </figcaption>
-  `
-  //content.appendChild(figure);
-}
-
-function populateDetails(i, history) {
-  //scroll details to top of page
+function populateDetails(i, skipHistory = false) {
+  const wheel = dataset[i];
+  
+  // Scroll to top
   document.getElementById('wheel-details').scrollTo(0,0);
 
-  //hide default message and show details
-  //document.querySelector('#wheel-details-message').classList = 'hidden';
-  //document.querySelector('#wheel-details-container').classList = '';
+  // Clear existing detail information safely
+  const heroHero = document.querySelector('#wheel-details-hero img');
+  if (heroHero) heroHero.remove();
   
-  //clear detail information
-  if (document.querySelector('#wheel-details-hero img')) {
-    document.querySelector('#wheel-details-hero img').remove();
-  }
   document.getElementById('wheel-header-tags').innerHTML = "";
   document.getElementById('wheel-info-construction').innerHTML = "";
   document.getElementById('wheel-info-colors').innerHTML = "";
-  const images = document.querySelectorAll('#wheel-images a');
-  images.forEach(images => {
-    images.remove();
-  });
-  const related = document.getElementById('wheel-related');
-  related.innerHTML = '';
-  const rows = document.querySelectorAll('#wheel-specs tr:not(:first-of-type)');
-  rows.forEach(rows => {
-    rows.remove();
-  });
+  document.getElementById('wheel-images').innerHTML = "";
+  document.getElementById('wheel-related').innerHTML = '';
   document.getElementById('wheel-links').innerHTML = "";
+  
+  // Remove all but the first table row (headers)
+  document.querySelectorAll('#wheel-specs tr:not(:first-of-type)').forEach(row => row.remove());
 
-  //load new detail information
-  const target = document.getElementById('wheel-details-hero');
-  const image  = document.createElement('img');
-  target.appendChild(image);
-  image.src = "images/" + dataset[i].id + "/00.png";
-  document.getElementById('wheel-header-brand').innerHTML = dataset[i].brand;
-  document.getElementById('wheel-header-model').innerHTML = dataset[i].model;
-  for (let j = 0; j < dataset[i].construction.length; j++) {
-    document.getElementById('wheel-header-tags').innerHTML += `<span>${dataset[i].construction[j]}</span>\n`;
-  }
-  document.getElementById('wheel-header-tags').innerHTML += `<span>${dataset[i].style}</span>\n`;
-  for (let j = 0; j < dataset[i].tags.length; j++) {
-    document.getElementById('wheel-header-tags').innerHTML += `<span>${dataset[i].tags[j]}</span>\n`;
-  }
-  document.getElementById('wheel-header-description').innerHTML = dataset[i].description;
-  document.getElementById('wheel-info-brand').innerHTML = `<span>${dataset[i].brand}</span>`;
-  document.getElementById('wheel-info-model').innerHTML = dataset[i].model;
-  document.getElementById('wheel-info-manufacturer').innerHTML = `<span>${dataset[i].manufacturer}</span>`;
-  if (dataset[i].year_start == dataset[i].year_end) {
-    document.getElementById('wheel-info-years').innerHTML = dataset[i].year_start;
-  }
-  else {
-    document.getElementById('wheel-info-years').innerHTML = dataset[i].year_start + ' - ' + dataset[i].year_end;
-  }
-  document.getElementById('wheel-info-origin').innerHTML = dataset[i].origin;
-  for (let j = 0; j < dataset[i].construction.length; j++) {
-    if (j != 0) {
-      document.getElementById('wheel-info-construction').innerHTML += ", ";
-    }
-    document.getElementById('wheel-info-construction').innerHTML += `<span>${dataset[i].construction[j]}</span>`;
-  }
-  for (let j = 0; j < dataset[i].colors.length; j++) {
-    document.getElementById('wheel-info-colors').innerHTML += `<span>${dataset[i].colors[j]}</span>\n`;
-  }
-  for (let j = 0; j < dataset[i].sizes.length; j++) {
-    const table = document.querySelector('#wheel-specs tbody');
-    const row  = document.createElement('tr');
-    table.appendChild(row);
-    for (const data in dataset[i].sizes[j]) {
+  // Load basic wheel information
+  document.getElementById('wheel-id').innerHTML = wheel.id;
+  
+  const heroTarget = document.getElementById('wheel-details-hero');
+  const heroImage = document.createElement('img');
+  heroImage.src = `images/${wheel.id}/00.png`;
+  heroTarget.appendChild(heroImage);
+
+  document.getElementById('wheel-header-brand').innerHTML = wheel.brand;
+  document.getElementById('wheel-header-model').innerHTML = wheel.model;
+  
+  // Load tags and construction
+  let tagsHTML = wheel.construction.map(c => `<span>${c}</span>\n`).join('');
+  tagsHTML += `<span>${wheel.style}</span>\n`;
+  tagsHTML += wheel.tags.map(t => `<span>${t}</span>\n`).join('');
+  document.getElementById('wheel-header-tags').innerHTML = tagsHTML;
+
+  document.getElementById('wheel-header-description').innerHTML = wheel.description;
+  document.getElementById('wheel-info-brand').innerHTML = `<span>${wheel.brand}</span>`;
+  document.getElementById('wheel-info-model').innerHTML = wheel.model;
+  document.getElementById('wheel-info-manufacturer').innerHTML = `<span>${wheel.manufacturer}</span>`;
+  
+  // Format years
+  document.getElementById('wheel-info-years').innerHTML = (wheel.year_start === wheel.year_end) 
+    ? wheel.year_start 
+    : `${wheel.year_start} - ${wheel.year_end}`;
+    
+  document.getElementById('wheel-info-origin').innerHTML = wheel.origin;
+  
+  // Format construction and colors
+  document.getElementById('wheel-info-construction').innerHTML = wheel.construction.map(c => `<span>${c}</span>`).join(', ');
+  document.getElementById('wheel-info-colors').innerHTML = wheel.colors.map(c => `<span>${c}</span>\n`).join('');
+
+  // Load size specifications table
+  const tableBody = document.querySelector('#wheel-specs tbody');
+  wheel.sizes.forEach(size => {
+    const row = document.createElement('tr');
+    Object.values(size).forEach(val => {
       const cell = document.createElement('td');
-      const text = document.createTextNode(dataset[i].sizes[j][data]);
+      cell.textContent = val;
       row.appendChild(cell);
-      cell.appendChild(text);
-    }
-  }
-  for (let j = 0; j < dataset[i].images.length; j++) {
-    const target = document.getElementById('wheel-images');
+    });
+    tableBody.appendChild(row);
+  });
+
+  // Load gallery images
+  const imagesTarget = document.getElementById('wheel-images');
+  wheel.images.forEach(imgName => {
     const link = document.createElement('a');
-    const image  = document.createElement('img');
-    target.appendChild(link);
-    link.href = "images/" + dataset[i].id + "/" + dataset[i].images[j];
+    link.href = `images/${wheel.id}/${imgName}`;
     link.target = '_blank';
+    
+    const image = document.createElement('img');
+    image.src = `images/${wheel.id}/${imgName}`;
+    
     link.appendChild(image);
-    image.src = "images/" + dataset[i].id + "/" + dataset[i].images[j];
-  }
-  if (dataset[i].related.length > 0) {
-    const container = document.getElementById('wheel-related-container');
-    container.classList = '';
-    for (let j = 0; j < dataset[i].related.length; j++) {
-      for (let k = 0; k < dataset.length; k++) {
-        if (dataset[k].id == dataset[i].related[j]) {
-          const target = document.getElementById('wheel-related');
-          const figure = document.createElement('figure');
-          const img = document.createElement('img');
-          const figcaption = document.createElement('figcaption');
-          const div = document.createElement('div');
-          target.appendChild(figure);
-          figure.appendChild(img);
-          figure.onclick = function(){loadDetails(dataset[i].related[j])};
-          img.src = "images/" + dataset[i].related[j] + "/00.png";
-          figure.appendChild(figcaption);
-          figcaption.innerHTML = `<p>${dataset[k].brand}</p>\n<p>${dataset[k].model}</p>`;
-        }
+    imagesTarget.appendChild(link);
+  });
+
+  // Load related wheels
+  const relatedContainer = document.getElementById('wheel-related-container');
+  if (wheel.related && wheel.related.length > 0) {
+    relatedContainer.classList.remove('hidden');
+    const target = document.getElementById('wheel-related');
+    
+    wheel.related.forEach(relatedId => {
+      const relatedWheel = dataset.find(w => w.id == relatedId);
+      if (relatedWheel) {
+        const figure = document.createElement('figure');
+        figure.onclick = () => getDetails(relatedId);
+        
+        figure.innerHTML = `
+          <img src="images/${relatedId}/00.png" alt="${relatedWheel.brand} ${relatedWheel.model}">
+          <figcaption>
+            <p>${relatedWheel.brand}</p>
+            <p>${relatedWheel.model}</p>
+          </figcaption>
+        `;
+        target.appendChild(figure);
       }
-    }    
+    });
+  } else {
+    relatedContainer.classList.add('hidden');
   }
-  else {
-    const target = document.getElementById('wheel-related-container');
-    target.classList = 'hidden';
-  }
-  if (dataset[i].links.length > 0) {
-    document.getElementById('wheel-links-container').classList = '';
-    for (let j = 0; j < dataset[i].links.length; j++) {
-      document.getElementById('wheel-links').innerHTML += `<a href="${dataset[i].links[j]}" target="_blank">${dataset[i].links[j]}</a>`;
-    }    
-  }
-  else {
-    document.getElementById('wheel-links-container').classList = 'hidden';
-  }
-  document.getElementById('wheel-details').classList = 'open';
-  document.title = 'Wheel Database - ' + dataset[i].brand + " " + dataset[i].model;
 
-  //update browser url/history
-  if (history) {
-    var queryString = new URL(document.location);
-    queryString.searchParams.set('id', dataset[i].id);
-    window.history.pushState(null, '', queryString);
+  // Load external links
+  const linksContainer = document.getElementById('wheel-links-container');
+  if (wheel.links && wheel.links.length > 0) {
+    linksContainer.classList.remove('hidden');
+    const linksTarget = document.getElementById('wheel-links');
+    linksTarget.innerHTML = wheel.links.map(link => `<a href="${link}" target="_blank">${link}</a>`).join('');
+  } else {
+    linksContainer.classList.add('hidden');
   }
+
+  openDetails(skipHistory);
 }
 
-function loadDetails(id) {
-  for (let i = 0; i < dataset.length; i++) {
-    if (dataset[i].id == id) {
-      populateDetails(i, true);
-    }
-  }
-  document.getElementById('wheel-details').scrollTo(0,0);
+function populateFilters() {
+  // Use Set to automatically filter out duplicate brands, then sort alphabetically
+  const brandArray = [...new Set(dataset.map(wheel => wheel.brand))].sort();
+  const brandInput = document.getElementById('input-brand');
+  
+  brandArray.forEach(brand => {
+    const option = document.createElement('option');
+    option.value = brand;
+    option.textContent = brand;
+    brandInput.appendChild(option);
+  });
+
+  // Use Set to filter out duplicate manufacturers, excluding 'Unverified', then sort
+  const manufacturerArray = [...new Set(
+    dataset.map(wheel => wheel.manufacturer).filter(m => m !== 'Unverified')
+  )].sort();
+  const manufacturerInput = document.getElementById('input-manufacturer');
+  
+  manufacturerArray.forEach(manufacturer => {
+    const option = document.createElement('option');
+    option.value = manufacturer;
+    option.textContent = manufacturer;
+    manufacturerInput.appendChild(option);
+  });
 }
 
-function closeDetails(history) {
-  //remove class to hide modal
-  document.getElementById('wheel-details').classList = '';
+function populateGrid(i, container = document.querySelector('#wheel-list > div')) {
+  const wheel = dataset[i];
+  const figure = document.createElement('figure');
+  figure.id = wheel.id;
+  figure.onclick = () => populateDetails(i, false);
+  
+  // Use template literals for cleaner DOM injection
+  figure.innerHTML = `
+    <img src="images/${wheel.id}/00.png" alt="${wheel.brand} ${wheel.model}">
+    <figcaption>
+      <p>${wheel.brand}</p>
+      <p>${wheel.model}</p>
+    </figcaption>
+  `;
+  container.appendChild(figure);
+}
 
-  //document.querySelector('#wheel-details-message').classList = '';
-  //document.querySelector('#wheel-details-container').classList = 'hidden';
-
-  //update browser url/history
-  if (history) {
-    document.title = 'Wheel Database';
-    var queryString = new URL(document.location);
-    queryString.searchParams.delete('id');
-    window.history.pushState(null, '', queryString);
-  }
+function resetFilter(skipHistory = false) {
+  // Reset the form inputs
+  document.getElementById('wheel-filters-form').reset();
+  // Re-apply filters based on the empty inputs
+  applyFilter(skipHistory);
 }
 
 function toggleTheme() {
-  if(document.querySelector('body').classList.contains('theme-light')) {
-    document.querySelector('body').classList = 'theme-dark';
-    document.getElementById('theme-toggle').innerHTML = 'light_mode';
-    document.cookie = 'theme=theme-dark';
-  }
-  else {
-    document.querySelector('body').classList = 'theme-light';
-    document.getElementById('theme-toggle').innerHTML = 'dark_mode';
-    document.cookie = 'theme=theme-light';
+  const bodyClass = document.body.classList;
+  const toggleBtn = document.getElementById('theme-toggle');
+
+  if (bodyClass.contains('theme-light') || !bodyClass.contains('theme-dark')) {
+    bodyClass.remove('theme-light');
+    bodyClass.add('theme-dark');
+    toggleBtn.innerHTML = 'light_mode';
+    document.cookie = 'theme=theme-dark; path=/';
+  } else {
+    bodyClass.remove('theme-dark');
+    bodyClass.add('theme-light');
+    toggleBtn.innerHTML = 'dark_mode';
+    document.cookie = 'theme=theme-light; path=/';
   }
 }
 
-function applyFilter() {
-  //create array
-  filterIndexes = []
-  
-  //set filter params
-  filterSearch = document.getElementById('input-search').value;
-  filterBrand = document.getElementById('input-brand').value;
-  filterManufacturer = document.getElementById('input-manufacturer').value;
-  filterStyle = document.getElementById('input-style').value;
-  //filterConstruction = document.getElementById('input-construction').value;
-  filterDiameter = document.getElementById('input-diameter').value;
-  filterPCD = document.getElementById('input-pcd').value
-    
-  //check dataset for matches
-  for (let i = 0; i < dataset.length; i++) {
-    matchSearch = false;
-    matchBrand = true;
-    matchManufacturer = true;
-    matchStyle = true;
-    matchConstruction = true;
-    matchDiameter = false;
-    matchPCD = false;
-    
-    //matchSearch 
-    if (!filterSearch) {
-      matchSearch = true;
-    }
-    else {
-      wheelName = dataset[i].brand + " " + dataset[i].model;
-      if (wheelName.toUpperCase().includes(filterSearch.toUpperCase())) {matchSearch = true;}
-      if (dataset[i].description.toUpperCase().includes(filterSearch.toUpperCase())) {matchSearch = true;}
-      for (let j = 0; j < dataset[i].tags.length; j++) {
-        if (dataset[i].tags[j].toUpperCase().includes(filterSearch.toUpperCase())) {matchSearch = true;}
-      }
-      for (let j = 0; j < dataset[i].construction.length; j++) {
-        if (dataset[i].construction[j].toUpperCase().includes(filterSearch.toUpperCase())) {matchSearch = true;}
-      }
-    }
-    
-    //matchBrand
-    if (filterBrand && dataset[i].brand != filterBrand) {
-      matchBrand = false;
-    }
-    
-    //matchManufacturer
-    if (filterManufacturer && dataset[i].manufacturer != filterManufacturer) {
-      matchManufacturer = false;
-    }
-
-    //matchStyle
-    if (filterStyle && dataset[i].style != filterStyle) {
-      matchStyle = false;
-    }
-    
-    //matchConstruction
-    //if (filterConstruction && dataset[i].construction != filterConstruction) {
-    //  matchConstruction = false;
-    //}
-    
-    //matchDiameter and matchPCD
-    if (filterDiameter && filterPCD) {
-      for (let j = 0; j < dataset[i].sizes.length; j++) {
-        if (dataset[i].sizes[j].diameter == filterDiameter && dataset[i].sizes[j].pcd == filterPCD) {
-          matchDiameter = true;
-          matchPCD = true;
-        }
-      }
-    }
-    else if (filterDiameter && !filterPCD) {
-      matchPCD = true;
-      for (let j = 0; j < dataset[i].sizes.length; j++) {
-        if (dataset[i].sizes[j].diameter == filterDiameter) {
-          matchDiameter = true;
-        }
-      }
-    }
-    else if (!filterDiameter && filterPCD) {
-      matchDiameter = true;
-      for (let j = 0; j < dataset[i].sizes.length; j++) {
-        if (dataset[i].sizes[j].pcd == filterPCD) {
-          matchPCD = true;
-        }
-      }
-    }
-    else {
-      matchDiameter = true;
-      matchPCD = true;
-    }
-    
-    //add matches to index list
-    if (matchSearch && matchBrand && matchManufacturer && matchStyle && matchConstruction && matchDiameter && matchPCD) {
-      filterIndexes.push(i);
-    }
+function updateCount(currentCount) {
+  const displayCountEl = document.getElementById("display-count");
+  if (currentCount === 0) {
+    displayCountEl.innerHTML = "No results found. <a href='#' onclick='resetFilter(); return false;'>Clear filters</a>.";
+  } else {
+    displayCountEl.innerHTML = `Displaying ${currentCount} of ${dataset.length} wheels`;
   }
-  
-  //clear wheel list
-  document.querySelector('#wheel-list > div').innerHTML = '';
-  
-  //populate wheel list
-  for (let j = 0; j < filterIndexes.length; j++) {
-    populateGrid(filterIndexes[j])
-  }
-
-  // add 'to top' button
-  insertToTop();
-
-  // update display count
-  if (document.querySelectorAll("#wheel-list > div > figure").length == 0) {
-    document.getElementById("display-count").innerHTML = "No results found. <a onclick='resetFilter()'>Clear filters</a>."
-  }
-  else {
-    document.getElementById("display-count").innerHTML = "Displaying " + document.querySelectorAll("#wheel-list > div > figure").length + " of " + dataset.length + " wheels";
-  }
-
-  //update browser url/history
-  var queryString = new URL(document.location);
-  if (filterSearch){queryString.searchParams.set('q', filterSearch)};
-  if (filterBrand){queryString.searchParams.set('b', filterBrand)};
-  if (filterManufacturer){queryString.searchParams.set('m', filterManufacturer)};
-  if (filterStyle){queryString.searchParams.set('s', filterStyle)};
-  //if (filterConstruction){queryString.searchParams.set('c', filterConstruction)};
-  if (filterDiameter){queryString.searchParams.set('d', filterDiameter)};
-  if (filterPCD){queryString.searchParams.set('p', filterPCD)};
-  window.history.pushState(null, '', queryString);
 }
 
-function resetFilter() {
-  //clear wheel list
-  document.querySelector('#wheel-list > div').innerHTML = '';
-  
-  //populate wheel list
-  for (let i = 0; i < dataset.length; i++) {
-    populateGrid(i)
+function updateHistory() {
+  const queryString = new URL(window.location);
+
+  // Map input IDs to their URL parameter keys
+  const paramsMap = {
+    'input-search': 'q',
+    'input-brand': 'b',
+    'input-manufacturer': 'm',
+    'input-style': 's',
+    'input-diameter': 'd',
+    'input-pcd': 'p'
+  };
+
+  // Loop through inputs and dynamically update URL parameters
+  Object.entries(paramsMap).forEach(([inputId, paramKey]) => {
+    const val = document.getElementById(inputId).value;
+    if (val) {
+      queryString.searchParams.set(paramKey, val);
+    } else {
+      queryString.searchParams.delete(paramKey);
+    }
+  });
+
+  // Handle Detail View State in URL
+  if (document.getElementById('wheel-details').classList.contains('open')) {
+    const currentId = document.getElementById('wheel-id').textContent;
+    queryString.searchParams.set('id', currentId);
+  } else {
+    queryString.searchParams.delete('id');
   }
 
-  // add 'to top' button
-  insertToTop();
-
-  // update display count
-  if (document.querySelectorAll("#wheel-list > div > figure").length == 0) {
-    document.getElementById("display-count").innerHTML = "No results found. <a onclick='resetFilter()'>Clear filters</a>."
-  }
-  else {
-    document.getElementById("display-count").innerHTML = "Displaying " + document.querySelectorAll("#wheel-list > div > figure").length + " of " + dataset.length + " wheels";
-  }
-  
-  //reset inputs
-  document.getElementById('wheel-filters-form').reset()
-
-  //reset url params
-  var queryString = new URL(document.location);
-  queryString.searchParams.delete('q');
-  queryString.searchParams.delete('b');
-  queryString.searchParams.delete('m');
-  queryString.searchParams.delete('s');
-  queryString.searchParams.delete('c');
-  queryString.searchParams.delete('d');
-  queryString.searchParams.delete('p')
+  // Push the new URL
   window.history.pushState(null, '', queryString);
+  
+  // Sync the title during normal navigation
+  updateTitle(); 
+}
+
+function updatePage(skipHistory = false) {
+  const urlParams = new URLSearchParams(window.location.search);
+
+  // Reset form
+  document.getElementById('wheel-filters-form').reset();
+
+  // Helper function to safely set select/input values if they exist in the URL
+  const setInputValue = (inputId, paramKey) => {
+    const paramVal = urlParams.get(paramKey);
+    if (paramVal) document.getElementById(inputId).value = paramVal;
+  };
+
+  setInputValue('input-search', 'q');
+  setInputValue('input-brand', 'b');
+  setInputValue('input-manufacturer', 'm');
+  setInputValue('input-style', 's');
+  setInputValue('input-construction', 'c');
+  setInputValue('input-diameter', 'd');
+  setInputValue('input-pcd', 'p');
+
+  // Apply filters based on the loaded URL params
+  applyFilter(skipHistory);
+
+  // Check if an ID is present in the URL to open details
+  const urlId = urlParams.get('id');
+  if (urlId) {
+    const index = dataset.findIndex(wheel => wheel.id == urlId);
+    if (index !== -1) {
+      populateDetails(index, skipHistory);
+    } else {
+      closeDetails(skipHistory);
+    }
+  } else {
+    closeDetails(skipHistory);
+  }
+
+  // Ensure the title syncs up when navigating via browser history
+  updateTitle(); 
+}
+
+function updateTitle() {
+  let newTitle = 'Wheel Database';
+
+  // Check if any search or filter inputs have a value
+  const isSearching = ['input-search', 'input-brand', 'input-manufacturer', 'input-style', 'input-diameter', 'input-pcd']
+    .some(id => document.getElementById(id).value !== '');
+
+  if (isSearching) {
+    newTitle = 'Wheel Database - Search';
+  }
+
+  // Detail view overrides the search title
+  if (document.getElementById('wheel-details').classList.contains('open')) {
+    const currentBrand = document.getElementById('wheel-info-brand').textContent;
+    const currentModel = document.getElementById('wheel-info-model').textContent;
+    newTitle = `Wheel Database - ${currentBrand} ${currentModel}`;
+  }
+
+  document.title = newTitle;
 }

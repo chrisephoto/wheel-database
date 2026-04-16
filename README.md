@@ -10,6 +10,12 @@ If you find this resource helpful and would like to support this project feel fr
 
 ## Changelog
 
+**2026-04-16**
+* JavaScript updates:
+  * Fixed browser history function and navigation
+  * Refactored code (thanks Gemini!)
+  * Added keyboard shortcuts for easier desktop navigation
+
 **2026-04-15**
 * Added:
   * Arrow Enterprise Gewalt Evolution
