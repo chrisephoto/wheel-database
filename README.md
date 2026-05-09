@@ -10,6 +10,17 @@ If you find this resource helpful and would like to support this project feel fr
 
 ## Changelog
 
+**2026-05-09**
+* CSS updates:
+  * Updated CSS styles related to colors, radii, and shadows
+  * Adjusted layout of search filters
+  * Adjusted layout of wheel details
+* JS updates:
+  * Adjusted filters to auto apply on select
+* Added:
+  * Buddy Club DTM P-1
+  * Buddy Club P1 Racing
+
 **2026-04-16**
 * JavaScript updates:
   * Fixed browser history function and navigation

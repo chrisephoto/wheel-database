@@ -102,8 +102,8 @@
               <option value="5x150">5x150</option>
               <option value="6x139.7">6x139.7</option>
             </select>
-            <input type="reset" value="Reset" onclick="resetFilter()"/>
-            <input type="button" value="Apply" onclick="applyFilter()"/>
+            <input type="reset" value="Clear" onclick="resetFilter()"/>
+            <input type="button" value="Search" onclick="applyFilter()"/>
           </form>
         </section>
         <section id="wheel-list" class="grid">
@@ -114,11 +114,6 @@
           </footer>
         </section>
       </div>
-      <section id="wheel-details-spacer">
-        <div id="wheel-details-message">
-          <h2>Select a wheel to view details.</h2>
-        </div>
-      </section>
       <section id="wheel-details">
         <span id="wheel-id" class="hidden"></span>
         <div id="wheel-details-container">
@@ -127,14 +122,15 @@
           </div>
           <div id="wheel-details-header">
             <div id="wheel-details-hero"></div>
+            <div id="wheel-images"></div>
+          </div>
+          <div id="wheel-details-info">
             <div id="wheel-details-text">
               <h1 id="wheel-header-brand"></h1>
               <h2 id="wheel-header-model"></h2>
               <div id="wheel-header-tags"></div>
               <p id="wheel-header-description"></p>
             </div>
-          </div>
-          <div id="wheel-details-info">
             <table id="wheel-info">
               <caption>Information</caption>
               <tbody>
@@ -180,9 +176,9 @@
                 -->
               </tbody>
             </table>
+            <h2 id="wheel-specs-title">Specifications</h2>
             <div id="wheel-specs-container">
               <table id="wheel-specs">
-                <caption>Specifications</caption>
                 <tbody>
                   <tr>
                     <th>Diameter</th>
@@ -194,15 +190,13 @@
                 </tbody>
               </table>
             </div>
-            <h2>Gallery</h2>
-            <div id="wheel-images"></div>
-            <div id="wheel-related-container">
-              <h2>Related Wheels</h2>
-              <div id="wheel-related"></div>
-            </div>
             <div id="wheel-links-container">
               <h2>Additional Resources</h2>
               <div id="wheel-links"></div>
+            </div>
+            <div id="wheel-related-container">
+              <h2>Related Wheels</h2>
+              <div id="wheel-related"></div>
             </div>
           </div>
         </div>

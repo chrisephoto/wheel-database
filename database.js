@@ -223,7 +223,7 @@ dataset =
     "tags": [],
     "colors": [
       "Hyper Silver",
-      "Hyber Black",
+      "Hyper Black",
       "Bronze"
     ],
     "sizes": [
@@ -1815,7 +1815,252 @@ dataset =
       "https://web.archive.org/web/20080313032053fw_/http://www.bs-awh.ne.jp/bim/dhs_081.html"
     ]
   },
-  /* Carving Cismarion Pietra */
+  /* Buddy Club DTM P-1 */
+  {
+    "id": "8V9CIBX3326M",
+    "description": "",
+    "brand": "Buddy Club",
+    "model": "DTM P-1",
+    "manufacturer": "Unverified",
+    "year_start": "1995",
+    "year_end": "Unverified",
+    "origin": "Japan",
+    "construction": [
+      "1 Piece",
+      "Cast"
+    ],
+    "style": "6 Spoke",
+    "tags": [],
+    "colors": [
+      "White",
+      "Silver"
+    ],
+    "sizes": [
+      {"diameter": "15", "width": "6.5", "pcd": "4x100", "offsets": "+30/+43"},
+      {"diameter": "16", "width": "7.0", "pcd": "4x100", "offsets": "+35/+40/+45"},
+      {"diameter": "16", "width": "7.0", "pcd": "4x114.3", "offsets": "+35/+40/+45"},
+      {"diameter": "17", "width": "7.0", "pcd": "4x100", "offsets": "+35/+45"},
+      {"diameter": "17", "width": "7.0", "pcd": "4x114.3", "offsets": "+35/+45"}
+    ],
+    "images": ["01.jpg"],
+    "related": ["ROGUNHQYMLD3","MJBPJCMTHH8Y"],
+    "links": []
+  },
+  /* Buddy Club P1 Racing */
+  {
+    "id": "MJBPJCMTHH8Y",
+    "description": "",
+    "brand": "Buddy Club",
+    "model": "P1 Racing",
+    "manufacturer": "Kosei Aluminum Co., Ltd.",
+    "year_start": "1998",
+    "year_end": "Unverified",
+    "origin": "Japan",
+    "construction": [
+      "1 Piece",
+      "Cast"
+    ],
+    "style": "6 Spoke",
+    "tags": [],
+    "colors": [
+      "Racing White",
+      "Titanium Silver",
+      "Hyper Gold"
+    ],
+    "sizes": [
+      {"diameter": "15", "width": "5.5", "pcd": "4x100", "offsets": "+42"},
+      {"diameter": "15", "width": "7.0", "pcd": "4x100", "offsets": "+27/+38/+45"},
+      {"diameter": "15", "width": "7.0", "pcd": "4x114.3", "offsets": "+38/+45"},
+      {"diameter": "15", "width": "7.0", "pcd": "5x114.3", "offsets": "+38/+45"},
+      {"diameter": "15", "width": "8.0", "pcd": "4x114.3", "offsets": "+12"},
+      {"diameter": "16", "width": "7.0", "pcd": "4x100", "offsets": "+20/+35/+43"},
+      {"diameter": "16", "width": "7.0", "pcd": "4x114.3", "offsets": "+35/+43"},
+      {"diameter": "16", "width": "7.0", "pcd": "5x100", "offsets": "+43"},
+      {"diameter": "16", "width": "7.0", "pcd": "5x114.3", "offsets": "+35/+43"},
+      {"diameter": "16", "width": "7.5", "pcd": "4x114.3", "offsets": "+22/+32"},
+      {"diameter": "16", "width": "7.5", "pcd": "5x114.3", "offsets": "+22/+32"},
+      {"diameter": "16", "width": "8.5", "pcd": "4x114.3", "offsets": "+27/+37"},
+      {"diameter": "16", "width": "8.5", "pcd": "5x114.3", "offsets": "+27/+37"},
+      {"diameter": "17", "width": "7.0", "pcd": "4x100", "offsets": "+25/+35/+43"},
+      {"diameter": "17", "width": "7.0", "pcd": "4x114.3", "offsets": "+35/+43"},
+      {"diameter": "17", "width": "7.0", "pcd": "5x100", "offsets": "+43"},
+      {"diameter": "17", "width": "7.0", "pcd": "5x114.3", "offsets": "+35/+43"},
+      {"diameter": "17", "width": "8.0", "pcd": "4x114.3", "offsets": "+22/+32"},
+      {"diameter": "17", "width": "8.0", "pcd": "5x114.3", "offsets": "+12/+22/+32/+42"},
+      {"diameter": "17", "width": "9.0", "pcd": "4x114.3", "offsets": "+27/+37"},
+      {"diameter": "17", "width": "9.0", "pcd": "5x114.3", "offsets": "+17/+27/+37/+47"}
+    ],
+    "images": ["02.jpg","01.jpg","03.jpg","04.jpg","05.jpg"],
+    "related": ["8V9CIBX3326M","OM2HY2Z7AKZ0"],
+    "links": ["https://web.archive.org/web/20050212071844fw_/http://www.first-inc.co.jp/buddyclub/p1r/p1r_f.html"]
+  },
+  /* Buddy Club P1 Racing II
+  {
+    "id": "OM2HY2Z7AKZ0",
+    "description": "",
+    "brand": "Buddy Club",
+    "model": "P1 Racing II",
+    "manufacturer": "Unverified",
+    "year_start": "2001",
+    "year_end": "Unverified",
+    "origin": "Japan",
+    "construction": [
+      "2 Piece",
+      "Cast",
+      "Welded"
+    ],
+    "style": "6 Spoke",
+    "tags": [],
+    "colors": [
+      "SBC",
+      "Gunmetallic",
+      "Hyper Gold"
+    ],
+    "sizes": [
+      {"diameter": "15", "width": "6.5", "pcd": "4x100", "offsets": "+30/+43"}
+    ],
+    "images": ["01.jpg"],
+    "related": ["MJBPJCMTHH8Y"],
+    "links": ["https://web.archive.org/web/20051119123439fw_/http://www.first-inc.co.jp:80/buddyclub/p1r2/p1r2_f.html"]
+  }, */
+  /* Buddy Club P1 Racing II Plus
+  {
+    "id": "IF7MF9IPDD4V",
+    "description": "",
+    "brand": "Buddy Club",
+    "model": "P1 Racing II Plus",
+    "manufacturer": "Unverified",
+    "year_start": "2003",
+    "year_end": "Unverified",
+    "origin": "Unverified",
+    "construction": [
+      "1 Piece",
+      "Cast"
+    ],
+    "style": "6 Spoke",
+    "tags": [],
+    "colors": [
+      "Gun Metallic",
+      "Hyper Gold"
+    ],
+    "sizes": [
+      {"diameter": "15", "width": "5.5", "pcd": "4x100", "offsets": "+42"},
+      {"diameter": "15", "width": "7.0", "pcd": "4x100", "offsets": "+27/+38/+45"},
+      {"diameter": "15", "width": "7.0", "pcd": "4x114.3", "offsets": "+38/+45"},
+      {"diameter": "15", "width": "7.0", "pcd": "5x114.3", "offsets": "+38/+45"},
+      {"diameter": "15", "width": "8.0", "pcd": "4x114.3", "offsets": "+12"},
+      {"diameter": "16", "width": "7.0", "pcd": "4x100", "offsets": "+20/+35/+43"},
+      {"diameter": "16", "width": "7.0", "pcd": "4x114.3", "offsets": "+35/+43"},
+      {"diameter": "16", "width": "7.0", "pcd": "5x100", "offsets": "+43"},
+      {"diameter": "16", "width": "7.0", "pcd": "5x114.3", "offsets": "+35/+43"},
+      {"diameter": "16", "width": "7.5", "pcd": "4x114.3", "offsets": "+22/+32"},
+      {"diameter": "16", "width": "7.5", "pcd": "5x114.3", "offsets": "+22/+32"},
+      {"diameter": "16", "width": "8.5", "pcd": "4x114.3", "offsets": "+27/+37"},
+      {"diameter": "16", "width": "8.5", "pcd": "5x114.3", "offsets": "+27/+37"},
+      {"diameter": "17", "width": "7.0", "pcd": "4x100", "offsets": "+25/+35/+43"},
+      {"diameter": "17", "width": "7.0", "pcd": "4x114.3", "offsets": "+35/+43"},
+      {"diameter": "17", "width": "7.0", "pcd": "5x100", "offsets": "+43"},
+      {"diameter": "17", "width": "7.0", "pcd": "5x114.3", "offsets": "+35/+43"},
+      {"diameter": "17", "width": "8.0", "pcd": "4x114.3", "offsets": "+22/+32"},
+      {"diameter": "17", "width": "8.0", "pcd": "5x114.3", "offsets": "+12/+22/+32/+42"},
+      {"diameter": "17", "width": "9.0", "pcd": "4x114.3", "offsets": "+27/+37"},
+      {"diameter": "17", "width": "9.0", "pcd": "5x114.3", "offsets": "+17/+27/+37/+47"}
+    ],
+    "images": ["01.jpg"],
+    "related": ["MJBPJCMTHH8Y"],
+    "links": ["https://web.archive.org/web/20040807120807fw_/http://www.buddyclub.us/buddyclub/p1r/p1r_f.html"]
+  }, */
+  /* Buddy Club P1 Racing QF
+  {
+    "id": "HX5F3F58QHGB",
+    "description": "",
+    "brand": "Buddy Club",
+    "model": "P1 Racing QF",
+    "manufacturer": "Tan-ei-sya Co., Ltd.",
+    "year_start": "2000",
+    "year_end": "Unverified",
+    "origin": "Unverified",
+    "construction": [
+      "1 Piece",
+      "Forged"
+    ],
+    "style": "6 Spoke",
+    "tags": [],
+    "colors": [
+      "Racing White",
+      "Gunmetallic"
+    ],
+    "sizes": [
+      {"diameter": "15", "width": "6.5", "pcd": "4x100", "offsets": "+30/+43"}
+    ],
+    "images": ["01.jpg"],
+    "related": ["MJBPJCMTHH8Y"],
+    "links": [
+      "https://web.archive.org/web/20050212090441fw_/http://www.first-inc.co.jp/buddyclub/p1rqf/p1rqf_f.html",
+      "https://web.archive.org/web/20040804071127fw_/http://www.buddyclub.us/buddyclub/p1rqf/p1rqf_f.html"
+    ]
+  }, */
+  /* Buddy Club P1 Racing SF
+  {
+    "id": "ET2CZB14MEC8",
+    "description": "",
+    "brand": "Buddy Club",
+    "model": "P1 Racing SF",
+    "manufacturer": "Unverified",
+    "year_start": "2004",
+    "year_end": "Unverified",
+    "origin": "Unverified",
+    "construction": [
+      "1 Piece",
+      "Cast"
+    ],
+    "style": "6 Spoke",
+    "tags": [],
+    "colors": [
+      "Racing White",
+      "Gunmetallic",
+      "Matte Black"
+    ],
+    "sizes": [
+      {"diameter": "15", "width": "6.5", "pcd": "4x100", "offsets": "+30/+43"}
+    ],
+    "images": ["01.jpg"],
+    "related": ["MJBPJCMTHH8Y"],
+    "links": [
+      "https://web.archive.org/web/20040804091939fw_/http://www.buddyclub.us/buddyclub/P1%20RACING%20SF/p1r_f.html",
+      "https://web.archive.org/web/20080309144842fw_/http://www.buddyclub.us/buddyclub/P1%20RACING%20SF/p1r.html"
+    ]
+  }, */
+  /* Buddy Club P1 Racing SF Challenge
+  {
+    "id": "1YR5YS18XWNE",
+    "description": "",
+    "brand": "Buddy Club",
+    "model": "P1 Racing SF Challenge",
+    "manufacturer": "Unverified",
+    "year_start": "2008",
+    "year_end": "Unverified",
+    "origin": "Unverified",
+    "construction": [
+      "1 Piece",
+      "Cast"
+    ],
+    "style": "6 Spoke",
+    "tags": [],
+    "colors": [
+      "White/Red",
+      "White/Blue",
+      "Black/Red",
+      "Black/Yellow"
+    ],
+    "sizes": [
+      {"diameter": "15", "width": "6.5", "pcd": "4x100", "offsets": "+30/+43"}
+    ],
+    "images": ["01.jpg"],
+    "related": ["MJBPJCMTHH8Y"],
+    "links": ["https://web.archive.org/web/20100428110407fw_/http://www.buddyclub.us:80/online-product-catalog/category/44/wheels/p1-racing-sf-challenge"]
+  }, */
+  /* Carving Cismarino Pietra */
   {
     "id": "6NAU5RW9F7TQ",
     "description": "Carving released their CisMarino line with the goal of adding an Italian style to Japanese subcompacts like the Toyota Vitz, Honda Capa, and Daihatsu Storia. In addition to their forged aluminum wheels, Carving also released aero parts for cars in this segment.",
@@ -1851,7 +2096,7 @@ dataset =
       "http://web.archive.org/web/20001109195400fw_/http://www.carving.co.jp/cis/cismarino_vitz.htm"
     ]
   },
-  /* Carving Cismarion Questa */
+  /* Carving Cismarino Questa */
   {
     "id": "QPTIDI3MCNQS",
     "description": "Carving released their CisMarino line with the goal of adding an Italian style to Japanese subcompacts like the Toyota Vitz, Honda Capa, and Daihatsu Storia. In addition to their forged aluminum wheels, Carving also released aero parts for cars in this segment.",
@@ -1885,6 +2130,160 @@ dataset =
       "http://web.archive.org/web/20001109195400fw_/http://www.carving.co.jp/cis/cismarino_vitz.htm"
     ]
   },
+  /* Cawaii Decor Decor Cannele
+  {
+    "id": "NWNEWCBVIUKN",
+    "description": "The Cawaii Decor Cannele drew its design cues from the grooved texture of its namesake — a French pastry. The sharp lines were balanced with a palette of soft-tone finishes and center caps, designed to offer a sophisticated yet playful aesthetic.",
+    "brand": "Cawaii Decor",
+    "model": "Decor Cannele",
+    "manufacturer": "Zhejiang Jujiu Hub Co., Ltd.",
+    "year_start": "2021",
+    "year_end": "Unverified",
+    "origin": "China",
+    "construction": [
+      "1 Piece",
+      "Cast"
+    ],
+    "style": "Split 5 Spoke",
+    "tags": [],
+    "colors": [
+      "Lumiere White",
+      "Univers Black",
+      "Corail Pink",
+      "Lamer Blue"
+    ],
+    "sizes": [
+      {"diameter": "14", "width": "4.5", "pcd": "4x100", "offsets": "+45"}
+    ],
+    "images": ["01.jpg","02.jpg","03.jpg","04.jpg"],
+    "related": [],
+    "links": [
+      "https://web.archive.org/web/20160209081634fw_/www.kyoho-corp.jp/products_a/cawaiidecor/"
+    ]
+  }, */
+  /* Cawaii Decor Decor Cherry Blossom
+  {
+    "id": "SQ6L263BDO24",
+    "description": "Inspired by the desire to create &quot;wheels we would want to drive on ourselves,&quot; the women of Kyoho Corporation launched the Cawaii Decor brand in 2015. The brand launched with three models specifically targeting kei cars — where female users then accounted for two-thirds of the market.",
+    "brand": "Cawaii Decor",
+    "model": "Decor Cherry Blossom",
+    "manufacturer": "Enkei Co., Ltd.",
+    "year_start": "2015",
+    "year_end": "Unverified",
+    "origin": "Japan",
+    "construction": [
+      "1 Piece",
+      "Cast"
+    ],
+    "style": "Split 5 Spoke",
+    "tags": [],
+    "colors": [
+      "Crystal White",
+      "Milk Tea",
+      "Mousse Pink"
+    ],
+    "sizes": [
+      {"diameter": "14", "width": "4.5", "pcd": "4x100", "offsets": "+45"},
+      {"diameter": "15", "width": "4.5", "pcd": "4x100", "offsets": "+45"}
+    ],
+    "images": ["01.jpg","02.jpg","03.jpg","04.jpg"],
+    "related": ["L19J6I9BTLJF","P7HC1PQ4OR18"],
+    "links": [
+      "https://web.archive.org/web/20160209081634fw_/www.kyoho-corp.jp/products_a/cawaiidecor/"
+    ]
+  }, */
+  /* Cawaii Decor Decor Cosmos
+  {
+    "id": "L19J6I9BTLJF",
+    "description": "Inspired by the desire to create &quot;wheels we would want to drive on ourselves,&quot; the women of Kyoho Corporation launched the Cawaii Decor brand in 2015. The brand launched with three models specifically targeting kei cars — where female users then accounted for two-thirds of the market.",
+    "brand": "Cawaii Decor",
+    "model": "Decor Cosmos",
+    "manufacturer": "Enkei Co., Ltd.",
+    "year_start": "2015",
+    "year_end": "Unverified",
+    "origin": "Japan",
+    "construction": [
+      "1 Piece",
+      "Cast"
+    ],
+    "style": "Split 7 Spoke",
+    "tags": [],
+    "colors": [
+      "Crystal White",
+      "Milk Tea",
+      "Mousse Pink"
+    ],
+    "sizes": [
+      {"diameter": "14", "width": "4.5", "pcd": "4x100", "offsets": "+45"},
+      {"diameter": "15", "width": "4.5", "pcd": "4x100", "offsets": "+45"}
+    ],
+    "images": ["01.jpg","02.jpg","03.jpg","04.jpg"],
+    "related": ["SQ6L263BDO24","P7HC1PQ4OR18"],
+    "links": [
+      "https://web.archive.org/web/20160209081634fw_/www.kyoho-corp.jp/products_a/cawaiidecor/"
+    ]
+  }, */
+  /* Cawaii Decor Decor Dahlia
+  {
+    "id": "P7HC1PQ4OR18",
+    "description": "Inspired by the desire to create &quot;wheels we would want to drive on ourselves,&quot; the women of Kyoho Corporation launched the Cawaii Decor brand in 2015. The brand launched with three models specifically targeting kei cars — where female users then accounted for two-thirds of the market.",
+    "brand": "Cawaii Decor",
+    "model": "Decor Dahlia",
+    "manufacturer": "Enkei Co., Ltd.",
+    "year_start": "2015",
+    "year_end": "Unverified",
+    "origin": "Japan",
+    "construction": [
+      "1 Piece",
+      "Cast"
+    ],
+    "style": "Split 10 Spoke",
+    "tags": [],
+    "colors": [
+      "Crystal White",
+      "Milk Tea",
+      "Mousse Pink"
+    ],
+    "sizes": [
+      {"diameter": "14", "width": "4.5", "pcd": "4x100", "offsets": "+45"},
+      {"diameter": "15", "width": "4.5", "pcd": "4x100", "offsets": "+45"}
+    ],
+    "images": ["01.jpg","02.jpg","03.jpg","04.jpg"],
+    "related": ["SQ6L263BDO24","L19J6I9BTLJF"],
+    "links": [
+      "https://web.archive.org/web/20160209081634fw_/www.kyoho-corp.jp/products_a/cawaiidecor/"
+    ]
+  }, */
+  /* Cawaii Decor Decor Nature
+  {
+    "id": "5NVR31HWD85D",
+    "description": "Kyoho Corporation expanded its Cawaii Decor brand into the outdoor market with the Decor Nature. While it shares its design with the PPX MIL:8, it distinguishes itself with a fresh palette of colors and exclusive center cap designs.",
+    "brand": "Cawaii Decor",
+    "model": "Decor Nature",
+    "manufacturer": "Zhongnan Aluminum Wheel Co., Ltd.",
+    "year_start": "2024",
+    "year_end": "Unverified",
+    "origin": "China",
+    "construction": [
+      "1 Piece",
+      "Cast"
+    ],
+    "style": "Dish",
+    "tags": [],
+    "colors": [
+      "Matte White",
+      "Matte Dark Bronze"
+    ],
+    "sizes": [
+      {"diameter": "14", "width": "4.5", "pcd": "4x100", "offsets": "+45"},
+      {"diameter": "15", "width": "4.5", "pcd": "4x100", "offsets": "+45"}
+    ],
+    "images": ["01.jpg","02.jpg","03.jpg","04.jpg"],
+    "related": [],
+    "links": [
+      "https://web.archive.org/web/20160209081634fw_/www.kyoho-corp.jp/products_a/cawaiidecor/"
+    ]
+  }, */
   /* Clear Ways TT-10F (2010 Model) */
   {
     "id": "VELHUS7N4YV4",
@@ -2031,6 +2430,35 @@ dataset =
       "https://web.archive.org/web/20210423030816/https://autobacs-asm.com/original2008/original_sub.cgi?PARTSNO=TM007DB"
     ]
   },
+  /* Cool's P-1
+  {
+    "id": "ROGUNHQYMLD3",
+    "description": "A chrome plated variant of the original Buddy Club DTM P-1 produced by Kustom Shop Cool's.",
+    "brand": "Cool's",
+    "model": "P-1",
+    "manufacturer": "Unverified",
+    "year_start": "1998",
+    "year_end": "Unverified",
+    "origin": "Japan",
+    "construction": [
+      "1 Piece",
+      "Cast"
+    ],
+    "style": "6 Spoke",
+    "tags": [],
+    "colors": [
+      "Chrome"
+    ],
+    "sizes": [
+      {"diameter": "16", "width": "7.0", "pcd": "4x100", "offsets": "+35/+40"},
+    ],
+    "images": ["01.jpg"],
+    "related": ["8V9CIBX3326M"],
+    "links": [
+      "https://web.archive.org/web/20040301231244fw_/http://www.jcools.com:80/funkycools/cools_parts/wheel.html",
+      "https://web.archive.org/web/20010308093321fw_/http://www.jcools.com/kustom_cools_parts/kustom_cools_home.htm"
+    ]
+  }, */
   /* Crimson Racing Sparco Viper R */
   {
     "id": "3RT7RU3APYPG",
@@ -2848,7 +3276,7 @@ dataset =
     "description": "Manufactured by Futek and sold by a number of companies, Uras offered this cast wheel as the NS-02 in sizes suitable for S-chassis Nissans.",
     "brand": "Uras",
     "model": "NS-02",
-    "manufacturer": "Futex Alloy (Changshu) Co., Ltd",
+    "manufacturer": "Futex Alloy Co., Ltd",
     "year_start": "2007",
     "year_end": "2007",
     "origin": "China",

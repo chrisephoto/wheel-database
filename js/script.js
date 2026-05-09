@@ -2,6 +2,12 @@ window.onload = function() {
   // Initialize event listeners
   document.getElementById('wheel-details-close').addEventListener('click', () => closeDetails(false));
   document.getElementById('theme-toggle').addEventListener('click', toggleTheme);
+  document.getElementById('input-search').addEventListener('change', applyFilter);
+  document.getElementById('input-brand').addEventListener('change', applyFilter);
+  document.getElementById('input-manufacturer').addEventListener('change', applyFilter);
+  document.getElementById('input-style').addEventListener('change', applyFilter);
+  document.getElementById('input-diameter').addEventListener('change', applyFilter);
+  document.getElementById('input-pcd').addEventListener('change', applyFilter);
   document.addEventListener('keydown', handleKeyboardShortcuts);
   window.addEventListener('popstate', () => updatePage(true));
 
@@ -235,6 +241,9 @@ function populateDetails(i, skipHistory = false) {
 
   // Load gallery images
   const imagesTarget = document.getElementById('wheel-images');
+  const minSlots = 12;
+
+  // 1. Append all actual images
   wheel.images.forEach(imgName => {
     const link = document.createElement('a');
     link.href = `images/${wheel.id}/${imgName}`;
@@ -246,6 +255,16 @@ function populateDetails(i, skipHistory = false) {
     link.appendChild(image);
     imagesTarget.appendChild(link);
   });
+
+  // 2. Calculate how many placeholders are needed
+  const placeholdersNeeded = minSlots - wheel.images.length;
+
+  // 3. Append placeholder divs if we have fewer than 12 images
+  for (let i = 0; i < placeholdersNeeded; i++) {
+    const placeholder = document.createElement('div');
+    placeholder.classList.add('placeholder'); // Use classList.add for safety
+    imagesTarget.appendChild(placeholder);
+  }
 
   // Load related wheels
   const relatedContainer = document.getElementById('wheel-related-container');
