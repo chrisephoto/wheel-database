@@ -3,20 +3,20 @@
   "name": "Wheel Database",
   "icons": [
     {
-      "src": "/icons/icon-192.png",
+      "src": "icons/icon-192.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "/icons/icon-512.png",
+      "src": "icons/icon-512.png",
       "type": "image/png",
       "sizes": "512x512"
     }
   ],
   "start_url": "/",
-  "background_color": "#000000",
+  "background_color": "#0e0f11",
   "display": "standalone",
   "scope": "/",
-  "theme_color": "#e53935",
+  "theme_color": "#0e0f11",
   "description": "Wheel Database"
 }
