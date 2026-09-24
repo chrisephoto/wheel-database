@@ -10,7 +10,10 @@ If you find this resource helpful and would like to support this project feel fr
 
 ## Changelog
 
-**2026-09-27**
+**2026-09-24**
+* Hotfixes
+
+**2026-09-24**
 * Added:
   * 5Zigen ProRacer GN+ Forged
   * Aimgain GIIM

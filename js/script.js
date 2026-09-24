@@ -428,6 +428,9 @@ function resetFilter(skipHistory = false) {
 }
 
 function searchByTag(inputId, value) {
+  // Clear current filters
+  document.getElementById('wheel-filters-form').reset();
+
   // Set the value of the targeted search field
   document.getElementById(inputId).value = value;
   
