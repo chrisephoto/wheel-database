@@ -10,6 +10,33 @@ If you find this resource helpful and would like to support this project feel fr
 
 ## Changelog
 
+**2026-09-27**
+* Added:
+  * 5Zigen ProRacer GN+ Forged
+  * Aimgain GIIM
+  * Aimgain GIIM-R (needs images, specs)
+  * Buddy Club P1 Racing II
+  * Buddy Club P1 Racing II Plus
+  * Buddy Club P1 Racing QF
+  * Buddy Club P1 Racing SF (needs images, specs)
+  * Buddy Club P1 Racing SF Challenge (needs images, specs)
+  * Cawaii Decor Decor Cannele (needs images)
+  * Cawaii Decor Decor Cherry Blossom (needs images)
+  * Cawaii Decor Decor Cosmos (needs images)
+  * Cawaii Decor Decor Dahlia (needs images)
+  * Cawaii Decor Decor Nature
+  * Cool's P-1 (needs images)
+  * Ram's PR-6 (needs images)
+* HTML/CSS updates:
+  * Added tool tips to various buttons in the interface
+  * Added construction (1/2/3 piece, cast/forged) filter
+  * Added favorites only filter
+  * Made wheel details tags clickable search filters
+* JS updates:
+  * Added function and button to display details of a wheel chosen at random
+  * Added function and buttons to save and view user's favorite wheels
+  * Moved user preferences from being stored as cookies to local storage
+
 **2026-05-09**
 * CSS updates:
   * Updated CSS styles related to colors, radii, and shadows

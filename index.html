@@ -4,15 +4,20 @@
     <title>Wheel Database</title>
     <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
     <link href="manifest.json" rel="manifest" type="application/manifest+json" />
-    <script src="database.js" type="text/javascript"></script>
     <script src="js/script.js" type="text/javascript"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
   </head>
   <body class="theme-light">
     <header>
+      <img id="page-logo" src="icons/icon-192.png" alt="Logo" />
       <h1 id="page-title">Wheel Database</h1>
-      <span id="theme-toggle" class="material-symbols-rounded">dark_mode</span>
+      <a href="//github.com/chrisephoto/wheel-database" target="_blank">
+        <span id="button-code" class="material-symbols-rounded" tooltip="View on Github">code</span>
+      </a>
+      <span id="button-favorite" class="material-symbols-rounded" tooltip="Favorite Wheels">favorite</span>
+      <span id="button-random" class="material-symbols-rounded" tooltip="Random Wheel">shuffle</span>
+      <span id="button-theme" class="material-symbols-rounded" tooltip="Change Theme">dark_mode</span>
     </header>
   
     <main>
@@ -35,46 +40,47 @@
               <option value="" selected>All Styles</option>
               <option value="Aero">Aero</option>
               <option value="Dish">Dish</option>
+              <option value="Fin">Fin</option>
               <option value="Mesh">Mesh</option>
-              <option value="3 Spoke">3 Spoke</option>
-              <option value="4 Spoke">4 Spoke</option>
-              <option value="5 Spoke">5 Spoke</option>
-              <option value="6 Spoke">6 Spoke</option>
-              <option value="7 Spoke">7 Spoke</option>
-              <option value="8 Spoke">8 Spoke</option>
-              <option value="9 Spoke">9 Spoke</option>
-              <option value="10 Spoke">10 Spoke</option>
-              <option value="11 Spoke">11 Spoke</option>
-              <option value="12 Spoke">12 Spoke</option>
-              <option value="15 Spoke">15 Spoke</option>
-              <option value="16 Spoke">16 Spoke</option>
-              <option value="Split 3 Spoke">Split 3 Spoke</option>
-              <option value="Split 4 Spoke">Split 4 Spoke</option>
-              <option value="Split 5 Spoke">Split 5 Spoke</option>
-              <option value="Split 6 Spoke">Split 6 Spoke</option>
-              <option value="Split 7 Spoke">Split 7 Spoke</option>
-              <option value="Split 8 Spoke">Split 8 Spoke</option>
-              <option value="Split 9 Spoke">Split 9 Spoke</option>
-              <option value="Split 10 Spoke">Split 10 Spoke</option>
+              <option value="Spiral">Spiral</option>
+              <option value="3 Split-Spoke">Split-Spoke, 3</option>
+              <option value="4 Split-Spoke">Split-Spoke, 4</option>
+              <option value="5 Split-Spoke">Split-Spoke, 5</option>
+              <option value="6 Split-Spoke">Split-Spoke, 6</option>
+              <option value="7 Split-Spoke">Split-Spoke, 7</option>
+              <option value="8 Split-Spoke">Split-Spoke, 8</option>
+              <option value="9 Split-Spoke">Split-Spoke, 9</option>
+              <option value="10 Split-Spoke">Split-Spoke, 10</option>
+              <option value="3 Spoke">Spoke, 3</option>
+              <option value="4 Spoke">Spoke, 4</option>
+              <option value="5 Spoke">Spoke, 5</option>
+              <option value="6 Spoke">Spoke, 6</option>
+              <option value="7 Spoke">Spoke, 7</option>
+              <option value="8 Spoke">Spoke, 8</option>
+              <option value="9 Spoke">Spoke, 9</option>
+              <option value="10 Spoke">Spoke, 10</option>
+              <option value="11 Spoke">Spoke, 11</option>
+              <option value="12 Spoke">Spoke, 12</option>
+              <option value="15 Spoke">Spoke, 15</option>
+              <option value="16 Spoke">Spoke, 16</option>
             </select>
-            <!--
             <label for="input-construction">Construction</label>
             <select id="input-construction">
-              <option value="" selected>All Construction Methods</option>
+              <option value="" selected>All Constructions</option>
               <option value="Unverified">Unverified</option>
-              <option value="1 Piece - Unverified">1 Piece - Unverified</option>
-              <option value="1 Piece - Cast">1 Piece - Cast</option>
-              <option value="1 Piece - Forged">1 Piece - Forged</option>
-              <option value="2 Piece - Unverified">2 Piece - Unverified</option>
-              <option value="2 Piece - Cast">2 Piece - Cast</option>
-              <option value="2 Piece - Forged">2 Piece - Forged</option>
-              <option value="2 Piece - Welded">2 Piece - Welded</option>
-              <option value="3 Piece - Unverified">3 Piece - Unverified</option>
-              <option value="3 Piece - Cast">3 Piece - Cast</option>
-              <option value="3 Piece - Forged">3 Piece - Forged</option>
-              <option value="3 Piece - Welded">3 Piece - Welded</option>
+              <option value="1 Piece">1 Piece</option>
+              <option value="2 Piece">2 Piece</option>
+              <option value="3 Piece">3 Piece</option>
+              <option value="Cast">Cast</option>
+              <option value="Semi Solid Forged">Semi Solid Forged</option>
+              <option value="Forged">Forged</option>
+              <option value="Welded">Welded</option>
+              <option value="Overhead Mount">Overhead Mount</option>
+              <option value="Sandwich Mount">Sandwich Mount</option>
+              <option value="Underhead Mount">Underhead Mount</option>
             </select>
-            -->
+            <label for="input-favorite">Favorite</label>
+            <input id="input-favorite" type="checkbox" />
             <label for="input-diameter">Diameter</label>
             <select id="input-diameter">
               <option value="" selected>All Diameters</option>
@@ -112,7 +118,6 @@
           <div></div>
           <footer>
             <div id="display-count"></div>
-            <div id="copyright">Made by <a href="//www.threads.net/@chrisephoto">@chrisphoto</a> | <a href="//github.com/chrisephoto/wheel-database">View on Github</a></div>
           </footer>
         </section>
       </div>
@@ -130,6 +135,7 @@
             <div id="wheel-details-text">
               <h1 id="wheel-header-brand"></h1>
               <h2 id="wheel-header-model"></h2>
+              <div id="wheel-header-favorite"></div>
               <div id="wheel-header-tags"></div>
               <p id="wheel-header-description"></p>
             </div>

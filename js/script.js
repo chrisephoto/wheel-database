@@ -1,40 +1,49 @@
-window.onload = function() {
+// Initialize empty global dataset
+let dataset = [];
+window.onload = async function() {
+  try {
+    // Fetch the JSON file
+    const response = await fetch('dataset.json');
+    if (!response.ok) {
+      throw new Error(`HTTP error! Status: ${response.status}`);
+    }
+    dataset = await response.json();
+  } catch (error) {
+    console.error('Failed to load wheel dataset:', error);
+    document.getElementById("display-count").innerHTML = "Error loading database.";
+    return; // Stop initialization if data fails to load
+  }
+
   // Initialize event listeners
   document.getElementById('wheel-details-close').addEventListener('click', () => closeDetails(false));
-  document.getElementById('theme-toggle').addEventListener('click', toggleTheme);
-  document.getElementById('input-search').addEventListener('change', applyFilter);
-  document.getElementById('input-brand').addEventListener('change', applyFilter);
-  document.getElementById('input-manufacturer').addEventListener('change', applyFilter);
-  document.getElementById('input-style').addEventListener('change', applyFilter);
-  document.getElementById('input-diameter').addEventListener('change', applyFilter);
-  document.getElementById('input-pcd').addEventListener('change', applyFilter);
+  document.getElementById('button-favorite').addEventListener('click', showFavoritesOnly);
+  document.getElementById('button-random').addEventListener('click', randomWheel);
+  document.getElementById('button-theme').addEventListener('click', toggleTheme);
+  document.getElementById('input-search').addEventListener('change', () => applyFilter());
+  document.getElementById('input-brand').addEventListener('change', () => applyFilter());
+  document.getElementById('input-manufacturer').addEventListener('change', () => applyFilter());
+  document.getElementById('input-construction').addEventListener('change', () => applyFilter());
+  document.getElementById('input-style').addEventListener('change', () => applyFilter());
+  document.getElementById('input-diameter').addEventListener('change', () => applyFilter());
+  document.getElementById('input-pcd').addEventListener('change', () => applyFilter());
+  document.getElementById('input-favorite').addEventListener('change', () => applyFilter());
   document.addEventListener('keydown', handleKeyboardShortcuts);
   window.addEventListener('popstate', () => updatePage(true));
 
   // Apply user preferences, populate UI, and load initial state
-  applyCookies();
+  applyPrefs();
   populateFilters();
   updatePage(); // updatePage handles the initial filtering, grid population, and counting
 };
 
-// ==========================================
-// Core Functions
-// ==========================================
-
-function applyCookies() {
-  // Helper to extract a specific cookie by name
-  function getCookie(name) {
-    const value = `; ${document.cookie}`;
-    const parts = value.split(`; ${name}=`);
-    if (parts.length === 2) return parts.pop().split(';').shift();
-  }
-
-  // Apply the theme if a cookie exists
-  const theme = getCookie('theme');
+function applyPrefs() {
+  // Apply the theme if a preference exists
+  const theme = localStorage.getItem("theme");
+  
   if (theme === 'theme-dark') {
     document.body.classList.add('theme-dark');
     document.body.classList.remove('theme-light');
-    document.querySelector('#theme-toggle').innerHTML = 'light_mode';
+    document.querySelector('#button-theme').innerHTML = 'light_mode';
   }
 }
 
@@ -43,9 +52,13 @@ function applyFilter(skipHistory = false) {
   const filterSearch = document.getElementById('input-search').value.toUpperCase();
   const filterBrand = document.getElementById('input-brand').value;
   const filterManufacturer = document.getElementById('input-manufacturer').value;
+  const filterConstruction = document.getElementById('input-construction').value;
   const filterStyle = document.getElementById('input-style').value;
   const filterDiameter = document.getElementById('input-diameter').value;
   const filterPCD = document.getElementById('input-pcd').value;
+  const filterFavorite = document.getElementById('input-favorite').checked;
+
+  const favorites = getFavorites(); 
     
   // Filter the dataset using modern array methods
   const filteredIndexes = dataset.reduce((acc, wheel, i) => {
@@ -62,14 +75,18 @@ function applyFilter(skipHistory = false) {
     // Check exact matches for dropdowns
     const matchBrand = !filterBrand || wheel.brand === filterBrand;
     const matchManufacturer = !filterManufacturer || wheel.manufacturer === filterManufacturer;
+    const matchConstruction = !filterConstruction || wheel.construction.includes(filterConstruction);
     const matchStyle = !filterStyle || wheel.style === filterStyle;
 
     // Check sizes array for diameter and PCD matches
     const matchDiameter = !filterDiameter || wheel.sizes.some(size => size.diameter == filterDiameter);
     const matchPCD = !filterPCD || wheel.sizes.some(size => size.pcd == filterPCD);
     
+    // Check if the wheel is in the favorites array (only if the checkbox is checked)
+    const matchFavorite = !filterFavorite || favorites.includes(wheel.id);
+    
     // If all conditions are met, save the index
-    if (matchSearch && matchBrand && matchManufacturer && matchStyle && matchDiameter && matchPCD) {
+    if (matchSearch && matchBrand && matchManufacturer && matchConstruction && matchStyle && matchDiameter && matchPCD && matchFavorite) {
       acc.push(i);
     }
     return acc;
@@ -79,6 +96,10 @@ function applyFilter(skipHistory = false) {
   const listContainer = document.querySelector('#wheel-list > div');
   listContainer.innerHTML = '';
   filteredIndexes.forEach(index => populateGrid(index, listContainer));
+
+  // Scroll to top of results
+  document.querySelector('main').scrollTo(0,0);
+  document.getElementById('wheel-select').scrollTo(0,0);
 
   updateCount(filteredIndexes.length);
 
@@ -101,6 +122,11 @@ function getDetails(id) {
     populateDetails(index, false);
   }
   document.getElementById('wheel-details').scrollTo(0,0);
+}
+
+function getFavorites() {
+  const storedFavs = localStorage.getItem("favorites");
+  return storedFavs ? JSON.parse(storedFavs) : [];
 }
 
 function handleKeyboardShortcuts(event) {
@@ -205,12 +231,39 @@ function populateDetails(i, skipHistory = false) {
   document.getElementById('wheel-header-brand').innerHTML = wheel.brand;
   document.getElementById('wheel-header-model').innerHTML = wheel.model;
   
-  // Load tags and construction
-  let tagsHTML = wheel.construction.map(c => `<span>${c}</span>\n`).join('');
-  tagsHTML += `<span>${wheel.style}</span>\n`;
-  tagsHTML += wheel.tags.map(t => `<span>${t}</span>\n`).join('');
+  // Load favorite button
+  const favorites = getFavorites();
+  const isFavorite = favorites.includes(wheel.id);
+  const favClass = isFavorite ? 'material-symbols-favorite-true' : 'material-symbols-favorite-false';
+  const favClass2 = isFavorite ? 'btn-primary' : 'btn-secondary';
+  
+  document.getElementById('wheel-header-favorite').innerHTML = `
+    <span id="wheel-header-favorite-button" class="${favClass2}">
+      <span style="margin-top:2px;" class="favorite-icon-btn material-symbols-rounded ${favClass}" data-wheel-id="${wheel.id}" onclick="toggleFavorite('${wheel.id}', event)">favorite</span>
+      <span class="favorite-text-btn" data-wheel-id="${wheel.id}" onclick="toggleFavorite('${wheel.id}', event)">Favorite</span>
+    </span>
+  `;
+
+  // Load tags
+  let tagsHTML = `<span class="clickable-tag" onclick="searchByTag('input-brand', '${wheel.brand}')">${wheel.brand}</span>\n`;
+  
+  if (wheel.manufacturer && wheel.manufacturer !== 'Unverified') {
+    tagsHTML += `<span class="clickable-tag" onclick="searchByTag('input-manufacturer', '${wheel.manufacturer}')">${wheel.manufacturer}</span>\n`;
+  }
+
+  tagsHTML += wheel.construction.map(c => 
+    `<span class="clickable-tag" onclick="searchByTag('input-construction', '${c}')">${c}</span>\n`
+  ).join('');
+  
+  tagsHTML += `<span class="clickable-tag" onclick="searchByTag('input-style', '${wheel.style}')">${wheel.style}</span>\n`;
+  
+  tagsHTML += wheel.tags.map(t => 
+    `<span class="clickable-tag" onclick="searchByTag('input-search', '${t}')">${t}</span>\n`
+  ).join('');
+  
   document.getElementById('wheel-header-tags').innerHTML = tagsHTML;
 
+  // Populate details fields
   document.getElementById('wheel-header-description').innerHTML = wheel.description;
   document.getElementById('wheel-info-brand').innerHTML = `<span>${wheel.brand}</span>`;
   document.getElementById('wheel-info-model').innerHTML = wheel.model;
@@ -337,8 +390,17 @@ function populateGrid(i, container = document.querySelector('#wheel-list > div')
   figure.id = wheel.id;
   figure.onclick = () => populateDetails(i, false);
   
-  // Use template literals for cleaner DOM injection
+  // Check the current favorite status to render the correct class on load
+  const favorites = getFavorites();
+  const isFavorite = favorites.includes(wheel.id);
+  const favClass = isFavorite ? 'material-symbols-favorite-true' : 'material-symbols-favorite-false';
+  const tooltipText = isFavorite ? 'Remove favorite' : 'Add favorite';
+  
+  // Note: Removed id="button-code" from the span. 
+  // IDs must be unique, so looping them in a grid creates invalid HTML. 
+  // Replaced with a class if you need to target it via CSS.
   figure.innerHTML = `
+    <span class="favorite-btn material-symbols-rounded ${favClass}" data-wheel-id="${wheel.id}" tooltip="${tooltipText}" onclick="toggleFavorite('${wheel.id}', event)">favorite</span>
     <img src="images/${wheel.id}/00.png" alt="${wheel.brand} ${wheel.model}">
     <figcaption>
       <p>${wheel.brand}</p>
@@ -348,6 +410,16 @@ function populateGrid(i, container = document.querySelector('#wheel-list > div')
   container.appendChild(figure);
 }
 
+function randomWheel() {
+    min = 0;
+    max = dataset.length;
+    const minCeiled = Math.ceil(min);
+    const maxFloored = Math.floor(max);
+    // The maximum is inclusive and the minimum is inclusive
+    i = Math.floor(Math.random() * (maxFloored - minCeiled + 1) + minCeiled);
+    populateDetails(i)
+}
+
 function resetFilter(skipHistory = false) {
   // Reset the form inputs
   document.getElementById('wheel-filters-form').reset();
@@ -355,20 +427,98 @@ function resetFilter(skipHistory = false) {
   applyFilter(skipHistory);
 }
 
+function searchByTag(inputId, value) {
+  // Set the value of the targeted search field
+  document.getElementById(inputId).value = value;
+  
+  // Apply the filter to update the grid
+  applyFilter();
+  
+  // Close the details panel so the user can see the filtered results
+  closeDetails();
+}
+
+function showFavoritesOnly() {
+  // Clear all text and select inputs
+  document.getElementById('input-search').value = '';
+  document.getElementById('input-brand').value = '';
+  document.getElementById('input-manufacturer').value = '';
+  document.getElementById('input-style').value = '';
+  document.getElementById('input-diameter').value = '';
+  document.getElementById('input-pcd').value = '';
+  
+  // Check the favorites only checkbox
+  document.getElementById('input-favorite').checked = true;
+  
+  // Trigger the search
+  applyFilter();
+
+  // Scroll to top of results
+  document.querySelector('main').scrollTo(0,0);
+  document.getElementById('wheel-select').scrollTo(0,0);
+
+  // Close the wheel details pane if open
+  closeDetails();
+}
+
+function toggleFavorite(wheelId, event) {
+  event.stopPropagation(); 
+  const favorites = getFavorites();
+  const index = favorites.indexOf(wheelId);
+  const isNowFavorite = index === -1;
+
+  if (isNowFavorite) {
+    favorites.push(wheelId);
+  } else {
+    favorites.splice(index, 1);
+  }
+
+  localStorage.setItem("favorites", JSON.stringify(favorites));
+
+  // Update the heart icons in the background grid
+  const gridIcons = document.querySelectorAll(`.favorite-btn[data-wheel-id="${wheelId}"]`);
+  gridIcons.forEach(icon => {
+    if (isNowFavorite) {
+      icon.classList.replace('material-symbols-favorite-false', 'material-symbols-favorite-true');
+      icon.setAttribute('tooltip', 'Remove favorite');
+    } else {
+      icon.classList.replace('material-symbols-favorite-true', 'material-symbols-favorite-false');
+      icon.setAttribute('tooltip', 'Add favorite');
+    }
+  });
+
+  // Update the text label in the details panel
+  if (isNowFavorite) {
+    document.getElementById('wheel-header-favorite-button').classList.replace('btn-secondary', 'btn-primary');
+  } else {
+    document.getElementById('wheel-header-favorite-button').classList.replace('btn-primary', 'btn-secondary');
+  }
+
+  // Update the heart icon next to the text in the details panel
+  const detailIcons = document.querySelectorAll(`.favorite-icon-btn[data-wheel-id="${wheelId}"]`);
+  detailIcons.forEach(icon => {
+    if (isNowFavorite) {
+      icon.classList.replace('material-symbols-favorite-false', 'material-symbols-favorite-true');
+    } else {
+      icon.classList.replace('material-symbols-favorite-true', 'material-symbols-favorite-false');
+    }
+  });
+}
+
 function toggleTheme() {
   const bodyClass = document.body.classList;
-  const toggleBtn = document.getElementById('theme-toggle');
+  const toggleBtn = document.getElementById('button-theme');
 
   if (bodyClass.contains('theme-light') || !bodyClass.contains('theme-dark')) {
     bodyClass.remove('theme-light');
     bodyClass.add('theme-dark');
     toggleBtn.innerHTML = 'light_mode';
-    document.cookie = 'theme=theme-dark; path=/';
+    localStorage.setItem("theme", "theme-dark");
   } else {
     bodyClass.remove('theme-dark');
     bodyClass.add('theme-light');
     toggleBtn.innerHTML = 'dark_mode';
-    document.cookie = 'theme=theme-light; path=/';
+    localStorage.setItem("theme", "theme-light");
   }
 }
 
@@ -384,17 +534,18 @@ function updateCount(currentCount) {
 function updateHistory() {
   const queryString = new URL(window.location);
 
-  // Map input IDs to their URL parameter keys
+  // Map input IDs to their URL parameter keys (removed input-favorite)
   const paramsMap = {
     'input-search': 'q',
     'input-brand': 'b',
     'input-manufacturer': 'm',
+    'input-construction': 'c',
     'input-style': 's',
     'input-diameter': 'd',
     'input-pcd': 'p'
   };
 
-  // Loop through inputs and dynamically update URL parameters
+  // Loop through text and select inputs and dynamically update URL parameters
   Object.entries(paramsMap).forEach(([inputId, paramKey]) => {
     const val = document.getElementById(inputId).value;
     if (val) {
@@ -403,6 +554,13 @@ function updateHistory() {
       queryString.searchParams.delete(paramKey);
     }
   });
+
+  // Handle the favorites checkbox separately using .checked
+  if (document.getElementById('input-favorite').checked) {
+    queryString.searchParams.set('f', 'true');
+  } else {
+    queryString.searchParams.delete('f');
+  }
 
   // Handle Detail View State in URL
   if (document.getElementById('wheel-details').classList.contains('open')) {
@@ -438,6 +596,11 @@ function updatePage(skipHistory = false) {
   setInputValue('input-construction', 'c');
   setInputValue('input-diameter', 'd');
   setInputValue('input-pcd', 'p');
+
+  // Handle the favorite checkbox state specifically
+  if (urlParams.get('f') === 'true') {
+    document.getElementById('input-favorite').checked = true;
+  }
 
   // Apply filters based on the loaded URL params
   applyFilter(skipHistory);

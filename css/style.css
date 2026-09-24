@@ -1,7 +1,8 @@
 /* css variables */
 
 @import url("https://fonts.googleapis.com/css2?family=Jost:wght@400&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,1,0");
+@import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200");
+
 
 :root {
   --base-padding: 1rem;
@@ -32,6 +33,36 @@
   --shadow: 0 4px 12px rgba(0,0,0,0.1), 0 0 1px 1px rgba(0,0,0,0.05);
 }
 
+.material-symbols-rounded {
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24;
+  cursor: pointer;
+  user-select: none;
+}
+
+.material-symbols-favorite-false {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+.material-symbols-favorite-true {
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+figure .material-symbols-favorite-true {
+  color: rgb(var(--color-accent-01));
+}
+
 /* element styles */
 
 a {
@@ -43,19 +74,6 @@ a {
 
 a:hover {
   color: rgba(var(--color-accent-01),0.7);
-}
-
-h1 {
-  color: var(--color-text);
-  font-size: 2rem;
-  font-weight: bold;
-}
-
-h2 {
-  color: var(--color-text);
-  font-size: 1.2rem;
-  font-weight: 600;
-  margin: 0 0 0.5rem 0;
 }
 
 body {
@@ -78,6 +96,25 @@ figure {
   margin: 0;
   position: relative;
   transition: background-color 0.2s;
+}
+
+figure .material-symbols-rounded {
+  padding: 0.5rem;
+  position: absolute;
+  right: 0;
+  transition: opacity 0.2s;
+}
+
+figure .material-symbols-favorite-false {
+  opacity: 1;
+}
+
+figure .material-symbols-favorite-true {
+  opacity: 1;
+}
+
+figure:hover .material-symbols-rounded {
+  opacity: 1;
 }
 
 figure img {
@@ -126,8 +163,17 @@ footer {
   text-align: center;
 }
 
-footer #display-count {
-  margin-bottom: var(--padding);
+h1 {
+  color: var(--color-text);
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+h2 {
+  color: var(--color-text);
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 0 0 0.5rem 0;
 }
 
 header {
@@ -140,26 +186,60 @@ header {
   z-index: 50;
 }
 
+header a {
+  display: contents;
+}
+
+header span {
+  color: rgb(var(--color-text));
+  transition: color 0.2s;
+}
+
+header span:hover {
+  color: rgb(var(--color-accent-01));
+}
+
+header #page-logo {
+  filter: drop-shadow(0px 100px 0 rgb(var(--color-text)));
+  height: 24px;
+  margin-right: 0.5rem;
+  transform: translateY(-100px);
+  user-select: none;
+}
+
 header #page-title {
   flex: 1 0 0;
   font-size: 1.2rem;
   line-height: 1;
   margin: 0;
-}
-
-header .material-symbols-rounded {
-  cursor: pointer;
-  flex: 0 0 0;
-  margin-left: 1rem;
   user-select: none;
 }
 
-input, option, select {
+header .material-symbols-rounded {
+  flex: 0 0 0;
+  margin-left: 1rem;
+}
+
+html {
+  overflow: hidden;
+}
+
+button, input, option, select {
   font-family: 'Jost', sans-serif;
 }
 
+button {
+  align-items: center;
+  display: flex;
+  gap: 1ch;
+  padding: 1ch;
+}
+
+button,
 input,
-select {
+select,
+span.btn-primary,
+span.btn-secondary {
   background-color: rgb(var(--color-background-02));
   border-radius: var(--radius-lg);
   border: none;
@@ -170,12 +250,15 @@ select {
   transition: background-color 0.2s;
 }
 
+button:hover,
 input:hover,
 select:hover {
   background-color: rgb(var(--color-background-03));
 }
 
-input[type="button"] {
+button,
+input[type="button"],
+span.btn-primary {
   background: rgb(var(--color-accent-01));
   border: none;
   color: rgb(var(--color-white));
@@ -183,11 +266,14 @@ input[type="button"] {
   transition: background-color 0.2s;
 }
 
-input[type="button"]:hover {
+button:hover,
+input[type="button"]:hover,
+span.btn-primary:hover {
   background-color: rgb(var(--color-accent-02));
 }
 
-input[type="reset"] {
+input[type="reset"],
+span.btn-secondary {
   background: rgb(var(--color-background-02));
   border: none;
   color: rgb(var(--color-accent-01));
@@ -197,7 +283,8 @@ input[type="reset"] {
   transition: background-color 0.2s;
 }
 
-input[type="reset"]:hover {
+input[type="reset"]:hover,
+span.btn-secondary:hover {
   background-color: rgb(var(--color-background-03));
 }
 
@@ -213,7 +300,8 @@ label {
 main {
   display: flex;
   flex-direction: column;
-  overflow: auto;
+  overflow-y: auto;
+  overflow-x: hidden;
   /*padding: calc(var(--padding) / 2);*/
   padding: 0;
 }
@@ -276,8 +364,37 @@ tr:hover th {
   order: 2;
 }
 
+#input-construction {
+  order: 4;
+}
+
 #input-diameter {
-  order: 5;
+  order: 6;
+}
+
+#input-favorite {
+  -webkit-appearance: none;
+  appearance: none;
+  margin: 0;
+  order: 8;
+  text-align: center;
+}
+
+#input-favorite:checked {
+  background: rgb(var(--color-accent-01));
+}
+
+#input-favorite:checked:hover {
+  background-color: rgb(var(--color-accent-02));
+}
+
+#input-favorite:after {
+  color: var(--color-text);
+  content: 'Favorites'
+}
+
+.theme-light #input-favorite:checked:after {
+  color: rgb(var(--color-white));
 }
 
 #input-manufacturer {
@@ -290,11 +407,11 @@ tr:hover th {
 }
 
 #input-pcd {
-  order: 6;
+  order: 7;
 }
 
 #input-style {
-  order: 4;
+  order: 5;
 }
 
 #wheel-filters {
@@ -320,11 +437,11 @@ tr:hover th {
 
 #wheel-filters-form input[type=button] {
   grid-column: 1/-1;
-  order: 8;
+  order: 10;
 }
 
 #wheel-filters-form input[type=reset] {
-  order: 7;
+  order: 9;
 }
 
 /* wheel-list */
@@ -379,6 +496,7 @@ tr:hover th {
     right: 0;
     top: 0;
     user-select: none;
+  z-index: 80;
 }
 
 #wheel-details-close:hover {
@@ -463,6 +581,24 @@ tr:hover th {
   margin: 1rem 0;
 }
 
+#wheel-header-favorite {
+  display: flex;
+  justify-content: center;
+  padding: 1ch 0;
+}
+
+#wheel-header-favorite-button {
+  align-items: center;
+  display: flex;
+  gap: 0.5ch;
+  padding: 0 1ch;
+  user-select: none;
+}
+
+#wheel-header-favorite-button span {
+  font-size: 1rem;
+}
+
 #wheel-header-model {
   font-size: 2rem;
   margin: 0;
@@ -472,10 +608,16 @@ tr:hover th {
   background: rgb(var(--color-accent-01));
   border-radius: var(--radius-lg);
   color: rgb(var(--color-white));
+  cursor: pointer;
   line-height: 2;
   padding: 0 1ch;
+  transition: background-color 0.2s;
   user-select: none;
   white-space: nowrap;
+}
+
+#wheel-header-tags span:hover {
+  background: rgb(var(--color-accent-02));
 }
 
 #wheel-images {
@@ -556,6 +698,33 @@ tr:hover th {
 
 /* generic classes */
 
+[tooltip] {
+    position: relative;
+    z-index: 20;
+}
+
+[tooltip]:after {
+    background: rgb(var(--color-accent-01));
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow);
+    color: rgb(var(--color-white));
+    content: attr(tooltip);
+    font-family: 'Jost', sans-serif;
+    font-size: 0.8rem;
+    left: 50%;
+    opacity: 0;
+    padding: 1ch;
+    pointer-events: none;
+    position: absolute;
+    transform: translate(-50%, 32px);
+    transition: opacity 0.2s;
+}
+
+[tooltip]:hover:after {
+    opacity: 1;
+    transition-delay: 0.3s;
+}
+
 .hidden {
   display: none !important;
 }
@@ -628,8 +797,16 @@ tr:hover th {
     order: 3;
   }
 
+   #input-construction {
+    order: 5;
+  }
+
   #input-diameter {
-    order: 6;
+    order: 7;
+  }
+
+   #input-favorite {
+    order: 9;
   }
 
   #input-manufacturer {
@@ -637,7 +814,7 @@ tr:hover th {
   }
 
   #input-pcd {
-    order: 7;
+    order: 8;
   }
 
   #input-search {
@@ -646,7 +823,7 @@ tr:hover th {
   }
 
   #input-style {
-    order: 5;
+    order: 6;
   }
 
   #wheel-details-container {
@@ -684,7 +861,7 @@ tr:hover th {
 
   #wheel-filters-form {
     gap: calc(var(--padding) / 4);
-    grid-template-columns: repeat(6, minmax(0,1fr));
+    grid-template-columns: repeat(8, minmax(0,1fr));
   }
 
   #wheel-filters-form input[type=button] {
@@ -693,7 +870,11 @@ tr:hover th {
   }
 
   #wheel-filters-form input[type=reset] {
-    order: 8;
+    order: 10;
+  }
+
+  #wheel-header-favorite {
+    justify-content: flex-start;
   }
 
   #wheel-images {
@@ -717,5 +898,11 @@ tr:hover th {
 
   .placeholder:nth-child(n + 4) {
     display: none;
+  }
+}
+
+@media (hover: hover) {
+  figure .material-symbols-favorite-false {
+    opacity: 0;
   }
 }
